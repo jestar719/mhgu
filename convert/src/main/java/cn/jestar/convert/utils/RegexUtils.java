@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
  */
 
 public class RegexUtils {
-    public final static String END_NUM = "(.*)\\d+$";
+    public final static String END_NUM = "(\\D*)\\d+$";
     public static final String NUM_REGEX = "\\d+";
 
     public static String getTextWithoutNum(String text) {

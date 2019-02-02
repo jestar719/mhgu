@@ -1,0 +1,98 @@
+[
+  {
+    "mName": "大剑",
+    "mData": {
+      "大剑1": "data/1900.html",
+      "大剑2": "data/2882.html"
+    }
+  },
+  {
+    "mName": "太刀",
+    "mData": {
+      "太刀1": "data/1901.html",
+      "太刀2": "data/2883.html"
+    }
+  },
+  {
+    "mName": "长枪",
+    "mData": {
+      "长枪2": "data/2888.html",
+      "长枪1": "data/1906.html"
+    }
+  },
+  {
+    "mName": "片手剑",
+    "mData": {
+      "片手剑1": "data/1902.html",
+      "片手剑2": "data/2884.html"
+    }
+  },
+  {
+    "mName": "双剑",
+    "mData": {
+      "双剑1": "data/1903.html",
+      "双剑2": "data/2885.html"
+    }
+  },
+  {
+    "mName": "大锤",
+    "mData": {
+      "大锤1": "data/1904.html",
+      "大锤2": "data/2886.html"
+    }
+  },
+  {
+    "mName": "狩猎笛",
+    "mData": {
+      "狩猎笛1": "data/1905.html",
+      "狩猎笛2": "data/2887.html"
+    }
+  },
+  {
+    "mName": "铳枪",
+    "mData": {
+      "铳枪1": "data/1907.html",
+      "铳枪2": "data/2889.html"
+    }
+  },
+  {
+    "mName": "斩击斧",
+    "mData": {
+      "斩击斧1": "data/1908.html",
+      "斩击斧2": "data/2890.html"
+    }
+  },
+  {
+    "mName": "盾斧",
+    "mData": {
+      "盾斧": "data/1909.html"
+    }
+  },
+  {
+    "mName": "操虫棍",
+    "mData": {
+      "操虫棍": "data/1910.html"
+    }
+  },
+  {
+    "mName": "弓",
+    "mData": {
+      "弓1": "data/1911.html",
+      "弓2": "data/2893.html"
+    }
+  },
+  {
+    "mName": "轻弩",
+    "mData": {
+      "轻弩1": "data/1912.html",
+      "轻弩2": "data/2894.html"
+    }
+  },
+  {
+    "mName": "重弩",
+    "mData": {
+      "重弩1": "data/1913.html",
+      "重弩2": "data/2895.html"
+    }
+  }
+]

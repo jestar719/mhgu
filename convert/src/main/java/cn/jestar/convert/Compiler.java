@@ -3,21 +3,31 @@ package cn.jestar.convert;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
-
-import cn.jestar.convert.utils.JsonUtils;
 
 /**
  * Created by 花京院 on 2019/1/29.
  */
 
-public abstract class Compiler {
+public abstract class Compiler extends Copyable {
 
-    private final File mFile;
+    protected File mFile;
+
+    public Compiler() {
+    }
 
     public Compiler(String path) {
+        setFile(path);
+    }
+
+    public Compiler(File file) {
+        mFile = file;
+    }
+
+    public void setFile(File file) {
+        mFile = file;
+    }
+
+    public void setFile(String path) {
         mFile = new File(path);
     }
 
@@ -34,19 +44,4 @@ public abstract class Compiler {
 
     protected abstract void onRead(BufferedReader reader) throws Exception;
 
-    protected void write(Object object,File file){
-        String s = JsonUtils.toString(object);
-        write(file,s);
-    }
-
-    protected void write(File file,String str){
-        try {
-            FileWriter writer = new FileWriter(file);
-            writer.write(str);
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
 }
