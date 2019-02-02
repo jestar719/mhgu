@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,14 +12,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import cn.jestar.convert.Constans;
+import cn.jestar.convert.Constants;
+import cn.jestar.convert.Type;
 import cn.jestar.convert.bean.DbBean;
 import cn.jestar.convert.bean.LinkInfo;
-import cn.jestar.convert.Type;
-import cn.jestar.convert.utils.JsonUtils;
 import cn.jestar.convert.utils.RegexUtils;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by 花京院 on 2019/1/27.
@@ -34,7 +32,7 @@ public class IndexConvertTest {
     @Before
     public void setUp() throws Exception {
         mConvert = new IndexConvert();
-        mFile = new File(Constans.TEMP_PATH);
+        mFile = new File(Constants.TEMP_PATH);
     }
 
 
@@ -80,7 +78,7 @@ public class IndexConvertTest {
     @Test
     public void copy() throws IOException {
         File source = new File(mFile, "BeanList");
-        File target = new File(Constans.WRAPPER_INDEX_PATH);
+        File target = new File(Constants.WRAPPER_INDEX_PATH);
         File[] files = source.listFiles();
         for (File file : files) {
             String name = file.getName();

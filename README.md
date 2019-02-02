@@ -20,6 +20,8 @@
  * db 数据库基础库，定义数据库相关的类，提供给app,dbwrapper使用
 
  * temp 用与存放提取的数据，以Json格式保存
+    * summary 提取的各汇总数据
+    * 待翻译数据
 
 ### 需求列表
 
@@ -59,6 +61,6 @@
 * 其它需求 （待定）
 
 ### 版本发布
-应用宝  Fir
+应用宝  [Fir](https://fir.im/v4hr)
 
 有问题或建议请发[Email](jestar719@gmail.com)

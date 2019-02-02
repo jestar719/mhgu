@@ -5,23 +5,14 @@ import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModel;
-import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.List;
 
-import cn.jestar.db.DbConstance;
-import cn.jestar.db.IndexDao;
-import cn.jestar.db.JsonUtils;
+import cn.jestar.db.DbConstants;
 import cn.jestar.db.MyDataBase;
-import cn.jestar.db.bean.IndexBean;
 import cn.jestar.mhgu.AppManager;
 
 /**
@@ -45,8 +36,8 @@ public class SplashModel extends ViewModel {
             public void run() {
                 try {
                     copyDb();
-                    SharedPreferences.Editor edit = AppManager.getSp(DbConstance.DB_NAME).edit();
-                    edit.putInt(DbConstance.DB_NAME, DbConstance.VERSION);
+                    SharedPreferences.Editor edit = AppManager.getSp(DbConstants.DB_NAME).edit();
+                    edit.putInt(DbConstants.DB_NAME, DbConstants.VERSION);
                     edit.apply();
                     MyDataBase.init(AppManager.getApp());
                     mInitState.postValue(true);
@@ -65,8 +56,8 @@ public class SplashModel extends ViewModel {
      */
     private void copyDb() throws IOException {
         Application app = AppManager.getApp();
-        try (InputStream in = app.getAssets().open(DbConstance.DB_NAME);
-             FileOutputStream out = new FileOutputStream(app.getDatabasePath(DbConstance.DB_NAME))) {
+        try (InputStream in = app.getAssets().open(DbConstants.DB_NAME);
+             FileOutputStream out = new FileOutputStream(app.getDatabasePath(DbConstants.DB_NAME))) {
             int available = in.available();
             byte[] bytes = new byte[available];
             in.read(bytes);

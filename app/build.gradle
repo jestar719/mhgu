@@ -1,6 +1,16 @@
 apply plugin: 'com.android.application'
 
+def properties = new Properties()
+properties.load(new FileInputStream(rootProject.file('keystone.properties')))
 android {
+    signingConfigs {
+        release {
+            keyAlias properties['KEY_ALIAS']
+            keyPassword properties['KEY_PASSWORD']
+            storeFile file(properties['KEY_PATH'])
+            storePassword properties['KEY_PASSWORD']
+        }
+    }
     compileSdkVersion targetSdk
     defaultConfig {
         applicationId "cn.jestar.mhgu"
@@ -14,21 +24,18 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation design
     implementation constraint
     implementation gson
     implementation flowlayout
-    implementation project(":db")
-//    implementation room
-//    implementation lifecycle
-//    annotationProcessor  roomCompiler
-//    annotationProcessor  lifecycleRuntime
+    implementation project(':db')
     testImplementation junit
     androidTestImplementation testRunner
     androidTestImplementation espresso

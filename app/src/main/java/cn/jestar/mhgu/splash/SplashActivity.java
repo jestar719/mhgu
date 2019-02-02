@@ -10,7 +10,7 @@ import android.view.View;
 
 import java.io.File;
 
-import cn.jestar.db.DbConstance;
+import cn.jestar.db.DbConstants;
 import cn.jestar.db.MyDataBase;
 import cn.jestar.mhgu.AppManager;
 import cn.jestar.mhgu.MainActivity;
@@ -58,9 +58,9 @@ public class SplashActivity extends AppCompatActivity {
      * @return true表示已经初始化完成，false反之
      */
     private boolean checkInit() {
-        File dbFile = getDatabasePath(DbConstance.DB_NAME);
-        int currentDbVersion = AppManager.getSp(DbConstance.DB_NAME).getInt(DbConstance.DB_NAME, 0);
-        return dbFile.exists() && currentDbVersion == DbConstance.VERSION;
+        File dbFile = getDatabasePath(DbConstants.DB_NAME);
+        int currentDbVersion = AppManager.getSp(DbConstants.DB_NAME).getInt(DbConstants.DB_NAME, 0);
+        return dbFile.exists() && currentDbVersion == DbConstants.VERSION;
     }
 
     /**

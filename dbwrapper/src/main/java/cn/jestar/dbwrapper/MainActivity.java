@@ -2,23 +2,20 @@ package cn.jestar.dbwrapper;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.Observer;
-import android.content.Context;
 import android.content.res.AssetManager;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.jestar.db.DbConstance;
+import cn.jestar.db.DbConstants;
 import cn.jestar.db.IndexDao;
 import cn.jestar.db.JsonUtils;
 import cn.jestar.db.MyDataBase;
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initDb() {
-        File file = getDatabasePath(DbConstance.DB_NAME);
+        File file = getDatabasePath(DbConstants.DB_NAME);
         if (file.exists()) {
             file.delete();
         }

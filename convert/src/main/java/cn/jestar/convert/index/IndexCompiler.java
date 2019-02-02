@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 
-import cn.jestar.convert.Constans;
+import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.utils.RegexUtils;
 
@@ -17,13 +17,13 @@ public class IndexCompiler extends UrlCompiler {
     private int size = 17;
 
     public IndexCompiler() {
-        super(Constans.INDEX);
+        super(Constants.INDEX);
     }
 
     @Override
     protected void onRead(BufferedReader reader) throws IOException {
         int num = 0;
-        File file = new File(Constans.TEMP_PATH);
+        File file = new File(Constants.TEMP_PATH);
         String nameTemp = "%s.json";
         while (num < size) {
             String s = reader.readLine();

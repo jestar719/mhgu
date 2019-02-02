@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 
-import cn.jestar.convert.Constans;
+import cn.jestar.convert.Constants;
 import cn.jestar.convert.index.UrlCompiler;
 import cn.jestar.convert.utils.RegexUtils;
 
@@ -19,7 +19,7 @@ public class SkillCollectCompiler extends UrlCompiler {
     private Map<String, String> mMap = new HashMap<>();
 
     public SkillCollectCompiler() {
-        super(Constans.DATA_PATH + "2200.html");
+        super(Constants.DATA_PATH + "2200.html");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class SkillCollectCompiler extends UrlCompiler {
             if (s.contains(START_FLAG)) {
                 flag = true;
             } else if (s.contains(END_FLAG)) {
-                File file = new File(Constans.TEMP_PATH);
+                File file = new File(Constants.TEMP_PATH);
                 write(mMap, new File(file, "技能一览.json"));
                 return;
             } else {

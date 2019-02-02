@@ -1,19 +1,16 @@
 package cn.jestar.convert.index;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
-import cn.jestar.convert.Constans;
 import cn.jestar.convert.bean.DbBean;
-import cn.jestar.convert.utils.JsonUtils;
 import cn.jestar.convert.bean.LinkInfo;
+import cn.jestar.convert.utils.JsonUtils;
 
 /**
  * 读取List<LinkInfo>类型的Json文件，转换成对应的List<IndexBean> 并保存

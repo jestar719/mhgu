@@ -6,3 +6,5 @@ local.properties
 build/
 captures/
 .externalNativeBuild
+.jks
+keystone.properties
