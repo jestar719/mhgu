@@ -1,0 +1,158 @@
+[
+  {
+    "mName": "怪物一览",
+    "mData": {
+      "大型怪物": "data/2501.html",
+      "小型怪物": "data/2502.html"
+    }
+  },
+  {
+    "mName": "其它种",
+    "mData": {
+      "黑蚀龙": "data/2830.html",
+      "浑沌呻吟黑蚀龙": "data/2990.html",
+      "雷狼龙": "data/1853.html",
+      "金雷公雷狼龙": "data/2839.html",
+      "影蜘蛛": "data/2979.html",
+      "绞蛇龙": "data/1849.html"
+    }
+  },
+  {
+    "mName": "两生种",
+    "mData": {
+      "鬼鲛": "data/1851.html",
+      "鬼蛙": "data/1856.html",
+      "岩穿鬼蛙": "data/2837.html"
+    }
+  },
+  {
+    "mName": "兽龙种",
+    "mData": {
+      "恐暴龙": "data/2871.html",
+      "极度饥饿恐暴龙": "data/2872.html",
+      "爆锤龙": "data/1966.html",
+      "宝缠爆锤龙": "data/2869.html",
+      "斩龙": "data/1829.html",
+      "烬灭刃斩龙": "data/2870.html",
+      "尾锤龙": "data/1976.html",
+      "碎龙": "data/1859.html",
+      "猛爆碎龙": "data/2991.html",
+      "土砂龙": "data/2965.html"
+    }
+  },
+  {
+    "mName": "古龙种",
+    "mData": {
+      "岚龙": "data/1979.html",
+      "煌黑龙": "data/2879.html",
+      "霞龙": "data/1967.html",
+      "骸龙": "data/2858.html",
+      "黑龙": "data/2993.html",
+      "红黑龙": "data/2994.html",
+      "祖龙": "data/2995.html",
+      "老山龙": "data/2977.html",
+      "麒麟": "data/1969.html",
+      "风翔龙": "data/1970.html",
+      "天廻龙": "data/2864.html",
+      "炎王龙": "data/1973.html",
+      "天慧龙": "data/2964.html"
+    }
+  },
+  {
+    "mName": "海龙种",
+    "mData": {
+      "炎戈龙": "data/1848.html",
+      "海龙": "data/1861.html",
+      "水兽": "data/1978.html",
+      "泡狐龙": "data/1832.html",
+      "天眼泡狐龙": "data/2973.html",
+      "潜口龙": "data/1858.html"
+    }
+  },
+  {
+    "mName": "牙兽种",
+    "mData": {
+      "青熊兽": "data/1964.html",
+      "红盔青熊兽": "data/2835.html",
+      "白兔兽": "data/1980.html",
+      "大雪主白兔兽": "data/2863.html",
+      "金狮子": "data/2873.html",
+      "激昂的金狮子": "data/2874.html",
+      "赤甲兽": "data/1977.html",
+      "巨兽": "data/1831.html",
+      "银岭巨兽": "data/2972.html",
+      "奇猿狐": "data/1850.html",
+      "野猪王": "data/1975.html",
+      "雪狮子王": "data/1857.html",
+      "桃毛兽王": "data/2971.html"
+    }
+  },
+  {
+    "mName": "甲壳种",
+    "mData": {
+      "镰蟹": "data/1852.html",
+      "铠裂镰蟹": "data/2982.html",
+      "盾蟹": "data/1854.html",
+      "矛碎盾蟹": "data/2836.html"
+    }
+  },
+  {
+    "mName": "甲虫种",
+    "mData": {
+      "阁螳螂": "data/2992.html",
+      "阁螳螂·机甲": "data/3002.html",
+      "彻甲虫": "data/2857.html",
+      "重甲虫": "data/1971.html"
+    }
+  },
+  {
+    "mName": "飞龙种",
+    "mData": {
+      "霸龙": "data/2875.html",
+      "崩龙": "data/2876.html",
+      "电龙": "data/1830.html",
+      "青电主电龙": "data/2974.html",
+      "雌火龙": "data/1862.html",
+      "紫毒姫雌火龙": "data/2834.html",
+      "雌火龙希少种": "data/2877.html",
+      "雄火龙": "data/1863.html",
+      "黑炎王雄火龙": "data/2833.html",
+      "雄火龙希少种": "data/2878.html",
+      "铠龙": "data/2980.html",
+      "千刃龙": "data/2831.html",
+      "角龙": "data/2962.html",
+      "鏖魔角龙": "data/2963.html",
+      "轰龙": "data/1855.html",
+      "荒钩爪轰龙": "data/2840.html",
+      "迅龙": "data/1839.html",
+      "白疾风迅龙": "data/2838.html",
+      "岩龙": "data/2983.html",
+      "白电龙": "data/1860.html",
+      "冰牙龙": "data/2966.html"
+    }
+  },
+  {
+    "mName": "魚龙种",
+    "mData": {
+      "熔岩龙": "data/1965.html",
+      "水龙": "data/1968.html",
+      "沙龙王": "data/1974.html",
+      "白速龙王": "data/2989.html"
+    }
+  },
+  {
+    "mName": "鸟龙种",
+    "mData": {
+      "黑狼鸟": "data/1846.html",
+      "独眼黑狼鸟": "data/2868.html",
+      "大怪鸟": "data/1840.html",
+      "毒怪鸟": "data/1972.html",
+      "红速龙王": "data/1981.html",
+      "黄速龙王": "data/1983.html",
+      "跳狗龙": "data/1836.html",
+      "蓝速龙王": "data/1984.html",
+      "夜鸟": "data/1845.html",
+      "朧隠夜鸟": "data/2981.html"
+    }
+  }
+]

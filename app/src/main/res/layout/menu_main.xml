@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/tools"
+    android:id="@+id/rl_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/action_search"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/list_index"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_search"
+        android:orientation="vertical" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_index"
+        android:padding="@dimen/d16"
+        zhy:max_select="1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/list_index"
+        android:layout_above="@id/tv_search"
+        android:layout_below="@+id/tfl_type">
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tfl_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tfl_type"
+            android:layout_toRightOf="@id/list_index"
+            android:padding="@dimen/d16"
+            zhy:max_select="1" />
+    </ScrollView>
+</RelativeLayout>

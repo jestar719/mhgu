@@ -1,0 +1,37 @@
+[
+  {
+    "mName": "道具",
+    "mData": {
+      "消耗": "data/2985.html",
+      "事件": "data/2117.html",
+      "珠玉": "data/2113.html",
+      "票": "data/2118.html",
+      "虫": "data/2114.html",
+      "端材": "data/2116.html",
+      "虫餌": "data/2111.html",
+      "植物": "data/2984.html",
+      "精算": "data/2119.html",
+      "狩证": "data/2959.html",
+      "道具一览": "data/2100.html",
+      "魚": "data/2115.html",
+      "矿石": "data/2112.html"
+    }
+  },
+  {
+    "mName": "交易窗口",
+    "mData": {
+      "点数交换": "data/2826.html",
+      "增加道具": "data/2827.html"
+    }
+  },
+  {
+    "mName": "道具入手",
+    "mData": {
+      "潮币交换": "data/2988.html",
+      "杂货屋": "data/2615.html",
+      "武具屋": "data/2617.html",
+      "山菜爷交换": "data/2504.html",
+      "调合列表": "data/2503.html"
+    }
+  }
+]

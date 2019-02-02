@@ -1,0 +1,70 @@
+[
+  {
+    "mName": "村任务",
+    "mData": {
+      "村9": "data/2019.html",
+      "村5": "data/2015.html",
+      "村6": "data/2016.html",
+      "村7": "data/2017.html",
+      "村8": "data/2018.html",
+      "村1": "data/2011.html",
+      "村2": "data/2012.html",
+      "村3": "data/2013.html",
+      "村4": "data/2014.html",
+      "村关键任务": "data/2859.html",
+      "村10": "data/2020.html"
+    }
+  },
+  {
+    "mName": "集任务",
+    "mData": {
+      "集1": "data/2021.html",
+      "集2": "data/2022.html",
+      "集3": "data/2023.html",
+      "集4": "data/2024.html",
+      "集5": "data/2025.html",
+      "集6": "data/2026.html",
+      "集7": "data/2027.html",
+      "G1": "data/2028.html",
+      "G2": "data/2029.html",
+      "G3": "data/2030.html",
+      "G4": "data/2996.html",
+      "集关键任务": "data/2987.html"
+    }
+  },
+  {
+    "mName": "其它任务",
+    "mData": {
+      "狩技追加": "data/2952.html",
+      "食材追加": "data/2950.html",
+      "装备解锁": "data/2953.html",
+      "挑战": "data/2034.html",
+      "设施強化": "data/2951.html",
+      "斗技大会": "data/2035.html",
+      "村民的委托": "data/2824.html"
+    }
+  },
+  {
+    "mName": "活动任务",
+    "mData": {
+      "活动下位": "data/2031.html",
+      "活动上位": "data/2032.html",
+      "活动G級": "data/2033.html"
+    }
+  },
+  {
+    "mName": "来访猎人",
+    "mData": {
+      "G級": "data/2614.html",
+      "上位": "data/2613.html",
+      "下位": "data/2612.html"
+    }
+  },
+  {
+    "mName": "二名任务",
+    "mData": {
+      "特殊许可": "data/2036.html",
+      "特许G級": "data/2997.html"
+    }
+  }
+]

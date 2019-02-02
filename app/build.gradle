@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion targetSdk
+    defaultConfig {
+        applicationId "cn.jestar.mhgu"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation design
+    implementation constraint
+    implementation gson
+    implementation flowlayout
+    implementation project(":db")
+//    implementation room
+//    implementation lifecycle
+//    annotationProcessor  roomCompiler
+//    annotationProcessor  lifecycleRuntime
+    testImplementation junit
+    androidTestImplementation testRunner
+    androidTestImplementation espresso
+}

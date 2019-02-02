@@ -1,0 +1,29 @@
+[{
+  "mName": "地图",
+  "mData": {
+    "旧沙漠": "data/2412.html",
+    "极圏": "data/2961.html",
+    "溶岩岛": "data/2401.html",
+    "龙之墓场": "data/2846.html",
+    "森丘": "data/2404.html",
+    "禁足地": "data/2845.html",
+    "沙漠": "data/2969.html",
+    "火山": "data/2407.html",
+    "遗迹平原": "data/2408.html",
+    "冰海": "data/2410.html",
+    "遗群岭": "data/2968.html",
+    "水上斗技场": "data/2843.html",
+    "立体斗技场": "data/2842.html",
+    "雪山": "data/2406.html",
+    "灵峰": "data/2844.html",
+    "地底火山": "data/2411.html",
+    "斗技场": "data/2841.html",
+    "沼地": "data/2405.html",
+    "塔之秘境": "data/2413.html",
+    "溪流": "data/2403.html",
+    "密林": "data/2975.html",
+    "古代林": "data/2400.html",
+    "孤岛": "data/2402.html",
+    "原生林": "data/2409.html"
+  }
+}]

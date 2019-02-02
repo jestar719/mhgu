@@ -1,0 +1,304 @@
+[
+  {
+    "id": 524544,
+    "type": 8,
+    "name": "村任务",
+    "parent": 0
+  },
+  {
+    "id": 524545,
+    "type": 8,
+    "name": "村1",
+    "url": "data/2011.html",
+    "parent": 524544
+  },
+  {
+    "id": 524546,
+    "type": 8,
+    "name": "村10",
+    "url": "data/2020.html",
+    "parent": 524544
+  },
+  {
+    "id": 524547,
+    "type": 8,
+    "name": "村2",
+    "url": "data/2012.html",
+    "parent": 524544
+  },
+  {
+    "id": 524548,
+    "type": 8,
+    "name": "村3",
+    "url": "data/2013.html",
+    "parent": 524544
+  },
+  {
+    "id": 524549,
+    "type": 8,
+    "name": "村4",
+    "url": "data/2014.html",
+    "parent": 524544
+  },
+  {
+    "id": 524550,
+    "type": 8,
+    "name": "村5",
+    "url": "data/2015.html",
+    "parent": 524544
+  },
+  {
+    "id": 524551,
+    "type": 8,
+    "name": "村6",
+    "url": "data/2016.html",
+    "parent": 524544
+  },
+  {
+    "id": 524552,
+    "type": 8,
+    "name": "村7",
+    "url": "data/2017.html",
+    "parent": 524544
+  },
+  {
+    "id": 524553,
+    "type": 8,
+    "name": "村8",
+    "url": "data/2018.html",
+    "parent": 524544
+  },
+  {
+    "id": 524554,
+    "type": 8,
+    "name": "村9",
+    "url": "data/2019.html",
+    "parent": 524544
+  },
+  {
+    "id": 524555,
+    "type": 8,
+    "name": "村关键任务",
+    "url": "data/2859.html",
+    "parent": 524544
+  },
+  {
+    "id": 524800,
+    "type": 8,
+    "name": "集任务",
+    "parent": 0
+  },
+  {
+    "id": 524801,
+    "type": 8,
+    "name": "G1",
+    "url": "data/2028.html",
+    "parent": 524800
+  },
+  {
+    "id": 524802,
+    "type": 8,
+    "name": "G2",
+    "url": "data/2029.html",
+    "parent": 524800
+  },
+  {
+    "id": 524803,
+    "type": 8,
+    "name": "G3",
+    "url": "data/2030.html",
+    "parent": 524800
+  },
+  {
+    "id": 524804,
+    "type": 8,
+    "name": "G4",
+    "url": "data/2996.html",
+    "parent": 524800
+  },
+  {
+    "id": 524805,
+    "type": 8,
+    "name": "集1",
+    "url": "data/2021.html",
+    "parent": 524800
+  },
+  {
+    "id": 524806,
+    "type": 8,
+    "name": "集2",
+    "url": "data/2022.html",
+    "parent": 524800
+  },
+  {
+    "id": 524807,
+    "type": 8,
+    "name": "集3",
+    "url": "data/2023.html",
+    "parent": 524800
+  },
+  {
+    "id": 524808,
+    "type": 8,
+    "name": "集4",
+    "url": "data/2024.html",
+    "parent": 524800
+  },
+  {
+    "id": 524809,
+    "type": 8,
+    "name": "集5",
+    "url": "data/2025.html",
+    "parent": 524800
+  },
+  {
+    "id": 524810,
+    "type": 8,
+    "name": "集6",
+    "url": "data/2026.html",
+    "parent": 524800
+  },
+  {
+    "id": 524811,
+    "type": 8,
+    "name": "集7",
+    "url": "data/2027.html",
+    "parent": 524800
+  },
+  {
+    "id": 524812,
+    "type": 8,
+    "name": "集关键任务",
+    "url": "data/2987.html",
+    "parent": 524800
+  },
+  {
+    "id": 525056,
+    "type": 8,
+    "name": "其它任务",
+    "parent": 0
+  },
+  {
+    "id": 525057,
+    "type": 8,
+    "name": "挑战",
+    "url": "data/2034.html",
+    "parent": 525056
+  },
+  {
+    "id": 525058,
+    "type": 8,
+    "name": "斗技大会",
+    "url": "data/2035.html",
+    "parent": 525056
+  },
+  {
+    "id": 525059,
+    "type": 8,
+    "name": "村民的委托",
+    "url": "data/2824.html",
+    "parent": 525056
+  },
+  {
+    "id": 525060,
+    "type": 8,
+    "name": "狩技追加",
+    "url": "data/2952.html",
+    "parent": 525056
+  },
+  {
+    "id": 525061,
+    "type": 8,
+    "name": "装备解锁",
+    "url": "data/2953.html",
+    "parent": 525056
+  },
+  {
+    "id": 525062,
+    "type": 8,
+    "name": "设施強化",
+    "url": "data/2951.html",
+    "parent": 525056
+  },
+  {
+    "id": 525063,
+    "type": 8,
+    "name": "食材追加",
+    "url": "data/2950.html",
+    "parent": 525056
+  },
+  {
+    "id": 525312,
+    "type": 8,
+    "name": "活动任务",
+    "parent": 0
+  },
+  {
+    "id": 525313,
+    "type": 8,
+    "name": "活动G級",
+    "url": "data/2033.html",
+    "parent": 525312
+  },
+  {
+    "id": 525314,
+    "type": 8,
+    "name": "活动上位",
+    "url": "data/2032.html",
+    "parent": 525312
+  },
+  {
+    "id": 525315,
+    "type": 8,
+    "name": "活动下位",
+    "url": "data/2031.html",
+    "parent": 525312
+  },
+  {
+    "id": 525568,
+    "type": 8,
+    "name": "来访猎人",
+    "parent": 0
+  },
+  {
+    "id": 525569,
+    "type": 8,
+    "name": "G級",
+    "url": "data/2614.html",
+    "parent": 525568
+  },
+  {
+    "id": 525570,
+    "type": 8,
+    "name": "上位",
+    "url": "data/2613.html",
+    "parent": 525568
+  },
+  {
+    "id": 525571,
+    "type": 8,
+    "name": "下位",
+    "url": "data/2612.html",
+    "parent": 525568
+  },
+  {
+    "id": 525824,
+    "type": 8,
+    "name": "二名任务",
+    "parent": 0
+  },
+  {
+    "id": 525825,
+    "type": 8,
+    "name": "特殊许可",
+    "url": "data/2036.html",
+    "parent": 525824
+  },
+  {
+    "id": 525826,
+    "type": 8,
+    "name": "特许G級",
+    "url": "data/2997.html",
+    "parent": 525824
+  }
+]

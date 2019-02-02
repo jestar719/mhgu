@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>武器</item>
+        <item>装备</item>
+        <item>道具</item>
+        <item>猎猫</item>
+        <item>技能</item>
+        <item>怪物</item>
+        <item>地图</item>
+        <item>任务</item>
+        <item>猫饭</item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+[
+  {
+    "mName": "防具",
+    "mData": {
+      "防具一览": "data/2300.html",
+      "稀有度4": "data/2304.html",
+      "稀有度3": "data/2303.html",
+      "稀有度2": "data/2302.html",
+      "稀有度1": "data/2301.html",
+      "稀有度7": "data/2307.html",
+      "稀有度6": "data/2306.html",
+      "稀有度5": "data/2305.html",
+      "稀有度(G)8-2": "data/2998.html",
+      "稀有度(G)8-1": "data/2308.html",
+      "稀有度(G)9": "data/2309.html",
+      "稀有度(G)10": "data/2310.html",
+      "稀有度(G)X": "data/2847.html"
+    }
+  }
+]
