@@ -2,12 +2,15 @@ apply plugin: 'com.android.application'
 
 def properties = new Properties()
 properties.load(new FileInputStream(rootProject.file('keystone.properties')))
+def path = properties['KEY_PATH']
+
+
 android {
     signingConfigs {
         release {
             keyAlias properties['KEY_ALIAS']
             keyPassword properties['KEY_PASSWORD']
-            storeFile file(properties['KEY_PATH'])
+            storeFile file(path)
             storePassword properties['KEY_PASSWORD']
         }
     }

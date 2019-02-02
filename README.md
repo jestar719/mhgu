@@ -6,7 +6,11 @@
 
 看得日文很不爽，然后就自己做。因为手头上有项目的原因，只能在闲时断断续续的搞。期间解析HTML很蛋疼，写代码时想法又太多，花费了不少时间
 
-现在休假中，对需求重新整理，然后按需求表一步步来做。其中最重要的翻译，实在是太烦琐了，我会提取文本，放在[在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)上，所有人都可以编辑
+现在休假中，对需求重新整理，然后按需求表一步步来做。
+
+其中最重要的翻译，实在是太烦琐了，只能寻找有志之士帮忙了处理了。
+
+已经提取文本，放在[在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)上，所有人都可以编辑
 
 当某页文本都翻译完了，我会进行处理，然后发布新版本
 
@@ -21,7 +25,8 @@
 
  * temp 用与存放提取的数据，以Json格式保存
     * summary 提取的各汇总数据
-    * 待翻译数据
+    * translation 待翻译数据
+    * translated 已经翻译好的数据
 
 ### 需求列表
 
