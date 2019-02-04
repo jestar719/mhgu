@@ -66,6 +66,6 @@
 * 其它需求 （待定）
 
 ### 版本发布
-[Fir](https://fir.im/v4hr)
+[Fir](https://fir.im/v4hr) [github](https://github.com/jestar719/mhgu/releases/download/v1.1.0/mhgu_110.apk)
 
 有问题或建议请发[Email](jestar719@gmail.com)
