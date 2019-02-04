@@ -24,5 +24,5 @@ public interface Constants {
     String TEMP_PATH = "temp";
     String TEMP_SUMMARY_PATH = "temp\\summary";
     String TEMP_TRANSLATION_PATH = "temp\\translation";
-
+    String TEMP_TRANSLATED_PATH = "temp\\translated";
 }

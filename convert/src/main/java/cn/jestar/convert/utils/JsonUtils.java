@@ -4,8 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import com.google.gson.reflect.TypeToken;
 
+import java.io.FileReader;
 import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -52,5 +52,9 @@ public class JsonUtils {
         } catch (Exception e) {
         }
         return lst;
+    }
+
+    public static <T> T fromStringByType(FileReader reader, Type type) {
+        return sGson.fromJson(reader, type);
     }
 }

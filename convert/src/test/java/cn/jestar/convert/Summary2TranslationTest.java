@@ -37,4 +37,6 @@ public class Summary2TranslationTest {
     public void createWeaponNameList() throws IOException {
         mHelper.fromStringMap(new File(Constants.TEMP_SUMMARY_PATH, "weapon"));
     }
+
+
 }
