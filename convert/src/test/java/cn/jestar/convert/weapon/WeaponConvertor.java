@@ -14,6 +14,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -28,6 +29,7 @@ import cn.jestar.convert.utils.RegexUtils;
 
 public class WeaponConvertor {
     public static final String REGEX = "<a href=\"../(ida/\\d+\\.html)\">.*</a> x\\d+<br>";
+    public static final String REGEX1 = "<span style=\"background-color:#.*;\">入手端材：<a href=\"../(ida/\\d+\\.html)\">.*</a> x\\d+</span><br>";
     private final File mSummaryFile;
     private final File mTranslatedFile;
     private final File mTranslationFile;
@@ -105,9 +107,11 @@ public class WeaponConvertor {
         write(s, url);
     }
 
-    public void getUrls(String text, TreeSet<String> links) {
+    public void getUrls(String text, Set<String> links) {
         if (text.matches(REGEX)) {
             links.add(RegexUtils.getMatchText(text, REGEX));
+        } else if (text.matches(REGEX1)) {
+            links.add(RegexUtils.getMatchText(text, REGEX1));
         }
     }
 
@@ -147,11 +151,8 @@ public class WeaponConvertor {
         }
     }
 
-    private boolean checkEnd(char c, char endC) {
-        return c == endC || c == 60 || (c < 58 && c > 48);
-    }
 
-    public StringBuilder getText(String url, TreeSet<String> links) throws Exception {
+    public StringBuilder getText(String url, Set<String> links) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader(Constants.MH_PATH + url));
         StringBuilder builder = new StringBuilder();
         String text;

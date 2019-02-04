@@ -7,8 +7,9 @@ import java.util.Map;
 import java.util.TreeSet;
 
 import cn.jestar.convert.bean.TranslatedBean;
+import cn.jestar.convert.utils.RegexUtils;
 
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -34,12 +35,14 @@ public class WeaponConvertorTest {
     @Test
     public void testRegex() throws Exception {
         String regex = WeaponConvertor.REGEX;
+        String regex1 = WeaponConvertor.REGEX1;
         String text1 = "<a href=\"../ida/189724.html\">龙骨【大】</a> x1<br>";
         String text2 = "<a href=\"../ida/219923.html\">辉龙石</a> x10<br>";
         String text3 = "<span style=\"background-color:#FFEFD3;\">入手端材：<a href=\"../ida/229914.html\">骨的上端材</a> x2</span><br>";
         assertTrue(text1.matches(regex));
         assertTrue(text2.matches(regex));
-        assertFalse(text3.matches(regex));
+        assertTrue(text3.matches(regex1));
+        assertEquals(RegexUtils.getMatchText(text3, regex1), "ida/229914.html");
         WeaponConvertor convertor = new WeaponConvertor(null);
         String url = "ida/230223.html";
         TreeSet<String> set = new TreeSet<>();
