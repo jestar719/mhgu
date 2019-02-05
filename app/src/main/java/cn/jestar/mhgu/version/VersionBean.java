@@ -33,4 +33,13 @@ public class VersionBean {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Override
+    public String toString() {
+        return "VersionBean{" +
+                "version=" + version +
+                ", msg='" + msg + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

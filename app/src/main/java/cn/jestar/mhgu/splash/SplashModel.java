@@ -115,6 +115,7 @@ public class SplashModel extends ViewModel {
             InputStream stream = url.openStream();
             InputStreamReader reader = new InputStreamReader(stream, "utf-8");
             VersionBean bean = JsonUtils.fromString(reader, VersionBean.class);
+            Log.i(App.TAG, bean.toString());
             AppManager.setVersion(bean);
             stream.close();
         } catch (Exception e) {
