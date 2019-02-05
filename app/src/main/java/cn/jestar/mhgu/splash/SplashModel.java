@@ -57,11 +57,12 @@ public class SplashModel extends ViewModel {
     public boolean initDb() {
         try {
             Application app = AppManager.getApp();
-            if (checkInit(app)) {
+            if (!checkInit(app)) {
                 copyDb();
                 SharedPreferences.Editor edit = AppManager.getSp(DbConstants.DB_NAME).edit();
                 edit.putInt(DbConstants.DB_NAME, DbConstants.VERSION);
                 edit.apply();
+                Log.i(App.TAG, "数据库Copy成功");
             }
             MyDataBase.init(app);
             return true;
@@ -73,7 +74,7 @@ public class SplashModel extends ViewModel {
     }
 
     /**
-     * 检查是否初始化完成
+     * 检查是否数据库是否初始化完成
      *
      * @return true表示已经初始化完成，false反之
      */
