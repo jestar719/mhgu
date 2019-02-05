@@ -42,4 +42,5 @@ dependencies {
     testImplementation junit
     androidTestImplementation testRunner
     androidTestImplementation espresso
+    implementation files('libs/crasheye-2.2.5.jar')
 }

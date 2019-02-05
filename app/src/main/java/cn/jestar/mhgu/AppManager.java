@@ -4,11 +4,10 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import com.xsj.crasheye.Crasheye;
 
-import cn.jestar.db.MyDataBase;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 /**
  * 用于提供生命周期为全局的工具的管理类
@@ -16,12 +15,15 @@ import cn.jestar.db.MyDataBase;
  */
 
 public class AppManager {
+    private static final String APP_KEY = "15dcbba0";
     private static Application APP;
     private static Executor sExecutor;
 
     public static void init(Application application) {
         APP = application;
         sExecutor = Executors.newSingleThreadExecutor();
+        Crasheye.setAppVersion(BuildConfig.VERSION_NAME);
+        Crasheye.init(application, APP_KEY);
     }
 
     public static Application getApp() {
