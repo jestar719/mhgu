@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.rl_menu).setOnClickListener(this);
         initSearch();
         initLeftMenu();
+        getVersion();
     }
 
     /**
@@ -187,6 +188,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_search:
                 searchByTag();
                 break;
+            case R.id.tv_version:
+                mDialog.show();
+                break;
         }
     }
 
@@ -254,13 +258,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mLlSearchResult.setVisibility(View.GONE);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+
+    private void getVersion() {
         mVersion = AppManager.getVersion();
         if (mVersion != null && mVersion.getVersion() > BuildConfig.VERSION_CODE) {
             View view = findViewById(R.id.tv_version);
             view.setVisibility(View.VISIBLE);
+            view.setOnClickListener(this);
             getDialog().show();
         }
     }
@@ -276,7 +280,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .setPositiveButton(R.string.update, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
+                            mDialog.dismiss();
                             update();
                         }
                     }).create();

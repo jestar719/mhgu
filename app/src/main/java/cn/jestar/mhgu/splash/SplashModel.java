@@ -43,22 +43,44 @@ public class SplashModel extends ViewModel {
             @Override
             public void run() {
                 getVersion();
-                try {
-                    Application app = AppManager.getApp();
-                    if (checkInit(app)) {
-                        copyDb();
-                        SharedPreferences.Editor edit = AppManager.getSp(DbConstants.DB_NAME).edit();
-                        edit.putInt(DbConstants.DB_NAME, DbConstants.VERSION);
-                        edit.apply();
-                    }
-                    MyDataBase.init(app);
-                    mInitState.postValue(true);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    mInitState.postValue(false);
-                }
+                boolean isDbInit = initDb();
+                mInitState.postValue(isDbInit);
             }
         });
+    }
+
+    /**
+     * 数据库初始化
+     *
+     * @return true表示成功初始化，false反之
+     */
+    public boolean initDb() {
+        try {
+            Application app = AppManager.getApp();
+            if (checkInit(app)) {
+                copyDb();
+                SharedPreferences.Editor edit = AppManager.getSp(DbConstants.DB_NAME).edit();
+                edit.putInt(DbConstants.DB_NAME, DbConstants.VERSION);
+                edit.apply();
+            }
+            MyDataBase.init(app);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            logE(e);
+            return false;
+        }
+    }
+
+    /**
+     * 检查是否初始化完成
+     *
+     * @return true表示已经初始化完成，false反之
+     */
+    private boolean checkInit(Context context) {
+        File dbFile = context.getDatabasePath(DbConstants.DB_NAME);
+        int currentDbVersion = AppManager.getSp(DbConstants.DB_NAME).getInt(DbConstants.DB_NAME, 0);
+        return dbFile.exists() && currentDbVersion == DbConstants.VERSION;
     }
 
     /**
@@ -84,6 +106,9 @@ public class SplashModel extends ViewModel {
         }
     }
 
+    /**
+     * 获取版本更新数据并保存
+     */
     private void getVersion() {
         try {
             URL url = new URL(LINK);
@@ -102,15 +127,5 @@ public class SplashModel extends ViewModel {
         Log.e(App.TAG, e.getMessage());
     }
 
-    /**
-     * 检查是否初始化完成
-     *
-     * @return true表示已经初始化完成，false反之
-     */
-    private boolean checkInit(Context context) {
-        File dbFile = context.getDatabasePath(DbConstants.DB_NAME);
-        int currentDbVersion = AppManager.getSp(DbConstants.DB_NAME).getInt(DbConstants.DB_NAME, 0);
-        return dbFile.exists() && currentDbVersion == DbConstants.VERSION;
-    }
 
 }
