@@ -8,11 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import java.io.File;
-
-import cn.jestar.db.DbConstants;
-import cn.jestar.db.MyDataBase;
-import cn.jestar.mhgu.AppManager;
 import cn.jestar.mhgu.MainActivity;
 import cn.jestar.mhgu.R;
 
@@ -33,34 +28,17 @@ public class SplashActivity extends AppCompatActivity {
         mView = findViewById(R.id.fl_splash);
         mStartTime = System.currentTimeMillis();
         SplashModel model = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(SplashModel.class);
-        if (checkInit()) {
-            MyDataBase.init(AppManager.getApp());
-            toMain();
-        } else {
-            model.init(this, new Observer<Boolean>() {
-                @Override
-                public void onChanged(@Nullable Boolean isInit) {
-                    if (isInit) {
-                        toMain();
-                    } else {
-                        // TODO: 2019/1/28
-                        finish();
-                    }
+        model.init(this, new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean isInit) {
+                if (isInit) {
+                    toMain();
+                } else {
+                    // TODO: 2019/1/28
+                    finish();
                 }
-            });
-        }
-    }
-
-
-    /**
-     * 检查是否初始化完成
-     *
-     * @return true表示已经初始化完成，false反之
-     */
-    private boolean checkInit() {
-        File dbFile = getDatabasePath(DbConstants.DB_NAME);
-        int currentDbVersion = AppManager.getSp(DbConstants.DB_NAME).getInt(DbConstants.DB_NAME, 0);
-        return dbFile.exists() && currentDbVersion == DbConstants.VERSION;
+            }
+        });
     }
 
     /**

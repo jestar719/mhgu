@@ -10,7 +10,5 @@ public interface FileConstans {
     String DATA = "data";
     String ASSETS = "\\src\\main\\assets";
     String BASE_PATH = "mhgu" + ASSETS;
-    String CONVERT_PATH = "convert";
-    String CONVERT_INDEX_PATH = "convert\\index";
-    String INDEX_PATH = BASE_PATH + "\\mhxx\\index\\index.html";
+    String UPDATE_URL = "https://fir.im/v4hr";
 }

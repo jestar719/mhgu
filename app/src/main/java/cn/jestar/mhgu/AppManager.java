@@ -9,6 +9,8 @@ import com.xsj.crasheye.Crasheye;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+import cn.jestar.mhgu.version.VersionBean;
+
 /**
  * 用于提供生命周期为全局的工具的管理类
  * Created by 花京院 on 2019/1/28.
@@ -18,6 +20,7 @@ public class AppManager {
     private static final String APP_KEY = "15dcbba0";
     private static Application APP;
     private static Executor sExecutor;
+    private static VersionBean sVersion;
 
     public static void init(Application application) {
         APP = application;
@@ -36,5 +39,13 @@ public class AppManager {
 
     public static Executor getExecutor() {
         return sExecutor;
+    }
+
+    public static VersionBean getVersion() {
+        return sVersion;
+    }
+
+    public static void setVersion(VersionBean version) {
+        sVersion = version;
     }
 }

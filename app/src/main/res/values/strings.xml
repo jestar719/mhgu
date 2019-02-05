@@ -5,4 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
     <string name="action_search">搜索</string>
+    <string name="has_new_version">有可更新的版本</string>
+    <string name="dialog_temp">最新版本：%s</string>
+    <string name="cancel">以后再说</string>
+    <string name="update">更新</string>
 </resources>

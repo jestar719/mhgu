@@ -1,11 +1,16 @@
 package cn.jestar.mhgu;
 
+import android.app.Dialog;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -22,12 +27,11 @@ import android.widget.TextView;
 
 import com.zhy.view.flowlayout.TagFlowLayout;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
 import cn.jestar.db.bean.IndexBean;
+import cn.jestar.mhgu.version.VersionBean;
 import cn.jestar.mhgu.web.WebViewManager;
 
 /**
@@ -47,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TagFlowLayout mFlSelect;
     private FlowAdapter mTypeAdapter;
     private FlowAdapter mSelectAdapter;
+    private VersionBean mVersion;
+    private AlertDialog mDialog;
 
 
     @Override
@@ -55,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mModel = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(MainViewModel.class);
         mWebViewManager = new WebViewManager((WebView) findViewById(R.id.web));
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -248,5 +254,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mLlSearchResult.setVisibility(View.GONE);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mVersion = AppManager.getVersion();
+        if (mVersion != null && mVersion.getVersion() > BuildConfig.VERSION_CODE) {
+            View view = findViewById(R.id.tv_version);
+            view.setVisibility(View.VISIBLE);
+            getDialog().show();
+        }
+    }
 
+    private Dialog getDialog() {
+        if (mDialog == null) {
+            String string = getString(R.string.dialog_temp);
+            mDialog = new AlertDialog.Builder(this)
+                    .setTitle(String.format(string, mVersion.getTitle()))
+                    .setMessage(mVersion.getMsg())
+                    .setCancelable(true)
+                    .setNegativeButton(R.string.cancel, null)
+                    .setPositiveButton(R.string.update, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            update();
+                        }
+                    }).create();
+        }
+        return mDialog;
+    }
+
+    private void update() {
+        Uri uri = Uri.parse(FileConstans.UPDATE_URL);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
 }

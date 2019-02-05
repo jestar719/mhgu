@@ -7,6 +7,7 @@ import android.app.Application;
  */
 
 public class App extends Application {
+    public static final String TAG = "Jestar";
     @Override
     public void onCreate() {
         super.onCreate();
