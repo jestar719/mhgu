@@ -102,4 +102,14 @@ public class WeaponConvertorTest {
     public void translateTaiDao() throws Exception {
         new WeaponConvertor("太刀").translation();
     }
+
+    /**
+     * 太刀翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateDunFu() throws Exception {
+        new WeaponConvertor("盾斧").translation();
+    }
 }
