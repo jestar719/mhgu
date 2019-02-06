@@ -1,7 +1,9 @@
 package cn.jestar.convert.weapon;
 
+import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
@@ -17,21 +19,45 @@ import static org.junit.Assert.assertTrue;
  */
 public class WeaponConvertorTest {
 
+    private String mName;
+    private WeaponConvertor mConvertor;
+    private String[] mUrls;
 
-    @Test
-    public void test() throws Exception {
-        String name = "太刀";
-        WeaponConvertor convertor = new WeaponConvertor(name);
-        System.out.println(convertor.checkTranslatedText());
+    @Before
+    public void init() {
+        mName = "盾斧";
+        mConvertor = new WeaponConvertor(mName);
+        mUrls = new String[]{
+                "data/1909.html",
+                "data/2709.html"
+        };
     }
 
+    /**
+     * 检查翻译文本
+     *
+     * @throws Exception
+     */
+    @Test
+    public void checkTranslatedTextTest() throws Exception {
+        System.out.println(mConvertor.checkTranslatedText());
+    }
+
+    /**
+     * 创建Bean
+     *
+     * @throws Exception
+     */
     @Test
     public void makeBean() throws Exception {
-        String name = "太刀";
-        WeaponConvertor convertor = new WeaponConvertor(name);
-        convertor.makeBean();
+        mConvertor.makeBean(Arrays.asList(mUrls));
     }
 
+    /**
+     * 验证正则
+     *
+     * @throws Exception
+     */
     @Test
     public void testRegex() throws Exception {
         String regex = WeaponConvertor.REGEX;
@@ -50,25 +76,28 @@ public class WeaponConvertorTest {
         System.out.println(set);
     }
 
+    /**
+     * 翻译验证
+     *
+     * @throws Exception
+     */
     @Test
     public void translateStepTest() throws Exception {
-        String name = "太刀";
-        WeaponConvertor convertor = new WeaponConvertor(name);
-        TranslatedBean bean = convertor.getBean();
+        TranslatedBean bean = mConvertor.getBean();
         Map<String, String> texts = bean.getTexts();
-        List<String> list = convertor.getList(texts);
-        String[] urls = new String[]{
-                "data/1901.html",
-                "data/2883.html",
-                "data/2701.html",
-        };
-        for (String url : urls) {
-            StringBuilder text = convertor.getText(url, null);
-            convertor.translation(text, texts, list);
-            convertor.write(text.toString(), url);
+        List<String> list = mConvertor.getList(texts);
+        for (String url : mUrls) {
+            StringBuilder text = mConvertor.getText(url, null);
+            mConvertor.translation(text, texts, list);
+            mConvertor.write(text.toString(), url);
         }
     }
 
+    /**
+     * 太刀翻译
+     *
+     * @throws Exception
+     */
     @Test
     public void translateTaiDao() throws Exception {
         new WeaponConvertor("太刀").translation();

@@ -46,11 +46,12 @@ public class WeaponConvertor {
     }
 
 
-    public void makeBean() throws Exception {
+    public void makeBean(List<String> list) throws Exception {
         String name = getName();
         Map<String, String> map = getMap(name, mSummaryFile);
         TranslatedBean bean = new TranslatedBean();
-        TreeSet<String> strings = new TreeSet<>(map.values());
+        TreeSet<String> strings = new TreeSet<>(list);
+        strings.addAll(map.values());
         bean.setUrls(new ArrayList<>(strings));
         map = getMap(name, mTranslatedFile);
         bean.setTexts(map);
