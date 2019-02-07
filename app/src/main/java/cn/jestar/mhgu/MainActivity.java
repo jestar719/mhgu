@@ -32,6 +32,7 @@ import java.util.Set;
 
 import cn.jestar.db.bean.IndexBean;
 import cn.jestar.mhgu.version.VersionBean;
+import cn.jestar.mhgu.version.VersionLiveData;
 import cn.jestar.mhgu.web.WebViewManager;
 
 /**
@@ -53,6 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FlowAdapter mSelectAdapter;
     private VersionBean mVersion;
     private AlertDialog mDialog;
+    private TextView mTvVersion;
+    private VersionLiveData mVersionLiveData;
+    private String mString;
+    private boolean isVersionGetting;
+    private View mProgress;
 
 
     @Override
@@ -189,8 +195,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 searchByTag();
                 break;
             case R.id.tv_version:
-                mDialog.show();
+                if (mVersion == null) {
+                    if (!isVersionGetting) {
+                        onGetVersion(true);
+                        mModel.getVersion();
+                    }
+                } else {
+                    if (mVersion.getVersion() > BuildConfig.VERSION_CODE) {
+                        getDialog().show();
+                    }
+                }
                 break;
+        }
+    }
+
+    private void onGetVersion(boolean isStart) {
+        isVersionGetting = isStart;
+        mProgress.setVisibility(isStart ? View.VISIBLE : View.GONE);
+        if (isStart) {
+            mTvVersion.setText(R.string.version_getting);
         }
     }
 
@@ -260,13 +283,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void getVersion() {
-        mVersion = AppManager.getVersion();
-        if (mVersion != null && mVersion.getVersion() > BuildConfig.VERSION_CODE) {
-            View view = findViewById(R.id.tv_version);
-            view.setVisibility(View.VISIBLE);
-            view.setOnClickListener(this);
-            getDialog().show();
-        }
+        mTvVersion = findViewById(R.id.tv_version);
+        mProgress = findViewById(R.id.pb);
+        mString = getString(R.string.version_temp);
+        mTvVersion.setVisibility(View.VISIBLE);
+        setCurrentVersion();
+        mTvVersion.setOnClickListener(this);
+        onGetVersion(true);
+        mModel.getVersion().observe(this, new Observer<VersionBean>() {
+            @Override
+            public void onChanged(@Nullable VersionBean versionBean) {
+                onGetVersion(false);
+                mVersion = versionBean;
+                if (versionBean == null) {
+                    setCurrentVersion();
+                } else {
+                    if (versionBean.getVersion() > BuildConfig.VERSION_CODE) {
+                        mTvVersion.setText(R.string.has_new_version);
+                        getDialog().show();
+                    } else {
+                        setCurrentVersion();
+                    }
+                }
+            }
+        });
+    }
+
+    private void setCurrentVersion() {
+        mTvVersion.setText(String.format(mString, BuildConfig.VERSION_NAME));
     }
 
     private Dialog getDialog() {

@@ -1,5 +1,6 @@
 package cn.jestar.convert.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,10 +11,19 @@ public class SkillBean {
     private int id;
     private String name;
     private String description;
-    private List<SkillEffect> effectList;
-    private int[] maxValues = new int[8];
+    private List<SkillEffect> effectList = new ArrayList<>();
     private int leftMaxValue;
     private int rightMaxValue;
+    private String url;
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public int getId() {
         return id;
@@ -51,19 +61,11 @@ public class SkillBean {
         return this;
     }
 
-    public SkillBean setEffetList(SkillEffect effet) {
+    public SkillBean addSkillEffect(SkillEffect effet) {
         effectList.add(effet);
         return this;
     }
 
-    public int[] getMaxValues() {
-        return maxValues;
-    }
-
-    public SkillBean setMaxValues(int[] maxValues) {
-        this.maxValues = maxValues;
-        return this;
-    }
 
     public int getLeftMaxValue() {
         return leftMaxValue;

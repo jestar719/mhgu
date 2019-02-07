@@ -13,6 +13,7 @@ import java.util.List;
 import cn.jestar.db.IndexDao;
 import cn.jestar.db.MyDataBase;
 import cn.jestar.db.bean.IndexBean;
+import cn.jestar.mhgu.version.VersionLiveData;
 
 
 /**
@@ -26,6 +27,7 @@ public class MainViewModel extends ViewModel {
     private IndexDao mDao;
     private MutableLiveData<Integer> mSelectType = new MutableLiveData<>();
     private MutableLiveData<Integer> mSelectParent = new MutableLiveData<>();
+    private VersionLiveData mVersionData=new VersionLiveData();
     private int mType;
 
     public MainViewModel() {
@@ -61,4 +63,8 @@ public class MainViewModel extends ViewModel {
         mSelects.observe(owner, observer);
     }
 
+    public VersionLiveData getVersion() {
+        mVersionData.getVersion();
+        return mVersionData;
+    }
 }

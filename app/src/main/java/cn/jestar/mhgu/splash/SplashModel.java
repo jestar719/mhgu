@@ -28,7 +28,6 @@ import cn.jestar.mhgu.version.VersionBean;
  */
 
 public class SplashModel extends ViewModel {
-    private static final String LINK = "https://raw.githubusercontent.com/jestar719/mhgu/master/version.json";
     private MutableLiveData<Boolean> mInitState = new MutableLiveData<>();
 
     /**
@@ -42,8 +41,8 @@ public class SplashModel extends ViewModel {
         AppManager.getExecutor().execute(new Runnable() {
             @Override
             public void run() {
-                getVersion();
                 boolean isDbInit = initDb();
+                MyDataBase.init(AppManager.getApp());
                 mInitState.postValue(isDbInit);
             }
         });
@@ -64,7 +63,6 @@ public class SplashModel extends ViewModel {
                 edit.apply();
                 Log.i(App.TAG, "数据库Copy成功");
             }
-            MyDataBase.init(app);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,7 +79,7 @@ public class SplashModel extends ViewModel {
     private boolean checkInit(Context context) {
         File dbFile = context.getDatabasePath(DbConstants.DB_NAME);
         int currentDbVersion = AppManager.getSp(DbConstants.DB_NAME).getInt(DbConstants.DB_NAME, 0);
-        return dbFile.exists() && currentDbVersion == DbConstants.VERSION;
+        return dbFile.exists() && currentDbVersion >= DbConstants.VERSION;
     }
 
     /**
@@ -104,24 +102,6 @@ public class SplashModel extends ViewModel {
             e.printStackTrace();
             logE(e);
             throw e;
-        }
-    }
-
-    /**
-     * 获取版本更新数据并保存
-     */
-    private void getVersion() {
-        try {
-            URL url = new URL(LINK);
-            InputStream stream = url.openStream();
-            InputStreamReader reader = new InputStreamReader(stream, "utf-8");
-            VersionBean bean = JsonUtils.fromString(reader, VersionBean.class);
-            Log.i(App.TAG, bean.toString());
-            AppManager.setVersion(bean);
-            stream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-            logE(e);
         }
     }
 

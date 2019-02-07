@@ -12,6 +12,7 @@ import cn.jestar.convert.index.UrlCompiler;
 import cn.jestar.convert.utils.RegexUtils;
 
 /**
+ * 抓取技能索引的Compiler
  * Created by 花京院 on 2019/1/31.
  */
 

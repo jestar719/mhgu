@@ -15,6 +15,7 @@ import static cn.jestar.convert.index.UrlCompiler.END_FLAG;
 
 
 /**
+ * 抓取技能数据的Compiler.保存为对象
  * Created by 花京院 on 2019/1/31.
  */
 
@@ -45,7 +46,9 @@ public class SkillValueCompiler extends Compiler {
         }
     }
 
-
+    /**
+     * 技能效果
+     */
     public static class SkillEffectCompiler implements SkillCompiler {
         private static final String TR_START = "<tr>";
         private static final String TR_END = "</tr>";
@@ -108,6 +111,9 @@ public class SkillValueCompiler extends Compiler {
         }
     }
 
+    /**
+     * 技能珠玉
+     */
     public static class SkillJewelryCompiler implements SkillCompiler {
         @Override
         public void compile(SkillBean bean, BufferedReader reader) {
@@ -115,6 +121,9 @@ public class SkillValueCompiler extends Compiler {
         }
     }
 
+    /**
+     * 技能最大值
+     */
     public static class SkillMaxValueCompiler implements SkillCompiler {
         @Override
         public void compile(SkillBean bean, BufferedReader reader) {
