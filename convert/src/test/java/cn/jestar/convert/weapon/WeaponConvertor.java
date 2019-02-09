@@ -71,7 +71,12 @@ public class WeaponConvertor {
         return JsonUtils.fromStringByType(reader, type);
     }
 
-    public List<String> checkTranslatedText() throws Exception {
+    /**
+     * 比较Translation和Translated中同名的文件，获取Translated中非翻译的名字集合
+     * @return Translated中没有的名字集合
+     * @throws Exception
+     */
+    public List<String> getNotTranslatedNames() throws Exception {
         String name = getName();
         File source = new File(mTranslationFile, name);
         List<String> list = JsonUtils.toList(new FileReader(source), String.class);
@@ -86,7 +91,31 @@ public class WeaponConvertor {
         return list1;
     }
 
+    /**
+     * 比较Translation和Translated中同名的文件，获取Translation中漏掉的名字
+     * @return ranslation中漏掉的名字集合
+     * @throws Exception
+     */
+    public List<String> getLostNamesInTranslation() throws Exception {
+        String name = getName();
+        File source = new File(mTranslationFile, name);
+        List<String> list = JsonUtils.toList(new FileReader(source), String.class);
+        TreeMap<String, String> treeMap = JsonUtils.fromString(new FileReader(new File(mTranslatedFile, name)), TreeMap.class);
+        ArrayList<String> list1 = new ArrayList<>();
+        for (String s : treeMap.keySet()) {
+            if (list.indexOf(s)==-1){
+                list1.add(s);
+            }
+        }
+        return list1;
+    }
 
+
+
+    /**
+     * 读取相关的TranslatedBean翻译,根据其中的Url，读取并翻译。
+     * @throws Exception
+     */
     public void translation() throws Exception {
         TranslatedBean bean = getBean();
         Map<String, String> texts = bean.getTexts();
@@ -101,6 +130,14 @@ public class WeaponConvertor {
         }
     }
 
+    /**
+     * 翻译
+     * @param url 链接
+     * @param transMap 文本对照Map
+     * @param JTextlist 日文文本
+     * @param set 保存素材Url的Set
+     * @throws Exception
+     */
     public void translateFile(String url, Map<String, String> transMap, List<String> JTextlist, TreeSet<String> set) throws Exception {
         StringBuilder builder = getText(url, set);
         translation(builder, transMap, JTextlist);
@@ -108,6 +145,11 @@ public class WeaponConvertor {
         write(s, url);
     }
 
+    /**
+     * 解析相关素材的Url并保存
+     * @param text 一行文本
+     * @param links 保存url的Set
+     */
     public void getUrls(String text, Set<String> links) {
         if (text.matches(REGEX)) {
             links.add(RegexUtils.getMatchText(text, REGEX));
@@ -116,6 +158,11 @@ public class WeaponConvertor {
         }
     }
 
+    /**
+     * 获取反序后的List
+     * @param texts
+     * @return
+     */
     public List<String> getList(Map<String, String> texts) {
         List<String> list = new ArrayList<>(texts.keySet());
         //这里反序排列，以防aabbcc 被 aabb先替换掉
@@ -128,6 +175,11 @@ public class WeaponConvertor {
         return list;
     }
 
+    /**
+     * 创建TraslatedBean {@link TranslatedBean}
+     * @return TranslatedBean
+     * @throws FileNotFoundException
+     */
     public TranslatedBean getBean() throws FileNotFoundException {
         String name = String.format(mTransBeaTemp, mName);
         File file = new File(mTranslatedFile, name);
@@ -140,6 +192,12 @@ public class WeaponConvertor {
         }
     }
 
+    /**
+     * 替换文本
+     * @param builder
+     * @param texts
+     * @param s
+     */
     public void replaceText(StringBuilder builder, Map<String, String> texts, String s) {
         int start;
         int index = 0;
@@ -152,7 +210,13 @@ public class WeaponConvertor {
         }
     }
 
-
+    /**
+     * 读取文件，保存在StringBuilder中，并解析相关素材的url并保存
+     * @param url 文件的url
+     * @param links 用与收集素材的url的Set
+     * @return 文件的String
+     * @throws Exception
+     */
     public StringBuilder getText(String url, Set<String> links) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader(Constants.MH_PATH + url));
         StringBuilder builder = new StringBuilder();
@@ -172,6 +236,12 @@ public class WeaponConvertor {
         return builder;
     }
 
+    /**
+     * 写入文本
+     * @param string 文本
+     * @param url 写入的url
+     * @throws IOException
+     */
     public void write(String string, String url) throws IOException {
         FileWriter writer = new FileWriter(Constants.MH_PATH + url);
         writer.write(string);

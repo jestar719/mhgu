@@ -18,7 +18,7 @@ import static cn.jestar.convert.index.UrlCompiler.END_FLAG;
 public class WeaponCompiler extends Compiler {
     public static final String START_REGEX = ".*<tr class=\"(.*?)plb.*?";
     public static final String NAME_REGEX = ".*<a href=\"../(ida/\\d+\\.html)\">(\\D+)([\\d]{0,2})</a>";
-    private static final String TD_END = "</td>";
+    public static final String TD_END = "</td>";
 
     private Map<String, String> mMap = new TreeMap<>();
 

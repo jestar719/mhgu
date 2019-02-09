@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
@@ -67,8 +68,7 @@ public class WeaponCompilerTest {
     public void getWeaponNameList() throws FileNotFoundException {
         WeaponCompiler compiler = new WeaponCompiler();
         File file = new File(Constants.TEMP_SUMMARY_PATH);
-        File source = new File(file, "武器一览.json");
-        List<LinkInfo> infos = JsonUtils.toList(new FileReader(source), LinkInfo.class);
+        List<LinkInfo> infos = getWeaponIndexs(file);
         for (LinkInfo info : infos) {
             String name = info.getName();
             TreeMap<String, String> map = new TreeMap<>();
@@ -79,6 +79,28 @@ public class WeaponCompilerTest {
             }
             File file1 = new File(file, "weapon\\" + name + ".json");
             compiler.write(map, file1);
+        }
+    }
+
+    public List<LinkInfo> getWeaponIndexs(File file) throws FileNotFoundException {
+        File source = new File(file, "武器一览.json");
+        return JsonUtils.toList(new FileReader(source), LinkInfo.class);
+    }
+
+    @Test
+    public void getWeaponName() throws FileNotFoundException {
+        WeaponNameCompiler compiler = new WeaponNameCompiler();
+        List<LinkInfo> indexs = getWeaponIndexs(new File(Constants.TEMP_SUMMARY_PATH));
+        File file = new File(Constants.TEMP_TRANSLATION_PATH);
+        for (LinkInfo index : indexs) {
+            String name = index.getName();
+            ArrayList<String> list = new ArrayList<>();
+            for (String s : index.getData().values()) {
+                List<String> names = compiler.getNames(new File(Constants.MH_PATH + s));
+                list.addAll(names);
+            }
+            File file1 = new File(file, "weapon\\" + name + ".json");
+            compiler.write(list, file1);
         }
     }
 }

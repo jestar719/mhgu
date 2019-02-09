@@ -25,11 +25,12 @@ public class WeaponConvertorTest {
 
     @Before
     public void init() {
-        mName = "盾斧";
+        mName = "重弩";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                "data/1909.html",
-                "data/2709.html"
+                "data/1913.html",
+                "data/2713.html",
+                "data/2895.html"
         };
     }
 
@@ -40,7 +41,8 @@ public class WeaponConvertorTest {
      */
     @Test
     public void checkTranslatedTextTest() throws Exception {
-        System.out.println(mConvertor.checkTranslatedText());
+        System.out.println(mConvertor.getNotTranslatedNames());
+        System.out.println(mConvertor.getLostNamesInTranslation());
     }
 
     /**

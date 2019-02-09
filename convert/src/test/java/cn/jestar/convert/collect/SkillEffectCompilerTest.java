@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -14,6 +16,7 @@ import java.util.TreeMap;
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.Type;
 import cn.jestar.convert.bean.SkillBean;
+import cn.jestar.convert.utils.JsonUtils;
 
 import static org.junit.Assert.*;
 
@@ -82,4 +85,26 @@ public class SkillEffectCompilerTest {
         mTestCompiler.write(set, new File(Constants.TEMP_TRANSLATION_PATH,mEffectListFileName));
     }
 
+    @Test
+    public void combinSkillTrans() throws Exception {
+        File file = new File(Constants.TEMP_TRANSLATED_PATH);
+        File file1 = new File(file,"技能一览.json");
+        File file2 = new File(file, "技能发动名称汇总.json");
+        TreeMap<String, String> map = new TreeMap<>();
+        map.putAll(getMap(file1));
+        map.putAll(getMap(file2));
+        mTestCompiler.write(map,new File(file,"技能对照表.json"));
+    }
+
+    private Map<String,String> getMap(File file) throws Exception {
+        FileReader reader = new FileReader(file);
+        return JsonUtils.fromString(reader, TreeMap.class);
+    }
+
+    @Test
+    public void convertSkillBeans() throws FileNotFoundException {
+        File file = new File(Constants.TEMP_TRANSLATED_PATH, "技能对照表.json");
+        TreeMap<String,String> map = JsonUtils.fromString(new FileReader(file), TreeMap.class);
+
+    }
 }
