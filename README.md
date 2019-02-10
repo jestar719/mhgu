@@ -48,7 +48,7 @@
         *  笛旋律  进度：待翻译
         *  弓  进度：待翻译
         *  轻弩  进度：待翻译
-        *  重弩  进度：待翻译
+        *  重弩  进度：已完成
      * 猎猫
        * 猫武器 进度：待翻译
        * 猫防具 进度：待翻译
@@ -71,6 +71,6 @@
 * 其它需求 （待定）
 
 ### 版本发布
-[Fir](https://fir.im/v4hr) [github](https://github.com/jestar719/mhgu/releases/download/v1.1.0/mhgu_110.apk)
+[Fir](https://fir.im/v4hr) [github](https://github.com/jestar719/mhgu/releases/tag/v1.3.0)
 
 有问题或建议请发[Email](jestar719@gmail.com)
