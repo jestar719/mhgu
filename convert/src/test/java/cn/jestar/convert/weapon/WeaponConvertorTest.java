@@ -89,10 +89,18 @@ public class WeaponConvertorTest {
         Map<String, String> texts = bean.getTexts();
         List<String> list = mConvertor.getList(texts);
         for (String url : mUrls) {
-            StringBuilder text = mConvertor.getText(url, null);
-            mConvertor.translation(text, texts, list);
-            mConvertor.write(text.toString(), url);
+            convertFile(texts, list, url);
         }
+        convertFile(texts, list, "ida/236520.html");
+        convertFile(texts, list, "ida/236483.html");
+        convertFile(texts, list, "ida/310231.html");
+        convertFile(texts, list, "ida/310463.html");
+    }
+
+    public void convertFile(Map<String, String> texts, List<String> list, String url) throws Exception {
+        StringBuilder text = mConvertor.getText(url, null);
+        mConvertor.translation(text, texts, list);
+        mConvertor.write(text.toString(), url);
     }
 
     /**
