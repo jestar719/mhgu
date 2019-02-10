@@ -322,8 +322,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     mDialog.dismiss();
                     if(which==DialogInterface.BUTTON_POSITIVE){
                         update(FileConstans.UPDATE_URL);
-                    }else if (which==DialogInterface.BUTTON_NEUTRAL){
-                        update(String.format(FileConstans.GITHUB,mVersion.getTitle(),mVersion.getVersion()));
+                    }else if (which==DialogInterface.BUTTON_NEGATIVE){
+                        update(FileConstans.GITHUB+mVersion.getTitle());
                     }
                 }
             };
@@ -331,9 +331,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .setTitle(String.format(string, mVersion.getTitle()))
                     .setMessage(mVersion.getMsg())
                     .setCancelable(true)
-                    .setNegativeButton(R.string.cancel, null)
                     .setPositiveButton(R.string.fir_update, listener)
-                    .setNeutralButton(R.string.github_update,listener)
+                    .setNegativeButton(R.string.github_update, listener)
+                    .setNeutralButton(R.string.cancel,null)
                     .create();
         }
         return mDialog;
