@@ -106,12 +106,22 @@ public class WeaponConvertorTest {
     }
 
     /**
-     * 太刀翻译
+     * 盾斧翻译
      *
      * @throws Exception
      */
     @Test
     public void translateDunFu() throws Exception {
         new WeaponConvertor("盾斧").translation();
+    }
+
+    /**
+     * 重弩翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateZhongNu() throws Exception {
+        new WeaponConvertor("重弩").translation();
     }
 }

@@ -6,15 +6,16 @@ def path = properties['KEY_PATH']
 
 
 android {
-    signingConfigs {
-        release {
-            keyAlias properties['KEY_ALIAS']
-            keyPassword properties['KEY_PASSWORD']
-            storeFile file(path)
-            storePassword properties['KEY_PASSWORD']
+    compileSdkVersion targetSdk
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.contentEquals('release')) {
+            variant.outputs.all { output ->
+                outputFileName = "mhgu_${vCode}.apk"
+            }
         }
     }
-    compileSdkVersion targetSdk
+
+
     defaultConfig {
         applicationId "cn.jestar.mhgu"
         minSdkVersion minSdk
@@ -23,6 +24,16 @@ android {
         versionName vName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            keyAlias properties['KEY_ALIAS']
+            keyPassword properties['KEY_PASSWORD']
+            storeFile file(path)
+            storePassword properties['KEY_PASSWORD']
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -30,13 +41,13 @@ android {
             signingConfig signingConfigs.release
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation design
     implementation constraint
-    implementation gson
     implementation flowlayout
     implementation project(':db')
     testImplementation junit

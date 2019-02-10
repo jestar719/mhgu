@@ -316,24 +316,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Dialog getDialog() {
         if (mDialog == null) {
             String string = getString(R.string.dialog_temp);
+            DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    mDialog.dismiss();
+                    if(which==DialogInterface.BUTTON_POSITIVE){
+                        update(FileConstans.UPDATE_URL);
+                    }else if (which==DialogInterface.BUTTON_NEUTRAL){
+                        update(String.format(FileConstans.GITHUB,mVersion.getTitle(),mVersion.getVersion()));
+                    }
+                }
+            };
             mDialog = new AlertDialog.Builder(this)
                     .setTitle(String.format(string, mVersion.getTitle()))
                     .setMessage(mVersion.getMsg())
                     .setCancelable(true)
                     .setNegativeButton(R.string.cancel, null)
-                    .setPositiveButton(R.string.update, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            mDialog.dismiss();
-                            update();
-                        }
-                    }).create();
+                    .setPositiveButton(R.string.fir_update, listener)
+                    .setNeutralButton(R.string.github_update,listener)
+                    .create();
         }
         return mDialog;
     }
 
-    private void update() {
-        Uri uri = Uri.parse(FileConstans.UPDATE_URL);
+    private void update(String updateUrl) {
+        Uri uri = Uri.parse(updateUrl);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }

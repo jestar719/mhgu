@@ -8,7 +8,8 @@
     <string name="has_new_version">有可更新的版本</string>
     <string name="dialog_temp">最新版本：%s</string>
     <string name="cancel">以后再说</string>
-    <string name="update">更新</string>
+    <string name="fir_update">默认更新</string>
     <string name="version_temp">当前版本： %s</string>
     <string name="version_getting">检查更新中，请稍后</string>
+    <string name="github_update">GitHub更新</string>
 </resources>

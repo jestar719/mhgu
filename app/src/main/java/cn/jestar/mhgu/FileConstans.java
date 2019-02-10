@@ -11,4 +11,5 @@ public interface FileConstans {
     String ASSETS = "\\src\\main\\assets";
     String BASE_PATH = "mhgu" + ASSETS;
     String UPDATE_URL = "https://fir.im/v4hr";
+    String GITHUB = "https://github.com/jestar719/mhgu/releases/download/v%s/mhgu_%s.apk";
 }

@@ -24,6 +24,7 @@ import cn.jestar.convert.utils.JsonUtils;
 import cn.jestar.convert.utils.RegexUtils;
 
 /**
+ * 用与武器翻译的类
  * Created by 花京院 on 2019/2/4.
  */
 
@@ -45,7 +46,12 @@ public class WeaponConvertor {
         mTranslationFile = new File(Constants.TEMP_TRANSLATION_PATH, mWeapon);
     }
 
-
+    /**
+     * 根据名字创建对应的TranslatedBean{@link TranslatedBean}
+     *
+     * @param list 该类武器相关的url列表
+     * @throws Exception
+     */
     public void makeBean(List<String> list) throws Exception {
         String name = getName();
         Map<String, String> map = getMap(name, mSummaryFile);
@@ -73,6 +79,7 @@ public class WeaponConvertor {
 
     /**
      * 比较Translation和Translated中同名的文件，获取Translated中非翻译的名字集合
+     *
      * @return Translated中没有的名字集合
      * @throws Exception
      */
@@ -93,6 +100,7 @@ public class WeaponConvertor {
 
     /**
      * 比较Translation和Translated中同名的文件，获取Translation中漏掉的名字
+     *
      * @return ranslation中漏掉的名字集合
      * @throws Exception
      */
@@ -103,7 +111,7 @@ public class WeaponConvertor {
         TreeMap<String, String> treeMap = JsonUtils.fromString(new FileReader(new File(mTranslatedFile, name)), TreeMap.class);
         ArrayList<String> list1 = new ArrayList<>();
         for (String s : treeMap.keySet()) {
-            if (list.indexOf(s)==-1){
+            if (list.indexOf(s) == -1) {
                 list1.add(s);
             }
         }
@@ -111,9 +119,9 @@ public class WeaponConvertor {
     }
 
 
-
     /**
      * 读取相关的TranslatedBean翻译,根据其中的Url，读取并翻译。
+     *
      * @throws Exception
      */
     public void translation() throws Exception {
@@ -132,10 +140,11 @@ public class WeaponConvertor {
 
     /**
      * 翻译
-     * @param url 链接
-     * @param transMap 文本对照Map
+     *
+     * @param url       链接
+     * @param transMap  文本对照Map
      * @param JTextlist 日文文本
-     * @param set 保存素材Url的Set
+     * @param set       保存素材Url的Set
      * @throws Exception
      */
     public void translateFile(String url, Map<String, String> transMap, List<String> JTextlist, TreeSet<String> set) throws Exception {
@@ -147,7 +156,8 @@ public class WeaponConvertor {
 
     /**
      * 解析相关素材的Url并保存
-     * @param text 一行文本
+     *
+     * @param text  一行文本
      * @param links 保存url的Set
      */
     public void getUrls(String text, Set<String> links) {
@@ -160,6 +170,7 @@ public class WeaponConvertor {
 
     /**
      * 获取反序后的List
+     *
      * @param texts
      * @return
      */
@@ -176,7 +187,8 @@ public class WeaponConvertor {
     }
 
     /**
-     * 创建TraslatedBean {@link TranslatedBean}
+     * 读取TranslatedBean {@link TranslatedBean}
+     *
      * @return TranslatedBean
      * @throws FileNotFoundException
      */
@@ -194,6 +206,7 @@ public class WeaponConvertor {
 
     /**
      * 替换文本
+     *
      * @param builder
      * @param texts
      * @param s
@@ -203,16 +216,18 @@ public class WeaponConvertor {
         int index = 0;
         int length = s.length();
         String value = texts.get(s);
+        int vLength = value.length();
         while ((start = builder.indexOf(s, index)) != -1) {
             int end = start + length;
             builder.replace(start, end, value);
-            index = start;
+            index =start+vLength ;
         }
     }
 
     /**
      * 读取文件，保存在StringBuilder中，并解析相关素材的url并保存
-     * @param url 文件的url
+     *
+     * @param url   文件的url
      * @param links 用与收集素材的url的Set
      * @return 文件的String
      * @throws Exception
@@ -238,8 +253,9 @@ public class WeaponConvertor {
 
     /**
      * 写入文本
+     *
      * @param string 文本
-     * @param url 写入的url
+     * @param url    写入的url
      * @throws IOException
      */
     public void write(String string, String url) throws IOException {
