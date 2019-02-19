@@ -10,7 +10,8 @@
 
 其中最重要的翻译，实在是太烦琐了，只能寻找有志之士帮忙了处理了。
 
-已经提取文本，放在[在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)上，所有人都可以编辑
+已经提取文本，放在[Google在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)，[腾讯在线文本](https://docs.qq.com/sheet/DTWJacUxUbWJsc0F3)上，所有人都可以编辑
+
 
 当某页文本都翻译完了，我会进行处理，然后发布新版本
 
