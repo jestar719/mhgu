@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
 
 import cn.jestar.convert.bean.TranslatedBean;
@@ -28,9 +29,9 @@ public class WeaponConvertorTest {
         mName = "重弩";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                "data/1913.html",
-                "data/2713.html",
-                "data/2895.html"
+                 "data/1903.html",
+                 "data/2885.html",
+                 "data/2703.html"
         };
     }
 
@@ -88,17 +89,22 @@ public class WeaponConvertorTest {
         TranslatedBean bean = mConvertor.getBean();
         Map<String, String> texts = bean.getTexts();
         List<String> list = mConvertor.getList(texts);
-        for (String url : mUrls) {
-            convertFile(texts, list, url);
+        String[] urls=new String[]{
+                "ida/236407.html",
+                "ida/236403.html",
+                "ida/228443.html",
+        };
+        Set<String> links=new TreeSet<>();
+        for (String url : urls) {
+            convertFile(texts, list, url,links);
         }
-        convertFile(texts, list, "ida/236520.html");
-        convertFile(texts, list, "ida/236483.html");
-        convertFile(texts, list, "ida/310231.html");
-        convertFile(texts, list, "ida/310463.html");
+        for (String link : links) {
+            convertFile(texts,list,link,null);
+        }
     }
 
-    public void convertFile(Map<String, String> texts, List<String> list, String url) throws Exception {
-        StringBuilder text = mConvertor.getText(url, null);
+    public void convertFile(Map<String, String> texts, List<String> list, String url, Set<String> links) throws Exception {
+        StringBuilder text = mConvertor.getText(url, links);
         mConvertor.translation(text, texts, list);
         mConvertor.write(text.toString(), url);
     }
@@ -131,5 +137,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateZhongNu() throws Exception {
         new WeaponConvertor("重弩").translation();
+    }
+
+    /**
+     * 双剑翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateDoubleSword() throws Exception {
+        new WeaponConvertor("双剑").translation();
     }
 }
