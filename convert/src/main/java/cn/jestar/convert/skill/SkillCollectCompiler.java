@@ -1,4 +1,4 @@
-package cn.jestar.convert.collect;
+package cn.jestar.convert.skill;
 
 import java.io.BufferedReader;
 import java.io.File;

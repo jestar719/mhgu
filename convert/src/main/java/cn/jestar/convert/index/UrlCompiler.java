@@ -30,7 +30,22 @@ public abstract class UrlCompiler extends Compiler {
 
     @Override
     protected void onRead(BufferedReader reader) throws IOException {
+        String text;
+        boolean flag = true;
+        while (flag && (text = reader.readLine()) != null) {
+            flag = onRead(reader, text);
+        }
+    }
 
+    /**
+     * 逐行处理
+     *
+     * @param reader
+     * @param text   当前一行的文本
+     * @return true表示继续，false表示结束
+     */
+    protected boolean onRead(BufferedReader reader, String text) {
+        return true;
     }
 
     protected void setLink(String text, LinkInfo linkInfo) {

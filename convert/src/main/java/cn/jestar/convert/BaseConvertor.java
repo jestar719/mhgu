@@ -1,5 +1,7 @@
 package cn.jestar.convert;
 
+import com.google.gson.reflect.TypeToken;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,29 +13,53 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import cn.jestar.convert.bean.TranslatedBean;
 import cn.jestar.convert.utils.JsonUtils;
 
 /**
+ * 翻译的基类，
  * Created by 花京院 on 2019/2/12.
  */
 
 public abstract class BaseConvertor {
 
+    public String mJsonFileName;
+    public String mTransBeanName;
     protected String mTemp = "%s.json";
     protected String mTransBeanTemp = "%sTransBean.json";
     protected String mName;
     protected File mTransBeanFile;
-    protected String mJsonFileName;
-    protected String mTransBeanName;
 
     public void setName(String name) {
         mName = name;
         mJsonFileName = String.format(mTemp, mName);
-        mTransBeanName=String.format(mTransBeanTemp,name);
+        mTransBeanName = String.format(mTransBeanTemp, name);
     }
+
+
+    public List<String> getLostList(List<String> orgin, List<String> handled) {
+        Collections.sort(orgin);
+        Collections.sort(handled);
+        ArrayList<String> list = new ArrayList<>();
+        int index = 0;
+        int size = handled.size();
+        for (String s : orgin) {
+            if (index >= size) {
+                list.add(s);
+            } else {
+                String s1 = handled.get(index);
+                if (!s.equals(s1)) {
+                    list.add(s);
+                    index++;
+                }
+            }
+        }
+        return list;
+    }
+
 
     /**
      * 读取相关的TranslatedBean翻译,根据其中的Url，读取并翻译。
@@ -53,6 +79,14 @@ public abstract class BaseConvertor {
             translateFile(url, texts, list, null);
         }
     }
+
+    public Map<String, String> getMap(String name, File file) throws FileNotFoundException {
+        FileReader reader = new FileReader(new File(file, name));
+        java.lang.reflect.Type type = new TypeToken<TreeMap<String, String>>() {
+        }.getType();
+        return JsonUtils.fromStringByType(reader, type);
+    }
+
 
     /**
      * 读取TranslatedBean {@link TranslatedBean}

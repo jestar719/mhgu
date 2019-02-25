@@ -1,8 +1,6 @@
-package cn.jestar.convert.collect;
+package cn.jestar.convert.skill;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by 花京院 on 2019/1/31.

@@ -1,4 +1,4 @@
-package cn.jestar.convert.collect;
+package cn.jestar.convert.skill;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,7 +18,7 @@ import cn.jestar.convert.Type;
 import cn.jestar.convert.bean.SkillBean;
 import cn.jestar.convert.utils.JsonUtils;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by 花京院 on 2019/2/7.

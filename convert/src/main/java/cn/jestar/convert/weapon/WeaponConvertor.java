@@ -1,13 +1,9 @@
 package cn.jestar.convert.weapon;
 
-import com.google.gson.reflect.TypeToken;
-
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -46,7 +42,7 @@ public class WeaponConvertor extends BaseConvertor {
     /**
      * 根据名字创建对应的TranslatedBean{@link TranslatedBean}
      *
-     * @param list 该类武器相关的url列表
+     * @param list 该类相关的url列表
      * @throws Exception
      */
     public void makeBean(List<String> list) throws Exception {
@@ -61,14 +57,6 @@ public class WeaponConvertor extends BaseConvertor {
         FileWriter writer = new FileWriter(mTransBeanFile);
         writer.write(JsonUtils.toString(bean));
         writer.close();
-    }
-
-
-    private Map<String, String> getMap(String name, File file) throws FileNotFoundException {
-        FileReader reader = new FileReader(new File(file, name));
-        Type type = new TypeToken<TreeMap<String, String>>() {
-        }.getType();
-        return JsonUtils.fromStringByType(reader, type);
     }
 
     /**
