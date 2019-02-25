@@ -1,1 +1,99 @@
-[{"id":131328,"type":2,"name":"防具","parent":0},{"id":131329,"type":2,"name":"稀有度(G)10","url":"data/2310.html","parent":131328},{"id":131330,"type":2,"name":"稀有度(G)8-1","url":"data/2308.html","parent":131328},{"id":131331,"type":2,"name":"稀有度(G)8-2","url":"data/2998.html","parent":131328},{"id":131332,"type":2,"name":"稀有度(G)9","url":"data/2309.html","parent":131328},{"id":131333,"type":2,"name":"稀有度(G)X","url":"data/2847.html","parent":131328},{"id":131334,"type":2,"name":"稀有度1","url":"data/2301.html","parent":131328},{"id":131335,"type":2,"name":"稀有度2","url":"data/2302.html","parent":131328},{"id":131336,"type":2,"name":"稀有度3","url":"data/2303.html","parent":131328},{"id":131337,"type":2,"name":"稀有度4","url":"data/2304.html","parent":131328},{"id":131338,"type":2,"name":"稀有度5","url":"data/2305.html","parent":131328},{"id":131339,"type":2,"name":"稀有度6","url":"data/2306.html","parent":131328},{"id":131340,"type":2,"name":"稀有度7","url":"data/2307.html","parent":131328},{"id":131341,"type":2,"name":"防具一览","url":"data/2300.html","parent":131328}]
+[
+  {
+    "id": 131328,
+    "type": 2,
+    "name": "防具",
+    "parent": 0
+  },
+  {
+    "id": 131329,
+    "type": 2,
+    "name": "稀有度(G)10",
+    "url": "data/2310.html",
+    "parent": 131328
+  },
+  {
+    "id": 131330,
+    "type": 2,
+    "name": "稀有度(G)8-1",
+    "url": "data/2308.html",
+    "parent": 131328
+  },
+  {
+    "id": 131331,
+    "type": 2,
+    "name": "稀有度(G)8-2",
+    "url": "data/2998.html",
+    "parent": 131328
+  },
+  {
+    "id": 131332,
+    "type": 2,
+    "name": "稀有度(G)9",
+    "url": "data/2309.html",
+    "parent": 131328
+  },
+  {
+    "id": 131333,
+    "type": 2,
+    "name": "稀有度(G)X",
+    "url": "data/2847.html",
+    "parent": 131328
+  },
+  {
+    "id": 131334,
+    "type": 2,
+    "name": "稀有度1",
+    "url": "data/2301.html",
+    "parent": 131328
+  },
+  {
+    "id": 131335,
+    "type": 2,
+    "name": "稀有度2",
+    "url": "data/2302.html",
+    "parent": 131328
+  },
+  {
+    "id": 131336,
+    "type": 2,
+    "name": "稀有度3",
+    "url": "data/2303.html",
+    "parent": 131328
+  },
+  {
+    "id": 131337,
+    "type": 2,
+    "name": "稀有度4",
+    "url": "data/2304.html",
+    "parent": 131328
+  },
+  {
+    "id": 131338,
+    "type": 2,
+    "name": "稀有度5",
+    "url": "data/2305.html",
+    "parent": 131328
+  },
+  {
+    "id": 131339,
+    "type": 2,
+    "name": "稀有度6",
+    "url": "data/2306.html",
+    "parent": 131328
+  },
+  {
+    "id": 131340,
+    "type": 2,
+    "name": "稀有度7",
+    "url": "data/2307.html",
+    "parent": 131328
+  },
+  {
+    "id": 131341,
+    "type": 2,
+    "name": "防具一览",
+    "url": "data/2300.html",
+    "parent": 131328
+  }
+]

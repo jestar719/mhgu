@@ -1,16 +1,29 @@
-[{
-  "mName": "技能",
-  "mData": {
-    "报酬・採取・调合": "data/2205.html",
-    "技能一览": "data/2200.html",
-    "随从猫・其他": "data/2206.html",
-    "体力・耐力・回復": "data/2202.html",
-    "攻击・防御・回避": "data/2201.html",
-    "神枪手专用": "data/2204.html",
-    "复合技能": "data/2207.html",
-    "耐性・无效化": "data/2203.html"
+[
+  {
+    "mName": "技能",
+    "mData": {
+      "报酬・採取・调合": "data/2205.html",
+      "技能一览": "data/2200.html",
+      "随从猫・其他": "data/2206.html",
+      "体力・耐力・回復": "data/2202.html",
+      "攻击・防御・回避": "data/2201.html",
+      "神枪手专用": "data/2204.html",
+      "复合技能": "data/2207.html",
+      "耐性・无效化": "data/2203.html"
+    }
+  },
+  {
+    "mName": "装饰品",
+    "mData": {
+      "神枪手用": "data/2582.html",
+      "剑士用": "data/2581.html",
+      "通用": "data/2580.html"
+    }
+  },
+  {
+    "mName": "狩技",
+    "mData": {
+      "狩技一览": "data/1847.html"
+    }
   }
-},
-  {"mName":"装饰品","mData":{"神枪手用":"data/2582.html","剑士用":"data/2581.html","通用":"data/2580.html"}},
-  {"mName":"狩技","mData":{"狩技一览":"data/1847.html"}}
 ]
