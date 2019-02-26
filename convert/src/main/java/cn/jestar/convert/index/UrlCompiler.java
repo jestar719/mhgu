@@ -2,6 +2,7 @@ package cn.jestar.convert.index;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Map;
 import java.util.regex.Matcher;
 
 import cn.jestar.convert.Compiler;
@@ -23,6 +24,9 @@ public abstract class UrlCompiler extends Compiler {
     public static final String TD = "<td";
     public static final String SPLIT = " / ";
 
+
+    public UrlCompiler() {
+    }
 
     public UrlCompiler(String path) {
         super(path);
@@ -49,9 +53,14 @@ public abstract class UrlCompiler extends Compiler {
     }
 
     protected void setLink(String text, LinkInfo linkInfo) {
+        Map<String, String> data = linkInfo.getData();
+        setMap(text, data);
+    }
+
+    protected void setMap(String text, Map<String, String> map) {
         Matcher matcher = RegexUtils.getMatcher(text, LINK_REGEX);
         if (matcher.find()) {
-            linkInfo.setData(matcher.group(2), matcher.group(1));
+            map.put(matcher.group(2), matcher.group(1));
         }
     }
 }
