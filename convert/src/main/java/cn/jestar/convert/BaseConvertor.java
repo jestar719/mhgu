@@ -2,6 +2,7 @@ package cn.jestar.convert;
 
 import com.google.gson.reflect.TypeToken;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -24,7 +25,7 @@ import cn.jestar.convert.utils.JsonUtils;
  * Created by 花京院 on 2019/2/12.
  */
 
-public abstract class BaseConvertor {
+public abstract class BaseConvertor extends Copyable {
 
     public String mJsonFileName;
     public String mTransBeanName;
@@ -32,6 +33,12 @@ public abstract class BaseConvertor {
     protected String mTransBeanTemp = "%sTransBean.json";
     protected String mName;
     protected File mTransBeanFile;
+    protected CompileUrlAble mCompileUrlAble;
+
+    public BaseConvertor setCompileUrlAble(CompileUrlAble compileUrlAble) {
+        mCompileUrlAble = compileUrlAble;
+        return this;
+    }
 
     public void setName(String name) {
         mName = name;
@@ -100,8 +107,23 @@ public abstract class BaseConvertor {
 
     /**
      * 翻译
+     * @param url      链接 格式为”data/xxxx.html" 或“ida/xxxx.html
+     * @param transMap 文本对照Map
+     * @param set      保存素材Url的Set
+     * @throws Exception
+     */
+    public void translateFile(String url, Map<String, String> transMap, Set<String> set) throws Exception {
+        StringBuilder builder = getText(url, set);
+        translation(builder, transMap, getList(transMap));
+        String s = builder.toString();
+        write(new File(Constants.MH_PATH + url),s);
+    }
+
+
+    /**
+     * 翻译
      *
-     * @param url      链接
+     * @param url      链接 格式为”data/xxxx.html" 或“ida/xxxx.html
      * @param transMap 文本对照Map
      * @param list     日文文本
      * @param set      保存素材Url的Set
@@ -111,10 +133,36 @@ public abstract class BaseConvertor {
         StringBuilder builder = getText(url, set);
         translation(builder, transMap, list);
         String s = builder.toString();
-        write(s, url);
+        write(new File(Constants.MH_PATH + url),s);
     }
 
-    protected abstract StringBuilder getText(String url, Set<String> set) throws Exception;
+    /**
+     * 读取文件，保存内容到StringBuilder ,并收集相关的url
+     * @param url
+     * @param set
+     * @return
+     * @throws Exception
+     */
+    public StringBuilder getText(String url, Set<String> set) throws Exception {
+        BufferedReader reader = new BufferedReader(new FileReader(Constants.MH_PATH + url));
+        StringBuilder builder = new StringBuilder();
+        String text;
+        String separator = System.lineSeparator();
+        boolean needCompile = mCompileUrlAble != null && mCompileUrlAble.needCompile(url);
+        boolean canCompile = needCompile && set != null;
+        while ((text = reader.readLine()) != null) {
+            text = text.trim();
+            if (!text.isEmpty()) {
+                builder.append(text).append(separator);
+                if (canCompile) {
+                    mCompileUrlAble.compile(text, set);
+                }
+            }
+        }
+        reader.close();
+        return builder;
+    }
+
 
     /**
      * 替换文本
@@ -178,5 +226,11 @@ public abstract class BaseConvertor {
             }
         });
         return list;
+    }
+
+    public interface CompileUrlAble {
+        boolean needCompile(String url);
+
+        void compile(String text, Set<String> set);
     }
 }

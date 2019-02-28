@@ -19,7 +19,7 @@ public class SkillNameConvert extends BaseConvertor {
     }
 
     @Override
-    protected StringBuilder getText(String url, Set<String> set) throws Exception {
+    public StringBuilder getText(String url, Set<String> set) throws Exception {
         StringBuilder builder = new StringBuilder();
         String separator = System.lineSeparator();
         File file = new File(Constants.MH_PATH, url);

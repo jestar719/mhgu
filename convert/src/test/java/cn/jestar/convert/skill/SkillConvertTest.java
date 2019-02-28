@@ -23,11 +23,13 @@ public class SkillConvertTest {
 
     private SkillNameConvert mConvert;
     private String mSkill;
+    private String mTemp;
 
     @Before
     public void init() {
         mConvert = new SkillNameConvert("技能一览");
         mSkill = "skill";
+        mTemp = "data/%s.html";
     }
 
     @Test
@@ -42,19 +44,26 @@ public class SkillConvertTest {
 
     @Test
     public void convertSkillNameInIndex() throws Exception {
-        String temp = "data/%s.html";
         Map<String, String> map = getMap();
         List<String> list = mConvert.getList(map);
-        for (int i = 2200; i < 2208; i++) {
-            mConvert.translateFile(String.format(temp, i), map, list, null);
+        //技能一览
+        for (int i = 2200; i <= 2207; i++) {
+            mConvert.translateFile(String.format(mTemp, i), map, list, null);
         }
-        for (int i = 2580; i < 2583; i++) {
-            mConvert.translateFile(String.format(temp, i), map, list, null);
+        //珠玉一览
+        for (int i = 2580; i <= 2582; i++) {
+            mConvert.translateFile(String.format(mTemp, i), map, list, null);
         }
-        for (int i = 2301; i < 2311; i++) {
-            mConvert.translateFile(String.format(temp, i), map, list, null);
+    }
+
+    @Test
+    public void convertSkillNameInArmar() throws Exception {
+        Map<String, String> map = getMap();
+        List<String> list = mConvert.getList(map);
+        for (int i = 2301; i <=2310; i++) {
+            mConvert.translateFile(String.format(mTemp, i), map, list, null);
         }
-        mConvert.translateFile(String.format(temp, 2847), map, list, null);
+        mConvert.translateFile(String.format(mTemp, 2847), map, list, null);
     }
 
     public Map<String, String> getMap() throws FileNotFoundException {

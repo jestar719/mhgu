@@ -14,7 +14,7 @@ public class SkillJewerCompilerTest {
     public void getMap() throws Exception {
         String urlTemp = "data/%s.html";
         SkillJewerCompiler compiler = new SkillJewerCompiler();
-        for (int i = 2580; i < 2583; i++) {
+        for (int i = 2580; i <=2582; i++) {
             String format = String.format(urlTemp, i);
             System.out.println(format);
             File file = new File(Constants.MH_PATH, format);

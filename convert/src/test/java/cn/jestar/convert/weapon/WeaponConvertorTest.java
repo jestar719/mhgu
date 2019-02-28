@@ -26,12 +26,12 @@ public class WeaponConvertorTest {
 
     @Before
     public void init() {
-        mName = "重弩";
+        mName = "弓";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                 "data/1903.html",
-                 "data/2885.html",
-                 "data/2703.html"
+                "data/1911.html",
+                "data/2893.html",
+                "data/2711.html"
         };
     }
 
@@ -86,28 +86,15 @@ public class WeaponConvertorTest {
      */
     @Test
     public void translateStepTest() throws Exception {
-        TranslatedBean bean = mConvertor.getBean();
-        Map<String, String> texts = bean.getTexts();
-        List<String> list = mConvertor.getList(texts);
-        String[] urls=new String[]{
-                "ida/236407.html",
-                "ida/236403.html",
-                "ida/228443.html",
-        };
-        Set<String> links=new TreeSet<>();
-        for (String url : urls) {
-            convertFile(texts, list, url,links);
+        Map<String, String> map = mConvertor.getMap();
+        List<String> list = mConvertor.getList(map);
+        TreeSet<String> set = new TreeSet<>();
+        for (String url : mUrls) {
+            mConvertor.translateFile(url, map, list, set);
         }
-        for (String link : links) {
-            convertFile(texts,list,link,null);
-        }
+        mConvertor.translateFile("ida/235182.html", map, list, null);
     }
 
-    public void convertFile(Map<String, String> texts, List<String> list, String url, Set<String> links) throws Exception {
-        StringBuilder text = mConvertor.getText(url, links);
-        mConvertor.translation(text, texts, list);
-        mConvertor.write(text.toString(), url);
-    }
 
     /**
      * 太刀翻译
@@ -147,5 +134,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateDoubleSword() throws Exception {
         new WeaponConvertor("双剑").translation();
+    }
+
+    /**
+     * 弓翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateBow() throws Exception {
+        new WeaponConvertor("弓").translation();
     }
 }

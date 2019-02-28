@@ -2,6 +2,7 @@ package cn.jestar.convert.weapon;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -36,7 +37,22 @@ public class WeaponConvertor extends BaseConvertor {
         mSummaryFile = new File(Constants.TEMP_SUMMARY_PATH, mWeapon);
         mTranslatedFile = new File(Constants.TEMP_TRANSLATED_PATH, mWeapon);
         mTranslationFile = new File(Constants.TEMP_TRANSLATION_PATH, mWeapon);
-        mTransBeanFile=new File(mTranslatedFile,mTransBeanName);
+        mTransBeanFile = new File(mTranslatedFile, mTransBeanName);
+        mCompileUrlAble = new CompileUrlAble() {
+            @Override
+            public boolean needCompile(String url) {
+                return url.contains("ida");
+            }
+
+            @Override
+            public void compile(String text, Set<String> set) {
+                if (text.matches(REGEX)) {
+                    set.add(RegexUtils.getMatchText(text, REGEX));
+                } else if (text.matches(REGEX1)) {
+                    set.add(RegexUtils.getMatchText(text, REGEX1));
+                }
+            }
+        };
     }
 
     /**
@@ -46,17 +62,20 @@ public class WeaponConvertor extends BaseConvertor {
      * @throws Exception
      */
     public void makeBean(List<String> list) throws Exception {
-        String name = mJsonFileName;
-        Map<String, String> map = getMap(name, mSummaryFile);
+        Map<String, String> map = getMap(mJsonFileName, mSummaryFile);
         TranslatedBean bean = new TranslatedBean();
         TreeSet<String> strings = new TreeSet<>(list);
         strings.addAll(map.values());
         bean.setUrls(new ArrayList<>(strings));
-        map = getMap(name, mTranslatedFile);
+        map = getMap();
         bean.setTexts(map);
         FileWriter writer = new FileWriter(mTransBeanFile);
         writer.write(JsonUtils.toString(bean));
         writer.close();
+    }
+
+    public Map<String, String> getMap() throws FileNotFoundException {
+        return getMap(mJsonFileName, mTranslatedFile);
     }
 
     /**
@@ -100,44 +119,4 @@ public class WeaponConvertor extends BaseConvertor {
     }
 
 
-    /**
-     * 解析相关素材的Url并保存
-     *
-     * @param text  一行文本
-     * @param links 保存url的Set
-     */
-    public void getUrls(String text, Set<String> links) {
-        if (text.matches(REGEX)) {
-            links.add(RegexUtils.getMatchText(text, REGEX));
-        } else if (text.matches(REGEX1)) {
-            links.add(RegexUtils.getMatchText(text, REGEX1));
-        }
-    }
-
-    /**
-     * 读取文件，保存在StringBuilder中，并解析相关素材的url并保存
-     *
-     * @param url   文件的url
-     * @param links 用与收集素材的url的Set
-     * @return 文件的String
-     * @throws Exception
-     */
-    public StringBuilder getText(String url, Set<String> links) throws Exception {
-        BufferedReader reader = new BufferedReader(new FileReader(Constants.MH_PATH + url));
-        StringBuilder builder = new StringBuilder();
-        String text;
-        String separator = System.lineSeparator();
-        boolean isIda = url.contains("ida");
-        while ((text = reader.readLine()) != null) {
-            text = text.trim();
-            if (!text.isEmpty()) {
-                builder.append(text).append(separator);
-                if (isIda && links != null) {
-                    getUrls(text, links);
-                }
-            }
-        }
-        reader.close();
-        return builder;
-    }
 }
