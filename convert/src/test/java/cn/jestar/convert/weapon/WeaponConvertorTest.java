@@ -6,10 +6,8 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.TreeSet;
 
-import cn.jestar.convert.bean.TranslatedBean;
 import cn.jestar.convert.utils.RegexUtils;
 
 import static org.junit.Assert.assertEquals;
@@ -26,12 +24,12 @@ public class WeaponConvertorTest {
 
     @Before
     public void init() {
-        mName = "弓";
+        mName = "轻弩";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                "data/1911.html",
-                "data/2893.html",
-                "data/2711.html"
+                "data/1912.html",
+                "data/2894.html",
+                "data/2712.html"
         };
     }
 
@@ -92,7 +90,7 @@ public class WeaponConvertorTest {
         for (String url : mUrls) {
             mConvertor.translateFile(url, map, list, set);
         }
-        mConvertor.translateFile("ida/235182.html", map, list, null);
+        mConvertor.translateFile("ida/219234.html", map, list, null);
     }
 
 
@@ -144,5 +142,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateBow() throws Exception {
         new WeaponConvertor("弓").translation();
+    }
+
+    /**
+     * 弓翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateQingNu() throws Exception {
+        new WeaponConvertor("轻弩").translation();
     }
 }
