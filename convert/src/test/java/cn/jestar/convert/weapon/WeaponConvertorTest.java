@@ -3,7 +3,9 @@ package cn.jestar.convert.weapon;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
@@ -92,6 +94,36 @@ public class WeaponConvertorTest {
         mConvertor.translateFile("ida/218109.html", map, list, null);
     }
 
+    /**
+     * 补充翻译
+     */
+    @Test
+    public void coustomConvert() throws Exception {
+        Map<String, String> map = new HashMap<>();
+        map.put("終","终");
+        map.put("強","强");
+        map.put("武器的一览です。列名クリックで並び替えが出来ます。","武器一览");
+        map.put("期待値についてはこちら","期待值");
+        map.put("与えるダメージ期待値","期待值计算相关");
+        map.put("初期は期待値的降順","默认以期待值降序排列");
+        map.put("LV1的み","LV1");
+        List<String> list = mConvertor.getList(map);
+        List<String> urls=new ArrayList<>();
+        String temp="data/%s.html";
+        for (int i = 1900; i <=1913; i++) {
+            urls.add(String.format(temp,i));
+            urls.add(String.format(temp,i+800));
+        }
+        for (int i = 2882; i <=2890; i++) {
+            urls.add(String.format(temp,i));
+        }
+        for (int i = 2893; i <=2895; i++) {
+            urls.add(String.format(temp,i));
+        }
+        for (String url : urls) {
+            mConvertor.translateFile(url, map, list, null);
+        }
+    }
 
     /**
      * 太刀翻译
