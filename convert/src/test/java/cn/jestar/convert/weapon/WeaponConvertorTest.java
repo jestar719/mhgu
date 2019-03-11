@@ -24,12 +24,11 @@ public class WeaponConvertorTest {
 
     @Before
     public void init() {
-        mName = "轻弩";
+        mName = "操虫棍";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                "data/1912.html",
-                "data/2894.html",
-                "data/2712.html"
+                "data/1910.html",
+                "data/2710.html"
         };
     }
 
@@ -90,7 +89,7 @@ public class WeaponConvertorTest {
         for (String url : mUrls) {
             mConvertor.translateFile(url, map, list, set);
         }
-        mConvertor.translateFile("ida/219234.html", map, list, null);
+        mConvertor.translateFile("ida/218109.html", map, list, null);
     }
 
 
@@ -152,5 +151,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateQingNu() throws Exception {
         new WeaponConvertor("轻弩").translation();
+    }
+
+    /**
+     * 操虫棍翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateChongGun() throws Exception {
+        new WeaponConvertor("操虫棍").translation();
     }
 }
