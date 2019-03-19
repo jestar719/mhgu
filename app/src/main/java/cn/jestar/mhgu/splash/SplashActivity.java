@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.layout_splash);
         mView = findViewById(R.id.fl_splash);
         mStartTime = System.currentTimeMillis();
         SplashModel model = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(SplashModel.class);
@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (isInit) {
                     toMain();
                 } else {
-                    // TODO: 2019/1/28
+                    // TODO: 2019/1/28 初始化失败
                     finish();
                 }
             }

@@ -8,8 +8,24 @@
     <string name="has_new_version">有可更新的版本</string>
     <string name="dialog_temp">最新版本：%s</string>
     <string name="cancel">以后再说</string>
-    <string name="fir_update">默认更新</string>
-    <string name="version_temp">当前版本： %s</string>
+    <string name="fir_update">FIR更新</string>
+    <string name="version_temp">当前版本：%s</string>
     <string name="version_getting">检查更新中，请稍后</string>
     <string name="github_update">GitHub更新</string>
+    <string name="psd_copied">密码已经复制到剪贴板</string>
+    <string name="baidu_update">百度网盘更新</string>
+    <string name="update">版本更新</string>
+    <string name="baidu_psd">密码(点击复制到剪贴板)：ikq3</string>
+    <string name="index">索引</string>
+    <string name="index_weapon">武器</string>
+    <string name="index_armour">装备</string>
+    <string name="index_material">道具</string>
+    <string name="index_cat">猎猫</string>
+    <string name="index_skill">技能</string>
+    <string name="index_monster">怪物</string>
+    <string name="index_map">地图</string>
+    <string name="index_quest">任务</string>
+    <string name="index_cat_rice">猫饭</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
 </resources>

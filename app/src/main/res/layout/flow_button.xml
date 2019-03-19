@@ -4,8 +4,8 @@
     android:id="@+id/tv_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/fl_button"
-    android:textSize="14sp"
-    android:textColor="@android:color/white"
+    android:background="@drawable/select_fl_button"
     android:padding="@dimen/d8"
+    android:textColor="@android:color/white"
+    android:textSize="14sp"
      />

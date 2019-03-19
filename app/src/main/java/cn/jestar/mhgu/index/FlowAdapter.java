@@ -1,4 +1,4 @@
-package cn.jestar.mhgu;
+package cn.jestar.mhgu.index;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,7 @@ import com.zhy.view.flowlayout.TagAdapter;
 import java.util.List;
 
 import cn.jestar.db.bean.IndexBean;
+import cn.jestar.mhgu.R;
 
 
 /**

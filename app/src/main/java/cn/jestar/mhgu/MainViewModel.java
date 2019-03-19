@@ -9,11 +9,14 @@ import android.arch.lifecycle.Transformations;
 import android.arch.lifecycle.ViewModel;
 
 import java.util.List;
+import java.util.Set;
 
 import cn.jestar.db.IndexDao;
 import cn.jestar.db.MyDataBase;
 import cn.jestar.db.bean.IndexBean;
 import cn.jestar.mhgu.version.VersionLiveData;
+
+import static android.app.Activity.RESULT_OK;
 
 
 /**
@@ -22,12 +25,14 @@ import cn.jestar.mhgu.version.VersionLiveData;
 
 public class MainViewModel extends ViewModel {
 
+    private IndexDao mDao;
     private LiveData<List<IndexBean>> mTyps;
     private LiveData<List<IndexBean>> mSelects;
-    private IndexDao mDao;
+    private MutableLiveData<String> mSelectTag = new MutableLiveData<>();
+    private MutableLiveData<String> mMenuSelect = new MutableLiveData<>();
     private MutableLiveData<Integer> mSelectType = new MutableLiveData<>();
     private MutableLiveData<Integer> mSelectParent = new MutableLiveData<>();
-    private VersionLiveData mVersionData=new VersionLiveData();
+    private VersionLiveData mVersionData = new VersionLiveData();
     private int mType;
 
     public MainViewModel() {
@@ -63,8 +68,31 @@ public class MainViewModel extends ViewModel {
         mSelects.observe(owner, observer);
     }
 
+    public void observerMenuSelect(LifecycleOwner owner, Observer<String> observer) {
+        mMenuSelect.observe(owner, observer);
+    }
+
+    public void observerTagSelect(LifecycleOwner owner, Observer<String> observer) {
+        mSelectTag.observe(owner, observer);
+    }
+
     public VersionLiveData getVersion() {
         mVersionData.getVersion();
         return mVersionData;
     }
+
+    public void onTagSelect(String url) {
+        mSelectTag.setValue(url);
+    }
+
+    public void onMenuSelect(String title) {
+        mMenuSelect.setValue(title);
+    }
+
+    public int getIndex(Set<Integer> set) {
+        if (set.isEmpty())
+            return RESULT_OK;
+        return (int) set.toArray()[0];
+    }
+
 }

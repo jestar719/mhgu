@@ -6,107 +6,66 @@
     android:layout_height="match_parent"
     tools:context="cn.jestar.mhgu.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/rl_title"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/d48"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
 
-        android:background="@color/colorPrimary">
-
-        <ImageView
-            android:id="@+id/iv_drawer_toggle"
-            android:layout_width="@dimen/d32"
-            android:layout_height="@dimen/d32"
-            android:layout_alignParentStart="true"
-            android:layout_margin="@dimen/d8"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/iv_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/d8"
-            android:src="@android:drawable/ic_menu_search" />
-
-        <EditText
-            android:id="@+id/et_search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/d8"
-            android:layout_toLeftOf="@id/iv_search"
-            android:layout_toRightOf="@id/iv_drawer_toggle"
-            android:imeActionLabel="@string/action_search"
-            android:imeOptions="actionSearch"
-            android:inputType="text"
-            android:paddingEnd="@dimen/d8"
-            android:paddingStart="@dimen/d16"
-            android:textColor="@android:color/white" />
-
-        <ImageView
-            android:id="@+id/iv_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/et_search"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/d8"
-            android:src="@android:drawable/ic_delete"
-            android:visibility="gone" />
-    </RelativeLayout>
 
     <WebView
         android:id="@+id/web"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl_title" />
-
-    <LinearLayout
-        android:id="@+id/ll_search_result"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/d32"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/rl_title"
-        android:background="@drawable/bg_with_line"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        tools:visibility="visible">
-
-        <TextView
-            android:id="@+id/tv_search_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:padding="@dimen/d8"
-            tools:text="@string/action_search" />
-
-        <ImageView
-            android:id="@+id/iv_pre"
-            android:layout_width="@dimen/d32"
-            android:layout_height="@dimen/d32"
-            android:padding="@dimen/d8"
-            android:src="@android:drawable/arrow_up_float" />
-
-        <ImageView
-            android:id="@+id/iv_next"
-            android:layout_width="@dimen/d32"
-            android:layout_height="@dimen/d32"
-            android:padding="@dimen/d8"
-            android:src="@android:drawable/arrow_down_float" />
-
-    </LinearLayout>
-
+        android:layout_below="@+id/toolbar" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/d16"
-        android:layout_marginBottom="@dimen/d8"
-        android:layout_marginEnd="@dimen/d8"
-        app:srcCompat="@android:drawable/arrow_up_float" />
+        android:layout_margin="@dimen/d8"
+        android:src="@mipmap/ic_top"
+        app:fabSize="mini" />
+    <LinearLayout
+        android:id="@+id/ll_fab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_top"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/d8"
+            android:src="@mipmap/ic_up"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/d8"
+            android:src="@mipmap/ic_down"
+            app:fabSize="mini" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
 
 </RelativeLayout>

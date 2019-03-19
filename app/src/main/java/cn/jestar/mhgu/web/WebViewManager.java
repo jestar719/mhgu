@@ -1,11 +1,8 @@
 package cn.jestar.mhgu.web;
 
-import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.Observer;
 import android.graphics.Bitmap;
-import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -118,8 +115,11 @@ public class WebViewManager implements WebView.FindListener {
 
     @Override
     public void onFindResultReceived(int activeMatchOrdinal, int numberOfMatches, boolean isDoneCounting) {
-        int i = numberOfMatches == 0 ? 0 : 1;
-        String format = String.format("%s/%s", activeMatchOrdinal + i, numberOfMatches);
+        boolean isFind = numberOfMatches != 0;
+        String format = null;
+        if (isFind) {
+            format = String.format("%s/%s", activeMatchOrdinal + 1, numberOfMatches);
+        }
         mData.setValue(format);
     }
 

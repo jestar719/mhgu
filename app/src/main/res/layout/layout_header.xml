@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d16"
+        android:src="@mipmap/img_mhgu" />
+
+    <LinearLayout
+        android:id="@+id/ll_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/d8"
+        android:layout_marginBottom="@dimen/d16">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/d4"
+            android:elevation="@dimen/d6"
+            android:textColor="@color/white"
+            tools:text="@string/version_temp" />
+
+        <ImageView
+            android:id="@+id/iv_new_version"
+            android:layout_width="@dimen/d24"
+            android:layout_height="@dimen/d24"
+            android:src="@mipmap/ic_new"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

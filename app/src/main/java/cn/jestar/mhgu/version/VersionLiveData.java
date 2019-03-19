@@ -23,24 +23,23 @@ public class VersionLiveData extends MutableLiveData<VersionBean> {
      * 获取版本更新数据并保存
      */
     public void getVersion() {
-       AppManager.getExecutor().execute(new Runnable() {
-           @Override
-           public void run() {
-               try {
-                   URL url = new URL(LINK);
-                   InputStream stream = url.openStream();
-                   InputStreamReader reader = new InputStreamReader(stream, "utf-8");
-                   VersionBean bean = JsonUtils.fromString(reader, VersionBean.class);
-                   AppManager.setVersion(bean);
-                   postValue(bean);
-                   stream.close();
-               } catch (Exception e) {
-                   e.printStackTrace();
-                   logE(e);
-                   postValue(null);
-               }
-           }
-       });
+        AppManager.getExecutor().execute(new Runnable() {
+            @Override
+            public void run() {
+                VersionBean bean = null;
+                try {
+                    URL url = new URL(LINK);
+                    InputStream stream = url.openStream();
+                    InputStreamReader reader = new InputStreamReader(stream, "utf-8");
+                    bean = JsonUtils.fromString(reader, VersionBean.class);
+                    stream.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    logE(e);
+                }
+                postValue(bean);
+            }
+        });
     }
 
 

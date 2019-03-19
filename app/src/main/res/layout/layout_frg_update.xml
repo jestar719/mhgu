@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/d24">
+
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_round_rect_white"
+        android:elevation="@dimen/d6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d32"
+            android:text="@string/update"
+            android:textSize="@dimen/sp24" />
+
+        <TextView
+            android:id="@+id/tv_version_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d32"
+            android:layout_marginTop="@dimen/d16"
+            tools:text="@string/version_temp" />
+
+        <TextView
+            android:id="@+id/tv_update_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d32"
+            android:layout_marginTop="@dimen/d8"
+            tools:text="1 测试\n2 测试" />
+
+        <TextView
+            android:id="@+id/tv_fir_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d32"
+            android:layout_marginTop="@dimen/d8"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/fir_update" />
+
+        <TextView
+            android:id="@+id/tv_baidu_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d32"
+            android:layout_marginTop="@dimen/d8"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/baidu_update" />
+
+        <TextView
+            android:id="@+id/tv_baidu_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d32"
+            android:layout_marginTop="@dimen/d8"
+            tools:text="@string/baidu_psd" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/d32"
+            android:layout_marginTop="@dimen/d24"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+</FrameLayout>
