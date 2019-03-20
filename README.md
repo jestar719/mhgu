@@ -45,7 +45,7 @@
         *  虫棍  进度：已完成
         *  斩斧  进度：待翻译
         *  长枪  进度：待翻译
-        *  铳枪  进度：待翻译
+        *  铳枪  进度：已完成
         *  笛  进度：待翻译
         *  笛旋律  进度：待翻译
         *  弓  进度：已完成
@@ -73,6 +73,9 @@
 * 其它需求 （待定）
 
 ### 版本发布
-[Fir](https://fir.im/v4hr) [github](https://github.com/jestar719/mhgu/releases/tag/v1.3.0)
+* [Fir.im](https://fir.im/v4hr)
+* [Github](https://github.com/jestar719/mhgu/releases)
+* [百度网盘](https://pan.baidu.com/s/134doOWgfoq3hj03qY2EXiA) 密码：ikq3
+
 
 有问题或建议请发[Email](jestar719@gmail.com)
