@@ -26,11 +26,12 @@ public class WeaponConvertorTest {
 
     @Before
     public void init() {
-        mName = "操虫棍";
+        mName = "铳枪";
         mConvertor = new WeaponConvertor(mName);
         mUrls = new String[]{
-                "data/1910.html",
-                "data/2710.html"
+                "data/1907.html",
+                "data/2889.html",
+                "data/2707.html"
         };
     }
 
