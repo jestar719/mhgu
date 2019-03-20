@@ -36,14 +36,19 @@ public class WeaponConvertorTest {
     }
 
     /**
-     * 检查翻译文本
+     * 翻译验证
      *
      * @throws Exception
      */
     @Test
-    public void checkTranslatedTextTest() throws Exception {
-        System.out.println(mConvertor.getNotTranslatedNames());
-        System.out.println(mConvertor.getLostNamesInTranslation());
+    public void translateStepTest() throws Exception {
+        Map<String, String> map = mConvertor.getMap();
+        List<String> list = mConvertor.getList(map);
+        TreeSet<String> set = new TreeSet<>();
+        for (String url : mUrls) {
+            mConvertor.translateFile(url, map, list, set);
+        }
+        mConvertor.translateFile("ida/219230.html", map, list, null);
     }
 
     /**
@@ -80,20 +85,16 @@ public class WeaponConvertorTest {
     }
 
     /**
-     * 翻译验证
+     * 检查翻译文本
      *
      * @throws Exception
      */
     @Test
-    public void translateStepTest() throws Exception {
-        Map<String, String> map = mConvertor.getMap();
-        List<String> list = mConvertor.getList(map);
-        TreeSet<String> set = new TreeSet<>();
-        for (String url : mUrls) {
-            mConvertor.translateFile(url, map, list, set);
-        }
-        mConvertor.translateFile("ida/218109.html", map, list, null);
+    public void checkTranslatedTextTest() throws Exception {
+        System.out.println(mConvertor.getNotTranslatedNames());
+        System.out.println(mConvertor.getLostNamesInTranslation());
     }
+
 
     /**
      * 补充翻译
@@ -194,5 +195,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateChongGun() throws Exception {
         new WeaponConvertor("操虫棍").translation();
+    }
+
+    /**
+     * 操虫棍翻译
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateChongQiang() throws Exception {
+        new WeaponConvertor("铳枪").translation();
     }
 }
