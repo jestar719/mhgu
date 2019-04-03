@@ -1,4 +1,4 @@
-package cn.jestar.mhgu.web;
+package cn.jestar.mhgu.search;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;

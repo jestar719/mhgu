@@ -22,12 +22,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
+import java.util.List;
+
+import cn.jestar.db.bean.SearchBean;
 import cn.jestar.mhgu.index.IndexFragment;
+import cn.jestar.mhgu.search.QueryHistoryAdapter;
+import cn.jestar.mhgu.search.WebViewManager;
 import cn.jestar.mhgu.version.UpdateFragment;
 import cn.jestar.mhgu.version.VersionBean;
-import cn.jestar.mhgu.web.WebViewManager;
 
 /**
  * 主页。通过WebView浏览内置HTML攻略。通过上方搜索来定位，通过侧拉菜单来索引跳转
@@ -46,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private SearchView mSearchView;
     private View mFabContainer;
     private View mFab;
+    private AutoCompleteTextView mCompleteText;
+    private ArrayAdapter<SearchBean> mAdapter;
 
 
     @Override
@@ -179,28 +187,53 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getMenuInflater().inflate(R.menu.menu_title, menu);
         MenuItem item = menu.findItem(R.id.action_search);
         mSearchView = (SearchView) MenuItemCompat.getActionView(item);
+        initAutoComplete();
+        mSearchView.setOnSuggestionListener(new SearchView.OnSuggestionListener() {
+            @Override
+            public boolean onSuggestionSelect(int position) {
+                return false;
+            }
+
+            @Override
+            public boolean onSuggestionClick(int position) {
+                mSearchView.setQuery(mAdapter.getItem(position).toString(), true);
+                return true;
+            }
+        });
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Log.e("onQueryTextSubmit", query);
-                boolean empty = TextUtils.isEmpty(query);
-                if (!empty) {
-                    mWebViewManager.search(query);
-                    mFabContainer.setVisibility(View.GONE);
-                    mSearchView.clearFocus();
+                if (!TextUtils.isEmpty(query)) {
+                    mModel.onPerformSearch(query);
                 }
-                return true;
+                mWebViewManager.search(query);
+                return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (TextUtils.isEmpty(newText)) {
-                    mWebViewManager.search(null);
-                }
+                Log.e("onQueryTextChange", newText);
+                mModel.onSearch(newText);
                 return false;
             }
         });
         return super.onCreateOptionsMenu(menu);
+    }
+
+
+    public void initAutoComplete() {
+        mCompleteText = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        mAdapter = new QueryHistoryAdapter(this, R.layout.list_item, 0);
+        mCompleteText.setAdapter(mAdapter);
+        mCompleteText.setThreshold(1);
+        mModel.onSearch(null).observe(this, new Observer<List<SearchBean>>() {
+            @Override
+            public void onChanged(@Nullable List<SearchBean> searchBeans) {
+                Log.e("onQueryTextChange", searchBeans.toString());
+                mAdapter.clear();
+                mAdapter.addAll(searchBeans);
+            }
+        });
     }
 
     @Override

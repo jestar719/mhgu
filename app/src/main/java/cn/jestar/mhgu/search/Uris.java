@@ -1,4 +1,4 @@
-package cn.jestar.mhgu.web;
+package cn.jestar.mhgu.search;
 
 /**
  * Created by 花京院 on 2018/12/14.

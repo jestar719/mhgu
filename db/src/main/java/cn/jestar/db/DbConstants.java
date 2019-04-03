@@ -6,5 +6,5 @@ package cn.jestar.db;
 
 public interface DbConstants {
     String DB_NAME = "mhgu.db";
-    int VERSION = 1;
+    int VERSION = 2;
 }
