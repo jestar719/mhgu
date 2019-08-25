@@ -35,8 +35,7 @@ public class WeaponCompiler extends Compiler {
 
     @Override
     public void setFile(String path) {
-        super.setFile(path);
-        mMap = new TreeMap<>();
+        setFile(new File(path));
     }
 
     @Override

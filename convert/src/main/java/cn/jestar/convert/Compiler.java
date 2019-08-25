@@ -5,11 +5,14 @@ import java.io.File;
 import java.io.FileReader;
 
 /**
+ * 解析器，用与解析HTML文档
  * Created by 花京院 on 2019/1/29.
  */
 
 public abstract class Compiler extends Copyable {
-
+    /**
+     * HTML文档
+     */
     protected File mFile;
 
     public Compiler() {
@@ -28,10 +31,13 @@ public abstract class Compiler extends Copyable {
     }
 
     public void setFile(String path) {
-        mFile = new File(path);
+       setFile(new File(path));
     }
 
-    public void readFile() {
+    /**
+     * 读取文档
+     */
+    public final void readFile() {
         try (FileReader reader = new FileReader(mFile)) {
             BufferedReader bufferedReader = new BufferedReader(reader);
             onRead(bufferedReader);
@@ -42,6 +48,11 @@ public abstract class Compiler extends Copyable {
         }
     }
 
+    /**
+     * 文档读取方式的抽象，由子类实现
+     * @param reader
+     * @throws Exception
+     */
     protected abstract void onRead(BufferedReader reader) throws Exception;
 
 }
