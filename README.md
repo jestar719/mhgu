@@ -75,7 +75,7 @@
 ### 版本发布
 * [Fir.im](https://fir.im/v4hr)
 * [Github](https://github.com/jestar719/mhgu/releases)
-* [百度网盘](https://pan.baidu.com/s/134doOWgfoq3hj03qY2EXiA) 密码：ikq3
+* [百度网盘](https://pan.baidu.com/s/18NuZxmRKjrsLmVPXIHyGTw) 密码：5iqt
 
 
 有问题或建议请发[Email](jestar719@gmail.com)

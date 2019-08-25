@@ -16,8 +16,8 @@ import cn.jestar.db.JsonUtils;
 public class VersionUpdateTest {
     @Test
     public void getVersion() throws Exception {
-        int version = 180;
-        String versionName = "1.8.0";
+        int version = 181;
+        String versionName = "1.8.1";
         updateVersionBean(version, versionName);
         updateVersion(version, versionName);
     }
@@ -39,10 +39,10 @@ public class VersionUpdateTest {
     private void addUpdateMsg(StringBuilder builder) {
         String separator = System.lineSeparator();
         builder
-                .append(separator)
-                .append("1 长枪翻译完成")
-                .append(separator)
-                .append("2 新增搜索历史功能");
+//                .append(separator)
+//                .append("1 长枪翻译完成")
+//                .append(separator)
+                .append("更新百度网盘地址");
     }
 
     private void updateVersion(int version, String versionName) throws IOException {
