@@ -16,27 +16,40 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Created by èŠ±äº¬é™¢ on 2019/2/4.
+ * Created by »¨¾©Ôº on 2019/2/4.
  */
 public class WeaponConvertorTest {
 
-    private String mName;
     private WeaponConvertor mConvertor;
     private String[] mUrls;
 
+    /**
+     * ³õÊ¼»¯
+     */
     @Before
     public void init() {
-        mName = "é“³æª";
-        mConvertor = new WeaponConvertor(mName);
+        String name = "³¤Ç¹";
+        mConvertor = new WeaponConvertor(name);
         mUrls = new String[]{
-                "data/1907.html",
-                "data/2889.html",
-                "data/2707.html"
+                "data/1906.html",
+                "data/2888.html",
+                "data/2706.html"
         };
     }
 
     /**
-     * ç¿»è¯‘éªŒè¯
+     * ´´½¨Bean
+     *
+     * @throws Exception
+     */
+    @Test
+    public void makeBean() throws Exception {
+        mConvertor.makeBean(Arrays.asList(mUrls));
+    }
+
+    /**
+     * ·­ÒëÑéÖ¤
+     * ·­ÒëÈı¸öÒ»ÀÀÒ³ºÍÒ»¸öÏêÇéÒ³
      *
      * @throws Exception
      */
@@ -48,21 +61,13 @@ public class WeaponConvertorTest {
         for (String url : mUrls) {
             mConvertor.translateFile(url, map, list, set);
         }
-        mConvertor.translateFile("ida/219230.html", map, list, null);
+        mConvertor.translateFile("ida/227164.html", map, list, null);
     }
 
-    /**
-     * åˆ›å»ºBean
-     *
-     * @throws Exception
-     */
-    @Test
-    public void makeBean() throws Exception {
-        mConvertor.makeBean(Arrays.asList(mUrls));
-    }
+
 
     /**
-     * éªŒè¯æ­£åˆ™
+     * ÑéÖ¤ÕıÔò
      *
      * @throws Exception
      */
@@ -70,9 +75,9 @@ public class WeaponConvertorTest {
     public void testRegex() throws Exception {
         String regex = WeaponConvertor.REGEX;
         String regex1 = WeaponConvertor.REGEX1;
-        String text1 = "<a href=\"../ida/189724.html\">é¾™éª¨ã€å¤§ã€‘</a> x1<br>";
-        String text2 = "<a href=\"../ida/219923.html\">è¾‰é¾™çŸ³</a> x10<br>";
-        String text3 = "<span style=\"background-color:#FFEFD3;\">å…¥æ‰‹ç«¯æï¼š<a href=\"../ida/229914.html\">éª¨çš„ä¸Šç«¯æ</a> x2</span><br>";
+        String text1 = "<a href=\"../ida/189724.html\">Áú¹Ç¡¾´ó¡¿</a> x1<br>";
+        String text2 = "<a href=\"../ida/219923.html\">»ÔÁúÊ¯</a> x10<br>";
+        String text3 = "<span style=\"background-color:#FFEFD3;\">ÈëÊÖ¶Ë²Ä£º<a href=\"../ida/229914.html\">¹ÇµÄÉÏ¶Ë²Ä</a> x2</span><br>";
         assertTrue(text1.matches(regex));
         assertTrue(text2.matches(regex));
         assertTrue(text3.matches(regex1));
@@ -85,7 +90,7 @@ public class WeaponConvertorTest {
     }
 
     /**
-     * æ£€æŸ¥ç¿»è¯‘æ–‡æœ¬
+     * ¼ì²é·­ÒëÎÄ±¾
      *
      * @throws Exception
      */
@@ -97,30 +102,30 @@ public class WeaponConvertorTest {
 
 
     /**
-     * è¡¥å……ç¿»è¯‘
+     * ²¹³ä·­Òë
      */
     @Test
-    public void coustomConvert() throws Exception {
+    public void subConvert() throws Exception {
         Map<String, String> map = new HashMap<>();
-        map.put("çµ‚","ç»ˆ");
-        map.put("å¼·","å¼º");
-        map.put("æ­¦å™¨çš„ä¸€è§ˆã§ã™ã€‚åˆ—åã‚¯ãƒªãƒƒã‚¯ã§ä¸¦ã³æ›¿ãˆãŒå‡ºæ¥ã¾ã™ã€‚","æ­¦å™¨ä¸€è§ˆ");
-        map.put("æœŸå¾…å€¤ã«ã¤ã„ã¦ã¯ã“ã¡ã‚‰","æœŸå¾…å€¼");
-        map.put("ä¸ãˆã‚‹ãƒ€ãƒ¡ãƒ¼ã‚¸æœŸå¾…å€¤","æœŸå¾…å€¼è®¡ç®—ç›¸å…³");
-        map.put("åˆæœŸã¯æœŸå¾…å€¤çš„é™é †","é»˜è®¤ä»¥æœŸå¾…å€¼é™åºæ’åˆ—");
-        map.put("LV1çš„ã¿","LV1");
+        map.put("½K", "ÖÕ");
+        map.put("Š", "Ç¿");
+        map.put("ÎäÆ÷µÄÒ»ÀÀ¤Ç¤¹¡£ÁĞÃû¥¯¥ê¥Ã¥¯¤ÇK¤ÓÌæ¤¨¤¬³öÀ´¤Ş¤¹¡£", "ÎäÆ÷Ò»ÀÀ");
+        map.put("ÆÚ´ı‚¤Ë¤Ä¤¤¤Æ¤Ï¤³¤Á¤é", "ÆÚ´ıÖµ");
+        map.put("Óë¤¨¤ë¥À¥á©`¥¸ÆÚ´ı‚", "ÆÚ´ıÖµ¼ÆËãÏà¹Ø");
+        map.put("³õÆÚ¤ÏÆÚ´ı‚µÄ½µí˜", "Ä¬ÈÏÒÔÆÚ´ıÖµ½µĞòÅÅÁĞ");
+        map.put("LV1µÄ¤ß", "LV1");
         List<String> list = mConvertor.getList(map);
-        List<String> urls=new ArrayList<>();
-        String temp="data/%s.html";
-        for (int i = 1900; i <=1913; i++) {
-            urls.add(String.format(temp,i));
-            urls.add(String.format(temp,i+800));
+        List<String> urls = new ArrayList<>();
+        String temp = "data/%s.html";
+        for (int i = 1900; i <= 1913; i++) {
+            urls.add(String.format(temp, i));
+            urls.add(String.format(temp, i + 800));
         }
-        for (int i = 2882; i <=2890; i++) {
-            urls.add(String.format(temp,i));
+        for (int i = 2882; i <= 2890; i++) {
+            urls.add(String.format(temp, i));
         }
-        for (int i = 2893; i <=2895; i++) {
-            urls.add(String.format(temp,i));
+        for (int i = 2893; i <= 2895; i++) {
+            urls.add(String.format(temp, i));
         }
         for (String url : urls) {
             mConvertor.translateFile(url, map, list, null);
@@ -128,82 +133,92 @@ public class WeaponConvertorTest {
     }
 
     /**
-     * å¤ªåˆ€ç¿»è¯‘
+     * Ì«µ¶·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateTaiDao() throws Exception {
-        new WeaponConvertor("å¤ªåˆ€").translation();
+        new WeaponConvertor("Ì«µ¶").translation();
     }
 
     /**
-     * ç›¾æ–§ç¿»è¯‘
+     * ¶Ü¸«·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateDunFu() throws Exception {
-        new WeaponConvertor("ç›¾æ–§").translation();
+        new WeaponConvertor("¶Ü¸«").translation();
     }
 
     /**
-     * é‡å¼©ç¿»è¯‘
+     * ÖØåó·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateZhongNu() throws Exception {
-        new WeaponConvertor("é‡å¼©").translation();
+        new WeaponConvertor("ÖØåó").translation();
     }
 
     /**
-     * åŒå‰‘ç¿»è¯‘
+     * Ë«½£·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateDoubleSword() throws Exception {
-        new WeaponConvertor("åŒå‰‘").translation();
+        new WeaponConvertor("Ë«½£").translation();
     }
 
     /**
-     * å¼“ç¿»è¯‘
+     * ¹­·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateBow() throws Exception {
-        new WeaponConvertor("å¼“").translation();
+        new WeaponConvertor("¹­").translation();
     }
 
     /**
-     * å¼“ç¿»è¯‘
+     * ¹­·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateQingNu() throws Exception {
-        new WeaponConvertor("è½»å¼©").translation();
+        new WeaponConvertor("Çáåó").translation();
     }
 
     /**
-     * æ“è™«æ£ç¿»è¯‘
+     * ²Ù³æ¹÷·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateChongGun() throws Exception {
-        new WeaponConvertor("æ“è™«æ£").translation();
+        new WeaponConvertor("²Ù³æ¹÷").translation();
     }
 
     /**
-     * æ“è™«æ£ç¿»è¯‘
+     * ï¥Ç¹·­Òë
      *
      * @throws Exception
      */
     @Test
     public void translateChongQiang() throws Exception {
-        new WeaponConvertor("é“³æª").translation();
+        new WeaponConvertor("ï¥Ç¹").translation();
+    }
+
+    /**
+     * ï¥Ç¹·­Òë
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateChangQiang() throws Exception {
+        new WeaponConvertor("³¤Ç¹").translation();
     }
 }
