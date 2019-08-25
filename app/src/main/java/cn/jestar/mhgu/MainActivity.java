@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.fab_up).setOnClickListener(this);
         findViewById(R.id.fab_down).setOnClickListener(this);
         mFabContainer = findViewById(R.id.ll_fab_container);
+        //根据搜索结果 显示/隐藏图标
         mWebViewManager.getLiveDate().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -188,6 +189,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MenuItem item = menu.findItem(R.id.action_search);
         mSearchView = (SearchView) MenuItemCompat.getActionView(item);
         initAutoComplete();
+        mSearchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                mWebViewManager.search(null);
+                return false;
+            }
+        });
         mSearchView.setOnSuggestionListener(new SearchView.OnSuggestionListener() {
             @Override
             public boolean onSuggestionSelect(int position) {
@@ -220,18 +228,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onCreateOptionsMenu(menu);
     }
 
-
+    /**
+     * 自动完成的初始化
+     * 设置Adapter及相关
+     */
     public void initAutoComplete() {
         mCompleteText = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
         mAdapter = new QueryHistoryAdapter(this, R.layout.list_item, 0);
-        mCompleteText.setAdapter(mAdapter);
         mCompleteText.setThreshold(1);
+        mCompleteText.setAdapter(mAdapter);
         mModel.onSearch(null).observe(this, new Observer<List<SearchBean>>() {
             @Override
             public void onChanged(@Nullable List<SearchBean> searchBeans) {
-                Log.e("onQueryTextChange", searchBeans.toString());
+//                Log.e("onQueryTextChange", searchBeans.toString());
                 mAdapter.clear();
-                mAdapter.addAll(searchBeans);
+                if (searchBeans != null) {
+                    mAdapter.addAll(searchBeans);
+                }
             }
         });
     }
@@ -270,12 +283,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mWebViewManager.searchNext(false);
                 break;
             case R.id.fab_down:
-                mWebViewManager.searchNext(false);
+                mWebViewManager.searchNext(true);
                 break;
         }
     }
 
-
+    /**
+     * 初始化版本更新
+     */
     private void initVersion() {
         mModel.getVersion().observe(this, new Observer<VersionBean>() {
             @Override

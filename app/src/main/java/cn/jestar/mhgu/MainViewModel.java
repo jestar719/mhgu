@@ -22,6 +22,7 @@ import static android.app.Activity.RESULT_OK;
 
 
 /**
+ * 主界面的逻辑管理类
  * Created by 花京院 on 2019/1/17.
  */
 
@@ -40,6 +41,9 @@ public class MainViewModel extends ViewModel {
     private VersionLiveData mVersionData = new VersionLiveData();
     private int mType;
 
+    /**
+     * 初始化.获取搜索历史的Dao,创建菜单相关的LivaData
+     */
     public MainViewModel() {
         mDao = MyDataBase.getInstance().getDao();
         mTyps = Transformations.switchMap(mSelectType, new Function<Integer, LiveData<List<IndexBean>>>() {

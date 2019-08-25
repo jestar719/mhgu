@@ -14,6 +14,7 @@ import cn.jestar.mhgu.R;
 
 
 /**
+ * 流式按键的Adapter
  * Created by 花京院 on 2019/1/29.
  */
 

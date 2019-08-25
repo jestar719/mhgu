@@ -26,6 +26,7 @@ import cn.jestar.mhgu.MainViewModel;
 import cn.jestar.mhgu.R;
 
 /**
+ * 版本更新的界面
  * Created by 花京院 on 2019/3/13.
  */
 
@@ -49,6 +50,11 @@ public class UpdateFragment extends Fragment implements Observer<VersionBean>, V
         return inflate;
     }
 
+    /**
+     * 有版本更新时,显示更新菜单
+     *
+     * @param versionBean 版本更新的数据
+     */
     @Override
     public void onChanged(@Nullable VersionBean versionBean) {
         if (versionBean != null) {
@@ -58,7 +64,6 @@ public class UpdateFragment extends Fragment implements Observer<VersionBean>, V
             getTextView(R.id.tv_cancel).setOnClickListener(this);
             setUrlSpan(getString(R.string.fir_update), FileConstans.UPDATE_FIR, R.id.tv_fir_update);
             setUrlSpan(getString(R.string.baidu_update), FileConstans.UPDATE_BAIDU_PAN, R.id.tv_baidu_update);
-
             TextView view = getTextView(R.id.tv_baidu_psd);
             view.setOnClickListener(this);
             SpannableString span = new SpannableString(getString(R.string.baidu_psd));

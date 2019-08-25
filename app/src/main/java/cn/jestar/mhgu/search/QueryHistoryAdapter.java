@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import cn.jestar.db.bean.SearchBean;
 
 /**
+ * 搜索历史的Adapter
  * Created by 花京院 on 2019/4/3.
  */
 
@@ -23,6 +24,12 @@ public class QueryHistoryAdapter extends ArrayAdapter<SearchBean> {
         super(context, resource);
     }
 
+    /**
+     * 获取过滤器方法的重写.提供了自定义的过滤器
+     * 此过滤器为SearchView所需的
+     *
+     * @return
+     */
     @NonNull
     @Override
     public Filter getFilter() {

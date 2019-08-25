@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         model.init(this, new Observer<Boolean>() {
             @Override
             public void onChanged(@Nullable Boolean isInit) {
-                if (isInit) {
+                if (isInit == null || isInit) {
                     toMain();
                 } else {
                     // TODO: 2019/1/28 初始化失败

@@ -9,12 +9,17 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 /**
+ * WebView的管理类
+ * 用与WebView的初始化及控制搜索及监听结果
  * Created by 花京院 on 2018/12/14.
  */
 
 public class WebViewManager implements WebView.FindListener {
 
     private final WebView mView;
+    /**
+     * 用于传递搜索结果的LiveData
+     */
     private final MutableLiveData<String> mData;
 
     public WebViewManager(WebView webView) {
@@ -23,6 +28,9 @@ public class WebViewManager implements WebView.FindListener {
         init();
     }
 
+    /**
+     * 初始化,
+     */
     private void init() {
         mView.clearHistory();
         mView.clearCache(true);
@@ -92,6 +100,9 @@ public class WebViewManager implements WebView.FindListener {
         mView.scrollTo(0, 0);
     }
 
+    /**
+     * 回首页
+     */
     public void toIndex() {
         mView.loadUrl(Uris.INDEX_PAGE);
     }
@@ -104,15 +115,32 @@ public class WebViewManager implements WebView.FindListener {
         return goBack;
     }
 
+    /**
+     * 跳转到上/下一个搜索结果
+     *
+     * @param next true表示下一个,false表示上一个
+     */
     public void searchNext(boolean next) {
         mView.findNext(next);
     }
 
+    /**
+     * 搜索
+     *
+     * @param text 关键字
+     */
     public void search(String text) {
         mView.clearMatches();
         mView.findAllAsync(text);
     }
 
+    /**
+     * 搜索结果
+     *
+     * @param activeMatchOrdinal 当前为第及个匹配的搜索结果
+     * @param numberOfMatches    全部搜索结果的数量
+     * @param isDoneCounting
+     */
     @Override
     public void onFindResultReceived(int activeMatchOrdinal, int numberOfMatches, boolean isDoneCounting) {
         boolean isFind = numberOfMatches != 0;
@@ -127,6 +155,11 @@ public class WebViewManager implements WebView.FindListener {
         return mData;
     }
 
+    /**
+     * 加载指定HTML页面
+     *
+     * @param url 指定的HTML的路径
+     */
     public void navigate(String url) {
         mView.loadUrl(Uris.BASE_PATH + url);
     }

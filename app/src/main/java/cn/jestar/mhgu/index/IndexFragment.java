@@ -26,6 +26,7 @@ import cn.jestar.mhgu.R;
 import static android.app.Activity.RESULT_OK;
 
 /**
+ * 索引导航界面
  * Created by 花京院 on 2019/3/14.
  */
 
@@ -59,6 +60,10 @@ public class IndexFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
+    /**
+     * 初始化流式按键
+     * 设置联动监听
+     */
     private void initFl() {
         mFlType.setOnSelectListener(new TagFlowLayout.OnSelectListener() {
             @Override
@@ -126,6 +131,12 @@ public class IndexFragment extends Fragment implements View.OnClickListener {
         });
     }
 
+    /**
+     * 点击事件
+     * 搜索被点击时获取指定HTML的路径
+     *
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.bt_search) {
