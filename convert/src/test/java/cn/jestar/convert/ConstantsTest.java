@@ -1,7 +1,5 @@
 package cn.jestar.convert;
 
-import org.junit.Test;
-
 import java.io.File;
 
 import static org.junit.Assert.assertTrue;
@@ -11,7 +9,7 @@ import static org.junit.Assert.assertTrue;
  * Created by 花京院 on 2019/1/27.
  */
 public class ConstantsTest {
-    @Test
+
     public void testPath() {
         assertTrue(new File(Constants.BASE).exists());
         assertTrue(new File(Constants.MH_PATH).exists());
