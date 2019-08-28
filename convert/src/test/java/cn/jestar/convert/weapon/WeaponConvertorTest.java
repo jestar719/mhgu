@@ -28,12 +28,12 @@ public class WeaponConvertorTest {
      */
     @Before
     public void init() {
-        String name = "´ó´¸";
+        String name = "Õ¶»÷¸«";
         mConvertor = new WeaponConvertor(name);
         mUrls = new String[]{
-                "data/1904.html",
-                "data/2886.html",
-                "data/2704.html"
+                "data/1908.html",
+                "data/2890.html",
+                "data/2708.html"
         };
     }
 
@@ -61,7 +61,7 @@ public class WeaponConvertorTest {
         for (String url : mUrls) {
             mConvertor.translateFile(url, map, list, set);
         }
-        mConvertor.translateFile("ida/219225.html", map, list, null);
+        mConvertor.translateFile("ida/227310.html", map, list, null);
     }
 
 
@@ -230,5 +230,15 @@ public class WeaponConvertorTest {
     @Test
     public void translateDaChui() throws Exception {
         new WeaponConvertor("´ó´¸").translation();
+    }
+
+    /**
+     * ï¥Ç¹·­Òë
+     *
+     * @throws Exception
+     */
+    @Test
+    public void translateZhanFu() throws Exception {
+        new WeaponConvertor("Õ¶»÷¸«").translation();
     }
 }
