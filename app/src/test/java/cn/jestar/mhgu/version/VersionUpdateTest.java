@@ -39,10 +39,10 @@ public class VersionUpdateTest {
     private void addUpdateMsg(StringBuilder builder) {
         String separator = System.lineSeparator();
         builder
-//                .append(separator)
-//                .append("1 长枪翻译完成")
-//                .append(separator)
-                .append("大锤翻译完成");
+                .append(separator)
+                .append("1 大锤翻译完成")
+                .append(separator)
+                .append("2 斩斧翻译完成");
     }
 
     private void updateVersion(int version, String versionName) throws IOException {
