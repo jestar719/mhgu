@@ -14,6 +14,8 @@ public class SkillBean {
     private List<SkillEffect> effectList = new ArrayList<>();
     private int leftMaxValue;
     private int rightMaxValue;
+    private int maxValue;
+    private int[] mMaxValues;
     private String url;
 
 
@@ -83,6 +85,25 @@ public class SkillBean {
     public SkillBean setRightMaxValue(int rightMaxValue) {
         this.rightMaxValue = rightMaxValue;
         return this;
+    }
+
+    public void setMaxValues(int[] max) {
+        mMaxValues = max;
+        int length = max.length;
+        int i = length - 2;
+        for (int i1 = 0; i1 < i; i1++) {
+            int maxValue = max[i1];
+            boolean isLeft = i1 % 2 == 0;
+            int value = isLeft ? leftMaxValue : rightMaxValue;
+            if (maxValue > value) {
+                if (isLeft) {
+                    leftMaxValue = maxValue;
+                } else {
+                    rightMaxValue = maxValue;
+                }
+            }
+        }
+        maxValue = max[i + 1];
     }
 
     public static class SkillEffect implements Comparable<SkillEffect> {

@@ -1,0 +1,363 @@
+[
+  {
+    "mName": "武器派生",
+    "mData": {
+      "双剑1": "data/1903.html",
+      "双剑2": "data/2885.html",
+      "大剑1": "data/1900.html",
+      "大剑2": "data/2882.html",
+      "大锤1": "data/1904.html",
+      "大锤2": "data/2886.html",
+      "太刀1": "data/1901.html",
+      "太刀2": "data/2883.html",
+      "弓1": "data/1911.html",
+      "弓2": "data/2893.html",
+      "操虫棍": "data/1910.html",
+      "斩击斧1": "data/1908.html",
+      "斩击斧2": "data/2890.html",
+      "最终": "data/2713.html",
+      "片手剑1": "data/1902.html",
+      "片手剑2": "data/2884.html",
+      "狩猎笛1": "data/1905.html",
+      "狩猎笛2": "data/2887.html",
+      "盾斧": "data/1909.html",
+      "轻弩1": "data/1912.html",
+      "轻弩2": "data/2894.html",
+      "重弩1": "data/1913.html",
+      "重弩2": "data/2895.html",
+      "铳枪1": "data/1907.html",
+      "铳枪2": "data/2889.html",
+      "长枪1": "data/1906.html",
+      "长枪2": "data/2888.html"
+    }
+  },
+  {
+    "mName": "武器补足",
+    "mData": {
+      "笛旋律": "data/2602.html"
+    }
+  },
+  {
+    "mName": "防具",
+    "mData": {
+      "稀有度1": "data/2301.html",
+      "稀有度10": "data/2310.html",
+      "稀有度2": "data/2302.html",
+      "稀有度3": "data/2303.html",
+      "稀有度4": "data/2304.html",
+      "稀有度5": "data/2305.html",
+      "稀有度6": "data/2306.html",
+      "稀有度7": "data/2307.html",
+      "稀有度8-1": "data/2308.html",
+      "稀有度8-2": "data/2998.html",
+      "稀有度9": "data/2309.html",
+      "稀有度X": "data/2847.html",
+      "防具一览": "data/2300.html"
+    }
+  },
+  {
+    "mName": "装饰品",
+    "mData": {
+      "剑士用": "data/2581.html",
+      "神枪手用": "data/2582.html",
+      "通用": "data/2580.html"
+    }
+  },
+  {
+    "mName": "道具",
+    "mData": {
+      "あ行": "data/2101.html",
+      "か行": "data/2102.html",
+      "さ行": "data/2103.html",
+      "た行": "data/2104.html",
+      "は行": "data/2106.html",
+      "ま行": "data/2107.html",
+      "や行": "data/2108.html",
+      "ら行": "data/2109.html",
+      "わ行": "data/2110.html",
+      "之行": "data/2105.html",
+      "事件": "data/2117.html",
+      "植物": "data/2984.html",
+      "消耗": "data/2985.html",
+      "狩证": "data/2959.html",
+      "珠玉": "data/2113.html",
+      "矿石": "data/2112.html",
+      "票": "data/2118.html",
+      "端材": "data/2116.html",
+      "精算": "data/2119.html",
+      "虫": "data/2114.html",
+      "虫饵": "data/2111.html",
+      "道具一览": "data/2100.html",
+      "魚": "data/2115.html"
+    }
+  },
+  {
+    "mName": "交易窗口",
+    "mData": {
+      "增加道具": "data/2827.html",
+      "点数交换": "data/2826.html"
+    }
+  },
+  {
+    "mName": "道具入手",
+    "mData": {
+      "山菜爷交换": "data/2504.html",
+      "杂货屋": "data/2615.html",
+      "武具屋": "data/2617.html",
+      "潮币交换": "data/2988.html",
+      "调合列表": "data/2503.html"
+    }
+  },
+  {
+    "mName": "地图",
+    "mData": {
+      "冰海": "data/2410.html",
+      "原生林": "data/2409.html",
+      "古代林": "data/2400.html",
+      "地底火山": "data/2411.html",
+      "塔之秘境": "data/2413.html",
+      "孤岛": "data/2402.html",
+      "密林": "data/2975.html",
+      "斗技场": "data/2841.html",
+      "旧沙漠": "data/2412.html",
+      "极圏": "data/2961.html",
+      "森丘": "data/2404.html",
+      "水上斗技场": "data/2843.html",
+      "沙漠": "data/2969.html",
+      "沼地": "data/2405.html",
+      "溪流": "data/2403.html",
+      "溶岩岛": "data/2401.html",
+      "火山": "data/2407.html",
+      "灵峰": "data/2844.html",
+      "禁足地": "data/2845.html",
+      "立体斗技场": "data/2842.html",
+      "遗群岭": "data/2968.html",
+      "遗迹平原": "data/2408.html",
+      "雪山": "data/2406.html",
+      "龙之墓场": "data/2846.html"
+    }
+  },
+  {
+    "mName": "任务",
+    "mData": {
+      "G1": "data/2028.html",
+      "G2": "data/2029.html",
+      "G3": "data/2030.html",
+      "G4": "data/2996.html",
+      "挑战": "data/2034.html",
+      "斗技大会": "data/2035.html",
+      "村1": "data/2011.html",
+      "村10": "data/2020.html",
+      "村2": "data/2012.html",
+      "村3": "data/2013.html",
+      "村4": "data/2014.html",
+      "村5": "data/2015.html",
+      "村6": "data/2016.html",
+      "村7": "data/2017.html",
+      "村8": "data/2018.html",
+      "村9": "data/2019.html",
+      "村关键任务": "data/2859.html",
+      "村民的委托": "data/2824.html",
+      "活动G級": "data/2033.html",
+      "活动上位": "data/2032.html",
+      "活动下位": "data/2031.html",
+      "特殊许可": "data/2036.html",
+      "特许G級": "data/2997.html",
+      "狩技追加": "data/2952.html",
+      "装备解锁": "data/2953.html",
+      "设施强化": "data/2951.html",
+      "集1": "data/2021.html",
+      "集2": "data/2022.html",
+      "集3": "data/2023.html",
+      "集4": "data/2024.html",
+      "集5": "data/2025.html",
+      "集6": "data/2026.html",
+      "集7": "data/2027.html",
+      "集关键任务": "data/2987.html",
+      "食材追加": "data/2950.html"
+    }
+  },
+  {
+    "mName": "随从猫任务",
+    "mData": {
+      "G級": "data/2999.html",
+      "上位": "data/2822.html",
+      "下位": "data/2821.html"
+    }
+  },
+  {
+    "mName": "来访猎人",
+    "mData": {
+      "G級": "data/2614.html",
+      "上位": "data/2613.html",
+      "下位": "data/2612.html"
+    }
+  },
+  {
+    "mName": "技能",
+    "mData": {
+      "体力・耐力・回复": "data/2202.html",
+      "复合技能": "data/2207.html",
+      "技能一览": "data/2200.html",
+      "报酬・采集・调合": "data/2205.html",
+      "攻击・防御・回避": "data/2201.html",
+      "神枪手专用": "data/2204.html",
+      "耐性・无效化": "data/2203.html",
+      "随从猫・其他": "data/2206.html"
+    }
+  },
+  {
+    "mName": "狩技",
+    "mData": {
+      "狩技一览": "data/1847.html"
+    }
+  },
+  {
+    "mName": "武器操作",
+    "mData": {
+      "双剑操作": "data/1953.html",
+      "大剑操作": "data/1950.html",
+      "大锤操作": "data/1954.html",
+      "太刀操作": "data/1951.html",
+      "弓操作": "data/1961.html",
+      "操虫棍操作": "data/1960.html",
+      "斩击斧操作": "data/1958.html",
+      "片手剑操作": "data/1952.html",
+      "狩猎笛操作": "data/1955.html",
+      "盾斧操作": "data/1959.html",
+      "轻弩操作": "data/1962.html",
+      "重弩操作": "data/1963.html",
+      "铳枪操作": "data/1957.html",
+      "长枪操作": "data/1956.html"
+    }
+  },
+  {
+    "mName": "随从猫装备",
+    "mData": {
+      "武器稀有度1～3": "data/2551.html",
+      "武器稀有度4～7": "data/2552.html",
+      "武器稀有度8～X": "data/2553.html",
+      "防具稀有度1～3": "data/2556.html",
+      "防具稀有度4～7": "data/2557.html",
+      "防具稀有度8～X": "data/2558.html"
+    }
+  },
+  {
+    "mName": "随从猫技能",
+    "mData": {
+      "支援行动": "data/2832.html",
+      "猎猫大全": "data/cat.html",
+      "被动技能": "data/2829.html"
+    }
+  },
+  {
+    "mName": "猫饭",
+    "mData": {
+      "料理一览": "data/3001.html",
+      "料理被动技能": "data/2505.html",
+      "每日抽奖": "data/2960.html",
+      "食事技能效果": "data/2506.html"
+    }
+  },
+  {
+    "mName": "怪物",
+    "mData": {
+      "临界碎龙": "data/2991.html",
+      "冰牙龙": "data/2966.html",
+      "千刃龙": "data/2831.html",
+      "土砂龙": "data/2965.html",
+      "夜鸟": "data/1845.html",
+      "大型怪物": "data/2501.html",
+      "大怪鸟": "data/1840.html",
+      "大雪主白兔兽": "data/2863.html",
+      "天廻龙": "data/2864.html",
+      "天慧龙": "data/2964.html",
+      "天眼泡狐龙": "data/2973.html",
+      "奇猿狐": "data/1850.html",
+      "宝缠爆锤龙": "data/2869.html",
+      "小型怪物": "data/2502.html",
+      "尾锤龙": "data/1976.html",
+      "岚龙": "data/1979.html",
+      "岩穿鬼蛙": "data/2837.html",
+      "岩龙": "data/2983.html",
+      "崩龙": "data/2876.html",
+      "巨兽": "data/1831.html",
+      "影蜘蛛": "data/2979.html",
+      "彻甲虫": "data/2857.html",
+      "恐暴龙": "data/2871.html",
+      "斩龙": "data/1829.html",
+      "极度饥饿恐暴龙": "data/2872.html",
+      "桃毛兽王": "data/2971.html",
+      "毒怪鸟": "data/1972.html",
+      "水兽": "data/1978.html",
+      "水龙": "data/1968.html",
+      "沙龙王": "data/1974.html",
+      "泡狐龙": "data/1832.html",
+      "海龙": "data/1861.html",
+      "混沌呻吟黑蚀龙": "data/2990.html",
+      "潜口龙": "data/1858.html",
+      "激昂的金狮子": "data/2874.html",
+      "炎戈龙": "data/1848.html",
+      "炎王龙": "data/1973.html",
+      "烬灭刃斩龙": "data/2870.html",
+      "煌黑龙": "data/2879.html",
+      "熔岩龙": "data/1965.html",
+      "爆锤龙": "data/1966.html",
+      "独眼黑狼鸟": "data/2868.html",
+      "电龙": "data/1860.html",
+      "电龙（新）": "data/1830.html",
+      "白兔兽": "data/1980.html",
+      "白疾风迅龙": "data/2838.html",
+      "白速龙王": "data/2989.html",
+      "盾蟹": "data/1854.html",
+      "矛碎盾蟹": "data/2836.html",
+      "碎龙": "data/1859.html",
+      "祖龙": "data/2995.html",
+      "紫毒姫雌火龙": "data/2834.html",
+      "红盔青熊兽": "data/2835.html",
+      "红速龙王": "data/1981.html",
+      "红黑龙": "data/2994.html",
+      "绞蛇龙": "data/1849.html",
+      "老山龙": "data/2977.html",
+      "胧隐夜鸟": "data/2981.html",
+      "荒钩爪轰龙": "data/2840.html",
+      "蓝速龙王": "data/1984.html",
+      "角龙": "data/2962.html",
+      "赤甲兽": "data/1977.html",
+      "跳狗龙": "data/1836.html",
+      "轰龙": "data/1855.html",
+      "迅龙": "data/1839.html",
+      "重甲虫": "data/1971.html",
+      "野猪王": "data/1975.html",
+      "金火龙": "data/2877.html",
+      "金狮子": "data/2873.html",
+      "金雷公雷狼龙": "data/2839.html",
+      "鏖魔角龙": "data/2963.html",
+      "钢龙": "data/1970.html",
+      "铠裂镰蟹": "data/2982.html",
+      "铠龙": "data/2980.html",
+      "银岭巨兽": "data/2972.html",
+      "银火龙": "data/2878.html",
+      "镰蟹": "data/1852.html",
+      "阁螳螂": "data/2992.html",
+      "阁螳螂·机甲": "data/3002.html",
+      "雄火龙": "data/1863.html",
+      "雌火龙": "data/1862.html",
+      "雪狮子王": "data/1857.html",
+      "雷狼龙": "data/1853.html",
+      "霞龙": "data/1967.html",
+      "霸龙": "data/2875.html",
+      "青熊兽": "data/1964.html",
+      "青电主电龙（新）": "data/2974.html",
+      "骸龙": "data/2858.html",
+      "鬼蛙": "data/1856.html",
+      "鬼鲛": "data/1851.html",
+      "麒麟": "data/1969.html",
+      "黄速龙王": "data/1983.html",
+      "黑狼鸟": "data/1846.html",
+      "黑蚀龙": "data/2830.html",
+      "黑龙": "data/2993.html",
+      "黒炎王雄火龙": "data/2833.html"
+    }
+  }
+]

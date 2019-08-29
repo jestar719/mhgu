@@ -22,4 +22,5 @@ vName='1.9.0'
     //其它库
     gson = "com.google.code.gson:gson:2.8.5"
     flowlayout = 'com.hyman:flowlayout-lib:1.1.2'
+    jsoup='org.jsoup:jsoup:1.12.1'
 }

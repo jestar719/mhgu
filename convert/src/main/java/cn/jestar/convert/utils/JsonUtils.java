@@ -5,7 +5,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -56,5 +59,12 @@ public class JsonUtils {
 
     public static <T> T fromStringByType(FileReader reader, Type type) {
         return sGson.fromJson(reader, type);
+    }
+
+    public static void writeJson(File file, Object obj) throws IOException {
+        String s = sGson.toJson(obj);
+        FileWriter writer = new FileWriter(file);
+        writer.write(s);
+        writer.close();
     }
 }

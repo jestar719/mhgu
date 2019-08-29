@@ -7,6 +7,15 @@ public class LinkInfo {
     private String mName;
     private Map<String, String> mData = new TreeMap<>();
 
+    public LinkInfo() {
+    }
+
+    public LinkInfo(String name) {
+        mName = name;
+    }
+
+
+
     public String getName() {
         return mName;
     }
