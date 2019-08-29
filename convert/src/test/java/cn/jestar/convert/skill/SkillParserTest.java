@@ -1,14 +1,19 @@
 package cn.jestar.convert.skill;
 
+import com.google.gson.reflect.TypeToken;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -65,13 +70,70 @@ public class SkillParserTest {
         }
         JsonUtils.writeJson(new File(Constants.TEMP_TRANSLATED_PATH, "skill/skillNames.json"), map);
     }
+    @Test
+    public void getJwe() throws IOException {
+        File json = new File(Constants.TEMP_TRANSLATED_PATH, "skill/jwd.json");
+        Map<String, String> map = JsonUtils.fromString(new FileReader(json), Map.class);
+        Map<String, String> jwerd = mSkillParser.parseJwerd();
+        Set<String> strings = jwerd.keySet();
+        HashMap<String, String> hashMap = new HashMap<>();
+        for (String string : strings) {
+            String s = string.substring(0, string.length() - 3);
+            String s1 = map.get(s);
+            System.out.println(String.format("%s %s", s, s1));
+            if (s1 != null) {
+                hashMap.put(string, string.replace(s, s1));
+            }
+        }
+        Map<String, Map<String, String>> list = new HashMap<>();
+        list.put("index", jwerd);
+        list.put("name", hashMap);
+        JsonUtils.writeJson(json, list);
+    }
+
+
+    @Test
+    public void splitSkillConvertText() throws IOException {
+        String skillName = "SkillName";
+        String effectName = "EffectName";
+        Map<String, String> map = JsonUtils.fromString(new FileReader(mSkills), Map.class);
+        File file = new File(Constants.TEMP_TRANSLATED_PATH, "skill/skillNames.json");
+        Type type = new TypeToken<HashMap<String, List<String>>>() {
+        }.getType();
+        Map<String, List<String>> names = JsonUtils.fromStringByType(new FileReader(file), type);
+        Map<String, Map<String, String>> map1 = new LinkedHashMap<>();
+        Map<String, String> map2 = new LinkedHashMap<>();
+        for (String key : names.get(skillName)) {
+            String value = map.get(key);
+            if (value != null) {
+                map2.put(key, value);
+            }
+        }
+        map1.put(skillName, map2);
+        map2 = new LinkedHashMap<>();
+        for (String key : names.get(effectName)) {
+            String value = map.get(key);
+            if (value != null) {
+                map2.put(key, value);
+            }
+        }
+        map1.put(effectName, map2);
+        JsonUtils.writeJson(new File(Constants.TEMP_TRANSLATED_PATH, "skill/full_skills.json"), map1);
+    }
 
     @Test
     public void convertSkillTest() throws IOException {
-        File file = new File(Constants.DATA_PATH, "2200.html");
-        File file1 = new File(Constants.IDA_PATH, "286087.html");
-        Map<String, String> map = JsonUtils.fromString(new FileReader(mSkills), Map.class);
-        mSkillParser.convertHtml(file1, map);
+        FileReader reader = new FileReader(new File(Constants.TEMP_TRANSLATED_PATH, "skill/jwd.json"));
+        Type type = new TypeToken<Map<String, Map<String, String>>>() {
+        }.getType();
+        Map<String, Map<String, String>> map = JsonUtils.fromStringByType(reader, type);
+        Map<String, String> name = map.get("name");
+        Map<String, String> map1 = JsonUtils.fromString(new FileReader(mSkills), Map.class);
+        map1.putAll(name);
+        for (String s : mSkillParser.parseSkillName().values()) {
+            mSkillParser.convertSkillInDetail(new File(Constants.MH_PATH, s), map1);
+        }
+
     }
 
     /**

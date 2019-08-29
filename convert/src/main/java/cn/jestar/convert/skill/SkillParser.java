@@ -7,27 +7,26 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.SkillBean;
-import cn.jestar.convert.index.IndexParser;
 
 import static cn.jestar.convert.index.IndexParser.getA;
 import static cn.jestar.convert.index.IndexParser.getDoc;
+import static cn.jestar.convert.index.IndexParser.parseAlist;
+
 
 /**
- * 技能的解析
- * Created by 花京院 on 2019/8/29.
  */
-
 public class SkillParser {
 
     public Map<String, String> parseSkillName() throws IOException {
         File file = new File(Constants.DATA_PATH, "2200.html");
         Document doc = getDoc(file);
         Element a = doc.select("table.t1").first();
-        Map map = IndexParser.parseAlist(a);
+        Map map = parseAlist(a);
         return map;
     }
 
@@ -66,10 +65,25 @@ public class SkillParser {
         return skillBean;
     }
 
+    public Map<String, String> parseJwerd() throws IOException {
+        Map<String, String> map = new LinkedHashMap<>();
+        for (int i = 2580; i <= 2582; i++) {
+            File file = new File(Constants.DATA_PATH, String.format("%s.html", i));
+            Document doc = getDoc(file);
+            Elements elements = doc.select("td[rowspan=2] a");
+            convertInElements(map, elements);
+        }
+        return map;
+    }
+
     public void convertHtml(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInA(map, getA(body));
+        convertInElements(map, getA(body));
+        writeDoc(file, doc);
+    }
+
+    public void writeDoc(File file, Document doc) throws IOException {
         FileWriter writer = new FileWriter(file);
         writer.write(doc.outerHtml());
         writer.close();
@@ -78,29 +92,49 @@ public class SkillParser {
     public void convertSkillInType(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInA(map, getA(body));
+        convertInElements(map, getA(body));
         Elements span = body.getElementsByTag("span");
-        convertInA(map, span);
-        FileWriter writer = new FileWriter(file);
-        writer.write(doc.outerHtml());
-        writer.close();
+        convertInElements(map, span);
+        writeDoc(file, doc);
     }
 
-    private void convertInA(Map<String, String> map, Elements elements) {
+    public void convertSkillInDetail(File file, Map<String, String> map) throws IOException {
+        Document doc = getDoc(file);
+        Element body = doc.body();
+        convertInElements(map, getA(body));
+        Elements select = body.select("table.t1");
+        convertInElements(map, select.first().select("td.b"));
+        replaceElement(map, select.last().selectFirst("td"));
+        convertInElements(map, doc.select("th"));
+        convertInElements(map, doc.select("h4"));
+        Element td = doc.select("div.box1").last();
+        String[] split = map.get(td.text().trim()).split("<br>");
+        td.text("");
+        for (String s : split) {
+            td.append("<p>" + s + "</p>");
+        }
+        writeDoc(file, doc);
+    }
+
+    public void convertInElements(Map<String, String> map, Elements elements) {
         for (Element element : elements) {
-            String text = element.text().trim();
-            int index = text.indexOf("+");
-            if (index > 0 || (index = text.indexOf("-")) > 0) {
-                String substring = text.substring(0, index);
-                String s = map.get(substring);
-                if (s != null) {
-                    element.text(text.replace(substring, s));
-                }
-            } else {
-                String s = map.get(text);
-                if (s != null) {
-                    element.text(s);
-                }
+            replaceElement(map, element);
+        }
+    }
+
+    public void replaceElement(Map<String, String> map, Element element) {
+        String text = element.text().trim();
+        int index = text.indexOf("+");
+        if (index > 0 || (index = text.indexOf("-")) > 0) {
+            String substring = text.substring(0, index);
+            String s = map.get(substring);
+            if (s != null) {
+                element.text(text.replace(substring, s));
+            }
+        } else {
+            String s = map.get(text);
+            if (s != null) {
+                element.text(s);
             }
         }
     }
