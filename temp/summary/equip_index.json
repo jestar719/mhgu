@@ -2,7 +2,6 @@
   {
     "mName": "equip_index",
     "mData": {
-      "全防具一览": "data/2300.html",
       "防具稀有度1": "data/2301.html",
       "防具稀有度2": "data/2302.html",
       "防具稀有度3": "data/2303.html",

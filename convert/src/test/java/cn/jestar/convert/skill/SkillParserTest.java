@@ -18,6 +18,7 @@ import java.util.Map;
 import java.util.Set;
 
 import cn.jestar.convert.Constants;
+import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.bean.SkillBean;
 import cn.jestar.convert.utils.JsonUtils;
 
@@ -150,6 +151,28 @@ public class SkillParserTest {
             mSkillParser.convertSkillInType(new File(Constants.DATA_PATH, page), map);
         }
         mSkillParser.convertHtml(new File(Constants.DATA_PATH, String.format(child, 2200)), map);
+    }
+
+    /**
+     * 翻译一览和各分类的技能
+     *
+     * @throws IOException
+     */
+    @Test
+    public void convertSkillInEquipTest() throws IOException {
+        Map<String, String> map = JsonUtils.fromString(new FileReader(mSkills), Map.class);
+        File file = new File(Constants.TEMP_SUMMARY_PATH, "equip_index.json");
+//        mSkillParser.convertHtml(new File(Constants.DATA_PATH,"2998.html"),map);
+//        mSkillParser.convertSkillInEquip(new File(Constants.IDA_PATH,"290518.html"),map);
+        List<LinkInfo> list = JsonUtils.toList(new FileReader(file), LinkInfo.class);
+        LinkInfo info = list.get(0);
+        Collection<String> values = info.getData().values();
+        for (String value : values) {
+            mSkillParser.convertHtml(new File(Constants.MH_PATH, value), map);
+        }
+        for (String s : list.get(1).getData().values()) {
+            mSkillParser.convertSkillInEquip(new File(Constants.MH_PATH, s), map);
+        }
     }
 
 }

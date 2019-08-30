@@ -116,6 +116,15 @@ public class SkillParser {
         writeDoc(file, doc);
     }
 
+    public void convertSkillInEquip(File file, Map<String, String> map) throws IOException {
+        Document doc = getDoc(file);
+        Element body = doc.body();
+        convertInElements(map, getA(body));
+        convertInElements(map, body.select("table.t1 th"));
+        convertInElements(map, body.select("table.t1 span.c_g"));
+        writeDoc(file, doc);
+    }
+
     public void convertInElements(Map<String, String> map, Elements elements) {
         for (Element element : elements) {
             replaceElement(map, element);

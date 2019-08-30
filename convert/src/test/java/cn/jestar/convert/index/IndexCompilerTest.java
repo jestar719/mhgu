@@ -95,6 +95,5 @@ public class IndexCompilerTest {
         info.setData(IndexParser.parseAlist(a));
         list.add(info);
         JsonUtils.writeJson(new File(Constants.TEMP_SUMMARY_PATH, "equip_index.json"), list);
-
     }
 }
