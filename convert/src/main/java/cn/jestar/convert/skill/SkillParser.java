@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.SkillBean;
@@ -124,6 +125,43 @@ public class SkillParser {
         convertInElements(map, body.select("table.t1 span.c_g"));
         writeDoc(file, doc);
     }
+
+    public void convertSkillInJwerldy(File file, Map<String, String> map, Set<String> set) throws IOException {
+        Document doc = getDoc(file);
+        Element body = doc.body();
+        convertInElements(map, getA(body));
+        Element h2 = body.selectFirst("h2");
+        String text = h2.text();
+        String trim = text.split("-")[0].trim();
+        String s = map.get(trim);
+        if (s != null) {
+            h2.text(text.replace(trim, s));
+        }
+        replaceElement(map, body.getElementsByTag("h3").last());
+        Elements t1 = body.getElementsByTag("table");
+        Elements tag = t1.last().getElementsByTag("a");
+        for (Element element : tag) {
+            set.add(element.attr("href").replace("../", ""));
+        }
+        Element td = t1.first().selectFirst("td");
+        String text1 = td.text().split(" ")[0].trim();
+        String s1 = map.get(text1);
+        if (s1 != null) {
+            Elements span = td.getElementsByTag("span");
+            td.text("");
+            Element p = new Element("p");
+            p.text(s1);
+            td.appendChild(p);
+            for (Element element : span) {
+                p = new Element("p");
+                p.text(element.text());
+                td.appendChild(p);
+            }
+        }
+        writeDoc(file, doc);
+    }
+
+
 
     public void convertInElements(Map<String, String> map, Elements elements) {
         for (Element element : elements) {

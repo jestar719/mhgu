@@ -2,6 +2,8 @@ package cn.jestar.convert.skill;
 
 import com.google.gson.reflect.TypeToken;
 
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,6 +13,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -20,6 +23,7 @@ import java.util.Set;
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.bean.SkillBean;
+import cn.jestar.convert.index.IndexParser;
 import cn.jestar.convert.utils.JsonUtils;
 
 /**
@@ -154,7 +158,7 @@ public class SkillParserTest {
     }
 
     /**
-     * 翻译一览和各分类的技能
+     * 翻译防具相关的技能
      *
      * @throws IOException
      */
@@ -173,6 +177,42 @@ public class SkillParserTest {
         for (String s : list.get(1).getData().values()) {
             mSkillParser.convertSkillInEquip(new File(Constants.MH_PATH, s), map);
         }
+    }
+
+    /**
+     * 翻译防具相关的技能
+     *
+     * @throws IOException
+     */
+    @Test
+    public void convertSkillInJwerldyTest() throws IOException {
+        File file = new File(Constants.TEMP_TRANSLATED_PATH, "skill/full_skills.json");
+        File file1 = new File(Constants.TEMP_TRANSLATED_PATH, "skill/jwd.json");
+        Type type = new TypeToken<Map<String, Map<String, String>>>() {
+        }.getType();
+        Map<String, Map<String, String>> map = JsonUtils.fromStringByType(new FileReader(file), type);
+        Map<String, Map<String, String>> jwdMap = JsonUtils.fromStringByType(new FileReader(file1), type);
+        Map<String, String> texts = map.get("SkillName");
+        Map<String, String> jwd = jwdMap.get("name");
+        texts.putAll(jwd);
+        HashSet<String> set = new HashSet<>();
+        for (int i = 2580; i <= 2582; i++) {
+            File file2 = new File(Constants.DATA_PATH, i + ".html");
+            mSkillParser.convertHtml(file2, texts);
+        }
+        for (String index : jwdMap.get("index").values()) {
+            File file2 = new File(Constants.MH_PATH, index);
+            mSkillParser.convertSkillInJwerldy(file2, texts, set);
+        }
+        for (String s : set) {
+            File file2 = new File(Constants.MH_PATH, s);
+            Document doc = IndexParser.getDoc(file2);
+            Elements a = doc.getElementsByTag("td").last().select("a");
+            mSkillParser.convertInElements(jwd, a);
+            mSkillParser.writeDoc(file2, doc);
+        }
+
+
     }
 
 }
