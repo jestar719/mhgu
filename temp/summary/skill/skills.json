@@ -1,0 +1,5942 @@
+[
+  {
+    "id": 0,
+    "name": "荒钩爪",
+    "effectList": [
+      {
+        "name": "荒钩爪之魂",
+        "description": "快吃+2 + 高级耳栓",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230100.html"
+  },
+  {
+    "id": 0,
+    "name": "居合",
+    "effectList": [
+      {
+        "name": "居合术【力】",
+        "description": "拔刀术【力】 + 收刀术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286037.html"
+  },
+  {
+    "id": 0,
+    "name": "怒",
+    "effectList": [
+      {
+        "name": "逆鱗",
+        "description": "火场怪力+2 + 毅力",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286038.html"
+  },
+  {
+    "id": 0,
+    "name": "岩穿",
+    "effectList": [
+      {
+        "name": "岩穿之魂",
+        "description": "火场怪力+2 + 俯拾即食",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230101.html"
+  },
+  {
+    "id": 0,
+    "name": "泡沫",
+    "effectList": [
+      {
+        "name": "泡沫之舞",
+        "description": "回避行动被泡沫覆盖，无敌时间增加，紧急回避消耗的耐力下降",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/226910.html"
+  },
+  {
+    "id": 0,
+    "name": "里会心",
+    "effectList": [
+      {
+        "name": "残忍会心",
+        "description": "负会心的攻击一定几率会转化为强力的会心攻击。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286039.html"
+  },
+  {
+    "id": 0,
+    "name": "掩人耳目",
+    "effectList": [
+      {
+        "name": "暗中活跃",
+        "description": "装填数UP + 调和成功率+20% + 隐密",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286040.html"
+  },
+  {
+    "id": 0,
+    "name": "运气",
+    "effectList": [
+      {
+        "name": "激运",
+        "description": "任务报酬的抽奖报酬获得率从平时的22/32变化为31/32。",
+        "value": 20
+      },
+      {
+        "name": "强运",
+        "description": "任务报酬的抽奖报酬获得率从平时的22/32变化为28/32。",
+        "value": 15
+      },
+      {
+        "name": "幸运",
+        "description": "任务报酬的抽奖报酬获得率从平时的22/32变化为25/32。",
+        "value": 10
+      },
+      {
+        "name": "霉运",
+        "description": "任务报酬的抽奖报酬获得率从平时的22/32变化为16/32。",
+        "value": -10
+      },
+      {
+        "name": "灾难",
+        "description": "任务报酬的抽奖报酬获得率从平时的22/32变化为8/32。",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      7,
+      7
+    ],
+    "url": "../ida/183524.html"
+  },
+  {
+    "id": 0,
+    "name": "搬运",
+    "effectList": [
+      {
+        "name": "搬运达人",
+        "description": "搬运时的移动速度变快。就算从高处跳下也不容易使搬运物掉落",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183525.html"
+  },
+  {
+    "id": 0,
+    "name": "英雄之盾",
+    "effectList": [
+      {
+        "name": "英雄守护",
+        "description": "小伤害无效化（5点以下），状态异常，道具，慢慢的体力减少的攻击也能无效化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/230102.html"
+  },
+  {
+    "id": 0,
+    "name": "ＳＰ持续",
+    "effectList": [
+      {
+        "name": "ＳＰ时间延长",
+        "description": "因SP狩技发动的SP状态会延长",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      3,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/286041.html"
+  },
+  {
+    "id": 0,
+    "name": "炎热适应",
+    "effectList": [
+      {
+        "name": "南风猎手",
+        "description": "暑热无效，在暑热区域攻击力、防御力上升。饮用热饮后攻击力进一步上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      7,
+      0,
+      7
+    ],
+    "url": "../ida/230103.html"
+  },
+  {
+    "id": 0,
+    "name": "鏖魔",
+    "effectList": [
+      {
+        "name": "鏖魔之魂",
+        "description": "攻击力UP【大】 + 回避性能+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286042.html"
+  },
+  {
+    "id": 0,
+    "name": "大雪主",
+    "effectList": [
+      {
+        "name": "大雪主的魂",
+        "description": "回避距离UP + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/226911.html"
+  },
+  {
+    "id": 0,
+    "name": "胧隐",
+    "effectList": [
+      {
+        "name": "胧隐之魂",
+        "description": "高级耳栓 + 装填速度+3 + 人剑一体",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286043.html"
+  },
+  {
+    "id": 0,
+    "name": "格挡强化",
+    "effectList": [
+      {
+        "name": "格挡强化",
+        "description": "可以防御通常不能防御的攻击。在防御特定的攻击后，不会出现一部分道具无法使用，防御力Down的状态",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      6,
+      4,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183526.html"
+  },
+  {
+    "id": 0,
+    "name": "格挡性能",
+    "effectList": [
+      {
+        "name": "格挡性能+2",
+        "description": "抑制防御时的后退，防御时的威力-20",
+        "value": 15
+      },
+      {
+        "name": "格挡性能+1",
+        "description": "抑制防御时的后退，防御时的威力-10",
+        "value": 10
+      },
+      {
+        "name": "格挡性能-1",
+        "description": "防御时更容易后退，防御时的威力+10",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183527.html"
+  },
+  {
+    "id": 0,
+    "name": "会心强化",
+    "effectList": [
+      {
+        "name": "超会心",
+        "description": "会心时的伤害是通常的1.25倍现在增加到1.4倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      5,
+      5
+    ],
+    "url": "../ida/226912.html"
+  },
+  {
+    "id": 0,
+    "name": "回避距离",
+    "effectList": [
+      {
+        "name": "回避距离UP",
+        "description": "回转回避的移动距离增",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 4,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      4,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183528.html"
+  },
+  {
+    "id": 0,
+    "name": "闪避术",
+    "effectList": [
+      {
+        "name": "杂技师",
+        "description": "体术+1 + 回避性能+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286044.html"
+  },
+  {
+    "id": 0,
+    "name": "回避性能",
+    "effectList": [
+      {
+        "name": "回避性能+2",
+        "description": "回转回避的无敌时间从0.2秒增加到0.4秒",
+        "value": 15
+      },
+      {
+        "name": "回避性能+1",
+        "description": "回转回避的无敌时间从0.2秒增加到0.33秒",
+        "value": 10
+      },
+      {
+        "name": "回避性能DOWN",
+        "description": "回转回避的无敌时间从0.2秒减少到0.1秒",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 4,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183530.html"
+  },
+  {
+    "id": 0,
+    "name": "回复速度",
+    "effectList": [
+      {
+        "name": "回复速度+2",
+        "description": "体力红色槽回复速度4倍",
+        "value": 15
+      },
+      {
+        "name": "回复速度+1",
+        "description": "体力红色槽回复速度2倍",
+        "value": 10
+      },
+      {
+        "name": "回复速度-1",
+        "description": "体力红色槽回复速度二分之一",
+        "value": -10
+      },
+      {
+        "name": "回复速度-2",
+        "description": "体力红色槽回复速度四分之一",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 12,
+    "maxValue": 12,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      4,
+      0,
+      12,
+      0,
+      0,
+      12
+    ],
+    "url": "../ida/183531.html"
+  },
+  {
+    "id": 0,
+    "name": "回复量",
+    "effectList": [
+      {
+        "name": "体力回复量UP",
+        "description": "体力回复道具的回复量增加到1.25倍",
+        "value": 10
+      },
+      {
+        "name": "体力回复量DOWN",
+        "description": "体力回复道具的回复量减少到0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183532.html"
+  },
+  {
+    "id": 0,
+    "name": "扩散弹追加",
+    "effectList": [
+      {
+        "name": "扩散弹全LV追加",
+        "description": "可使用所有LV的扩散弹",
+        "value": 15
+      },
+      {
+        "name": "扩散弹全LV追加",
+        "description": "可使用LV1扩散弹",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183533.html"
+  },
+  {
+    "id": 0,
+    "name": "加护",
+    "effectList": [
+      {
+        "name": "精灵加护",
+        "description": "4分之一的概率，受到的伤害减少30%",
+        "value": 10
+      },
+      {
+        "name": "恶灵作崇",
+        "description": "4分之一的概率，受到的伤害增加30%",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 9,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      9,
+      7,
+      10,
+      10
+    ],
+    "url": "../ida/183534.html"
+  },
+  {
+    "id": 0,
+    "name": "忍耐",
+    "effectList": [
+      {
+        "name": "虎视眈眈",
+        "description": "受到伤害时，狩猎技、勇气槽、炼金槽也会积蓄",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/286045.html"
+  },
+  {
+    "id": 0,
+    "name": "雷属性攻击",
+    "effectList": [
+      {
+        "name": "雷属性攻击强化+2",
+        "description": "雷属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "雷属性攻击强化+1",
+        "description": "雷属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "雷属性攻击弱化",
+        "description": "雷属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      13,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183535.html"
+  },
+  {
+    "id": 0,
+    "name": "雷耐性",
+    "effectList": [
+      {
+        "name": "雷耐性【大】",
+        "description": "雷耐性+20。合计耐性超过20时，雷属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "雷耐性【小】",
+        "description": "雷耐性+15。合计耐性超过10时，雷属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "雷耐性弱化",
+        "description": "雷耐性-20",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183536.html"
+  },
+  {
+    "id": 0,
+    "name": "猎人",
+    "effectList": [
+      {
+        "name": "猎人生活",
+        "description": "变得容易做烤肉。就算没有地图也能显示小地图。钓鱼时在首次拉杆中上钩。鱼饵道具调合成功率100%。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183537.html"
+  },
+  {
+    "id": 0,
+    "name": "顽强",
+    "effectList": [
+      {
+        "name": "铁壁",
+        "description": "防御力UP【中】 + 铁面",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286046.html"
+  },
+  {
+    "id": 0,
+    "name": "观察眼",
+    "effectList": [
+      {
+        "name": "捕获精通",
+        "description": "标记时，在可捕获的时候图标出现白色闪烁。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183539.html"
+  },
+  {
+    "id": 0,
+    "name": "贯通弹强化",
+    "effectList": [
+      {
+        "name": "贯通弹・贯通矢UP",
+        "description": "貫通弾、貫通矢的威力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183540.html"
+  },
+  {
+    "id": 0,
+    "name": "贯通弹追加",
+    "effectList": [
+      {
+        "name": "贯通弹全LV追加",
+        "description": "可使用所有LV的贯通弹",
+        "value": 15
+      },
+      {
+        "name": "贯通弹LV1追加",
+        "description": "可使用LV1贯通弹",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183541.html"
+  },
+  {
+    "id": 0,
+    "name": "寒冷适应",
+    "effectList": [
+      {
+        "name": "北风猎手",
+        "description": "寒冷无效，在寒冷区域攻击力、防御力上升。饮用冷饮后攻击力进一步上升。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      7,
+      0,
+      7
+    ],
+    "url": "../ida/226913.html"
+  },
+  {
+    "id": 0,
+    "name": "祈愿",
+    "effectList": [
+      {
+        "name": "祝福",
+        "description": "体力回复量UP + 精灵加护",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286047.html"
+  },
+  {
+    "id": 0,
+    "name": "昏厥",
+    "effectList": [
+      {
+        "name": "昏厥无效",
+        "description": "不会进入气绝状态",
+        "value": 15
+      },
+      {
+        "name": "昏厥概率减半",
+        "description": "气绝将发生时，有2分之一的概率气绝无效化",
+        "value": 10
+      },
+      {
+        "name": "昏厥加倍",
+        "description": "气绝时间加倍、气绝回复时输入的摇杆、按键数加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183543.html"
+  },
+  {
+    "id": 0,
+    "name": "反复无常",
+    "effectList": [
+      {
+        "name": "神明的反复无常",
+        "description": "铁镐系、虫网系、笛系、回旋镖が1/2的確率不会坏掉",
+        "value": 15
+      },
+      {
+        "name": "精灵的反复无常",
+        "description": "铁镐系、虫网系、笛系、回旋镖が1/3的確率不会坏掉",
+        "value": 10
+      },
+      {
+        "name": "恶灵的反复无常",
+        "description": "铁镐系、虫网系、笛系、回旋镖が1/4的確率容易变坏",
+        "value": -10
+      },
+      {
+        "name": "悪魔的反复无常",
+        "description": "铁镐系、虫网系、笛系、回旋镖が1/2的確率容易变坏",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183545.html"
+  },
+  {
+    "id": 0,
+    "name": "暴怒",
+    "effectList": [
+      {
+        "name": "反怒",
+        "description": "体力槽存在红色部分的时候攻击力提升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/230104.html"
+  },
+  {
+    "id": 0,
+    "name": "逆境",
+    "effectList": [
+      {
+        "name": "不屈",
+        "description": "1回猫车后，攻击力1.1倍，防御力上升15%。2回后，攻击力1.3倍，防御力上升30%",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "maxValue": 5,
+    "mMaxValues": [
+      4,
+      0,
+      5,
+      5,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    "url": "../ida/183546.html"
+  },
+  {
+    "id": 0,
+    "name": "绝境",
+    "effectList": [
+      {
+        "name": "死中求生",
+        "description": "状态异常时攻击力上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/226914.html"
+  },
+  {
+    "id": 0,
+    "name": "狂击耐性",
+    "effectList": [
+      {
+        "name": "无我之境",
+        "description": "容易克服狂龙病毒，另外在狂击化时会心率上升15%-30%",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "maxValue": 7,
+    "mMaxValues": [
+      3,
+      0,
+      0,
+      5,
+      5,
+      0,
+      7,
+      0,
+      7
+    ],
+    "url": "../ida/183547.html"
+  },
+  {
+    "id": 0,
+    "name": "强击瓶追加",
+    "effectList": [
+      {
+        "name": "强击瓶全LV追加",
+        "description": "全LV的強击瓶可以使用",
+        "value": 15
+      },
+      {
+        "name": "强击瓶LV1追加",
+        "description": "強击瓶LV1可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "maxValue": 12,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0,
+      12
+    ],
+    "url": "../ida/183548.html"
+  },
+  {
+    "id": 0,
+    "name": "耐力回复",
+    "effectList": [
+      {
+        "name": "耐力急速回复",
+        "description": "耐力的回复速度加倍",
+        "value": 10
+      },
+      {
+        "name": "耐力回复迟缓",
+        "description": "耐力回复速度减少到0.75",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183549.html"
+  },
+  {
+    "id": 0,
+    "name": "锋利度",
+    "effectList": [
+      {
+        "name": "利刃",
+        "description": "通常攻击、铳枪的炮击、龙击炮、大剑和蓄力斧的防御等造成的斩味下降减少至2分之一。但弹刀时的下降值不变。",
+        "value": 10
+      },
+      {
+        "name": "钝刃",
+        "description": "斩位的消耗加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183550.html"
+  },
+  {
+    "id": 0,
+    "name": "金雷公",
+    "effectList": [
+      {
+        "name": "金雷公之魂",
+        "description": "力量解放+2 + 体术+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230105.html"
+  },
+  {
+    "id": 0,
+    "name": "银峰",
+    "effectList": [
+      {
+        "name": "银峰之魂",
+        "description": "长跑健将 + 钝器手 + 通常弹・连射矢UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286048.html"
+  },
+  {
+    "id": 0,
+    "name": "贪吃鬼",
+    "effectList": [
+      {
+        "name": "俯拾即食",
+        "description": "吃肉时耐力最大值额外增加25。另外食用特定道具时スタミナ也会额外增加",
+        "value": 15
+      },
+      {
+        "name": "吃饱喝足",
+        "description": "吃肉时耐力最大值额外增加25",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183551.html"
+  },
+  {
+    "id": 0,
+    "name": "KO",
+    "effectList": [
+      {
+        "name": "KO术",
+        "description": "气绝值1.1倍（不包括操虫棍的猎虫攻击）",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 4,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      10,
+      10,
+      10
+    ],
+    "url": "../ida/183552.html"
+  },
+  {
+    "id": 0,
+    "name": "洁癖",
+    "effectList": [
+      {
+        "name": "舞斗家",
+        "description": "最佳状态 + 回避距离UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286049.html"
+  },
+  {
+    "id": 0,
+    "name": "气息",
+    "effectList": [
+      {
+        "name": "隐密",
+        "description": "变得不容易被怪物视为攻击目标",
+        "value": 10
+      },
+      {
+        "name": "挑衅",
+        "description": "变得容易被被怪物视为攻击目标",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183554.html"
+  },
+  {
+    "id": 0,
+    "name": "减气攻击",
+    "effectList": [
+      {
+        "name": "夺取耐力",
+        "description": "打击属性(抜刀術【力】の斬撃、弩的减气弹、弓的曲射、减气瓶)造成的减气伤害1.2倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 4,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      10,
+      10,
+      10
+    ],
+    "url": "../ida/183555.html"
+  },
+  {
+    "id": 0,
+    "name": "减气瓶追加",
+    "effectList": [
+      {
+        "name": "减气瓶追加",
+        "description": "減气瓶可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183556.html"
+  },
+  {
+    "id": 0,
+    "name": "剑术",
+    "effectList": [
+      {
+        "name": "心眼",
+        "description": "弹刀时不会引发硬直",
+        "value": 10
+      },
+      {
+        "name": "生疏",
+        "description": "通常不弹刀的部位，也有3分之一的概率强制弹刀",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183557.html"
+  },
+  {
+    "id": 0,
+    "name": "打磨术",
+    "effectList": [
+      {
+        "name": "刚刃打磨",
+        "description": "使用砥石后一段时间斩味不减。神射手角色攻击*1.75",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      5,
+      5
+    ],
+    "url": "../ida/226915.html"
+  },
+  {
+    "id": 0,
+    "name": "广域",
+    "effectList": [
+      {
+        "name": "广域化+2",
+        "description": "药草、回复药、解毒药、忍耐的种、怪力的种、ウチケシの実的效果在同一个区域内的队友、猫身上也会发动",
+        "value": 15
+      },
+      {
+        "name": "广域化+1",
+        "description": "药草、回复药、解毒药、忍耐的种、怪力的种、ウチケシの実的效果在同一个区域内的队友、猫身上也会发动。ただし解毒药以外は效果が半分に之る",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "maxValue": 12,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      12,
+      0,
+      12,
+      12
+    ],
+    "url": "../ida/183558.html"
+  },
+  {
+    "id": 0,
+    "name": "效果持续",
+    "effectList": [
+      {
+        "name": "道具使用强化",
+        "description": "药、饮料、种子、丸药的道具效果持续时间2倍",
+        "value": 10
+      },
+      {
+        "name": "道具使用弱化",
+        "description": "药、饮料、种子、丸药的道具效果持续时间3分之2",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183559.html"
+  },
+  {
+    "id": 0,
+    "name": "攻击",
+    "effectList": [
+      {
+        "name": "攻击力UP【大】",
+        "description": "攻击力+20",
+        "value": 20
+      },
+      {
+        "name": "攻击力UP【中】",
+        "description": "攻击力+15",
+        "value": 15
+      },
+      {
+        "name": "攻击力UP【小】",
+        "description": "攻击力+10",
+        "value": 10
+      },
+      {
+        "name": "攻击力DOWN【小】",
+        "description": "攻击力-5",
+        "value": -10
+      },
+      {
+        "name": "攻击力DOWN【中】",
+        "description": "攻击力-10",
+        "value": -15
+      },
+      {
+        "name": "攻击力DOWN【大】",
+        "description": "攻击力-15",
+        "value": -20
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      4,
+      0,
+      4,
+      7,
+      0,
+      10,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183560.html"
+  },
+  {
+    "id": 0,
+    "name": "刚击",
+    "effectList": [
+      {
+        "name": "无情",
+        "description": "洞察+2 + 弱点特效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286050.html"
+  },
+  {
+    "id": 0,
+    "name": "高速设置",
+    "effectList": [
+      {
+        "name": "陷阱师",
+        "description": "陷井道具、肉道具、炸弹(除了小桶炸弹和升空桶炸弹以外)的设置所需时间变短。陷井道具及肉道具的调合成功率100%",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183563.html"
+  },
+  {
+    "id": 0,
+    "name": "强欲",
+    "effectList": [
+      {
+        "name": "丰收",
+        "description": "强运 + 捕获达人",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286051.html"
+  },
+  {
+    "id": 0,
+    "name": "号令",
+    "effectList": [
+      {
+        "name": "号令随从猫",
+        "description": "在打猎猫休息的状态，实行动作“かけごえ（号令）”就能使其体力回满。不可在使用后的10分钟内再次使用。在设有背水の陣的印的时候无效。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      3,
+      0,
+      5,
+      7,
+      7,
+      10,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183565.html"
+  },
+  {
+    "id": 0,
+    "name": "铁臂",
+    "effectList": [
+      {
+        "name": "痛打",
+        "description": "夺取耐力 + KO术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286052.html"
+  },
+  {
+    "id": 0,
+    "name": "冰属性攻击",
+    "effectList": [
+      {
+        "name": "冰属性攻击强化+2",
+        "description": "冰属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "冰属性攻击强化+1",
+        "description": "冰属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "冰属性攻击弱化",
+        "description": "冰属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      13,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183567.html"
+  },
+  {
+    "id": 0,
+    "name": "冰耐性",
+    "effectList": [
+      {
+        "name": "冰耐性【大】",
+        "description": "冰耐性+20。合计耐性超过20时，冰属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "冰耐性【小】",
+        "description": "冰耐性+15。合计耐性超过10时，冰属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "冰耐性弱化",
+        "description": "冰耐性-20",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183568.html"
+  },
+  {
+    "id": 0,
+    "name": "黑炎王",
+    "effectList": [
+      {
+        "name": "黑炎王之魂",
+        "description": "风压【大】无效 + 攻击力UP【大】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230106.html"
+  },
+  {
+    "id": 0,
+    "name": "可可特",
+    "effectList": [
+      {
+        "name": "可可特之心",
+        "description": "雷耐性【小】 + 精灵的反复无常",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/230107.html"
+  },
+  {
+    "id": 0,
+    "name": "护石王",
+    "effectList": [
+      {
+        "name": "护符猎人",
+        "description": "采集时30%几率获得两个护身符",
+        "value": 15
+      },
+      {
+        "name": "护符收集",
+        "description": "采集时20%几率获得两个护身符",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      7,
+      10,
+      7,
+      10,
+      10
+    ],
+    "url": "../ida/183569.html"
+  },
+  {
+    "id": 0,
+    "name": "护石强化",
+    "effectList": [
+      {
+        "name": "护石系统加倍",
+        "description": "护石技能点翻倍。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286053.html"
+  },
+  {
+    "id": 0,
+    "name": "护石收集",
+    "effectList": [
+      {
+        "name": "护符发烧友",
+        "description": "护符猎人 + 采集+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286054.html"
+  },
+  {
+    "id": 0,
+    "name": "毅力",
+    "effectList": [
+      {
+        "name": "毅力",
+        "description": "体力在64以上时，一次性受到超过剩余体力的攻击也不会猫车。只能使用一次。猫车后可以再次生效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/183571.html"
+  },
+  {
+    "id": 0,
+    "name": "细菌学",
+    "effectList": [
+      {
+        "name": "生化博士",
+        "description": "こやし玉集中后怪物必定换区。肥やし玉的调和必然成功。部分道具不能使用，不会沾染爆破粉尘。狂龙症发病时间缩短到0.8倍",
+        "value": 15
+      },
+      {
+        "name": "细菌研究员",
+        "description": "こやし玉集中后怪物必定换区。肥やし玉的调和必然成功。部分道具不能使用，不会沾染爆破粉尘。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 5,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      5,
+      8,
+      0,
+      10,
+      0,
+      10
+    ],
+    "url": "../ida/183572.html"
+  },
+  {
+    "id": 0,
+    "name": "采集",
+    "effectList": [
+      {
+        "name": "采集+2",
+        "description": "下次也可采取道具的几率从平时的25/32变为29/32。",
+        "value": 15
+      },
+      {
+        "name": "采集+1",
+        "description": "下次也可采取道具的几率从平时的25/32变为27/32。",
+        "value": 10
+      },
+      {
+        "name": "采集-1",
+        "description": "下次也可采取道具的几率从平时的25/32变为21/32。",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183573.html"
+  },
+  {
+    "id": 0,
+    "name": "指挥",
+    "effectList": [
+      {
+        "name": "指挥随从",
+        "description": "随从猫的攻击力与防御力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      3,
+      0,
+      5,
+      7,
+      7,
+      10,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183574.html"
+  },
+  {
+    "id": 0,
+    "name": "斩术",
+    "effectList": [
+      {
+        "name": "人剑一体",
+        "description": "心眼 + 利刃",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286055.html"
+  },
+  {
+    "id": 0,
+    "name": "散弹强化",
+    "effectList": [
+      {
+        "name": "散弹・扩散矢UP",
+        "description": "散弹的威力变为原来的1.2倍。扩散矢的威力变为原来的1.3倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183576.html"
+  },
+  {
+    "id": 0,
+    "name": "散弹追加",
+    "effectList": [
+      {
+        "name": "散弹全LV追加",
+        "description": "可使用所有LV的散弹",
+        "value": 15
+      },
+      {
+        "name": "散弹LV1追加",
+        "description": "可使用LV1散弹",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183577.html"
+  },
+  {
+    "id": 0,
+    "name": "紫毒姫",
+    "effectList": [
+      {
+        "name": "紫毒姫之魂",
+        "description": "状态异常攻击+2 + 广域化+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/226916.html"
+  },
+  {
+    "id": 0,
+    "name": "射手",
+    "effectList": [
+      {
+        "name": "刚弹",
+        "description": "通常弹・连射矢UP + 贯通弹・贯通矢UP + 散弹・扩散矢UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286056.html"
+  },
+  {
+    "id": 0,
+    "name": "射法",
+    "effectList": [
+      {
+        "name": "弹道强化",
+        "description": "使部分子弹、弓箭的会心距离延长",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      3,
+      3,
+      5,
+      5,
+      4,
+      5
+    ],
+    "url": "../ida/183582.html"
+  },
+  {
+    "id": 0,
+    "name": "重击",
+    "effectList": [
+      {
+        "name": "破坏王",
+        "description": "部位破坏的积蓄值1.3倍。容易让怪物胆怯。但只增加对部位耐久值的伤害，不会增加攻击值，且部位破坏后则无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183583.html"
+  },
+  {
+    "id": 0,
+    "name": "重击弹强化",
+    "effectList": [
+      {
+        "name": "重击弹・重射矢UP",
+        "description": "重击弾、重射矢的攻击力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/230108.html"
+  },
+  {
+    "id": 0,
+    "name": "状态耐性",
+    "effectList": [
+      {
+        "name": "护法",
+        "description": "毒耐性 + 麻痹无效 + 睡眠无效 + 昏厥无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286057.html"
+  },
+  {
+    "id": 0,
+    "name": "工人",
+    "effectList": [
+      {
+        "name": "陷阱大师",
+        "description": "爆破手 + 陷阱师",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286058.html"
+  },
+  {
+    "id": 0,
+    "name": "进食",
+    "effectList": [
+      {
+        "name": "快吃+2",
+        "description": "吃肉、食用道具速度加快",
+        "value": 15
+      },
+      {
+        "name": "快吃+1",
+        "description": "吃肉速度加快",
+        "value": 10
+      },
+      {
+        "name": "细嚼慢咽",
+        "description": "吃肉速度减慢",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183586.html"
+  },
+  {
+    "id": 0,
+    "name": "食欲",
+    "effectList": [
+      {
+        "name": "美食家",
+        "description": "快吃+2 + 嗜肉如命 + 最爱蘑菇",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286059.html"
+  },
+  {
+    "id": 0,
+    "name": "白疾风",
+    "effectList": [
+      {
+        "name": "白疾风之魂",
+        "description": "回避性能+2 + 洞察+3",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230109.html"
+  },
+  {
+    "id": 0,
+    "name": "真・荒钩爪",
+    "effectList": [
+      {
+        "name": "真・荒钩爪之魂",
+        "description": "快吃+2 + 高级耳栓 + ＳＰ时间延长",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286060.html"
+  },
+  {
+    "id": 0,
+    "name": "真・岩穿",
+    "effectList": [
+      {
+        "name": "真・岩穿之魂",
+        "description": "火场怪力+2 + 俯拾即食 + 炮术王",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286061.html"
+  },
+  {
+    "id": 0,
+    "name": "真・鏖魔",
+    "effectList": [
+      {
+        "name": "真・鏖魔之魂",
+        "description": "攻击力UP【大】 + 回避性能+2 + 明镜止水",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286062.html"
+  },
+  {
+    "id": 0,
+    "name": "真・大雪主",
+    "effectList": [
+      {
+        "name": "真・大雪主之魂",
+        "description": "回避距离UP + 乘骑名人 + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286063.html"
+  },
+  {
+    "id": 0,
+    "name": "真・胧隐",
+    "effectList": [
+      {
+        "name": "真・胧隐之魂",
+        "description": "高级耳栓 + 装填速度+3 + 人剑一体 + 陷阱师",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286064.html"
+  },
+  {
+    "id": 0,
+    "name": "真・金雷公",
+    "effectList": [
+      {
+        "name": "真・金雷公之魂",
+        "description": "力量解放+2 + 体术+2 + 集中",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286065.html"
+  },
+  {
+    "id": 0,
+    "name": "真・银峰",
+    "effectList": [
+      {
+        "name": "真・银峰之魂",
+        "description": "长跑健将 + 钝器手 + 通常弹・连射矢UP + 攻击力UP【中】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286066.html"
+  },
+  {
+    "id": 0,
+    "name": "真・黑炎王",
+    "effectList": [
+      {
+        "name": "真・黑炎王之魂",
+        "description": "风压【大】无效 + 攻击力UP【大】 + 火场怪力+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286067.html"
+  },
+  {
+    "id": 0,
+    "name": "真・紫毒姫",
+    "effectList": [
+      {
+        "name": "真・紫毒姫之魂",
+        "description": "状态异常攻击+2 + 广域化+2 + 药草超强化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286068.html"
+  },
+  {
+    "id": 0,
+    "name": "真・白疾风",
+    "effectList": [
+      {
+        "name": "真・白疾风之魂",
+        "description": "回避性能+2 + 洞察+3 + 隐密",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286069.html"
+  },
+  {
+    "id": 0,
+    "name": "真・烬灭刃",
+    "effectList": [
+      {
+        "name": "真・烬灭刃之魂",
+        "description": "锋利度等级+2 + 爆破手 + 弹道强化 + 急速磨刀",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286070.html"
+  },
+  {
+    "id": 0,
+    "name": "真・青电主",
+    "effectList": [
+      {
+        "name": "真・青电主之魂",
+        "description": "超会心 + 连发数+1 + 锋利度等级+1 + 虎视眈眈",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286071.html"
+  },
+  {
+    "id": 0,
+    "name": "真・独眼",
+    "effectList": [
+      {
+        "name": "真・独眼之魂",
+        "description": "昏厥无效 + 挑战者+2 + 不屈",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286072.html"
+  },
+  {
+    "id": 0,
+    "name": "真・宝缠",
+    "effectList": [
+      {
+        "name": "真・宝缠之魂",
+        "description": "护符猎人 + 英雄守护 + 饥饿无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286073.html"
+  },
+  {
+    "id": 0,
+    "name": "真・天眼",
+    "effectList": [
+      {
+        "name": "真・天眼之魂",
+        "description": "洞察+3 + 挑战者+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286074.html"
+  },
+  {
+    "id": 0,
+    "name": "真・红盔",
+    "effectList": [
+      {
+        "name": "真・红盔之魂",
+        "description": "反怒 + 集中 + 长跑健将",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286075.html"
+  },
+  {
+    "id": 0,
+    "name": "真・矛碎",
+    "effectList": [
+      {
+        "name": "真・矛碎之魂",
+        "description": "利刃 + 后坐力减轻+2 + 精灵加护 + 体术+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286076.html"
+  },
+  {
+    "id": 0,
+    "name": "烬灭刃",
+    "effectList": [
+      {
+        "name": "烬灭刃之魂",
+        "description": "锋利度等级+2 + 弹道强化 + 急速磨刀",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230110.html"
+  },
+  {
+    "id": 0,
+    "name": "真・铠裂",
+    "effectList": [
+      {
+        "name": "真・铠裂之魂",
+        "description": "格挡性能+2 + 收刀术 + 刃鳞打磨",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286077.html"
+  },
+  {
+    "id": 0,
+    "name": "刃鳞",
+    "effectList": [
+      {
+        "name": "刃鳞打磨",
+        "description": "抜刀中回避发动效果。剑士斩位回复5(千刃龙武器回复7)。轻/重弩弾装填1发。50%的確率装填数+1。弓接击瓶的伤害是1.5倍(千刃龙武器1.65倍)",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286078.html"
+  },
+  {
+    "id": 0,
+    "name": "睡眠",
+    "effectList": [
+      {
+        "name": "睡眠无效",
+        "description": "不会进入睡眠状态",
+        "value": 10
+      },
+      {
+        "name": "睡眠加倍",
+        "description": "睡眠状态的时間加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "maxValue": 7,
+    "mMaxValues": [
+      5,
+      0,
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      7
+    ],
+    "url": "../ida/183588.html"
+  },
+  {
+    "id": 0,
+    "name": "睡眠瓶追加",
+    "effectList": [
+      {
+        "name": "睡眠瓶追加",
+        "description": "睡眠瓶可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183589.html"
+  },
+  {
+    "id": 0,
+    "name": "耐力",
+    "effectList": [
+      {
+        "name": "长跑健将",
+        "description": "冲刺、鬼人状态、突进、蓄力时耐力消费量减半",
+        "value": 10
+      },
+      {
+        "name": "步履缓慢",
+        "description": "冲刺、鬼人状态、突进、蓄力时耐力消费量加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183590.html"
+  },
+  {
+    "id": 0,
+    "name": "青电主",
+    "effectList": [
+      {
+        "name": "青电主之魂",
+        "description": "超会心 + 连发数+1 + 锋利度等级+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286079.html"
+  },
+  {
+    "id": 0,
+    "name": "精确射击",
+    "effectList": [
+      {
+        "name": "抑制偏移+2",
+        "description": "不再有弹道抖动幅度",
+        "value": 15
+      },
+      {
+        "name": "抑制偏移+1",
+        "description": "弹道抖动幅度减少1个阶段",
+        "value": 10
+      },
+      {
+        "name": "抑制偏移-1",
+        "description": "弹道抖动幅度增加1个阶段",
+        "value": -10
+      },
+      {
+        "name": "抑制偏移-2",
+        "description": "弹道抖动幅度大",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183591.html"
+  },
+  {
+    "id": 0,
+    "name": "独眼",
+    "effectList": [
+      {
+        "name": "独眼之魂",
+        "description": "昏厥无效 + 挑战者+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230111.html"
+  },
+  {
+    "id": 0,
+    "name": "接击瓶追加",
+    "effectList": [
+      {
+        "name": "接击瓶追加",
+        "description": "接击瓶可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183592.html"
+  },
+  {
+    "id": 0,
+    "name": "节食",
+    "effectList": [
+      {
+        "name": "浅尝辄止",
+        "description": "吃肉或饮用道具后，25%的概率肉或道具不消失",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183593.html"
+  },
+  {
+    "id": 0,
+    "name": "千里眼",
+    "effectList": [
+      {
+        "name": "自动标记",
+        "description": "常时显示中型、大型怪物的位置、朝向、攻击状态",
+        "value": 15
+      },
+      {
+        "name": "探知",
+        "description": "标记时，显示中型、大型怪物的位置、朝向、攻击状态。同时，就算没有进行标记也有一定几率获得同样的效果",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "maxValue": 12,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      12,
+      0,
+      0,
+      12
+    ],
+    "url": "../ida/183594.html"
+  },
+  {
+    "id": 0,
+    "name": "长跑",
+    "effectList": [
+      {
+        "name": "奔跑不息",
+        "description": "耐力剩余25(红色)以下时，无消耗。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/286080.html"
+  },
+  {
+    "id": 0,
+    "name": "装填数",
+    "effectList": [
+      {
+        "name": "装填数UP",
+        "description": "弩枪的装填数、弓的蓄力各增加1个阶段(最大4阶段)。铳枪的炮击、蓄力斧的装填数都会增加",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      5,
+      5
+    ],
+    "url": "../ida/183595.html"
+  },
+  {
+    "id": 0,
+    "name": "装填速度",
+    "effectList": [
+      {
+        "name": "装填速度+3",
+        "description": "弩枪的装填速度提高3个阶段，但是对蹲姿射击没有影响。弓的瓶子切换后可以自动装填",
+        "value": 20
+      },
+      {
+        "name": "装填速度+2",
+        "description": "弩枪的装填速度提高2个阶段，但是对蹲姿射击没有影响。弓的瓶子切换后可以自动装填",
+        "value": 15
+      },
+      {
+        "name": "装填速度+1",
+        "description": "弩枪的装填速度提高1个阶段，但是对蹲姿射击没有影响。弓的瓶子切换速度加快0.75倍",
+        "value": 10
+      },
+      {
+        "name": "装填速度-1",
+        "description": "弩枪的装填速度延缓1个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.1倍",
+        "value": -10
+      },
+      {
+        "name": "装填速度-2",
+        "description": "弩枪的装填速度延缓2个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.2倍",
+        "value": -15
+      },
+      {
+        "name": "装填速度-3",
+        "description": "弩枪的装填速度延缓3个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.3倍",
+        "value": -20
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      6,
+      4,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183596.html"
+  },
+  {
+    "id": 0,
+    "name": "増幅",
+    "effectList": [
+      {
+        "name": "属性兼道具强化",
+        "description": "属性攻击强化 + 道具使用强化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286081.html"
+  },
+  {
+    "id": 0,
+    "name": "属强瓶追加",
+    "effectList": [
+      {
+        "name": "属强瓶全LV追加",
+        "description": "全LV的属強瓶可以使用",
+        "value": 15
+      },
+      {
+        "name": "属强瓶LV1追加",
+        "description": "属強瓶LV1可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "maxValue": 12,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0,
+      12
+    ],
+    "url": "../ida/230112.html"
+  },
+  {
+    "id": 0,
+    "name": "速射",
+    "effectList": [
+      {
+        "name": "连发数+1",
+        "description": "速射时的发射数+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      4,
+      5
+    ],
+    "url": "../ida/183598.html"
+  },
+  {
+    "id": 0,
+    "name": "属性会心",
+    "effectList": [
+      {
+        "name": "会心攻击【属性】",
+        "description": "攻击发生会心时，给予的属性伤害(火、水、雷、冰、龙)提升。大剑1.2倍。轻/重弩1.3倍。片手剑、双剑、弓1.35倍。其他1.25倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      0,
+      6,
+      0,
+      6
+    ],
+    "url": "../ida/183599.html"
+  },
+  {
+    "id": 0,
+    "name": "属性攻击",
+    "effectList": [
+      {
+        "name": "属性攻击强化",
+        "description": "火、水、雷、冰、龙的属性値伤害*1.1倍。",
+        "value": 10
+      },
+      {
+        "name": "属性攻击弱化",
+        "description": "火、水、雷、冰、龙的属性値伤害*0.9倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      7,
+      0,
+      7
+    ],
+    "url": "../ida/183601.html"
+  },
+  {
+    "id": 0,
+    "name": "属性耐性",
+    "effectList": [
+      {
+        "name": "属性异常无效",
+        "description": "全属性（火、水、雷、冰、龙属性）无效化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183602.html"
+  },
+  {
+    "id": 0,
+    "name": "潜力",
+    "effectList": [
+      {
+        "name": "火场怪力+2",
+        "description": "体力下降到40%以下后防御力增加30-45，攻击力1.3倍",
+        "value": 15
+      },
+      {
+        "name": "火场怪力+1",
+        "description": "体力下降到40%以下后防御力增加30-45。",
+        "value": 10
+      },
+      {
+        "name": "畏手畏脚",
+        "description": "体力下降到40%以下后防御力减少21-30，攻击力0.7倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 4,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183603.html"
+  },
+  {
+    "id": 0,
+    "name": "对炎龙",
+    "effectList": [
+      {
+        "name": "钢壳守护",
+        "description": "南风猎手 + 火耐性【大】 + 细菌研究员",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286082.html"
+  },
+  {
+    "id": 0,
+    "name": "对霞龙",
+    "effectList": [
+      {
+        "name": "炎鳞守护",
+        "description": "毒耐性 + 偷盗无效 + 自动标记",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286083.html"
+  },
+  {
+    "id": 0,
+    "name": "耐寒",
+    "effectList": [
+      {
+        "name": "寒冷无效",
+        "description": "寒冷引起的耐力最大值减少无效化。",
+        "value": 10
+      },
+      {
+        "name": "寒冷加倍",
+        "description": "寒冷引起的耐力最大值减少加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183604.html"
+  },
+  {
+    "id": 0,
+    "name": "对钢龙",
+    "effectList": [
+      {
+        "name": "霞皮守护",
+        "description": "北风猎手 + 风压【大】无效 + 雪人状态无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286084.html"
+  },
+  {
+    "id": 0,
+    "name": "体术",
+    "effectList": [
+      {
+        "name": "体术+2",
+        "description": "回避、防御时耐力消费量减半。遇到大型怪物时，可以实行紧急回避，紧急回避的移动距离增加",
+        "value": 15
+      },
+      {
+        "name": "体术+1",
+        "description": "回避、防御时耐力消费量减少为0.75。遇到大型怪物时，可以实行紧急回避，紧急回避的移动距离增加",
+        "value": 10
+      },
+      {
+        "name": "体术-1",
+        "description": "回避、防御时耐力消费量增加到1.2倍",
+        "value": -10
+      },
+      {
+        "name": "体术-2",
+        "description": "回避、防御时耐力消费量增加到1.35倍",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183605.html"
+  },
+  {
+    "id": 0,
+    "name": "耐暑",
+    "effectList": [
+      {
+        "name": "炎热无效",
+        "description": "暑热、熔岩地形、燃尘造成的伤害无效",
+        "value": 10
+      },
+      {
+        "name": "炎热加倍",
+        "description": "暑热、熔岩地形、燃尘造成的伤害加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183606.html"
+  },
+  {
+    "id": 0,
+    "name": "耐震",
+    "effectList": [
+      {
+        "name": "耐震",
+        "description": "不会因震动引发硬直",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "maxValue": 8,
+    "mMaxValues": [
+      7,
+      0,
+      7,
+      8,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    "url": "../ida/183607.html"
+  },
+  {
+    "id": 0,
+    "name": "对防御DOWN",
+    "effectList": [
+      {
+        "name": "铁面",
+        "description": "不会发生防御力下降状态。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "maxValue": 8,
+    "mMaxValues": [
+      7,
+      0,
+      7,
+      8,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    "url": "../ida/183610.html"
+  },
+  {
+    "id": 0,
+    "name": "体力",
+    "effectList": [
+      {
+        "name": "体力+50",
+        "description": "体力最大値+50",
+        "value": 15
+      },
+      {
+        "name": "体力+20",
+        "description": "体力最大値+20",
+        "value": 10
+      },
+      {
+        "name": "体力-10",
+        "description": "体力最大値-10",
+        "value": -10
+      },
+      {
+        "name": "体力-30",
+        "description": "体力最大値-30",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183611.html"
+  },
+  {
+    "id": 0,
+    "name": "宝缠",
+    "effectList": [
+      {
+        "name": "宝缠之魂",
+        "description": "护符猎人 + 饥饿无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/230113.html"
+  },
+  {
+    "id": 0,
+    "name": "匠",
+    "effectList": [
+      {
+        "name": "锋利度等级+2",
+        "description": "斩位槽+2",
+        "value": 15
+      },
+      {
+        "name": "锋利度等级+1",
+        "description": "斩位槽+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 5,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      5,
+      5
+    ],
+    "url": "../ida/183612.html"
+  },
+  {
+    "id": 0,
+    "name": "食菇",
+    "effectList": [
+      {
+        "name": "最爱蘑菇",
+        "description": "可以吃蘑菇后获得各种效果。·アオキノコ\u003d回復薬；·ニトロダケ\u003d鬼神薬；·マヒダケ\u003d硬化薬；·毒テングダケ\u003d栄養剤；·ドキドキキノコ\u003dいにしえの秘薬；·強走薬\u003d怪力の種；·忍耐の種\u003d体力回复（最小40，随机）；·クタビレダケ\u003d強走薬；·マンドラゴラ\u003d秘薬；·特産キノコ\u003d携帯食料；·厳選キノコ\u003d強走薬グレート",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      5,
+      5
+    ],
+    "url": "../ida/183544.html"
+  },
+  {
+    "id": 0,
+    "name": "达人",
+    "effectList": [
+      {
+        "name": "洞察+3",
+        "description": "会心率+30%",
+        "value": 20
+      },
+      {
+        "name": "洞察+2",
+        "description": "会心率+20%",
+        "value": 15
+      },
+      {
+        "name": "洞察+1",
+        "description": "会心率+10%",
+        "value": 10
+      },
+      {
+        "name": "洞察-1",
+        "description": "会心率-5%",
+        "value": -10
+      },
+      {
+        "name": "洞察-2",
+        "description": "会心率-10%",
+        "value": -15
+      },
+      {
+        "name": "洞察-3",
+        "description": "会心率-15%",
+        "value": -20
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      4,
+      0,
+      4,
+      7,
+      0,
+      10,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183613.html"
+  },
+  {
+    "id": 0,
+    "name": "持盾",
+    "effectList": [
+      {
+        "name": "持盾手",
+        "description": "格挡强化 + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286085.html"
+  },
+  {
+    "id": 0,
+    "name": "蓄力缩短",
+    "effectList": [
+      {
+        "name": "集中",
+        "description": "大剑、锤子、弓的蓄力时间0.8倍、太刀、双剣、斩击斧蓄力槽积蓄速度1.2倍。",
+        "value": 10
+      },
+      {
+        "name": "杂念",
+        "description": "大剑、锤子、弓的蓄力时间1.2倍、太刀、双剣、斩击斧蓄力槽积蓄速度0.8倍。",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183615.html"
+  },
+  {
+    "id": 0,
+    "name": "雪人",
+    "effectList": [
+      {
+        "name": "雪人状态无效",
+        "description": "雪球、气泡状态无效化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "maxValue": 8,
+    "mMaxValues": [
+      7,
+      0,
+      7,
+      8,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    "url": "../ida/226917.html"
+  },
+  {
+    "id": 0,
+    "name": "弹药节约",
+    "effectList": [
+      {
+        "name": "弹药节约",
+        "description": "射击时有时不消耗子弹及瓶子",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/226918.html"
+  },
+  {
+    "id": 0,
+    "name": "良机",
+    "effectList": [
+      {
+        "name": "杀手锏",
+        "description": "跟大型魔物战斗中，机会来临时狩技威力上升(这边的机会大概是像骑倒之类的)※效果持续1分钟，使用狩技的伤害或持续时间1.2倍，此外，部分的狩技效果上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/230114.html"
+  },
+  {
+    "id": 0,
+    "name": "听觉保护",
+    "effectList": [
+      {
+        "name": "高级耳栓",
+        "description": "咆哮（大、小）无效。但无法抵御伴随伤害的咆哮（如轰龙）",
+        "value": 15
+      },
+      {
+        "name": "耳栓",
+        "description": "咆哮（小）无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      7,
+      5,
+      7
+    ],
+    "url": "../ida/183616.html"
+  },
+  {
+    "id": 0,
+    "name": "调合数",
+    "effectList": [
+      {
+        "name": "满额调和",
+        "description": "调合的生产数必然为最大",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183617.html"
+  },
+  {
+    "id": 0,
+    "name": "调和成功率",
+    "effectList": [
+      {
+        "name": "调和成功率+45%",
+        "description": "调合的成功率+45%",
+        "value": 15
+      },
+      {
+        "name": "调和成功率+20%",
+        "description": "调合的成功率+20%",
+        "value": 10
+      },
+      {
+        "name": "调和成功率-10%",
+        "description": "调合的成功率-10%",
+        "value": -10
+      },
+      {
+        "name": "调和成功率-20%",
+        "description": "调合的成功率-20%",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183618.html"
+  },
+  {
+    "id": 0,
+    "name": "跳跃",
+    "effectList": [
+      {
+        "name": "飞燕",
+        "description": "跳跃攻击威力和追加效果提升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/226919.html"
+  },
+  {
+    "id": 0,
+    "name": "痛击",
+    "effectList": [
+      {
+        "name": "弱点特效",
+        "description": "攻击肉质45以上的部位时会心率上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183619.html"
+  },
+  {
+    "id": 0,
+    "name": "通常弹强化",
+    "effectList": [
+      {
+        "name": "通常弹・连射矢UP",
+        "description": "通常弾、連射矢的威力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183620.html"
+  },
+  {
+    "id": 0,
+    "name": "通常弹追加",
+    "effectList": [
+      {
+        "name": "通常弹全LV追加",
+        "description": "可使用所有LV的通常弹",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 8,
+    "maxValue": 8,
+    "mMaxValues": [
+      8,
+      0,
+      6,
+      8,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    "url": "../ida/183621.html"
+  },
+  {
+    "id": 0,
+    "name": "天眼",
+    "effectList": [
+      {
+        "name": "天眼之魂",
+        "description": "洞察+3 + 挑战者+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286086.html"
+  },
+  {
+    "id": 0,
+    "name": "身体系统加倍",
+    "effectList": [
+      {
+        "name": "身体系统加倍",
+        "description": "胴部件的技能点数变为原来的2倍",
+        "value": 0
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/183622.html"
+  },
+  {
+    "id": 0,
+    "name": "斗魂",
+    "effectList": [
+      {
+        "name": "挑战者+2",
+        "description": "大型怪物愤怒时能力提升，3秒后攻击力+25，会心率+20%",
+        "value": 15
+      },
+      {
+        "name": "挑战者+1",
+        "description": "大型怪物愤怒时能力提升，3秒后攻击力+10，会心率+10%",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/183623.html"
+  },
+  {
+    "id": 0,
+    "name": "刀匠",
+    "effectList": [
+      {
+        "name": "真锻",
+        "description": "锋利度等级+1 + 攻击力UP【大】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286087.html"
+  },
+  {
+    "id": 0,
+    "name": "磨刀匠",
+    "effectList": [
+      {
+        "name": "急速磨刀",
+        "description": "使用砥石系道具所需时间变短。从平时的4次变为1次。",
+        "value": 10
+      },
+      {
+        "name": "缓慢磨刀",
+        "description": "砥石系道具研ぎ时間が长く之る。通常的4回から5回に之る。",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 8,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      0,
+      8,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183625.html"
+  },
+  {
+    "id": 0,
+    "name": "毒",
+    "effectList": [
+      {
+        "name": "毒耐性",
+        "description": "不会中毒",
+        "value": 10
+      },
+      {
+        "name": "毒加倍",
+        "description": "中毒后受到的伤害加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "maxValue": 7,
+    "mMaxValues": [
+      5,
+      0,
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      7
+    ],
+    "url": "../ida/183626.html"
+  },
+  {
+    "id": 0,
+    "name": "特殊会心",
+    "effectList": [
+      {
+        "name": "会心攻击【特殊】",
+        "description": "攻击发生会心时，给予的状态异常値(麻痹、毒、睡眠)*1.2倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      0,
+      6,
+      0,
+      6
+    ],
+    "url": "../ida/183627.html"
+  },
+  {
+    "id": 0,
+    "name": "特殊攻击",
+    "effectList": [
+      {
+        "name": "状态异常攻击+2",
+        "description": "毒、麻痹、睡眠、捕获麻酔的属性値伤害*1.2倍+1",
+        "value": 15
+      },
+      {
+        "name": "状态异常攻击+1",
+        "description": "毒、麻痹、睡眠、捕获麻酔的属性値伤害*1.1倍+1",
+        "value": 10
+      },
+      {
+        "name": "状态异常攻击弱化",
+        "description": "毒、麻痹、睡眠、捕获麻酔的属性値伤害*0.9倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 4,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      4,
+      6,
+      4,
+      7,
+      7,
+      7
+    ],
+    "url": "../ida/183628.html"
+  },
+  {
+    "id": 0,
+    "name": "毒瓶追加",
+    "effectList": [
+      {
+        "name": "毒瓶追加",
+        "description": "毒瓶可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183629.html"
+  },
+  {
+    "id": 0,
+    "name": "钝器",
+    "effectList": [
+      {
+        "name": "钝器手",
+        "description": "斩位越差攻击力越高。蓝：不增加、绿：1.1倍、黄：1.15倍、橙、赤：1.2倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 0,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      6,
+      0,
+      6,
+      0,
+      6
+    ],
+    "url": "../ida/230115.html"
+  },
+  {
+    "id": 0,
+    "name": "肉食",
+    "effectList": [
+      {
+        "name": "嗜肉如命",
+        "description": "可以食用生肉，食用后スタミナ最大值增加50。另外，吃烤生的肉、熟肉、冷肉、热肉将附加1分钟强走效果",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      0,
+      0,
+      5
+    ],
+    "url": "../ida/183630.html"
+  },
+  {
+    "id": 0,
+    "name": "偷盗无效",
+    "effectList": [
+      {
+        "name": "偷盗无效",
+        "description": "道具不会被盗",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183631.html"
+  },
+  {
+    "id": 0,
+    "name": "收刀",
+    "effectList": [
+      {
+        "name": "收刀术",
+        "description": "收刀速度提升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 4,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      6,
+      0,
+      6,
+      4,
+      10,
+      7,
+      10
+    ],
+    "url": "../ida/183633.html"
+  },
+  {
+    "id": 0,
+    "name": "收刀打磨",
+    "effectList": [
+      {
+        "name": "挑战者的收刀",
+        "description": "怪物愤怒状态时，纳刀回复少量的斩位。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 3,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      3,
+      10,
+      0,
+      10
+    ],
+    "url": "../ida/286088.html"
+  },
+  {
+    "id": 0,
+    "name": "乘骑",
+    "effectList": [
+      {
+        "name": "乘骑名人",
+        "description": "骑乘积蓄值1.25倍、骑乘状态时攻击槽1.25倍",
+        "value": 10
+      },
+      {
+        "name": "不善乘骑",
+        "description": "骑乘积蓄值0.9倍、骑乘状态时攻击槽0.9倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 8,
+    "maxValue": 10,
+    "mMaxValues": [
+      10,
+      0,
+      0,
+      8,
+      0,
+      5,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183634.html"
+  },
+  {
+    "id": 0,
+    "name": "剥取",
+    "effectList": [
+      {
+        "name": "剥取名人",
+        "description": "剥取次数增加1次，剥取时霸体",
+        "value": 15
+      },
+      {
+        "name": "剥取铁人",
+        "description": "剥取时霸体",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      5,
+      5
+    ],
+    "url": "../ida/183635.html"
+  },
+  {
+    "id": 0,
+    "name": "爆弹强化",
+    "effectList": [
+      {
+        "name": "爆破手",
+        "description": "爆弹伤害1.3倍。爆破属性积蓄值1.2倍(如果和猫的火药术并用则1.25倍)。爆弹调和成功率100%",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      8,
+      0,
+      10,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183636.html"
+  },
+  {
+    "id": 0,
+    "name": "爆破瓶追加",
+    "effectList": [
+      {
+        "name": "爆破瓶追加",
+        "description": "可装备爆破瓶",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183638.html"
+  },
+  {
+    "id": 0,
+    "name": "蜂蜜",
+    "effectList": [
+      {
+        "name": "蜂蜜猎人",
+        "description": "1次可采取2个蜂蜜及皇家蜂蜜",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183639.html"
+  },
+  {
+    "id": 0,
+    "name": "拔刀会心",
+    "effectList": [
+      {
+        "name": "拔刀术【技】",
+        "description": "拔刀时，会心率翻倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      5,
+      5
+    ],
+    "url": "../ida/183640.html"
+  },
+  {
+    "id": 0,
+    "name": "拔刀减气",
+    "effectList": [
+      {
+        "name": "拔刀术【力】",
+        "description": "切断系武器拔刀攻击时，附加气绝30和减气20。基本攻击力增加5",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 8,
+    "maxValue": 8,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      8,
+      5,
+      8,
+      8
+    ],
+    "url": "../ida/183641.html"
+  },
+  {
+    "id": 0,
+    "name": "饥饿",
+    "effectList": [
+      {
+        "name": "饥饿无效",
+        "description": "不会因饥饿导致耐力最大值减少",
+        "value": 15
+      },
+      {
+        "name": "饥饿减半",
+        "description": "因饥饿造成的耐力最大值减少量下降一半",
+        "value": 10
+      },
+      {
+        "name": "饥饿加倍【小】",
+        "description": "因饥饿造成的耐力最大值减少量上升到1.5倍",
+        "value": -10
+      },
+      {
+        "name": "饥饿加倍【大】",
+        "description": "因饥饿造成的耐力最大值减少量上升到2倍",
+        "value": -15
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      10,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183642.html"
+  },
+  {
+    "id": 0,
+    "name": "后坐力",
+    "effectList": [
+      {
+        "name": "后坐力减轻+3",
+        "description": "弩枪的反作用力减少3个阶段。但对速的反作用力无效",
+        "value": 20
+      },
+      {
+        "name": "后坐力减轻+2",
+        "description": "弩枪的反作用力减少2个阶段。但对速的反作用力无效",
+        "value": 15
+      },
+      {
+        "name": "后坐力减轻+1",
+        "description": "弩枪的反作用力减少1个阶段。但对速的反作用力无效",
+        "value": 10
+      },
+      {
+        "name": "后坐力减轻-1",
+        "description": "弩枪的反作用力增加1个阶段。但对速的反作用力无效",
+        "value": -10
+      },
+      {
+        "name": "后坐力减轻-2",
+        "description": "弩枪的反作用力增加2个阶段。但对速的反作用力无效",
+        "value": -15
+      },
+      {
+        "name": "后坐力减轻-3",
+        "description": "弩枪的反作用力增加3个阶段。但对速的反作用力无效",
+        "value": -20
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      3,
+      6,
+      7,
+      7
+    ],
+    "url": "../ida/183643.html"
+  },
+  {
+    "id": 0,
+    "name": "飞行酒吧",
+    "effectList": [
+      {
+        "name": "飞行酒吧之心",
+        "description": "KO术 + 吹笛名人",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286089.html"
+  },
+  {
+    "id": 0,
+    "name": "秘术",
+    "effectList": [
+      {
+        "name": "技能加点+2",
+        "description": "装备技能点数的合计値+2。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286090.html"
+  },
+  {
+    "id": 0,
+    "name": "火属性攻击",
+    "effectList": [
+      {
+        "name": "火属性攻击强化+2",
+        "description": "火属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "火属性攻击强化+1",
+        "description": "火属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "火属性攻击弱化",
+        "description": "火属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      13,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183644.html"
+  },
+  {
+    "id": 0,
+    "name": "火耐性",
+    "effectList": [
+      {
+        "name": "火耐性【大】",
+        "description": "火耐性+20。合计耐性超过20时，火属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "火耐性【小】",
+        "description": "火耐性+15。合计耐性超过10时，火属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "火耐性弱化",
+        "description": "火耐性-20",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183645.html"
+  },
+  {
+    "id": 0,
+    "name": "风压",
+    "effectList": [
+      {
+        "name": "风压【大】无效",
+        "description": "风压（大、小）无效。龙风压（大）效果减轻",
+        "value": 15
+      },
+      {
+        "name": "风压【小】无效",
+        "description": "风压（小）无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 3,
+    "maxValue": 10,
+    "mMaxValues": [
+      0,
+      0,
+      4,
+      0,
+      5,
+      3,
+      10,
+      7,
+      10
+    ],
+    "url": "../ida/183647.html"
+  },
+  {
+    "id": 0,
+    "name": "笛",
+    "effectList": [
+      {
+        "name": "吹笛名人",
+        "description": "延长狩猎笛的演奏效果时间，拥有回复效果的旋律则出现回复量变多的效果。此外，笛道具有1/2的几率不破损",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      8,
+      0,
+      10,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183648.html"
+  },
+  {
+    "id": 0,
+    "name": "红盔",
+    "effectList": [
+      {
+        "name": "红盔之魂",
+        "description": "反怒 + 集中",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/226920.html"
+  },
+  {
+    "id": 0,
+    "name": "贝鲁纳",
+    "effectList": [
+      {
+        "name": "贝鲁纳之心",
+        "description": "火耐性【小】 + 饥饿减半",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/230116.html"
+  },
+  {
+    "id": 0,
+    "name": "变则射击",
+    "effectList": [
+      {
+        "name": "特定射击强化",
+        "description": "武器内藏\b弹、曲射、\b刚射的威力上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      5,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/230117.html"
+  },
+  {
+    "id": 0,
+    "name": "防御",
+    "effectList": [
+      {
+        "name": "防御力UP【大】",
+        "description": "防御力1.06倍+25",
+        "value": 20
+      },
+      {
+        "name": "防御力UP【中】",
+        "description": "防御力1.03倍+20",
+        "value": 15
+      },
+      {
+        "name": "防御力UP【小】",
+        "description": "防御力+15",
+        "value": 10
+      },
+      {
+        "name": "防御力DOWN【小】",
+        "description": "防御力-10。最小值是1",
+        "value": -10
+      },
+      {
+        "name": "防御力DOWN【中】",
+        "description": "防御力0.95倍-10。最小值是1",
+        "value": -15
+      },
+      {
+        "name": "防御力DOWN【大】",
+        "description": "防御力0.9倍-10。最小值是1",
+        "value": -20
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "maxValue": 13,
+    "mMaxValues": [
+      4,
+      0,
+      4,
+      7,
+      0,
+      10,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183650.html"
+  },
+  {
+    "id": 0,
+    "name": "炮术",
+    "effectList": [
+      {
+        "name": "炮术王",
+        "description": "压敏电阻弹、大炮、铳枪炮击、龙击炮的攻击力1.2倍，蓄力斧的榴弹瓶、彻甲榴弹的威力1.3倍。龙击炮的冷却时间从120秒缩短到90秒",
+        "value": 15
+      },
+      {
+        "name": "炮术師",
+        "description": "压敏电阻弹、大炮、铳枪炮击、龙击炮的攻击力1.1倍，蓄力斧的榴弹瓶、彻甲榴弹的威力1.15倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      8,
+      0,
+      10,
+      0,
+      10,
+      10
+    ],
+    "url": "../ida/183651.html"
+  },
+  {
+    "id": 0,
+    "name": "捕获",
+    "effectList": [
+      {
+        "name": "捕获名人",
+        "description": "捕获怪物时的捕获报酬从2～3个增加至3～4个",
+        "value": 15
+      },
+      {
+        "name": "捕获达人",
+        "description": "捕获怪物时的捕获报酬从2～3个增加至3个",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 7,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      7,
+      7
+    ],
+    "url": "../ida/183652.html"
+  },
+  {
+    "id": 0,
+    "name": "北辰/海渊纳豆流",
+    "effectList": [
+      {
+        "name": "粘糊糊剑法",
+        "description": "不屈 + 长跑健将 + 夺取耐力",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/183653.html"
+  },
+  {
+    "id": 0,
+    "name": "矛碎",
+    "effectList": [
+      {
+        "name": "矛碎之魂",
+        "description": "利刃 + 后坐力减轻+2 + 精灵加护",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/226921.html"
+  },
+  {
+    "id": 0,
+    "name": "波凯",
+    "effectList": [
+      {
+        "name": "波凯之心",
+        "description": "冰耐性【小】 + 吃饱喝足",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/230118.html"
+  },
+  {
+    "id": 0,
+    "name": "全力",
+    "effectList": [
+      {
+        "name": "力量解放+2",
+        "description": "累计受到伤害180以上，或者被大型怪物发现5分钟以后发动。90秒时间内、会心率上升50%、耐力值消费变为4分之一",
+        "value": 15
+      },
+      {
+        "name": "力量解放+1",
+        "description": "累计受到伤害180以上，或者被大型怪物发现5分钟以后发动。90秒时间内、会心率上升30%、耐力值消费变为2分之一",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 4,
+    "maxValue": 6,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      4,
+      6,
+      5,
+      6
+    ],
+    "url": "../ida/183654.html"
+  },
+  {
+    "id": 0,
+    "name": "麻痹",
+    "effectList": [
+      {
+        "name": "麻痹无效",
+        "description": "不会进入麻痹状态",
+        "value": 10
+      },
+      {
+        "name": "麻痹加倍",
+        "description": "麻痹状态的时間加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "maxValue": 7,
+    "mMaxValues": [
+      5,
+      0,
+      5,
+      7,
+      0,
+      0,
+      0,
+      0,
+      7
+    ],
+    "url": "../ida/183655.html"
+  },
+  {
+    "id": 0,
+    "name": "麻痹瓶追加",
+    "effectList": [
+      {
+        "name": "麻痹瓶追加",
+        "description": "麻痹瓶可以使用",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183656.html"
+  },
+  {
+    "id": 0,
+    "name": "水属性攻击",
+    "effectList": [
+      {
+        "name": "水属性攻击强化+2",
+        "description": "水属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "水属性攻击强化+1",
+        "description": "水属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "水属性攻击弱化",
+        "description": "水属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      13,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183657.html"
+  },
+  {
+    "id": 0,
+    "name": "水耐性",
+    "effectList": [
+      {
+        "name": "水耐性【大】",
+        "description": "水耐性+20。合计耐性超过20时，水属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "水耐性【小】",
+        "description": "水耐性+15。合计耐性超过10时，水属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "水耐性弱化",
+        "description": "水耐性-20",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183658.html"
+  },
+  {
+    "id": 0,
+    "name": "无伤",
+    "effectList": [
+      {
+        "name": "最佳状态",
+        "description": "体力满格的时候，攻击力上升，基础攻击力+20",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/183659.html"
+  },
+  {
+    "id": 0,
+    "name": "无心",
+    "effectList": [
+      {
+        "name": "明镜止水",
+        "description": "狩技/勇气/炼金槽累积速度上升",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/230119.html"
+  },
+  {
+    "id": 0,
+    "name": "野草知识",
+    "effectList": [
+      {
+        "name": "药草超强化",
+        "description": "药草的回复力变为50",
+        "value": 15
+      },
+      {
+        "name": "药草强化",
+        "description": "药草的回复力变为30",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      8,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/226922.html"
+  },
+  {
+    "id": 0,
+    "name": "结云",
+    "effectList": [
+      {
+        "name": "结云之心",
+        "description": "水耐性【小】 + 蜂蜜猎人",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/230120.html"
+  },
+  {
+    "id": 0,
+    "name": "铠裂",
+    "effectList": [
+      {
+        "name": "铠裂之魂",
+        "description": "格挡性能+2 + 收刀术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3
+    ],
+    "url": "../ida/286091.html"
+  },
+  {
+    "id": 0,
+    "name": "龙气",
+    "effectList": [
+      {
+        "name": "龙气活性",
+        "description": "体力２/３以下时触发龙属性异常状态、全部的属性耐性値+50，攻击力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 3,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    "url": "../ida/286092.html"
+  },
+  {
+    "id": 0,
+    "name": "龙识船",
+    "effectList": [
+      {
+        "name": "龙识船之心",
+        "description": "龙耐性【小】 + 细菌研究员",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "maxValue": 0,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "url": "../ida/286093.html"
+  },
+  {
+    "id": 0,
+    "name": "龙属性攻击",
+    "effectList": [
+      {
+        "name": "龙属性攻击强化+2",
+        "description": "龙属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "龙属性攻击强化+1",
+        "description": "龙属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "龙属性攻击弱化",
+        "description": "龙属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      0,
+      0,
+      7,
+      0,
+      7,
+      13,
+      0,
+      13,
+      13
+    ],
+    "url": "../ida/183660.html"
+  },
+  {
+    "id": 0,
+    "name": "龙耐性",
+    "effectList": [
+      {
+        "name": "龙耐性【大】",
+        "description": "龙耐性+20。合计耐性超过20时，龙属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "龙耐性【小】",
+        "description": "龙耐性+15。合计耐性超过10时，龙属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "龙耐性弱化",
+        "description": "龙耐性-20",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "maxValue": 13,
+    "mMaxValues": [
+      6,
+      0,
+      6,
+      10,
+      0,
+      13,
+      0,
+      0,
+      13
+    ],
+    "url": "../ida/183661.html"
+  },
+  {
+    "id": 0,
+    "name": "榴弹追加",
+    "effectList": [
+      {
+        "name": "徹甲榴弹全LV追加",
+        "description": "可使用所有LV的徹甲榴弹",
+        "value": 15
+      },
+      {
+        "name": "徹甲榴弹LV1追加",
+        "description": "可使用LV1徹甲榴弹",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      8,
+      0,
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183662.html"
+  },
+  {
+    "id": 0,
+    "name": "裂伤",
+    "effectList": [
+      {
+        "name": "裂伤无效",
+        "description": "裂伤无效化",
+        "value": 10
+      },
+      {
+        "name": "裂伤加倍",
+        "description": "裂傷状态加倍",
+        "value": -10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 10,
+    "maxValue": 10,
+    "mMaxValues": [
+      5,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    "url": "../ida/183663.html"
+  },
+  {
+    "id": 0,
+    "name": "连击",
+    "effectList": [
+      {
+        "name": "连击的心得",
+        "description": "攻击使会心率提升25%,5s内再次攻击可继续提升，最高30%，5s后失效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "maxValue": 5,
+    "mMaxValues": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      3,
+      5
+    ],
+    "url": "../ida/226923.html"
+  }
+]

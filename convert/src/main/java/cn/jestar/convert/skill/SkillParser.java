@@ -5,18 +5,20 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.SkillBean;
+import cn.jestar.convert.bean.SkillJewelryBean;
 
-import static cn.jestar.convert.index.IndexParser.getA;
-import static cn.jestar.convert.index.IndexParser.getDoc;
-import static cn.jestar.convert.index.IndexParser.parseAlist;
+import static cn.jestar.convert.utils.ParserUtils.getAList;
+import static cn.jestar.convert.utils.ParserUtils.getDoc;
+import static cn.jestar.convert.utils.ParserUtils.parseAList;
+import static cn.jestar.convert.utils.ParserUtils.writeDoc;
 
 
 /**
@@ -27,16 +29,14 @@ public class SkillParser {
         File file = new File(Constants.DATA_PATH, "2200.html");
         Document doc = getDoc(file);
         Element a = doc.select("table.t1").first();
-        Map map = parseAlist(a);
+        Map map = parseAList(a);
         return map;
     }
 
-    public SkillBean parseSkill(File file) throws IOException {
+    public SkillBean parseSkill(File file, SkillBean skillBean) throws IOException {
         Elements select = getDoc(file).select("table.t1");
         Elements tr = select.first().getElementsByTag("tr");
         int size = tr.size();
-        SkillBean skillBean = new SkillBean();
-        skillBean.setUrl(file.getName());
         for (int i = 1; i < size; i++) {
             SkillBean.SkillEffect effect = new SkillBean.SkillEffect();
             Element element = tr.get(i);
@@ -66,34 +66,48 @@ public class SkillParser {
         return skillBean;
     }
 
-    public Map<String, String> parseJwerd() throws IOException {
-        Map<String, String> map = new LinkedHashMap<>();
+    public List<SkillJewelryBean> parseJewelry() throws IOException {
+        List<SkillJewelryBean> jwdList = new ArrayList<>();
+        SkillJewelryBean bean;
         for (int i = 2580; i <= 2582; i++) {
             File file = new File(Constants.DATA_PATH, String.format("%s.html", i));
             Document doc = getDoc(file);
-            Elements elements = doc.select("td[rowspan=2] a");
-            convertInElements(map, elements);
+            Elements elements = doc.select("table.t1");
+            for (Element element : elements) {
+                Elements a = element.select("a");
+                Element first = a.first();
+                bean = new SkillJewelryBean(first.text());
+                bean.setUrl(first.attr("href"));
+                bean.setSkill(a.get(1).text());
+                bean.setDebuff(a.last().text());
+                for (Element span : element.select("span")) {
+                    String s = span.className();
+                    if ("c_g b".equals(s)) {
+                        bean.setSkillValue(bean.getInt(span.text()));
+                    } else if ("c_r b".equals(s)) {
+                        bean.setDebuffValue(bean.getInt(span.text()));
+                        break;
+                    }
+                }
+                jwdList.add(bean);
+            }
         }
-        return map;
+        return jwdList;
     }
 
     public void convertHtml(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInElements(map, getA(body));
+        convertInElements(map, getAList(body));
         writeDoc(file, doc);
     }
 
-    public void writeDoc(File file, Document doc) throws IOException {
-        FileWriter writer = new FileWriter(file);
-        writer.write(doc.outerHtml());
-        writer.close();
-    }
+
 
     public void convertSkillInType(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInElements(map, getA(body));
+        convertInElements(map, getAList(body));
         Elements span = body.getElementsByTag("span");
         convertInElements(map, span);
         writeDoc(file, doc);
@@ -102,7 +116,7 @@ public class SkillParser {
     public void convertSkillInDetail(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInElements(map, getA(body));
+        convertInElements(map, getAList(body));
         Elements select = body.select("table.t1");
         convertInElements(map, select.first().select("td.b"));
         replaceElement(map, select.last().selectFirst("td"));
@@ -120,7 +134,7 @@ public class SkillParser {
     public void convertSkillInEquip(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInElements(map, getA(body));
+        convertInElements(map, getAList(body));
         convertInElements(map, body.select("table.t1 th"));
         convertInElements(map, body.select("table.t1 span.c_g"));
         writeDoc(file, doc);
@@ -129,7 +143,7 @@ public class SkillParser {
     public void convertSkillInJwerldy(File file, Map<String, String> map, Set<String> set) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
-        convertInElements(map, getA(body));
+        convertInElements(map, getAList(body));
         Element h2 = body.selectFirst("h2");
         String text = h2.text();
         String trim = text.split("-")[0].trim();

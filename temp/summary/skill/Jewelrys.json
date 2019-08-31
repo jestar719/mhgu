@@ -1,0 +1,2180 @@
+[
+  {
+    "name": "攻击珠【1】",
+    "skill": "攻击",
+    "debuff": "防御",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211163.html"
+  },
+  {
+    "name": "攻击珠【2】",
+    "skill": "攻击",
+    "debuff": "防御",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211164.html"
+  },
+  {
+    "name": "攻击珠【3】",
+    "skill": "攻击",
+    "debuff": "防御",
+    "skillValue": 5,
+    "debuffValue": 1,
+    "slotNum": 3,
+    "mUrl": "../ida/211165.html"
+  },
+  {
+    "name": "达人珠【1】",
+    "skill": "达人",
+    "debuff": "龙耐性",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211166.html"
+  },
+  {
+    "name": "达人珠【2】",
+    "skill": "达人",
+    "debuff": "龙耐性",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211167.html"
+  },
+  {
+    "name": "达人珠【3】",
+    "skill": "达人",
+    "debuff": "龙耐性",
+    "skillValue": 5,
+    "debuffValue": 1,
+    "slotNum": 3,
+    "mUrl": "../ida/211168.html"
+  },
+  {
+    "name": "特攻珠【1】",
+    "skill": "特殊攻击",
+    "debuff": "属性攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211169.html"
+  },
+  {
+    "name": "特攻珠【2】",
+    "skill": "特殊攻击",
+    "debuff": "属性攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211170.html"
+  },
+  {
+    "name": "属攻珠【1】",
+    "skill": "属性攻击",
+    "debuff": "特殊攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211171.html"
+  },
+  {
+    "name": "属攻珠【3】",
+    "skill": "属性攻击",
+    "debuff": "特殊攻击",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211172.html"
+  },
+  {
+    "name": "火炎珠【1】",
+    "skill": "火属性攻击",
+    "debuff": "水属性攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211173.html"
+  },
+  {
+    "name": "火炎珠【2】",
+    "skill": "火属性攻击",
+    "debuff": "水属性攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211174.html"
+  },
+  {
+    "name": "流水珠【1】",
+    "skill": "水属性攻击",
+    "debuff": "雷属性攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211175.html"
+  },
+  {
+    "name": "流水珠【2】",
+    "skill": "水属性攻击",
+    "debuff": "雷属性攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211176.html"
+  },
+  {
+    "name": "雷光珠【1】",
+    "skill": "雷属性攻击",
+    "debuff": "冰属性攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211177.html"
+  },
+  {
+    "name": "雷光珠【2】",
+    "skill": "雷属性攻击",
+    "debuff": "冰属性攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211178.html"
+  },
+  {
+    "name": "冰结珠【1】",
+    "skill": "冰属性攻击",
+    "debuff": "火属性攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211179.html"
+  },
+  {
+    "name": "冰结珠【2】",
+    "skill": "冰属性攻击",
+    "debuff": "火属性攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211180.html"
+  },
+  {
+    "name": "破龙珠【1】",
+    "skill": "龙属性攻击",
+    "debuff": "特殊攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211181.html"
+  },
+  {
+    "name": "破龙珠【2】",
+    "skill": "龙属性攻击",
+    "debuff": "特殊攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211182.html"
+  },
+  {
+    "name": "痛击珠【1】",
+    "skill": "痛击",
+    "debuff": "体力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211183.html"
+  },
+  {
+    "name": "痛击珠【3】",
+    "skill": "痛击",
+    "debuff": "体力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211184.html"
+  },
+  {
+    "name": "重击珠【1】",
+    "skill": "重击",
+    "debuff": "达人",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211185.html"
+  },
+  {
+    "name": "重击珠【3】",
+    "skill": "重击",
+    "debuff": "达人",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211186.html"
+  },
+  {
+    "name": "属会珠【1】",
+    "skill": "属性会心",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211187.html"
+  },
+  {
+    "name": "属会珠【2】",
+    "skill": "属性会心",
+    "debuff": "攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211188.html"
+  },
+  {
+    "name": "特会珠【1】",
+    "skill": "特殊会心",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211189.html"
+  },
+  {
+    "name": "特会珠【2】",
+    "skill": "特殊会心",
+    "debuff": "攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211190.html"
+  },
+  {
+    "name": "里会心珠【1】",
+    "skill": "里会心",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288535.html"
+  },
+  {
+    "name": "里会心珠【3】",
+    "skill": "里会心",
+    "debuff": "攻击",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288536.html"
+  },
+  {
+    "name": "短缩珠【1】",
+    "skill": "蓄力缩短",
+    "debuff": "体术",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211191.html"
+  },
+  {
+    "name": "短缩珠【3】",
+    "skill": "蓄力缩短",
+    "debuff": "体术",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211192.html"
+  },
+  {
+    "name": "全开珠【1】",
+    "skill": "全力",
+    "debuff": "气息",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211193.html"
+  },
+  {
+    "name": "全开珠【2】",
+    "skill": "全力",
+    "debuff": "气息",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211194.html"
+  },
+  {
+    "name": "ＫＯ珠【1】",
+    "skill": "KO",
+    "debuff": "蓄力缩短",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211195.html"
+  },
+  {
+    "name": "ＫＯ珠【2】",
+    "skill": "KO",
+    "debuff": "蓄力缩短",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211196.html"
+  },
+  {
+    "name": "夺气珠【1】",
+    "skill": "减气攻击",
+    "debuff": "耐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211197.html"
+  },
+  {
+    "name": "夺气珠【2】",
+    "skill": "减气攻击",
+    "debuff": "耐力",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211198.html"
+  },
+  {
+    "name": "潜力珠【1】",
+    "skill": "潜力",
+    "debuff": "加护",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211199.html"
+  },
+  {
+    "name": "潜力珠【2】",
+    "skill": "潜力",
+    "debuff": "加护",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211200.html"
+  },
+  {
+    "name": "逆境珠【1】",
+    "skill": "逆境",
+    "debuff": "回复量",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211201.html"
+  },
+  {
+    "name": "逆境珠【2】",
+    "skill": "逆境",
+    "debuff": "回复量",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211202.html"
+  },
+  {
+    "name": "爆师珠【1】",
+    "skill": "爆弹强化",
+    "debuff": "爆弹强化",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211203.html"
+  },
+  {
+    "name": "炮术珠【1】",
+    "skill": "炮术",
+    "debuff": "炮术",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211204.html"
+  },
+  {
+    "name": "防御珠【1】",
+    "skill": "防御",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211205.html"
+  },
+  {
+    "name": "防御珠【2】",
+    "skill": "防御",
+    "debuff": "攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211206.html"
+  },
+  {
+    "name": "加护珠【1】",
+    "skill": "加护",
+    "debuff": "加护",
+    "skillValue": 1,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211208.html"
+  },
+  {
+    "name": "神护珠【1】",
+    "skill": "加护",
+    "debuff": "加护",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211209.html"
+  },
+  {
+    "name": "闪避珠【1】",
+    "skill": "回避性能",
+    "debuff": "体力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211210.html"
+  },
+  {
+    "name": "闪避珠【2】",
+    "skill": "回避性能",
+    "debuff": "体力",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211211.html"
+  },
+  {
+    "name": "跳跃珠【1】",
+    "skill": "回避距离",
+    "debuff": "体力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211212.html"
+  },
+  {
+    "name": "跳跃珠【3】",
+    "skill": "回避距离",
+    "debuff": "体力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288537.html"
+  },
+  {
+    "name": "速纳珠【1】",
+    "skill": "收刀",
+    "debuff": "磨刀匠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211214.html"
+  },
+  {
+    "name": "速纳珠【2】",
+    "skill": "收刀",
+    "debuff": "磨刀匠",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211215.html"
+  },
+  {
+    "name": "收磨珠【1】",
+    "skill": "收刀打磨",
+    "debuff": "收刀",
+    "skillValue": 2,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288538.html"
+  },
+  {
+    "name": "刃鳞珠【1】",
+    "skill": "刃鳞",
+    "debuff": "刃鳞",
+    "skillValue": 1,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/288539.html"
+  },
+  {
+    "name": "刃鳞珠【3】",
+    "skill": "刃鳞",
+    "debuff": "刃鳞",
+    "skillValue": 4,
+    "debuffValue": 0,
+    "slotNum": 3,
+    "mUrl": "../ida/288540.html"
+  },
+  {
+    "name": "铁壁珠【1】",
+    "skill": "格挡性能",
+    "debuff": "体术",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211216.html"
+  },
+  {
+    "name": "铁壁珠【2】",
+    "skill": "格挡性能",
+    "debuff": "体术",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211217.html"
+  },
+  {
+    "name": "强壁珠【1】",
+    "skill": "格挡强化",
+    "debuff": "耐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211218.html"
+  },
+  {
+    "name": "强壁珠【2】",
+    "skill": "格挡强化",
+    "debuff": "耐力",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211219.html"
+  },
+  {
+    "name": "毅力珠【1】",
+    "skill": "毅力",
+    "debuff": "调和成功率",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211223.html"
+  },
+  {
+    "name": "毅力珠【2】",
+    "skill": "毅力",
+    "debuff": "调和成功率",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211224.html"
+  },
+  {
+    "name": "斗魂珠【1】",
+    "skill": "斗魂",
+    "debuff": "格挡性能",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211225.html"
+  },
+  {
+    "name": "斗魂珠【2】",
+    "skill": "斗魂",
+    "debuff": "格挡性能",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211226.html"
+  },
+  {
+    "name": "无伤珠【1】",
+    "skill": "无伤",
+    "debuff": "回复速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211227.html"
+  },
+  {
+    "name": "无伤珠【2】",
+    "skill": "无伤",
+    "debuff": "回复速度",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211228.html"
+  },
+  {
+    "name": "鼓笛珠【1】",
+    "skill": "笛",
+    "debuff": "笛",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211313.html"
+  },
+  {
+    "name": "剑豪珠【1】",
+    "skill": "剑术",
+    "debuff": "匠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211321.html"
+  },
+  {
+    "name": "剑豪珠【3】",
+    "skill": "剑术",
+    "debuff": "匠",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211322.html"
+  },
+  {
+    "name": "刚刃珠【1】",
+    "skill": "打磨术",
+    "debuff": "磨刀匠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231081.html"
+  },
+  {
+    "name": "刚刃珠【3】",
+    "skill": "打磨术",
+    "debuff": "磨刀匠",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/231082.html"
+  },
+  {
+    "name": "连击珠【1】",
+    "skill": "连击",
+    "debuff": "加护",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231083.html"
+  },
+  {
+    "name": "连击珠【3】",
+    "skill": "连击",
+    "debuff": "加护",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/231084.html"
+  },
+  {
+    "name": "会心珠【1】",
+    "skill": "会心强化",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231085.html"
+  },
+  {
+    "name": "会心珠【3】",
+    "skill": "会心强化",
+    "debuff": "攻击",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288541.html"
+  },
+  {
+    "name": "泡沫珠【1】",
+    "skill": "泡沫",
+    "debuff": "耐力回复",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231086.html"
+  },
+  {
+    "name": "泡沫珠【3】",
+    "skill": "泡沫",
+    "debuff": "耐力回复",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288542.html"
+  },
+  {
+    "name": "好机珠【1】",
+    "skill": "良机",
+    "debuff": "效果持续",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231087.html"
+  },
+  {
+    "name": "好机珠【3】",
+    "skill": "良机",
+    "debuff": "效果持续",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288543.html"
+  },
+  {
+    "name": "逆境珠【1】",
+    "skill": "暴怒",
+    "debuff": "体术",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231088.html"
+  },
+  {
+    "name": "逆境珠【2】",
+    "skill": "暴怒",
+    "debuff": "体术",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/231089.html"
+  },
+  {
+    "name": "绝境珠【1】",
+    "skill": "绝境",
+    "debuff": "毒",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231090.html"
+  },
+  {
+    "name": "绝境珠【2】",
+    "skill": "绝境",
+    "debuff": "毒",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/231091.html"
+  },
+  {
+    "name": "飞燕珠【1】",
+    "skill": "跳跃",
+    "debuff": "跳跃",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/231092.html"
+  },
+  {
+    "name": "无念珠【1】",
+    "skill": "无心",
+    "debuff": "气息",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231093.html"
+  },
+  {
+    "name": "无念珠【3】",
+    "skill": "无心",
+    "debuff": "气息",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288544.html"
+  },
+  {
+    "name": "英雄珠【1】",
+    "skill": "英雄之盾",
+    "debuff": "运气",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231094.html"
+  },
+  {
+    "name": "英雄珠【3】",
+    "skill": "英雄之盾",
+    "debuff": "运气",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/231095.html"
+  },
+  {
+    "name": "龙气珠【1】",
+    "skill": "龙气",
+    "debuff": "防御",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288545.html"
+  },
+  {
+    "name": "龙气珠【3】",
+    "skill": "龙气",
+    "debuff": "防御",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288546.html"
+  },
+  {
+    "name": "忍耐珠【1】",
+    "skill": "忍耐",
+    "debuff": "无心",
+    "skillValue": 2,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288547.html"
+  },
+  {
+    "name": "技延珠【1】",
+    "skill": "ＳＰ持续",
+    "debuff": "无心",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288548.html"
+  },
+  {
+    "name": "技延珠【2】",
+    "skill": "ＳＰ持续",
+    "debuff": "无心",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/288549.html"
+  },
+  {
+    "name": "属耐珠【1】",
+    "skill": "属性耐性",
+    "debuff": "体力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211231.html"
+  },
+  {
+    "name": "属耐珠【3】",
+    "skill": "属性耐性",
+    "debuff": "体力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211232.html"
+  },
+  {
+    "name": "耐火珠【1】",
+    "skill": "火耐性",
+    "debuff": "水耐性",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211233.html"
+  },
+  {
+    "name": "制火珠【1】",
+    "skill": "火耐性",
+    "debuff": "火耐性",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211234.html"
+  },
+  {
+    "name": "耐水珠【1】",
+    "skill": "水耐性",
+    "debuff": "雷耐性",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211235.html"
+  },
+  {
+    "name": "制水珠【1】",
+    "skill": "水耐性",
+    "debuff": "水耐性",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211236.html"
+  },
+  {
+    "name": "耐雷珠【1】",
+    "skill": "雷耐性",
+    "debuff": "冰耐性",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211237.html"
+  },
+  {
+    "name": "制雷珠【1】",
+    "skill": "雷耐性",
+    "debuff": "雷耐性",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211238.html"
+  },
+  {
+    "name": "耐冰珠【1】",
+    "skill": "冰耐性",
+    "debuff": "火耐性",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211239.html"
+  },
+  {
+    "name": "制冰珠【1】",
+    "skill": "冰耐性",
+    "debuff": "冰耐性",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211240.html"
+  },
+  {
+    "name": "耐龙珠【1】",
+    "skill": "龙耐性",
+    "debuff": "毒",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211241.html"
+  },
+  {
+    "name": "制龙珠【1】",
+    "skill": "龙耐性",
+    "debuff": "龙耐性",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211242.html"
+  },
+  {
+    "name": "耐绝珠【1】",
+    "skill": "昏厥",
+    "debuff": "麻痹",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211243.html"
+  },
+  {
+    "name": "制绝珠【1】",
+    "skill": "昏厥",
+    "debuff": "昏厥",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211244.html"
+  },
+  {
+    "name": "耐麻珠【1】",
+    "skill": "麻痹",
+    "debuff": "毒",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211245.html"
+  },
+  {
+    "name": "耐麻珠【2】",
+    "skill": "麻痹",
+    "debuff": "毒",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211246.html"
+  },
+  {
+    "name": "耐眠珠【1】",
+    "skill": "睡眠",
+    "debuff": "雪人",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211247.html"
+  },
+  {
+    "name": "耐眠珠【2】",
+    "skill": "睡眠",
+    "debuff": "雪人",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211248.html"
+  },
+  {
+    "name": "耐毒珠【1】",
+    "skill": "毒",
+    "debuff": "昏厥",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211249.html"
+  },
+  {
+    "name": "耐毒珠【2】",
+    "skill": "毒",
+    "debuff": "昏厥",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211250.html"
+  },
+  {
+    "name": "耐防珠【1】",
+    "skill": "对防御DOWN",
+    "debuff": "对防御DOWN",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211251.html"
+  },
+  {
+    "name": "耐盗珠【1】",
+    "skill": "偷盗无效",
+    "debuff": "偷盗无效",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211252.html"
+  },
+  {
+    "name": "耐震珠【1】",
+    "skill": "耐震",
+    "debuff": "睡眠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211255.html"
+  },
+  {
+    "name": "抗震珠【1】",
+    "skill": "耐震",
+    "debuff": "耐震",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211256.html"
+  },
+  {
+    "name": "耐暑珠【1】",
+    "skill": "耐暑",
+    "debuff": "耐暑",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211257.html"
+  },
+  {
+    "name": "耐寒珠【1】",
+    "skill": "耐寒",
+    "debuff": "耐寒",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211258.html"
+  },
+  {
+    "name": "防音珠【1】",
+    "skill": "听觉保护",
+    "debuff": "加护",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211259.html"
+  },
+  {
+    "name": "防音珠【3】",
+    "skill": "听觉保护",
+    "debuff": "加护",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211260.html"
+  },
+  {
+    "name": "防风珠【1】",
+    "skill": "风压",
+    "debuff": "运气",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211261.html"
+  },
+  {
+    "name": "防风珠【2】",
+    "skill": "风压",
+    "debuff": "运气",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211262.html"
+  },
+  {
+    "name": "菌学珠【1】",
+    "skill": "细菌学",
+    "debuff": "气息",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211263.html"
+  },
+  {
+    "name": "菌究珠【1】",
+    "skill": "细菌学",
+    "debuff": "细菌学",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211264.html"
+  },
+  {
+    "name": "抗狂珠【1】",
+    "skill": "狂击耐性",
+    "debuff": "回避性能",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211265.html"
+  },
+  {
+    "name": "抗狂珠【3】",
+    "skill": "狂击耐性",
+    "debuff": "回避性能",
+    "skillValue": 5,
+    "debuffValue": 1,
+    "slotNum": 3,
+    "mUrl": "../ida/211266.html"
+  },
+  {
+    "name": "抗伤珠【1】",
+    "skill": "裂伤",
+    "debuff": "裂伤",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211267.html"
+  },
+  {
+    "name": "耐达摩珠【1】",
+    "skill": "雪人",
+    "debuff": "睡眠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/228220.html"
+  },
+  {
+    "name": "抗达摩珠【1】",
+    "skill": "雪人",
+    "debuff": "雪人",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228221.html"
+  },
+  {
+    "name": "北风珠【1】",
+    "skill": "寒冷适应",
+    "debuff": "耐暑",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231096.html"
+  },
+  {
+    "name": "北风珠【3】",
+    "skill": "寒冷适应",
+    "debuff": "耐暑",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288550.html"
+  },
+  {
+    "name": "南风珠【1】",
+    "skill": "炎热适应",
+    "debuff": "耐寒",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231097.html"
+  },
+  {
+    "name": "南风珠【3】",
+    "skill": "炎热适应",
+    "debuff": "耐寒",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288551.html"
+  },
+  {
+    "name": "体力珠【1】",
+    "skill": "体力",
+    "debuff": "体力",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211269.html"
+  },
+  {
+    "name": "早复珠【1】",
+    "skill": "回复速度",
+    "debuff": "进食",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211270.html"
+  },
+  {
+    "name": "早复珠【2】",
+    "skill": "回复速度",
+    "debuff": "进食",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211271.html"
+  },
+  {
+    "name": "治愈珠【1】",
+    "skill": "回复量",
+    "debuff": "回复速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211272.html"
+  },
+  {
+    "name": "治愈珠【2】",
+    "skill": "回复量",
+    "debuff": "回复速度",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211273.html"
+  },
+  {
+    "name": "快吃珠【1】",
+    "skill": "进食",
+    "debuff": "回复量",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211274.html"
+  },
+  {
+    "name": "快吃珠【3】",
+    "skill": "进食",
+    "debuff": "回复量",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211275.html"
+  },
+  {
+    "name": "强走珠【1】",
+    "skill": "耐力",
+    "debuff": "饥饿",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211276.html"
+  },
+  {
+    "name": "强走珠【3】",
+    "skill": "耐力",
+    "debuff": "饥饿",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211277.html"
+  },
+  {
+    "name": "体术珠【1】",
+    "skill": "体术",
+    "debuff": "耐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211278.html"
+  },
+  {
+    "name": "体术珠【2】",
+    "skill": "体术",
+    "debuff": "耐力",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211279.html"
+  },
+  {
+    "name": "早气珠【1】",
+    "skill": "耐力回复",
+    "debuff": "回避性能",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211280.html"
+  },
+  {
+    "name": "早气珠【2】",
+    "skill": "耐力回复",
+    "debuff": "回避性能",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211281.html"
+  },
+  {
+    "name": "长跑珠【1】",
+    "skill": "长跑",
+    "debuff": "体术",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288552.html"
+  },
+  {
+    "name": "长跑珠【2】",
+    "skill": "长跑",
+    "debuff": "体术",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/288553.html"
+  },
+  {
+    "name": "无食珠【1】",
+    "skill": "饥饿",
+    "debuff": "饥饿",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211282.html"
+  },
+  {
+    "name": "食汉珠【1】",
+    "skill": "贪吃鬼",
+    "debuff": "贪吃鬼",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211283.html"
+  },
+  {
+    "name": "友爱珠【1】",
+    "skill": "广域",
+    "debuff": "气息",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211284.html"
+  },
+  {
+    "name": "友爱珠【2】",
+    "skill": "广域",
+    "debuff": "气息",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211285.html"
+  },
+  {
+    "name": "持续珠【1】",
+    "skill": "效果持续",
+    "debuff": "效果持续",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211286.html"
+  },
+  {
+    "name": "肉食珠【1】",
+    "skill": "肉食",
+    "debuff": "饥饿",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211287.html"
+  },
+  {
+    "name": "肉好珠【1】",
+    "skill": "肉食",
+    "debuff": "肉食",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211288.html"
+  },
+  {
+    "name": "茸好珠【1】",
+    "skill": "食菇",
+    "debuff": "肉食",
+    "skillValue": 2,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211289.html"
+  },
+  {
+    "name": "节食珠【1】",
+    "skill": "节食",
+    "debuff": "反复无常",
+    "skillValue": 2,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211290.html"
+  },
+  {
+    "name": "野草珠【1】",
+    "skill": "野草知识",
+    "debuff": "野草知识",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228222.html"
+  },
+  {
+    "name": "运气珠【1】",
+    "skill": "运气",
+    "debuff": "反复无常",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211291.html"
+  },
+  {
+    "name": "运气珠【3】",
+    "skill": "运气",
+    "debuff": "反复无常",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211292.html"
+  },
+  {
+    "name": "捕获珠【1】",
+    "skill": "捕获",
+    "debuff": "运气",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211293.html"
+  },
+  {
+    "name": "捕获珠【3】",
+    "skill": "捕获",
+    "debuff": "运气",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211294.html"
+  },
+  {
+    "name": "剥皮珠【1】",
+    "skill": "剥取",
+    "debuff": "运气",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211295.html"
+  },
+  {
+    "name": "剥皮珠【3】",
+    "skill": "剥取",
+    "debuff": "运气",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211296.html"
+  },
+  {
+    "name": "搬运珠【1】",
+    "skill": "搬运",
+    "debuff": "搬运",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211297.html"
+  },
+  {
+    "name": "采集珠【1】",
+    "skill": "采集",
+    "debuff": "采集",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211298.html"
+  },
+  {
+    "name": "祝福珠【1】",
+    "skill": "反复无常",
+    "debuff": "反复无常",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211300.html"
+  },
+  {
+    "name": "博士珠【1】",
+    "skill": "调和成功率",
+    "debuff": "调和成功率",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211301.html"
+  },
+  {
+    "name": "弹制珠【1】",
+    "skill": "调合数",
+    "debuff": "调合数",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211302.html"
+  },
+  {
+    "name": "采蜜珠【1】",
+    "skill": "蜂蜜",
+    "debuff": "反复无常",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211303.html"
+  },
+  {
+    "name": "占蜜珠【1】",
+    "skill": "蜂蜜",
+    "debuff": "蜂蜜",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211304.html"
+  },
+  {
+    "name": "护石珠【1】",
+    "skill": "护石王",
+    "debuff": "护石王",
+    "skillValue": 1,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211305.html"
+  },
+  {
+    "name": "护石珠【3】",
+    "skill": "护石王",
+    "debuff": "护石王",
+    "skillValue": 4,
+    "debuffValue": 0,
+    "slotNum": 3,
+    "mUrl": "../ida/288554.html"
+  },
+  {
+    "name": "千里珠【1】",
+    "skill": "千里眼",
+    "debuff": "千里眼",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211306.html"
+  },
+  {
+    "name": "观察珠【1】",
+    "skill": "观察眼",
+    "debuff": "观察眼",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211307.html"
+  },
+  {
+    "name": "猎人珠【1】",
+    "skill": "猎人",
+    "debuff": "猎人",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211308.html"
+  },
+  {
+    "name": "名指挥珠【1】",
+    "skill": "气息",
+    "debuff": "气息",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211309.html"
+  },
+  {
+    "name": "骑惯珠【1】",
+    "skill": "乘骑",
+    "debuff": "乘骑",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211310.html"
+  },
+  {
+    "name": "陷阱师【1】",
+    "skill": "高速设置",
+    "debuff": "高速设置",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211311.html"
+  },
+  {
+    "name": "指挥珠【1】",
+    "skill": "指挥",
+    "debuff": "效果持续",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211314.html"
+  },
+  {
+    "name": "名指挥珠【1】",
+    "skill": "指挥",
+    "debuff": "指挥",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211315.html"
+  },
+  {
+    "name": "号令珠【1】",
+    "skill": "号令",
+    "debuff": "采集",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211316.html"
+  },
+  {
+    "name": "号令珠【2】",
+    "skill": "号令",
+    "debuff": "采集",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211317.html"
+  },
+  {
+    "name": "历铃珠【1】",
+    "skill": "贝鲁纳",
+    "debuff": "贝鲁纳",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228224.html"
+  },
+  {
+    "name": "雪花珠【1】",
+    "skill": "波凯",
+    "debuff": "波凯",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228225.html"
+  },
+  {
+    "name": "仙汤珠【1】",
+    "skill": "结云",
+    "debuff": "结云",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228226.html"
+  },
+  {
+    "name": "始猎珠【1】",
+    "skill": "可可特",
+    "debuff": "可可特",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/228227.html"
+  },
+  {
+    "name": "探究珠【1】",
+    "skill": "龙识船",
+    "debuff": "龙识船",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/288555.html"
+  },
+  {
+    "name": "天宴珠【1】",
+    "skill": "飞行酒吧",
+    "debuff": "飞行酒吧",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/288556.html"
+  },
+  {
+    "name": "匠珠【1】",
+    "skill": "匠",
+    "debuff": "锋利度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288557.html"
+  },
+  {
+    "name": "匠珠【3】",
+    "skill": "匠",
+    "debuff": "锋利度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211319.html"
+  },
+  {
+    "name": "斩铁珠【1】",
+    "skill": "锋利度",
+    "debuff": "匠",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211323.html"
+  },
+  {
+    "name": "斩铁珠【3】",
+    "skill": "锋利度",
+    "debuff": "匠",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211324.html"
+  },
+  {
+    "name": "拔刀珠【1】",
+    "skill": "拔刀会心",
+    "debuff": "达人",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211325.html"
+  },
+  {
+    "name": "拔刀珠【2】",
+    "skill": "拔刀会心",
+    "debuff": "达人",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211326.html"
+  },
+  {
+    "name": "拔打珠【1】",
+    "skill": "拔刀减气",
+    "debuff": "锋利度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211327.html"
+  },
+  {
+    "name": "拔打珠【3】",
+    "skill": "拔刀减气",
+    "debuff": "锋利度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211328.html"
+  },
+  {
+    "name": "打磨珠【1】",
+    "skill": "磨刀匠",
+    "debuff": "磨刀匠",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211329.html"
+  },
+  {
+    "name": "钝器珠【1】",
+    "skill": "钝器",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/231098.html"
+  },
+  {
+    "name": "钝器珠【2】",
+    "skill": "钝器",
+    "debuff": "攻击",
+    "skillValue": 3,
+    "debuffValue": 2,
+    "slotNum": 2,
+    "mUrl": "../ida/231099.html"
+  },
+  {
+    "name": "装填珠【1】",
+    "skill": "装填数",
+    "debuff": "装填速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/288558.html"
+  },
+  {
+    "name": "装填珠【3】",
+    "skill": "装填数",
+    "debuff": "装填速度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211331.html"
+  },
+  {
+    "name": "速射珠【1】",
+    "skill": "速射",
+    "debuff": "装填速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211333.html"
+  },
+  {
+    "name": "速射珠【3】",
+    "skill": "速射",
+    "debuff": "装填速度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211334.html"
+  },
+  {
+    "name": "早填珠【1】",
+    "skill": "装填速度",
+    "debuff": "后坐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211335.html"
+  },
+  {
+    "name": "早填珠【2】",
+    "skill": "装填速度",
+    "debuff": "后坐力",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211336.html"
+  },
+  {
+    "name": "抑反珠【1】",
+    "skill": "后坐力",
+    "debuff": "装填速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211337.html"
+  },
+  {
+    "name": "抑反珠【3】",
+    "skill": "后坐力",
+    "debuff": "装填速度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211338.html"
+  },
+  {
+    "name": "点射珠【1】",
+    "skill": "精确射击",
+    "debuff": "精确射击",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211339.html"
+  },
+  {
+    "name": "射法珠【1】",
+    "skill": "射法",
+    "debuff": "装填数",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211340.html"
+  },
+  {
+    "name": "射法珠【2】",
+    "skill": "射法",
+    "debuff": "装填数",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211341.html"
+  },
+  {
+    "name": "节弹珠【1】",
+    "skill": "弹药节约",
+    "debuff": "精确射击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/228228.html"
+  },
+  {
+    "name": "节弹珠【2】",
+    "skill": "弹药节约",
+    "debuff": "精确射击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/231100.html"
+  },
+  {
+    "name": "变射珠【1】",
+    "skill": "变则射击",
+    "debuff": "变则射击",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/231101.html"
+  },
+  {
+    "name": "强弹珠【1】",
+    "skill": "通常弹强化",
+    "debuff": "后坐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211342.html"
+  },
+  {
+    "name": "强弹珠【3】",
+    "skill": "通常弹强化",
+    "debuff": "后坐力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211343.html"
+  },
+  {
+    "name": "贯通珠【1】",
+    "skill": "贯通弹强化",
+    "debuff": "后坐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211344.html"
+  },
+  {
+    "name": "贯通珠【3】",
+    "skill": "贯通弹强化",
+    "debuff": "后坐力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211345.html"
+  },
+  {
+    "name": "散弹珠【1】",
+    "skill": "散弹强化",
+    "debuff": "后坐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211346.html"
+  },
+  {
+    "name": "散弹珠【3】",
+    "skill": "散弹强化",
+    "debuff": "后坐力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/211347.html"
+  },
+  {
+    "name": "重弹珠【1】",
+    "skill": "重击弹强化",
+    "debuff": "后坐力",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/228223.html"
+  },
+  {
+    "name": "重弹珠【3】",
+    "skill": "重击弹强化",
+    "debuff": "后坐力",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/231102.html"
+  },
+  {
+    "name": "加弹珠【1】",
+    "skill": "通常弹追加",
+    "debuff": "装填速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211348.html"
+  },
+  {
+    "name": "加弹珠【2】",
+    "skill": "通常弹追加",
+    "debuff": "装填速度",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211349.html"
+  },
+  {
+    "name": "加贯珠【1】",
+    "skill": "贯通弹追加",
+    "debuff": "贯通弹追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211350.html"
+  },
+  {
+    "name": "加散珠【1】",
+    "skill": "散弹追加",
+    "debuff": "散弹追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211351.html"
+  },
+  {
+    "name": "加榴珠【1】",
+    "skill": "榴弹追加",
+    "debuff": "榴弹追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211352.html"
+  },
+  {
+    "name": "加扩珠【1】",
+    "skill": "扩散弹追加",
+    "debuff": "装填速度",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211353.html"
+  },
+  {
+    "name": "加扩珠【3】",
+    "skill": "扩散弾追加",
+    "debuff": "装填速度",
+    "skillValue": 4,
+    "debuffValue": 2,
+    "slotNum": 3,
+    "mUrl": "../ida/288559.html"
+  },
+  {
+    "name": "强瓶珠【1】",
+    "skill": "强击瓶追加",
+    "debuff": "达人",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211355.html"
+  },
+  {
+    "name": "强瓶珠【2】",
+    "skill": "强击瓶追加",
+    "debuff": "达人",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211356.html"
+  },
+  {
+    "name": "接瓶珠【1】",
+    "skill": "接击瓶追加",
+    "debuff": "接击瓶追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211357.html"
+  },
+  {
+    "name": "毒瓶珠【1】",
+    "skill": "毒瓶追加",
+    "debuff": "毒瓶追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211358.html"
+  },
+  {
+    "name": "痹瓶珠【1】",
+    "skill": "麻痹瓶追加",
+    "debuff": "攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/211359.html"
+  },
+  {
+    "name": "痹瓶珠【2】",
+    "skill": "麻痹瓶追加",
+    "debuff": "攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/211360.html"
+  },
+  {
+    "name": "眠瓶珠【1】",
+    "skill": "睡眠瓶追加",
+    "debuff": "睡眠瓶追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211361.html"
+  },
+  {
+    "name": "减瓶珠【1】",
+    "skill": "减气瓶追加",
+    "debuff": "减气瓶追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211362.html"
+  },
+  {
+    "name": "爆瓶珠【1】",
+    "skill": "爆破瓶追加",
+    "debuff": "爆破瓶追加",
+    "skillValue": 2,
+    "debuffValue": 0,
+    "slotNum": 1,
+    "mUrl": "../ida/211364.html"
+  },
+  {
+    "name": "属瓶珠【1】",
+    "skill": "属强瓶追加",
+    "debuff": "特殊攻击",
+    "skillValue": 1,
+    "debuffValue": 1,
+    "slotNum": 1,
+    "mUrl": "../ida/228219.html"
+  },
+  {
+    "name": "属瓶珠【2】",
+    "skill": "属强瓶追加",
+    "debuff": "特殊攻击",
+    "skillValue": 3,
+    "debuffValue": 1,
+    "slotNum": 2,
+    "mUrl": "../ida/231103.html"
+  }
+]

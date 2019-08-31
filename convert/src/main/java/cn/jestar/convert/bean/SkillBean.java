@@ -18,6 +18,36 @@ public class SkillBean {
     private int[] mMaxValues;
     private String url;
 
+    public int getMaxValue() {
+        return maxValue;
+    }
+
+    public void setMaxValue(int maxValue) {
+        this.maxValue = maxValue;
+    }
+
+    public int[] getMaxValues() {
+        return mMaxValues;
+    }
+
+    public void setMaxValues(int[] max) {
+        mMaxValues = max;
+        int length = max.length;
+        int i = length - 2;
+        for (int i1 = 0; i1 < i; i1++) {
+            int maxValue = max[i1];
+            boolean isLeft = i1 % 2 == 0;
+            int value = isLeft ? leftMaxValue : rightMaxValue;
+            if (maxValue > value) {
+                if (isLeft) {
+                    leftMaxValue = maxValue;
+                } else {
+                    rightMaxValue = maxValue;
+                }
+            }
+        }
+        maxValue = max[i + 1];
+    }
 
     public String getUrl() {
         return url;
@@ -68,7 +98,6 @@ public class SkillBean {
         return this;
     }
 
-
     public int getLeftMaxValue() {
         return leftMaxValue;
     }
@@ -85,25 +114,6 @@ public class SkillBean {
     public SkillBean setRightMaxValue(int rightMaxValue) {
         this.rightMaxValue = rightMaxValue;
         return this;
-    }
-
-    public void setMaxValues(int[] max) {
-        mMaxValues = max;
-        int length = max.length;
-        int i = length - 2;
-        for (int i1 = 0; i1 < i; i1++) {
-            int maxValue = max[i1];
-            boolean isLeft = i1 % 2 == 0;
-            int value = isLeft ? leftMaxValue : rightMaxValue;
-            if (maxValue > value) {
-                if (isLeft) {
-                    leftMaxValue = maxValue;
-                } else {
-                    rightMaxValue = maxValue;
-                }
-            }
-        }
-        maxValue = max[i + 1];
     }
 
     public static class SkillEffect implements Comparable<SkillEffect> {

@@ -15,6 +15,7 @@ import java.util.regex.Matcher;
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.utils.JsonUtils;
+import cn.jestar.convert.utils.ParserUtils;
 import cn.jestar.convert.utils.RegexUtils;
 
 import static org.junit.Assert.assertEquals;
@@ -66,7 +67,7 @@ public class IndexCompilerTest {
     @Test
     public void testJsoup() throws IOException {
         File file = new File(Constants.INDEX);
-        Document doc = IndexParser.getDoc(file);
+        Document doc = ParserUtils.getDoc(file);
         Element body = doc.body();
         Elements div = body.select("table.t0");
         List<LinkInfo> list = new ArrayList<>(div.size());
@@ -84,15 +85,15 @@ public class IndexCompilerTest {
 
     @Test
     public void getEquipIndex() throws IOException {
-        Document doc = IndexParser.getDoc(new File(Constants.DATA_PATH, "2300.html"));
+        Document doc = ParserUtils.getDoc(new File(Constants.DATA_PATH, "2300.html"));
         List<LinkInfo> list = new ArrayList<>();
         Elements a = doc.select("div#navi1").first().getElementsByTag("a");
         LinkInfo info = new LinkInfo("equip_index");
-        info.setData(IndexParser.parseAlist(a));
+        info.setData(ParserUtils.parseAList(a));
         list.add(info);
         a = doc.select("table.t1").first().getElementsByTag("a");
         info = new LinkInfo("all_equip");
-        info.setData(IndexParser.parseAlist(a));
+        info.setData(ParserUtils.parseAList(a));
         list.add(info);
         JsonUtils.writeJson(new File(Constants.TEMP_SUMMARY_PATH, "equip_index.json"), list);
     }
