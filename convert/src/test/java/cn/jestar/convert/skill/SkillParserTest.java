@@ -157,9 +157,9 @@ public class SkillParserTest {
             int slotValue = bean.getSlotValue();
             addTd(String.valueOf(slotValue), true, tr);
             addTd(String.valueOf(bean.getSlotNum()), true, tr);
-            String value = slotValue == 2 ? "Yes" : "No";
+            String value = slotValue == 2 ? "<span style=\"color:#0011ff;\">Yes</span>" : "No";
             td = getTd(true);
-            td.append("<span style=\"color:#0011ff;\">" + value + "</span>");
+            td.append(value);
             tr.appendChild(td);
             element.appendChild(tr);
         }
