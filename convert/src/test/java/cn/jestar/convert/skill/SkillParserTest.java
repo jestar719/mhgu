@@ -114,18 +114,6 @@ public class SkillParserTest {
             detail.setSkillBean(bean, skillJewelryBean, isEmpty ? 0 : jList.size());
             list.add(detail);
         }
-        list.sort((x1, x2) -> x1.getType() - x2.getType());
-        file = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
-        JsonUtils.writeJson(file, list);
-    }
-
-    @Test
-    public void createSkillDetailHtml() throws IOException {
-        File file = new File(Constants.DATA_PATH, "2208.html");
-        Document doc = getDoc(file);
-        Elements select = doc.select("table.t1 tbody");
-        File json = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
-        List<SkillDetailBean> list = JsonUtils.toList(new FileReader(json), SkillDetailBean.class);
         list.sort(new Comparator<SkillDetailBean>() {
             @Override
             public int compare(SkillDetailBean o1, SkillDetailBean o2) {
@@ -137,6 +125,17 @@ public class SkillParserTest {
                 return result;
             }
         });
+        file = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
+        JsonUtils.writeJson(file, list);
+    }
+
+    @Test
+    public void createSkillDetailHtml() throws IOException {
+        File file = new File(Constants.DATA_PATH, "2208.html");
+        Document doc = getDoc(file);
+        Elements select = doc.select("table.t1 tbody");
+        File json = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
+        List<SkillDetailBean> list = JsonUtils.toList(new FileReader(json), SkillDetailBean.class);
         int type = -1;
         Element element = null;
         for (SkillDetailBean bean : list) {
@@ -158,7 +157,10 @@ public class SkillParserTest {
             int slotValue = bean.getSlotValue();
             addTd(String.valueOf(slotValue), true, tr);
             addTd(String.valueOf(bean.getSlotNum()), true, tr);
-            addTd(slotValue == 2 ? "Yes" : "No", true, tr);
+            String value = slotValue == 2 ? "Yes" : "No";
+            td = getTd(true);
+            td.append("<span style=\"color:#0011ff;\">" + value + "</span>");
+            tr.appendChild(td);
             element.appendChild(tr);
         }
         writeDoc(file, doc);

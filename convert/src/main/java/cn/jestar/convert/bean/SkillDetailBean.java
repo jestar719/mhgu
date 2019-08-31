@@ -102,7 +102,7 @@ public class SkillDetailBean {
             if (slotValue + maxValue >= 10) {
                 type = SINGLE_WITH_STONE;
             } else {
-                if (slotNum == 2 && slotValue + maxValue + 1 > 10) {
+                if (slotNum == 2 && slotValue + maxValue + 1 >= 10) {
                     type = SINGLE_WITH_STONE;
                 } else if (slotValue == 2) {
                     type = maxValue + 6 >= 10 ? SINGLE_WITH_STONE : NEED_EQUIP;

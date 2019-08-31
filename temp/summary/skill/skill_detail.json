@@ -1,483 +1,13 @@
 [
   {
-    "name": "搬运",
-    "maxValue": 10,
-    "jewelryName": "搬运珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183525.html"
-  },
-  {
-    "name": "扩散弹追加",
-    "maxValue": 10,
-    "jewelryName": "加扩珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 1,
-    "type": 0,
-    "url": "../ida/183533.html"
-  },
-  {
-    "name": "加护",
-    "maxValue": 10,
-    "jewelryName": "神护珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183534.html"
-  },
-  {
-    "name": "猎人",
-    "maxValue": 10,
-    "jewelryName": "猎人珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183537.html"
-  },
-  {
-    "name": "观察眼",
-    "maxValue": 10,
-    "jewelryName": "观察珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183539.html"
-  },
-  {
-    "name": "贯通弹追加",
-    "maxValue": 10,
-    "jewelryName": "加贯珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183541.html"
-  },
-  {
-    "name": "KO",
-    "maxValue": 10,
-    "jewelryName": "ＫＯ珠【2】",
+    "name": "龙属性攻击",
+    "maxValue": 13,
+    "jewelryName": "破龙珠【2】",
     "jewelryNum": 2,
     "slotNum": 2,
     "slotValue": 3,
     "type": 0,
-    "url": "../ida/183552.html"
-  },
-  {
-    "name": "气息",
-    "maxValue": 10,
-    "jewelryName": "名指挥珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183554.html"
-  },
-  {
-    "name": "减气攻击",
-    "maxValue": 10,
-    "jewelryName": "夺气珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183555.html"
-  },
-  {
-    "name": "减气瓶追加",
-    "maxValue": 10,
-    "jewelryName": "减瓶珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183556.html"
-  },
-  {
-    "name": "效果持续",
-    "maxValue": 10,
-    "jewelryName": "持续珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183559.html"
-  },
-  {
-    "name": "攻击",
-    "maxValue": 10,
-    "jewelryName": "攻击珠【3】",
-    "jewelryNum": 3,
-    "slotNum": 3,
-    "slotValue": 5,
-    "type": 0,
-    "url": "../ida/183560.html"
-  },
-  {
-    "name": "高速设置",
-    "maxValue": 10,
-    "jewelryName": "陷阱师【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183563.html"
-  },
-  {
-    "name": "号令",
-    "maxValue": 10,
-    "jewelryName": "号令珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183565.html"
-  },
-  {
-    "name": "护石王",
-    "maxValue": 10,
-    "jewelryName": "护石珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 0,
-    "url": "../ida/183569.html"
-  },
-  {
-    "name": "细菌学",
-    "maxValue": 10,
-    "jewelryName": "菌究珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183572.html"
-  },
-  {
-    "name": "指挥",
-    "maxValue": 10,
-    "jewelryName": "名指挥珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183574.html"
-  },
-  {
-    "name": "散弹追加",
-    "maxValue": 10,
-    "jewelryName": "加散珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183577.html"
-  },
-  {
-    "name": "睡眠瓶追加",
-    "maxValue": 10,
-    "jewelryName": "眠瓶珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183589.html"
-  },
-  {
-    "name": "精确射击",
-    "maxValue": 10,
-    "jewelryName": "点射珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183591.html"
-  },
-  {
-    "name": "接击瓶追加",
-    "maxValue": 10,
-    "jewelryName": "接瓶珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183592.html"
-  },
-  {
-    "name": "耐寒",
-    "maxValue": 10,
-    "jewelryName": "耐寒珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183604.html"
-  },
-  {
-    "name": "耐暑",
-    "maxValue": 10,
-    "jewelryName": "耐暑珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183606.html"
-  },
-  {
-    "name": "达人",
-    "maxValue": 10,
-    "jewelryName": "达人珠【3】",
-    "jewelryNum": 3,
-    "slotNum": 3,
-    "slotValue": 5,
-    "type": 0,
-    "url": "../ida/183613.html"
-  },
-  {
-    "name": "调合数",
-    "maxValue": 10,
-    "jewelryName": "弹制珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183617.html"
-  },
-  {
-    "name": "磨刀匠",
-    "maxValue": 10,
-    "jewelryName": "打磨珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183625.html"
-  },
-  {
-    "name": "毒瓶追加",
-    "maxValue": 10,
-    "jewelryName": "毒瓶珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183629.html"
-  },
-  {
-    "name": "偷盗无效",
-    "maxValue": 10,
-    "jewelryName": "耐盗珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183631.html"
-  },
-  {
-    "name": "收刀",
-    "maxValue": 10,
-    "jewelryName": "速纳珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183633.html"
-  },
-  {
-    "name": "收刀打磨",
-    "maxValue": 10,
-    "jewelryName": "收磨珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/286088.html"
-  },
-  {
-    "name": "乘骑",
-    "maxValue": 10,
-    "jewelryName": "骑惯珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183634.html"
-  },
-  {
-    "name": "爆弹强化",
-    "maxValue": 10,
-    "jewelryName": "爆师珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183636.html"
-  },
-  {
-    "name": "爆破瓶追加",
-    "maxValue": 10,
-    "jewelryName": "爆瓶珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183638.html"
-  },
-  {
-    "name": "蜂蜜",
-    "maxValue": 10,
-    "jewelryName": "占蜜珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183639.html"
-  },
-  {
-    "name": "饥饿",
-    "maxValue": 10,
-    "jewelryName": "无食珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183642.html"
-  },
-  {
-    "name": "风压",
-    "maxValue": 10,
-    "jewelryName": "防风珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183647.html"
-  },
-  {
-    "name": "笛",
-    "maxValue": 10,
-    "jewelryName": "鼓笛珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183648.html"
-  },
-  {
-    "name": "变则射击",
-    "maxValue": 10,
-    "jewelryName": "变射珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/230117.html"
-  },
-  {
-    "name": "炮术",
-    "maxValue": 10,
-    "jewelryName": "炮术珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183651.html"
-  },
-  {
-    "name": "麻痹瓶追加",
-    "maxValue": 10,
-    "jewelryName": "痹瓶珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183656.html"
-  },
-  {
-    "name": "野草知识",
-    "maxValue": 10,
-    "jewelryName": "野草珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/226922.html"
-  },
-  {
-    "name": "榴弹追加",
-    "maxValue": 10,
-    "jewelryName": "加榴珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183662.html"
-  },
-  {
-    "name": "裂伤",
-    "maxValue": 10,
-    "jewelryName": "抗伤珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183663.html"
-  },
-  {
-    "name": "回复速度",
-    "maxValue": 12,
-    "jewelryName": "早复珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183531.html"
-  },
-  {
-    "name": "强击瓶追加",
-    "maxValue": 12,
-    "jewelryName": "强瓶珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183548.html"
-  },
-  {
-    "name": "广域",
-    "maxValue": 12,
-    "jewelryName": "友爱珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183558.html"
-  },
-  {
-    "name": "千里眼",
-    "maxValue": 12,
-    "jewelryName": "千里珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183594.html"
-  },
-  {
-    "name": "属强瓶追加",
-    "maxValue": 12,
-    "jewelryName": "属瓶珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/230112.html"
+    "url": "../ida/183660.html"
   },
   {
     "name": "雷属性攻击",
@@ -490,6 +20,56 @@
     "url": "../ida/183535.html"
   },
   {
+    "name": "防御",
+    "maxValue": 13,
+    "jewelryName": "防御珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183650.html"
+  },
+  {
+    "name": "火属性攻击",
+    "maxValue": 13,
+    "jewelryName": "火炎珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183644.html"
+  },
+  {
+    "name": "水属性攻击",
+    "maxValue": 13,
+    "jewelryName": "流水珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183657.html"
+  },
+  {
+    "name": "冰属性攻击",
+    "maxValue": 13,
+    "jewelryName": "冰结珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183567.html"
+  },
+  {
+    "name": "龙耐性",
+    "maxValue": 13,
+    "jewelryName": "制龙珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183661.html"
+  },
+  {
     "name": "雷耐性",
     "maxValue": 13,
     "jewelryName": "制雷珠【1】",
@@ -498,6 +78,56 @@
     "slotValue": 2,
     "type": 0,
     "url": "../ida/183536.html"
+  },
+  {
+    "name": "采集",
+    "maxValue": 13,
+    "jewelryName": "采集珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183573.html"
+  },
+  {
+    "name": "贪吃鬼",
+    "maxValue": 13,
+    "jewelryName": "食汉珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183551.html"
+  },
+  {
+    "name": "调和成功率",
+    "maxValue": 13,
+    "jewelryName": "博士珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183618.html"
+  },
+  {
+    "name": "火耐性",
+    "maxValue": 13,
+    "jewelryName": "制火珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183645.html"
+  },
+  {
+    "name": "水耐性",
+    "maxValue": 13,
+    "jewelryName": "制水珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183658.html"
   },
   {
     "name": "昏厥",
@@ -520,26 +150,6 @@
     "url": "../ida/183545.html"
   },
   {
-    "name": "贪吃鬼",
-    "maxValue": 13,
-    "jewelryName": "食汉珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183551.html"
-  },
-  {
-    "name": "冰属性攻击",
-    "maxValue": 13,
-    "jewelryName": "冰结珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183567.html"
-  },
-  {
     "name": "冰耐性",
     "maxValue": 13,
     "jewelryName": "制冰珠【1】",
@@ -548,16 +158,6 @@
     "slotValue": 2,
     "type": 0,
     "url": "../ida/183568.html"
-  },
-  {
-    "name": "采集",
-    "maxValue": 13,
-    "jewelryName": "采集珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183573.html"
   },
   {
     "name": "体力",
@@ -570,464 +170,514 @@
     "url": "../ida/183611.html"
   },
   {
-    "name": "调和成功率",
-    "maxValue": 13,
-    "jewelryName": "博士珠【1】",
+    "name": "强击瓶追加",
+    "maxValue": 12,
+    "jewelryName": "强瓶珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183548.html"
+  },
+  {
+    "name": "广域",
+    "maxValue": 12,
+    "jewelryName": "友爱珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183558.html"
+  },
+  {
+    "name": "属强瓶追加",
+    "maxValue": 12,
+    "jewelryName": "属瓶珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/230112.html"
+  },
+  {
+    "name": "回复速度",
+    "maxValue": 12,
+    "jewelryName": "早复珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183531.html"
+  },
+  {
+    "name": "千里眼",
+    "maxValue": 12,
+    "jewelryName": "千里珠【1】",
     "jewelryNum": 1,
     "slotNum": 1,
     "slotValue": 2,
     "type": 0,
-    "url": "../ida/183618.html"
+    "url": "../ida/183594.html"
   },
   {
-    "name": "火属性攻击",
-    "maxValue": 13,
-    "jewelryName": "火炎珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183644.html"
-  },
-  {
-    "name": "火耐性",
-    "maxValue": 13,
-    "jewelryName": "制火珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183645.html"
-  },
-  {
-    "name": "防御",
-    "maxValue": 13,
-    "jewelryName": "防御珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183650.html"
-  },
-  {
-    "name": "水属性攻击",
-    "maxValue": 13,
-    "jewelryName": "流水珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183657.html"
-  },
-  {
-    "name": "水耐性",
-    "maxValue": 13,
-    "jewelryName": "制水珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183658.html"
-  },
-  {
-    "name": "龙属性攻击",
-    "maxValue": 13,
-    "jewelryName": "破龙珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 0,
-    "url": "../ida/183660.html"
-  },
-  {
-    "name": "龙耐性",
-    "maxValue": 13,
-    "jewelryName": "制龙珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 0,
-    "url": "../ida/183661.html"
-  },
-  {
-    "name": "食菇",
-    "maxValue": 5,
-    "jewelryName": "茸好珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 1,
-    "url": "../ida/183544.html"
-  },
-  {
-    "name": "肉食",
-    "maxValue": 5,
-    "jewelryName": "肉好珠【1】",
-    "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 1,
-    "url": "../ida/183630.html"
-  },
-  {
-    "name": "回避距离",
-    "maxValue": 6,
-    "jewelryName": "跳跃珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183528.html"
-  },
-  {
-    "name": "贯通弹强化",
-    "maxValue": 6,
-    "jewelryName": "贯通珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183540.html"
-  },
-  {
-    "name": "散弹强化",
-    "maxValue": 6,
-    "jewelryName": "散弹珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183576.html"
-  },
-  {
-    "name": "重击",
-    "maxValue": 6,
-    "jewelryName": "重击珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183583.html"
-  },
-  {
-    "name": "重击弹强化",
-    "maxValue": 6,
-    "jewelryName": "重弹珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/230108.html"
-  },
-  {
-    "name": "进食",
-    "maxValue": 6,
-    "jewelryName": "快吃珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183586.html"
-  },
-  {
-    "name": "耐力",
-    "maxValue": 6,
-    "jewelryName": "强走珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183590.html"
-  },
-  {
-    "name": "蓄力缩短",
-    "maxValue": 6,
-    "jewelryName": "短缩珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183615.html"
-  },
-  {
-    "name": "跳跃",
-    "maxValue": 6,
-    "jewelryName": "飞燕珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 1,
-    "url": "../ida/226919.html"
-  },
-  {
-    "name": "痛击",
-    "maxValue": 6,
-    "jewelryName": "痛击珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183619.html"
-  },
-  {
-    "name": "通常弹强化",
-    "maxValue": 6,
-    "jewelryName": "强弹珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183620.html"
-  },
-  {
-    "name": "运气",
-    "maxValue": 7,
-    "jewelryName": "运气珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183524.html"
-  },
-  {
-    "name": "ＳＰ持续",
-    "maxValue": 7,
-    "jewelryName": "技延珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/286041.html"
-  },
-  {
-    "name": "炎热适应",
-    "maxValue": 7,
-    "jewelryName": "南风珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/230103.html"
-  },
-  {
-    "name": "格挡强化",
-    "maxValue": 7,
-    "jewelryName": "强壁珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183526.html"
-  },
-  {
-    "name": "格挡性能",
-    "maxValue": 7,
-    "jewelryName": "铁壁珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183527.html"
-  },
-  {
-    "name": "回复量",
-    "maxValue": 7,
-    "jewelryName": "治愈珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183532.html"
-  },
-  {
-    "name": "忍耐",
-    "maxValue": 7,
-    "jewelryName": "忍耐珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 1,
-    "url": "../ida/286045.html"
-  },
-  {
-    "name": "寒冷适应",
-    "maxValue": 7,
-    "jewelryName": "北风珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/226913.html"
-  },
-  {
-    "name": "狂击耐性",
-    "maxValue": 7,
-    "jewelryName": "抗狂珠【3】",
-    "jewelryNum": 2,
+    "name": "达人",
+    "maxValue": 10,
+    "jewelryName": "达人珠【3】",
+    "jewelryNum": 3,
     "slotNum": 3,
     "slotValue": 5,
-    "type": 1,
-    "url": "../ida/183547.html"
+    "type": 0,
+    "url": "../ida/183613.html"
   },
   {
-    "name": "耐力回复",
-    "maxValue": 7,
-    "jewelryName": "早气珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183549.html"
+    "name": "攻击",
+    "maxValue": 10,
+    "jewelryName": "攻击珠【3】",
+    "jewelryNum": 3,
+    "slotNum": 3,
+    "slotValue": 5,
+    "type": 0,
+    "url": "../ida/183560.html"
   },
   {
-    "name": "锋利度",
-    "maxValue": 7,
-    "jewelryName": "斩铁珠【3】",
+    "name": "护石王",
+    "maxValue": 10,
+    "jewelryName": "护石珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183550.html"
+    "type": 0,
+    "url": "../ida/183569.html"
   },
   {
-    "name": "剑术",
-    "maxValue": 7,
-    "jewelryName": "剑豪珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183557.html"
-  },
-  {
-    "name": "睡眠",
-    "maxValue": 7,
-    "jewelryName": "耐眠珠【2】",
+    "name": "麻痹瓶追加",
+    "maxValue": 10,
+    "jewelryName": "痹瓶珠【2】",
     "jewelryNum": 2,
     "slotNum": 2,
     "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183588.html"
+    "type": 0,
+    "url": "../ida/183656.html"
   },
   {
-    "name": "节食",
-    "maxValue": 7,
-    "jewelryName": "节食珠【1】",
+    "name": "风压",
+    "maxValue": 10,
+    "jewelryName": "防风珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183647.html"
+  },
+  {
+    "name": "收刀",
+    "maxValue": 10,
+    "jewelryName": "速纳珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183633.html"
+  },
+  {
+    "name": "号令",
+    "maxValue": 10,
+    "jewelryName": "号令珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183565.html"
+  },
+  {
+    "name": "减气攻击",
+    "maxValue": 10,
+    "jewelryName": "夺气珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183555.html"
+  },
+  {
+    "name": "KO",
+    "maxValue": 10,
+    "jewelryName": "ＫＯ珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 0,
+    "url": "../ida/183552.html"
+  },
+  {
+    "name": "高速设置",
+    "maxValue": 10,
+    "jewelryName": "陷阱师【1】",
     "jewelryNum": 1,
     "slotNum": 1,
     "slotValue": 2,
-    "type": 1,
-    "url": "../ida/183593.html"
+    "type": 0,
+    "url": "../ida/183563.html"
   },
   {
-    "name": "装填速度",
-    "maxValue": 7,
-    "jewelryName": "早填珠【2】",
+    "name": "饥饿",
+    "maxValue": 10,
+    "jewelryName": "无食珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183642.html"
+  },
+  {
+    "name": "野草知识",
+    "maxValue": 10,
+    "jewelryName": "野草珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/226922.html"
+  },
+  {
+    "name": "贯通弹追加",
+    "maxValue": 10,
+    "jewelryName": "加贯珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183541.html"
+  },
+  {
+    "name": "调合数",
+    "maxValue": 10,
+    "jewelryName": "弹制珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183617.html"
+  },
+  {
+    "name": "观察眼",
+    "maxValue": 10,
+    "jewelryName": "观察珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183539.html"
+  },
+  {
+    "name": "裂伤",
+    "maxValue": 10,
+    "jewelryName": "抗伤珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183663.html"
+  },
+  {
+    "name": "蜂蜜",
+    "maxValue": 10,
+    "jewelryName": "占蜜珠【1】",
     "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183596.html"
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183639.html"
   },
   {
-    "name": "属性攻击",
-    "maxValue": 7,
-    "jewelryName": "属攻珠【3】",
+    "name": "耐暑",
+    "maxValue": 10,
+    "jewelryName": "耐暑珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183606.html"
+  },
+  {
+    "name": "耐寒",
+    "maxValue": 10,
+    "jewelryName": "耐寒珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183604.html"
+  },
+  {
+    "name": "细菌学",
+    "maxValue": 10,
+    "jewelryName": "菌究珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183572.html"
+  },
+  {
+    "name": "精确射击",
+    "maxValue": 10,
+    "jewelryName": "点射珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183591.html"
+  },
+  {
+    "name": "笛",
+    "maxValue": 10,
+    "jewelryName": "鼓笛珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183648.html"
+  },
+  {
+    "name": "磨刀匠",
+    "maxValue": 10,
+    "jewelryName": "打磨珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183625.html"
+  },
+  {
+    "name": "睡眠瓶追加",
+    "maxValue": 10,
+    "jewelryName": "眠瓶珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183589.html"
+  },
+  {
+    "name": "猎人",
+    "maxValue": 10,
+    "jewelryName": "猎人珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183537.html"
+  },
+  {
+    "name": "爆破瓶追加",
+    "maxValue": 10,
+    "jewelryName": "爆瓶珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183638.html"
+  },
+  {
+    "name": "爆弹强化",
+    "maxValue": 10,
+    "jewelryName": "爆师珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183636.html"
+  },
+  {
+    "name": "炮术",
+    "maxValue": 10,
+    "jewelryName": "炮术珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183651.html"
+  },
+  {
+    "name": "气息",
+    "maxValue": 10,
+    "jewelryName": "名指挥珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183554.html"
+  },
+  {
+    "name": "毒瓶追加",
+    "maxValue": 10,
+    "jewelryName": "毒瓶珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183629.html"
+  },
+  {
+    "name": "榴弹追加",
+    "maxValue": 10,
+    "jewelryName": "加榴珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183662.html"
+  },
+  {
+    "name": "散弹追加",
+    "maxValue": 10,
+    "jewelryName": "加散珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183577.html"
+  },
+  {
+    "name": "效果持续",
+    "maxValue": 10,
+    "jewelryName": "持续珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183559.html"
+  },
+  {
+    "name": "收刀打磨",
+    "maxValue": 10,
+    "jewelryName": "收磨珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/286088.html"
+  },
+  {
+    "name": "搬运",
+    "maxValue": 10,
+    "jewelryName": "搬运珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183525.html"
+  },
+  {
+    "name": "接击瓶追加",
+    "maxValue": 10,
+    "jewelryName": "接瓶珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183592.html"
+  },
+  {
+    "name": "指挥",
+    "maxValue": 10,
+    "jewelryName": "名指挥珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183574.html"
+  },
+  {
+    "name": "变则射击",
+    "maxValue": 10,
+    "jewelryName": "变射珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/230117.html"
+  },
+  {
+    "name": "加护",
+    "maxValue": 10,
+    "jewelryName": "神护珠【1】",
+    "jewelryNum": 2,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183534.html"
+  },
+  {
+    "name": "减气瓶追加",
+    "maxValue": 10,
+    "jewelryName": "减瓶珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183556.html"
+  },
+  {
+    "name": "偷盗无效",
+    "maxValue": 10,
+    "jewelryName": "耐盗珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183631.html"
+  },
+  {
+    "name": "乘骑",
+    "maxValue": 10,
+    "jewelryName": "骑惯珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 0,
+    "url": "../ida/183634.html"
+  },
+  {
+    "name": "扩散弹追加",
+    "maxValue": 10,
+    "jewelryName": "加扩珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 1,
+    "type": 0,
+    "url": "../ida/183533.html"
+  },
+  {
+    "name": "拔刀减气",
+    "maxValue": 8,
+    "jewelryName": "拔打珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 1,
-    "url": "../ida/183601.html"
+    "url": "../ida/183641.html"
   },
   {
-    "name": "属性耐性",
-    "maxValue": 7,
-    "jewelryName": "属耐珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183602.html"
-  },
-  {
-    "name": "体术",
-    "maxValue": 7,
-    "jewelryName": "体术珠【2】",
+    "name": "通常弹追加",
+    "maxValue": 8,
+    "jewelryName": "加弹珠【2】",
     "jewelryNum": 2,
     "slotNum": 2,
     "slotValue": 3,
     "type": 1,
-    "url": "../ida/183605.html"
+    "url": "../ida/183621.html"
   },
   {
-    "name": "弹药节约",
-    "maxValue": 7,
-    "jewelryName": "节弹珠【2】",
+    "name": "雪人",
+    "maxValue": 8,
+    "jewelryName": "抗达摩珠【1】",
     "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "slotNum": 1,
+    "slotValue": 2,
     "type": 1,
-    "url": "../ida/226918.html"
-  },
-  {
-    "name": "听觉保护",
-    "maxValue": 7,
-    "jewelryName": "防音珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183616.html"
-  },
-  {
-    "name": "毒",
-    "maxValue": 7,
-    "jewelryName": "耐毒珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183626.html"
-  },
-  {
-    "name": "特殊攻击",
-    "maxValue": 7,
-    "jewelryName": "特攻珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183628.html"
-  },
-  {
-    "name": "后坐力",
-    "maxValue": 7,
-    "jewelryName": "抑反珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183643.html"
-  },
-  {
-    "name": "捕获",
-    "maxValue": 7,
-    "jewelryName": "捕获珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 1,
-    "url": "../ida/183652.html"
-  },
-  {
-    "name": "麻痹",
-    "maxValue": 7,
-    "jewelryName": "耐麻珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 1,
-    "url": "../ida/183655.html"
+    "url": "../ida/226917.html"
   },
   {
     "name": "耐震",
@@ -1050,448 +700,524 @@
     "url": "../ida/183610.html"
   },
   {
-    "name": "雪人",
-    "maxValue": 8,
-    "jewelryName": "抗达摩珠【1】",
+    "name": "狂击耐性",
+    "maxValue": 7,
+    "jewelryName": "抗狂珠【3】",
     "jewelryNum": 2,
-    "slotNum": 1,
-    "slotValue": 2,
+    "slotNum": 3,
+    "slotValue": 5,
     "type": 1,
-    "url": "../ida/226917.html"
+    "url": "../ida/183547.html"
   },
   {
-    "name": "通常弹追加",
-    "maxValue": 8,
-    "jewelryName": "加弹珠【2】",
+    "name": "锋利度",
+    "maxValue": 7,
+    "jewelryName": "斩铁珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183550.html"
+  },
+  {
+    "name": "运气",
+    "maxValue": 7,
+    "jewelryName": "运气珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183524.html"
+  },
+  {
+    "name": "炎热适应",
+    "maxValue": 7,
+    "jewelryName": "南风珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/230103.html"
+  },
+  {
+    "name": "捕获",
+    "maxValue": 7,
+    "jewelryName": "捕获珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183652.html"
+  },
+  {
+    "name": "属性耐性",
+    "maxValue": 7,
+    "jewelryName": "属耐珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183602.html"
+  },
+  {
+    "name": "属性攻击",
+    "maxValue": 7,
+    "jewelryName": "属攻珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183601.html"
+  },
+  {
+    "name": "寒冷适应",
+    "maxValue": 7,
+    "jewelryName": "北风珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/226913.html"
+  },
+  {
+    "name": "听觉保护",
+    "maxValue": 7,
+    "jewelryName": "防音珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183616.html"
+  },
+  {
+    "name": "后坐力",
+    "maxValue": 7,
+    "jewelryName": "抑反珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183643.html"
+  },
+  {
+    "name": "剑术",
+    "maxValue": 7,
+    "jewelryName": "剑豪珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183557.html"
+  },
+  {
+    "name": "ＳＰ持续",
+    "maxValue": 7,
+    "jewelryName": "技延珠【2】",
     "jewelryNum": 2,
     "slotNum": 2,
     "slotValue": 3,
     "type": 1,
-    "url": "../ida/183621.html"
+    "url": "../ida/286041.html"
   },
   {
-    "name": "拔刀减气",
-    "maxValue": 8,
-    "jewelryName": "拔打珠【3】",
+    "name": "麻痹",
+    "maxValue": 7,
+    "jewelryName": "耐麻珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183655.html"
+  },
+  {
+    "name": "装填速度",
+    "maxValue": 7,
+    "jewelryName": "早填珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183596.html"
+  },
+  {
+    "name": "耐力回复",
+    "maxValue": 7,
+    "jewelryName": "早气珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183549.html"
+  },
+  {
+    "name": "睡眠",
+    "maxValue": 7,
+    "jewelryName": "耐眠珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183588.html"
+  },
+  {
+    "name": "特殊攻击",
+    "maxValue": 7,
+    "jewelryName": "特攻珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183628.html"
+  },
+  {
+    "name": "毒",
+    "maxValue": 7,
+    "jewelryName": "耐毒珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183626.html"
+  },
+  {
+    "name": "格挡性能",
+    "maxValue": 7,
+    "jewelryName": "铁壁珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183527.html"
+  },
+  {
+    "name": "格挡强化",
+    "maxValue": 7,
+    "jewelryName": "强壁珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183526.html"
+  },
+  {
+    "name": "弹药节约",
+    "maxValue": 7,
+    "jewelryName": "节弹珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/226918.html"
+  },
+  {
+    "name": "回复量",
+    "maxValue": 7,
+    "jewelryName": "治愈珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183532.html"
+  },
+  {
+    "name": "体术",
+    "maxValue": 7,
+    "jewelryName": "体术珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183605.html"
+  },
+  {
+    "name": "节食",
+    "maxValue": 7,
+    "jewelryName": "节食珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 1,
+    "url": "../ida/183593.html"
+  },
+  {
+    "name": "忍耐",
+    "maxValue": 7,
+    "jewelryName": "忍耐珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 1,
+    "url": "../ida/286045.html"
+  },
+  {
+    "name": "重击弹强化",
+    "maxValue": 6,
+    "jewelryName": "重弹珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 1,
-    "url": "../ida/183641.html"
+    "url": "../ida/230108.html"
   },
   {
-    "name": "可可特",
-    "maxValue": 0,
-    "jewelryName": "始猎珠【1】",
+    "name": "重击",
+    "maxValue": 6,
+    "jewelryName": "重击珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183583.html"
+  },
+  {
+    "name": "通常弹强化",
+    "maxValue": 6,
+    "jewelryName": "强弹珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183620.html"
+  },
+  {
+    "name": "进食",
+    "maxValue": 6,
+    "jewelryName": "快吃珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183586.html"
+  },
+  {
+    "name": "贯通弹强化",
+    "maxValue": 6,
+    "jewelryName": "贯通珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183540.html"
+  },
+  {
+    "name": "蓄力缩短",
+    "maxValue": 6,
+    "jewelryName": "短缩珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183615.html"
+  },
+  {
+    "name": "耐力",
+    "maxValue": 6,
+    "jewelryName": "强走珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183590.html"
+  },
+  {
+    "name": "痛击",
+    "maxValue": 6,
+    "jewelryName": "痛击珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183619.html"
+  },
+  {
+    "name": "散弹强化",
+    "maxValue": 6,
+    "jewelryName": "散弹珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183576.html"
+  },
+  {
+    "name": "回避距离",
+    "maxValue": 6,
+    "jewelryName": "跳跃珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 1,
+    "url": "../ida/183528.html"
+  },
+  {
+    "name": "长跑",
+    "maxValue": 6,
+    "jewelryName": "长跑珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/286080.html"
+  },
+  {
+    "name": "钝器",
+    "maxValue": 6,
+    "jewelryName": "钝器珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/230115.html"
+  },
+  {
+    "name": "绝境",
+    "maxValue": 6,
+    "jewelryName": "绝境珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/226914.html"
+  },
+  {
+    "name": "特殊会心",
+    "maxValue": 6,
+    "jewelryName": "特会珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183627.html"
+  },
+  {
+    "name": "潜力",
+    "maxValue": 6,
+    "jewelryName": "潜力珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183603.html"
+  },
+  {
+    "name": "暴怒",
+    "maxValue": 6,
+    "jewelryName": "逆境珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/230104.html"
+  },
+  {
+    "name": "属性会心",
+    "maxValue": 6,
+    "jewelryName": "属会珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183599.html"
+  },
+  {
+    "name": "回避性能",
+    "maxValue": 6,
+    "jewelryName": "闪避珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183530.html"
+  },
+  {
+    "name": "全力",
+    "maxValue": 6,
+    "jewelryName": "全开珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 1,
+    "url": "../ida/183654.html"
+  },
+  {
+    "name": "跳跃",
+    "maxValue": 6,
+    "jewelryName": "飞燕珠【1】",
     "jewelryNum": 1,
     "slotNum": 1,
     "slotValue": 2,
-    "type": 2,
-    "url": "../ida/230107.html"
+    "type": 1,
+    "url": "../ida/226919.html"
   },
   {
-    "name": "飞行酒吧",
-    "maxValue": 0,
-    "jewelryName": "天宴珠【1】",
+    "name": "食菇",
+    "maxValue": 5,
+    "jewelryName": "茸好珠【1】",
     "jewelryNum": 1,
     "slotNum": 1,
     "slotValue": 2,
-    "type": 2,
-    "url": "../ida/286089.html"
+    "type": 1,
+    "url": "../ida/183544.html"
   },
   {
-    "name": "贝鲁纳",
-    "maxValue": 0,
-    "jewelryName": "历铃珠【1】",
-    "jewelryNum": 1,
+    "name": "肉食",
+    "maxValue": 5,
+    "jewelryName": "肉好珠【1】",
+    "jewelryNum": 2,
     "slotNum": 1,
     "slotValue": 2,
-    "type": 2,
-    "url": "../ida/230116.html"
+    "type": 1,
+    "url": "../ida/183630.html"
   },
   {
-    "name": "波凯",
-    "maxValue": 0,
-    "jewelryName": "雪花珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 2,
-    "url": "../ida/230118.html"
-  },
-  {
-    "name": "结云",
-    "maxValue": 0,
-    "jewelryName": "仙汤珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 2,
-    "url": "../ida/230120.html"
-  },
-  {
-    "name": "龙识船",
-    "maxValue": 0,
-    "jewelryName": "探究珠【1】",
-    "jewelryNum": 1,
-    "slotNum": 1,
-    "slotValue": 2,
-    "type": 2,
-    "url": "../ida/286093.html"
-  },
-  {
-    "name": "荒钩爪",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230100.html"
-  },
-  {
-    "name": "岩穿",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230101.html"
-  },
-  {
-    "name": "里会心",
-    "maxValue": 3,
-    "jewelryName": "里会心珠【3】",
+    "name": "速射",
+    "maxValue": 5,
+    "jewelryName": "速射珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/286039.html"
+    "url": "../ida/183598.html"
   },
   {
-    "name": "鏖魔",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286042.html"
-  },
-  {
-    "name": "大雪主",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/226911.html"
-  },
-  {
-    "name": "胧隐",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286043.html"
-  },
-  {
-    "name": "金雷公",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230105.html"
-  },
-  {
-    "name": "银峰",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286048.html"
-  },
-  {
-    "name": "黑炎王",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230106.html"
-  },
-  {
-    "name": "紫毒姫",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/226916.html"
-  },
-  {
-    "name": "白疾风",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230109.html"
-  },
-  {
-    "name": "真・荒钩爪",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286060.html"
-  },
-  {
-    "name": "真・岩穿",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286061.html"
-  },
-  {
-    "name": "真・鏖魔",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286062.html"
-  },
-  {
-    "name": "真・大雪主",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286063.html"
-  },
-  {
-    "name": "真・胧隐",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286064.html"
-  },
-  {
-    "name": "真・金雷公",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286065.html"
-  },
-  {
-    "name": "真・银峰",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286066.html"
-  },
-  {
-    "name": "真・黑炎王",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286067.html"
-  },
-  {
-    "name": "真・紫毒姫",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286068.html"
-  },
-  {
-    "name": "真・白疾风",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286069.html"
-  },
-  {
-    "name": "真・烬灭刃",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286070.html"
-  },
-  {
-    "name": "真・青电主",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286071.html"
-  },
-  {
-    "name": "真・独眼",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286072.html"
-  },
-  {
-    "name": "真・宝缠",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286073.html"
-  },
-  {
-    "name": "真・天眼",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286074.html"
-  },
-  {
-    "name": "真・红盔",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286075.html"
-  },
-  {
-    "name": "真・矛碎",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286076.html"
-  },
-  {
-    "name": "烬灭刃",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230110.html"
-  },
-  {
-    "name": "真・铠裂",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286077.html"
-  },
-  {
-    "name": "刃鳞",
-    "maxValue": 3,
-    "jewelryName": "刃鳞珠【3】",
+    "name": "连击",
+    "maxValue": 5,
+    "jewelryName": "连击珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/286078.html"
+    "url": "../ida/226923.html"
   },
   {
-    "name": "青电主",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286079.html"
-  },
-  {
-    "name": "独眼",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230111.html"
-  },
-  {
-    "name": "宝缠",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/230113.html"
-  },
-  {
-    "name": "天眼",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286086.html"
-  },
-  {
-    "name": "红盔",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/226920.html"
-  },
-  {
-    "name": "矛碎",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/226921.html"
-  },
-  {
-    "name": "铠裂",
-    "maxValue": 3,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 2,
-    "url": "../ida/286091.html"
-  },
-  {
-    "name": "龙气",
-    "maxValue": 3,
-    "jewelryName": "龙气珠【3】",
+    "name": "装填数",
+    "maxValue": 5,
+    "jewelryName": "装填珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/286092.html"
+    "url": "../ida/183595.html"
+  },
+  {
+    "name": "英雄之盾",
+    "maxValue": 5,
+    "jewelryName": "英雄珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 2,
+    "url": "../ida/230102.html"
+  },
+  {
+    "name": "良机",
+    "maxValue": 5,
+    "jewelryName": "好机珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 2,
+    "url": "../ida/230114.html"
   },
   {
     "name": "泡沫",
@@ -1504,14 +1230,44 @@
     "url": "../ida/226910.html"
   },
   {
-    "name": "英雄之盾",
+    "name": "无心",
     "maxValue": 5,
-    "jewelryName": "英雄珠【3】",
+    "jewelryName": "无念珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/230102.html"
+    "url": "../ida/230119.html"
+  },
+  {
+    "name": "打磨术",
+    "maxValue": 5,
+    "jewelryName": "刚刃珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 2,
+    "url": "../ida/226915.html"
+  },
+  {
+    "name": "匠",
+    "maxValue": 5,
+    "jewelryName": "匠珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 2,
+    "url": "../ida/183612.html"
+  },
+  {
+    "name": "剥取",
+    "maxValue": 5,
+    "jewelryName": "剥皮珠【3】",
+    "jewelryNum": 2,
+    "slotNum": 3,
+    "slotValue": 4,
+    "type": 2,
+    "url": "../ida/183635.html"
   },
   {
     "name": "会心强化",
@@ -1534,16 +1290,6 @@
     "url": "../ida/183546.html"
   },
   {
-    "name": "打磨术",
-    "maxValue": 5,
-    "jewelryName": "刚刃珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/226915.html"
-  },
-  {
     "name": "毅力",
     "maxValue": 5,
     "jewelryName": "毅力珠【2】",
@@ -1552,86 +1298,6 @@
     "slotValue": 3,
     "type": 2,
     "url": "../ida/183571.html"
-  },
-  {
-    "name": "射法",
-    "maxValue": 5,
-    "jewelryName": "射法珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 2,
-    "url": "../ida/183582.html"
-  },
-  {
-    "name": "装填数",
-    "maxValue": 5,
-    "jewelryName": "装填珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/183595.html"
-  },
-  {
-    "name": "速射",
-    "maxValue": 5,
-    "jewelryName": "速射珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/183598.html"
-  },
-  {
-    "name": "匠",
-    "maxValue": 5,
-    "jewelryName": "匠珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/183612.html"
-  },
-  {
-    "name": "良机",
-    "maxValue": 5,
-    "jewelryName": "好机珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/230114.html"
-  },
-  {
-    "name": "斗魂",
-    "maxValue": 5,
-    "jewelryName": "斗魂珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 2,
-    "url": "../ida/183623.html"
-  },
-  {
-    "name": "剥取",
-    "maxValue": 5,
-    "jewelryName": "剥皮珠【3】",
-    "jewelryNum": 2,
-    "slotNum": 3,
-    "slotValue": 4,
-    "type": 2,
-    "url": "../ida/183635.html"
-  },
-  {
-    "name": "拔刀会心",
-    "maxValue": 5,
-    "jewelryName": "拔刀珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
-    "type": 2,
-    "url": "../ida/183640.html"
   },
   {
     "name": "无伤",
@@ -1644,258 +1310,448 @@
     "url": "../ida/183659.html"
   },
   {
-    "name": "无心",
+    "name": "斗魂",
     "maxValue": 5,
-    "jewelryName": "无念珠【3】",
+    "jewelryName": "斗魂珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 2,
+    "url": "../ida/183623.html"
+  },
+  {
+    "name": "拔刀会心",
+    "maxValue": 5,
+    "jewelryName": "拔刀珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 2,
+    "url": "../ida/183640.html"
+  },
+  {
+    "name": "射法",
+    "maxValue": 5,
+    "jewelryName": "射法珠【2】",
+    "jewelryNum": 2,
+    "slotNum": 2,
+    "slotValue": 3,
+    "type": 2,
+    "url": "../ida/183582.html"
+  },
+  {
+    "name": "龙气",
+    "maxValue": 3,
+    "jewelryName": "龙气珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/230119.html"
+    "url": "../ida/286092.html"
   },
   {
-    "name": "连击",
-    "maxValue": 5,
-    "jewelryName": "连击珠【3】",
+    "name": "里会心",
+    "maxValue": 3,
+    "jewelryName": "里会心珠【3】",
     "jewelryNum": 2,
     "slotNum": 3,
     "slotValue": 4,
     "type": 2,
-    "url": "../ida/226923.html"
+    "url": "../ida/286039.html"
   },
   {
-    "name": "回避性能",
-    "maxValue": 6,
-    "jewelryName": "闪避珠【2】",
+    "name": "刃鳞",
+    "maxValue": 3,
+    "jewelryName": "刃鳞珠【3】",
     "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "slotNum": 3,
+    "slotValue": 4,
     "type": 2,
-    "url": "../ida/183530.html"
+    "url": "../ida/286078.html"
   },
   {
-    "name": "暴怒",
-    "maxValue": 6,
-    "jewelryName": "逆境珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "黑炎王",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/230104.html"
+    "url": "../ida/230106.html"
   },
   {
-    "name": "绝境",
-    "maxValue": 6,
-    "jewelryName": "绝境珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "青电主",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/226914.html"
+    "url": "../ida/286079.html"
   },
   {
-    "name": "长跑",
-    "maxValue": 6,
-    "jewelryName": "长跑珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "银峰",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/286080.html"
+    "url": "../ida/286048.html"
   },
   {
-    "name": "属性会心",
-    "maxValue": 6,
-    "jewelryName": "属会珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "铠裂",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/183599.html"
+    "url": "../ida/286091.html"
   },
   {
-    "name": "潜力",
-    "maxValue": 6,
-    "jewelryName": "潜力珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "鏖魔",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/183603.html"
+    "url": "../ida/286042.html"
   },
   {
-    "name": "特殊会心",
-    "maxValue": 6,
-    "jewelryName": "特会珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "金雷公",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/183627.html"
+    "url": "../ida/230105.html"
   },
   {
-    "name": "钝器",
-    "maxValue": 6,
-    "jewelryName": "钝器珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "荒钩爪",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/230115.html"
+    "url": "../ida/230100.html"
   },
   {
-    "name": "全力",
-    "maxValue": 6,
-    "jewelryName": "全开珠【2】",
-    "jewelryNum": 2,
-    "slotNum": 2,
-    "slotValue": 3,
+    "name": "胧隐",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
     "type": 2,
-    "url": "../ida/183654.html"
+    "url": "../ida/286043.html"
   },
   {
-    "name": "居合",
-    "maxValue": 0,
+    "name": "红盔",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286037.html"
+    "type": 2,
+    "url": "../ida/226920.html"
   },
   {
-    "name": "怒",
-    "maxValue": 0,
+    "name": "紫毒姫",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286038.html"
+    "type": 2,
+    "url": "../ida/226916.html"
   },
   {
-    "name": "掩人耳目",
-    "maxValue": 0,
+    "name": "矛碎",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286040.html"
+    "type": 2,
+    "url": "../ida/226921.html"
   },
   {
-    "name": "闪避术",
-    "maxValue": 0,
+    "name": "真・黑炎王",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286044.html"
+    "type": 2,
+    "url": "../ida/286067.html"
   },
   {
-    "name": "顽强",
-    "maxValue": 0,
+    "name": "真・青电主",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286046.html"
+    "type": 2,
+    "url": "../ida/286071.html"
   },
   {
-    "name": "祈愿",
-    "maxValue": 0,
+    "name": "真・银峰",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286047.html"
+    "type": 2,
+    "url": "../ida/286066.html"
   },
   {
-    "name": "洁癖",
-    "maxValue": 0,
+    "name": "真・铠裂",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286049.html"
+    "type": 2,
+    "url": "../ida/286077.html"
   },
   {
-    "name": "刚击",
-    "maxValue": 0,
+    "name": "真・鏖魔",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286050.html"
+    "type": 2,
+    "url": "../ida/286062.html"
   },
   {
-    "name": "强欲",
-    "maxValue": 0,
+    "name": "真・金雷公",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286051.html"
+    "type": 2,
+    "url": "../ida/286065.html"
   },
   {
-    "name": "铁臂",
-    "maxValue": 0,
+    "name": "真・荒钩爪",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286052.html"
+    "type": 2,
+    "url": "../ida/286060.html"
   },
   {
-    "name": "护石强化",
-    "maxValue": 0,
+    "name": "真・胧隐",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286053.html"
+    "type": 2,
+    "url": "../ida/286064.html"
   },
   {
-    "name": "护石收集",
-    "maxValue": 0,
+    "name": "真・红盔",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286054.html"
+    "type": 2,
+    "url": "../ida/286075.html"
   },
   {
-    "name": "斩术",
-    "maxValue": 0,
+    "name": "真・紫毒姫",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286055.html"
+    "type": 2,
+    "url": "../ida/286068.html"
   },
   {
-    "name": "射手",
-    "maxValue": 0,
+    "name": "真・矛碎",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286056.html"
+    "type": 2,
+    "url": "../ida/286076.html"
   },
   {
-    "name": "状态耐性",
-    "maxValue": 0,
+    "name": "真・白疾风",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286057.html"
+    "type": 2,
+    "url": "../ida/286069.html"
   },
   {
-    "name": "工人",
-    "maxValue": 0,
+    "name": "真・独眼",
+    "maxValue": 3,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286058.html"
+    "type": 2,
+    "url": "../ida/286072.html"
+  },
+  {
+    "name": "真・烬灭刃",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286070.html"
+  },
+  {
+    "name": "真・岩穿",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286061.html"
+  },
+  {
+    "name": "真・宝缠",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286073.html"
+  },
+  {
+    "name": "真・天眼",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286074.html"
+  },
+  {
+    "name": "真・大雪主",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286063.html"
+  },
+  {
+    "name": "白疾风",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/230109.html"
+  },
+  {
+    "name": "独眼",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/230111.html"
+  },
+  {
+    "name": "烬灭刃",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/230110.html"
+  },
+  {
+    "name": "岩穿",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/230101.html"
+  },
+  {
+    "name": "宝缠",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/230113.html"
+  },
+  {
+    "name": "天眼",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/286086.html"
+  },
+  {
+    "name": "大雪主",
+    "maxValue": 3,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 2,
+    "url": "../ida/226911.html"
+  },
+  {
+    "name": "龙识船",
+    "maxValue": 0,
+    "jewelryName": "探究珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/286093.html"
+  },
+  {
+    "name": "飞行酒吧",
+    "maxValue": 0,
+    "jewelryName": "天宴珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/286089.html"
+  },
+  {
+    "name": "贝鲁纳",
+    "maxValue": 0,
+    "jewelryName": "历铃珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/230116.html"
+  },
+  {
+    "name": "结云",
+    "maxValue": 0,
+    "jewelryName": "仙汤珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/230120.html"
+  },
+  {
+    "name": "波凯",
+    "maxValue": 0,
+    "jewelryName": "雪花珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/230118.html"
+  },
+  {
+    "name": "可可特",
+    "maxValue": 0,
+    "jewelryName": "始猎珠【1】",
+    "jewelryNum": 1,
+    "slotNum": 1,
+    "slotValue": 2,
+    "type": 2,
+    "url": "../ida/230107.html"
   },
   {
     "name": "食欲",
@@ -1907,22 +1763,166 @@
     "url": "../ida/286059.html"
   },
   {
-    "name": "増幅",
+    "name": "顽强",
     "maxValue": 0,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
     "type": 3,
-    "url": "../ida/286081.html"
+    "url": "../ida/286046.html"
   },
   {
-    "name": "对炎龙",
+    "name": "闪避术",
     "maxValue": 0,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
     "type": 3,
-    "url": "../ida/286082.html"
+    "url": "../ida/286044.html"
+  },
+  {
+    "name": "铁臂",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286052.html"
+  },
+  {
+    "name": "身体系统加倍",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/183622.html"
+  },
+  {
+    "name": "秘术",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286090.html"
+  },
+  {
+    "name": "祈愿",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286047.html"
+  },
+  {
+    "name": "状态耐性",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286057.html"
+  },
+  {
+    "name": "洁癖",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286049.html"
+  },
+  {
+    "name": "斩术",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286055.html"
+  },
+  {
+    "name": "掩人耳目",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286040.html"
+  },
+  {
+    "name": "持盾",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286085.html"
+  },
+  {
+    "name": "护石收集",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286054.html"
+  },
+  {
+    "name": "护石强化",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286053.html"
+  },
+  {
+    "name": "怒",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286038.html"
+  },
+  {
+    "name": "强欲",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286051.html"
+  },
+  {
+    "name": "工人",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286058.html"
+  },
+  {
+    "name": "居合",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286037.html"
+  },
+  {
+    "name": "射手",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286056.html"
   },
   {
     "name": "对霞龙",
@@ -1943,40 +1943,22 @@
     "url": "../ida/286084.html"
   },
   {
-    "name": "持盾",
+    "name": "对炎龙",
     "maxValue": 0,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
     "type": 3,
-    "url": "../ida/286085.html"
+    "url": "../ida/286082.html"
   },
   {
-    "name": "身体系统加倍",
+    "name": "増幅",
     "maxValue": 0,
     "jewelryNum": 0,
     "slotNum": 0,
     "slotValue": 0,
     "type": 3,
-    "url": "../ida/183622.html"
-  },
-  {
-    "name": "刀匠",
-    "maxValue": 0,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286087.html"
-  },
-  {
-    "name": "秘术",
-    "maxValue": 0,
-    "jewelryNum": 0,
-    "slotNum": 0,
-    "slotValue": 0,
-    "type": 3,
-    "url": "../ida/286090.html"
+    "url": "../ida/286081.html"
   },
   {
     "name": "北辰/海渊纳豆流",
@@ -1986,5 +1968,23 @@
     "slotValue": 0,
     "type": 3,
     "url": "../ida/183653.html"
+  },
+  {
+    "name": "刚击",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286050.html"
+  },
+  {
+    "name": "刀匠",
+    "maxValue": 0,
+    "jewelryNum": 0,
+    "slotNum": 0,
+    "slotValue": 0,
+    "type": 3,
+    "url": "../ida/286087.html"
   }
 ]
