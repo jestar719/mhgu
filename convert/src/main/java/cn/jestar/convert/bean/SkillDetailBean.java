@@ -17,6 +17,24 @@ public class SkillDetailBean {
     private int slotValue;
     private int type;
     private String url;
+    private int leftMaxValue;
+    private int rightMaxValue;
+
+    public int getLeftMaxValue() {
+        return leftMaxValue;
+    }
+
+    public void setLeftMaxValue(int leftMaxValue) {
+        this.leftMaxValue = leftMaxValue;
+    }
+
+    public int getRightMaxValue() {
+        return rightMaxValue;
+    }
+
+    public void setRightMaxValue(int rightMaxValue) {
+        this.rightMaxValue = rightMaxValue;
+    }
 
     public int getJewelryNum() {
         return jewelryNum;
@@ -84,6 +102,8 @@ public class SkillDetailBean {
 
     public void setSkillBean(SkillBean bean, SkillJewelryBean jewelryBean, int jewelryNum) {
         name = bean.getName();
+        leftMaxValue = bean.getLeftMaxValue();
+        rightMaxValue = bean.getRightMaxValue();
         maxValue = bean.getMaxValue();
         url = bean.getUrl();
         this.jewelryNum = jewelryNum;

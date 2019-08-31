@@ -136,33 +136,50 @@ public class SkillParserTest {
         Elements select = doc.select("table.t1 tbody");
         File json = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
         List<SkillDetailBean> list = JsonUtils.toList(new FileReader(json), SkillDetailBean.class);
-        int type = -1;
-        Element element = null;
+        Map<String,String> map=new HashMap<>();
         for (SkillDetailBean bean : list) {
-            int beanType = bean.getType();
-            if (type != beanType) {
-                type = beanType;
-                element = select.get(type);
-            }
-            Element tr = new Element("tr");
-            Element td = getTd(false);
-            Element a = new Element("a");
-            a.text(bean.getName());
-            a.attr("href", bean.getUrl());
-            td.appendChild(a);
-            tr.appendChild(td);
-            addTd(String.valueOf(bean.getMaxValue()), true, tr);
-            addTd(String.valueOf(bean.getJewelryNum()), true, tr);
-            addTd(bean.getJewelryName(), false, tr);
-            int slotValue = bean.getSlotValue();
-            addTd(String.valueOf(slotValue), true, tr);
-            addTd(String.valueOf(bean.getSlotNum()), true, tr);
-            String value = slotValue == 2 ? "<span style=\"color:#0011ff;\">Yes</span>" : "No";
-            td = getTd(true);
-            td.append(value);
-            tr.appendChild(td);
-            element.appendChild(tr);
+            String temp="<span style=\"color:#0033ff;\">%s</span> | <span style=\"color:#ff6600;\">%s</span>";
+            String maxValue = String.format(temp, bean.getLeftMaxValue(), bean.getRightMaxValue());
+            map.put(bean.getName(),maxValue);
         }
+        select=doc.select("tr:has(a)");
+        for (Element element : select) {
+            String text = element.selectFirst("a").text().trim();
+            String s = map.get(text);
+            Element child = element.getElementsByTag("td").get(1);
+            System.out.println(String.format("%s %s %s",text,child.text(),s));
+            child.text("");
+            child.append(s);
+        }
+//        int type = -1;
+//        Element element = null;
+//        for (SkillDetailBean bean : list) {
+//            int beanType = bean.getType();
+//            if (type != beanType) {
+//                type = beanType;
+//                element = select.get(type);
+//            }
+//            Element tr = new Element("tr");
+//            Element td = getTd(false);
+//            Element a = new Element("a");
+//            a.text(bean.getName());
+//            a.attr("href", bean.getUrl());
+//            td.appendChild(a);
+//            tr.appendChild(td);
+//            String temp="%s <span style=\"color:#0011ff;\">|</span> %s";
+//            String maxValue = String.format(temp, bean.getLeftMaxValue(), bean.getRightMaxValue());
+//            addTd(maxValue, true, tr);
+//            addTd(String.valueOf(bean.getJewelryNum()), true, tr);
+//            addTd(bean.getJewelryName(), false, tr);
+//            int slotValue = bean.getSlotValue();
+//            addTd(String.valueOf(slotValue), true, tr);
+//            addTd(String.valueOf(bean.getSlotNum()), true, tr);
+//            String value = slotValue == 2 ? "<span style=\"color:#0011ff;\">Yes</span>" : "No";
+//            td = getTd(true);
+//            td.append(value);
+//            tr.appendChild(td);
+//            element.appendChild(tr);
+//        }
         writeDoc(file, doc);
     }
 
