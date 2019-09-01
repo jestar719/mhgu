@@ -33,7 +33,6 @@ import cn.jestar.convert.utils.JsonUtils;
 import cn.jestar.convert.utils.ParserUtils;
 
 import static cn.jestar.convert.utils.ParserUtils.getDoc;
-import static cn.jestar.convert.utils.ParserUtils.parseAList;
 import static cn.jestar.convert.utils.ParserUtils.writeDoc;
 
 /**
@@ -349,19 +348,34 @@ public class SkillParserTest {
     @Test
     public void fightSkill() throws IOException {
         File file = new File(Constants.DATA_PATH, "1847.html");
+        File file1 = new File(Constants.TEMP_TRANSLATED_PATH, "skill/fight_skill.json");
+        Type type = new TypeToken<Map<String, Map<String, String>>>() {
+        }.getType();
+        Map<String, Map<String,String>> map=JsonUtils.fromStringByType(new FileReader(file1),type);
+        Map<String, String> names = map.get("name");
         Document doc = getDoc(file);
         Elements select = doc.select("td.b[rowspan]:not([style])");
-        Map<String,String> names=new HashMap<>();
         for (Element element : select) {
-            String text = element.text();
-            names.put(text,text);
+            String text = element.text().trim();
+            String s = names.get(text);
+            if (s!=null){
+                element.text(s);
+            }
         }
-        Elements a = doc.selectFirst("table.t1").select("a");
-        Map<String,String> links=parseAList(a);
-        Map<String, Map<String,String>> map = new HashMap<>();
-        map.put("name",names);
-        map.put("link",links);
-        File file1 = new File(Constants.TEMP_TRANSLATED_PATH, "skill/fight_skill.json");
+        writeDoc(file,doc);
+        for (String link : map.get("link").values()) {
+            file = new File(Constants.MH_PATH, link);
+            doc = getDoc(file);
+            Elements a = doc.select("a");
+            for (Element element : a) {
+                String text = element.text().trim();
+                String s = names.get(text);
+                if (s!=null){
+                    element.text(s);
+                }
+            }
+            writeDoc(file,doc);
+        }
         JsonUtils.writeJson(file1,map);
     }
 }
