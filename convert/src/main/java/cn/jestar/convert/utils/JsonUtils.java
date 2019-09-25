@@ -33,7 +33,7 @@ public class JsonUtils {
         return sGson.fromJson(reader, cls);
     }
 
-    public static <T> List<T> toList(String string, Class<T> clazz) {
+    public static <T> List<T> toList(FileReader string, Class<T> clazz) {
         List<T> lst = new ArrayList<>();
         try {
             JsonArray array = new JsonParser().parse(string).getAsJsonArray();

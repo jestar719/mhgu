@@ -47,6 +47,21 @@ public class ParserUtils {
         return parseAList(elements);
     }
 
+    public static void matchCovert(Element element,Map<String,String> map){
+        String trim = element.text().trim();
+        String s = map.get(trim);
+        if (s!=null){
+            element.text(s);
+            System.out.println(trim+" "+s);
+        }
+    }
+
+    public static void matchCovert(Elements elements,Map<String,String> map){
+        for (Element element : elements) {
+            matchCovert(element,map);
+        }
+    }
+
     public static Elements getAList(Element element) {
         return element.getElementsByTag("a");
     }

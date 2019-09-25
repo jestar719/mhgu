@@ -89,7 +89,7 @@ public class SkillJewelryBean implements Comparable<SkillJewelryBean> {
 
     @Override
     public int compareTo(SkillJewelryBean o) {
-        int result = skill.compareTo(o.skill);
+        int result =o==null?-1:skill.compareTo(o.skill);
         return result == 0 ? skillValue - o.getSkillValue() : result;
     }
 }

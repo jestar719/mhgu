@@ -2071,7 +2071,7 @@
   },
   {
     "name": "加扩珠【3】",
-    "skill": "扩散弾追加",
+    "skill": "扩散弹追加",
     "debuff": "装填速度",
     "skillValue": 4,
     "debuffValue": 2,

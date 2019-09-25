@@ -1,5 +1,7 @@
 package cn.jestar.convert.bean;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,30 +12,21 @@ import java.util.List;
 public class SkillBean {
     private int id;
     private String name;
+    @SerializedName("effect")
     private String description;
     private List<SkillEffect> effectList = new ArrayList<>();
+    private List<SkillJewelryBean> jewelryList =null;
     private int leftMaxValue;
     private int rightMaxValue;
-    private int maxValue;
-    private int[] mMaxValues;
     private String url;
+    private int type;
 
-    public int getMaxValue() {
-        return maxValue;
-    }
-
-    public void setMaxValue(int maxValue) {
-        this.maxValue = maxValue;
-    }
-
-    public int[] getMaxValues() {
-        return mMaxValues;
+    public int getType() {
+        return type;
     }
 
     public void setMaxValues(int[] max) {
-        mMaxValues = max;
-        int length = max.length;
-        int i = length - 2;
+        int i = max.length - 1;
         for (int i1 = 0; i1 < i; i1++) {
             int maxValue = max[i1];
             boolean isLeft = i1 % 2 == 0;
@@ -46,7 +39,6 @@ public class SkillBean {
                 }
             }
         }
-        maxValue = max[i + 1];
     }
 
     public String getUrl() {
@@ -84,6 +76,10 @@ public class SkillBean {
         return this;
     }
 
+    public List<SkillJewelryBean> getJewelryList() {
+        return jewelryList;
+    }
+
     public List<SkillEffect> getEffectList() {
         return effectList;
     }
@@ -93,8 +89,8 @@ public class SkillBean {
         return this;
     }
 
-    public SkillBean addSkillEffect(SkillEffect effet) {
-        effectList.add(effet);
+    public SkillBean addSkillEffect(SkillEffect effect) {
+        effectList.add(effect);
         return this;
     }
 
@@ -116,8 +112,19 @@ public class SkillBean {
         return this;
     }
 
+    public void addJewelry(SkillJewelryBean bean) {
+        if (jewelryList==null)
+            jewelryList=new ArrayList<>();
+         jewelryList.add(bean);
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
     public static class SkillEffect implements Comparable<SkillEffect> {
         private String name;
+        @SerializedName("effect")
         private String description;
         private int value;
 

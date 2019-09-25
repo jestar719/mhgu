@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 import cn.jestar.convert.Constants;
+import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.bean.SkillBean;
 import cn.jestar.convert.bean.SkillJewelryBean;
 
@@ -94,6 +95,61 @@ public class SkillParser {
         }
         return jwdList;
     }
+
+   public LinkInfo parseSkillEffect(String url) throws IOException {
+       File file = new File(Constants.MH_PATH, url);
+       Document doc = getDoc(file);
+       Elements select = doc.selectFirst("table.t1").select("tr:has(td)");
+       LinkInfo info = new LinkInfo(url);
+       for (Element e : select) {
+           Element td = e.select("td").last();
+           String key = td.text().trim();
+           info.setData(key,"");
+       }
+       return info;
+   }
+
+   public List<String> convertSkillEffect(LinkInfo info) throws IOException {
+       String name = info.getName();
+       File file = new File(Constants.MH_PATH, name);
+       Document doc = getDoc(file);
+       Map<String, String> data = info.getData();
+       for (Element element : doc.select("table.t1 tr:has(td)")) {
+           Element span = element.select("td span").last();
+           String key = span.text().trim();
+           String value = data.get(key);
+           if (value!=null){
+               span.text(value);
+           }
+       }
+       writeDoc(file,doc);
+       Elements trs = doc.select("table[id^=sorter] tr:has(td)");
+       List<String> list=new ArrayList<>();
+       for (Element tr : trs) {
+           Elements a = tr.select("td:not(.left):has(a) a");
+           String url = a.attr("href").replace("../","").trim();
+           list.add(url);
+       }
+       return list;
+   }
+
+    public void convertSkillEffect(String url,Map<String,String> map) throws IOException {
+        File file = new File(Constants.MH_PATH, url);
+        Document doc = getDoc(file);
+        Elements select = doc.select("table.t1 td.left:not(span)");
+        System.out.println(select.size());
+        for (Element e : select) {
+            if (e.childNodeSize()==1){
+                String key = e.text().trim();
+                String s = map.get(key);
+                if (s!=null){
+                    e.text(s);
+                }
+            }
+        }
+        writeDoc(file,doc);
+    }
+
 
     public void convertHtml(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
@@ -198,5 +254,18 @@ public class SkillParser {
                 element.text(s);
             }
         }
+    }
+
+    public void convertSkillEffectInCatlog(File file, Map<String, String> map) throws IOException {
+        Document doc = getDoc(file);
+        Elements select = doc.select("td.left:has(span) span");
+        for (Element element : select) {
+            String text = element.text().trim();
+            String s = map.get(text);
+            if (s!=null){
+                element.text(s);
+            }
+        }
+        writeDoc(file,doc);
     }
 }

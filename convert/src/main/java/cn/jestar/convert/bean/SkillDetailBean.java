@@ -1,16 +1,22 @@
 package cn.jestar.convert.bean;
 
 /**
+ * 技能详细
  * Created by 花京院 on 2019/8/31.
  */
 
 public class SkillDetailBean {
+    //无洞护石可发动的技能
     public static final int SINGLE = 0;
+    //有洞护石可发动的技能
     public static final int SINGLE_WITH_STONE = 1;
+    //仅护石不能发动的技能
     public static final int NEED_EQUIP = 2;
+    //仅装备可发动的技能
     public static final int NO_SKILL = 3;
+    //二名技能
+    public static final int SPACIAL_SKILL = 4;
     private String name;
-    private int maxValue;
     private String jewelryName;
     private int jewelryNum;
     private int slotNum;
@@ -69,11 +75,7 @@ public class SkillDetailBean {
     }
 
     public int getMaxValue() {
-        return maxValue;
-    }
-
-    public void setMaxValue(int maxValue) {
-        this.maxValue = maxValue;
+        return Math.max(leftMaxValue,rightMaxValue);
     }
 
     public String getJewelryName() {
@@ -104,7 +106,7 @@ public class SkillDetailBean {
         name = bean.getName();
         leftMaxValue = bean.getLeftMaxValue();
         rightMaxValue = bean.getRightMaxValue();
-        maxValue = bean.getMaxValue();
+        int maxValue = getMaxValue();
         url = bean.getUrl();
         this.jewelryNum = jewelryNum;
         if (jewelryBean != null) {
@@ -118,18 +120,21 @@ public class SkillDetailBean {
         }
         if (maxValue >= 10) {
             type = SINGLE;
+        } else if (maxValue == 0) {
+            type = NO_SKILL;
         } else {
-            if (slotValue + maxValue >= 10) {
-                type = SINGLE_WITH_STONE;
+            if (slotNum == 0) {
+                type = SPACIAL_SKILL;
             } else {
-                if (slotNum == 2 && slotValue + maxValue + 1 >= 10) {
-                    type = SINGLE_WITH_STONE;
-                } else if (slotValue == 2) {
-                    type = maxValue + 6 >= 10 ? SINGLE_WITH_STONE : NEED_EQUIP;
-                } else {
-                    type = maxValue == 0 ? NO_SKILL : NEED_EQUIP;
+                int value;
+                if (slotNum==3){
+                   value=slotValue;
+                }else {
+                    value= slotValue == 2 ? slotValue * 3 : slotValue + 1;
                 }
+                type = maxValue + value < 10 ? NEED_EQUIP : SINGLE_WITH_STONE;
             }
+
         }
     }
 

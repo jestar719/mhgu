@@ -15,7 +15,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -42,6 +41,7 @@ public class SkillParserTest {
 
     private SkillParser mSkillParser;
     private File mSkills;
+    private File mFile;
 
     @Before
     public void init() {
@@ -64,24 +64,18 @@ public class SkillParserTest {
 
     @Test
     public void getAllSkill() throws IOException {
-        File file = new File(Constants.TEMP_SUMMARY_PATH, "skill_index.json");
-        Type type = new TypeToken<Map<String, Map<String, String>>>() {
-        }.getType();
-        Map<String, Map<String, String>> map = JsonUtils.fromStringByType(new FileReader(file), type);
-        Map<String, String> skill = map.get("skill");
-        Set<String> skills = skill.keySet();
-        SkillBean bean;
-        List<SkillBean> list = new ArrayList<>();
-        for (String name : skills) {
-            String url = skill.get(name);
-            File file1 = new File(Constants.MH_PATH, url);
-            bean = new SkillBean();
-            bean.setName(name);
-            bean.setUrl("../" + url);
-            mSkillParser.parseSkill(file1, bean);
-            list.add(bean);
+        File file = new File(Constants.TEMP_SUMMARY_PATH, "skill/skills.json");
+        List<SkillBean> beans = JsonUtils.toList(new FileReader(file), SkillBean.class);
+        beans.sort((o1,o2)-> {
+                int result = o1.getType() - o2.getType();
+                return result==0?o1.getName().compareTo(o2.getName()):result;
+        });
+        int id=1;
+        for (SkillBean bean : beans) {
+            bean.setId(id++);
+            bean.setUrl(bean.getUrl().replace("../",""));
         }
-        JsonUtils.writeJson(new File(Constants.TEMP_SUMMARY_PATH, "skill/skills.json"), list);
+        JsonUtils.writeJson(file, beans);
     }
 
     @Test
@@ -90,7 +84,6 @@ public class SkillParserTest {
         List<SkillBean> skillBeans = JsonUtils.toList(new FileReader(file), SkillBean.class);
         file = new File(Constants.TEMP_SUMMARY_PATH, "skill/Jewelrys.json");
         List<SkillJewelryBean> jewelryBeans = JsonUtils.toList(new FileReader(file), SkillJewelryBean.class);
-        Collections.sort(skillBeans, (x1, x2) -> (x1.getMaxValue() - x2.getMaxValue()));
         Collections.sort(jewelryBeans);
         HashMap<String, LinkedList<SkillJewelryBean>> map = new HashMap<>();
         for (SkillJewelryBean bean : jewelryBeans) {
@@ -102,7 +95,6 @@ public class SkillParserTest {
             }
             list.add(bean);
         }
-
         ArrayList<SkillDetailBean> list = new ArrayList<>();
         SkillDetailBean detail;
         for (SkillBean bean : skillBeans) {
@@ -114,16 +106,15 @@ public class SkillParserTest {
             detail.setSkillBean(bean, skillJewelryBean, isEmpty ? 0 : jList.size());
             list.add(detail);
         }
-        list.sort(new Comparator<SkillDetailBean>() {
-            @Override
-            public int compare(SkillDetailBean o1, SkillDetailBean o2) {
-                int result = o1.getType() - o2.getType();
-                result = result == 0 ? o2.getMaxValue() - o1.getMaxValue() : result;
-                result = result == 0 ? o2.getSlotNum() - o1.getSlotNum() : result;
-                result = result == 0 ? o2.getSlotValue() - o1.getSlotValue() : result;
-                result = result == 0 ? o2.getName().compareTo(o1.getName()) : result;
-                return result;
-            }
+        JsonUtils.writeJson(new File(Constants.TEMP_SUMMARY_PATH, "skill/skills.json"), skillBeans);
+        list.sort((o1, o2) -> {
+            int result = o1.getType() - o2.getType();
+            result = result == 0 ? o2.getMaxValue() - o1.getMaxValue() : result;
+            result = result == 0 ? o2.getLeftMaxValue() + o2.getRightMaxValue() - o1.getLeftMaxValue() - o1.getRightMaxValue() : result;
+            result = result == 0 ? o1.getSlotNum() - o2.getSlotNum() : result;
+            result = result == 0 ? o2.getSlotValue() - o1.getSlotValue() : result;
+            result = result == 0 ? o2.getName().compareTo(o1.getName()) : result;
+            return result;
         });
         file = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
         JsonUtils.writeJson(file, list);
@@ -133,54 +124,49 @@ public class SkillParserTest {
     public void createSkillDetailHtml() throws IOException {
         File file = new File(Constants.DATA_PATH, "2208.html");
         Document doc = getDoc(file);
-        Elements select = doc.select("table.t1 tbody");
         File json = new File(Constants.TEMP_SUMMARY_PATH, "skill/skill_detail.json");
         List<SkillDetailBean> list = JsonUtils.toList(new FileReader(json), SkillDetailBean.class);
-        Map<String,String> map=new HashMap<>();
-        for (SkillDetailBean bean : list) {
-            String temp="<span style=\"color:#0033ff;\">%s</span> | <span style=\"color:#ff6600;\">%s</span>";
-            String maxValue = String.format(temp, bean.getLeftMaxValue(), bean.getRightMaxValue());
-            map.put(bean.getName(),maxValue);
-        }
-        select=doc.select("tr:has(a)");
+        int type = -1;
+        Elements select = doc.select("table.t1 tbody");
         for (Element element : select) {
-            String text = element.selectFirst("a").text().trim();
-            String s = map.get(text);
-            Element child = element.getElementsByTag("td").get(1);
-            System.out.println(String.format("%s %s %s",text,child.text(),s));
-            child.text("");
-            child.append(s);
+            element.select("tr:has(td)").remove();
         }
-//        int type = -1;
-//        Element element = null;
-//        for (SkillDetailBean bean : list) {
-//            int beanType = bean.getType();
-//            if (type != beanType) {
-//                type = beanType;
-//                element = select.get(type);
-//            }
-//            Element tr = new Element("tr");
-//            Element td = getTd(false);
-//            Element a = new Element("a");
-//            a.text(bean.getName());
-//            a.attr("href", bean.getUrl());
-//            td.appendChild(a);
-//            tr.appendChild(td);
-//            String temp="%s <span style=\"color:#0011ff;\">|</span> %s";
-//            String maxValue = String.format(temp, bean.getLeftMaxValue(), bean.getRightMaxValue());
-//            addTd(maxValue, true, tr);
-//            addTd(String.valueOf(bean.getJewelryNum()), true, tr);
-//            addTd(bean.getJewelryName(), false, tr);
-//            int slotValue = bean.getSlotValue();
-//            addTd(String.valueOf(slotValue), true, tr);
-//            addTd(String.valueOf(bean.getSlotNum()), true, tr);
-//            String value = slotValue == 2 ? "<span style=\"color:#0011ff;\">Yes</span>" : "No";
-//            td = getTd(true);
-//            td.append(value);
-//            tr.appendChild(td);
-//            element.appendChild(tr);
-//        }
+        addSkillListInTable(list, type, select);
         writeDoc(file, doc);
+    }
+
+    private void addSkillListInTable(List<SkillDetailBean> list, int type, Elements select) {
+        Element element = null;
+        for (SkillDetailBean bean : list) {
+            int beanType = bean.getType();
+            if (type != beanType) {
+                type = beanType;
+                element = select.get(type);
+            }
+            Element tr = new Element("tr");
+            Element td = getTd(false);
+            Element a = new Element("a");
+            a.text(bean.getName());
+            String url = bean.getUrl();
+            a.attr("href", url);
+            td.appendChild(a);
+            tr.appendChild(td);
+            String temp = "<span style=\"color:#0033ff;\">%s</span> | <span style=\"color:#ff6600;\">%s</span>";
+            String maxValue = String.format(temp, bean.getLeftMaxValue(), bean.getRightMaxValue());
+            td = getTd(true);
+            td.append(maxValue);
+            tr.appendChild(td);
+            addTd(String.valueOf(bean.getJewelryNum()), true, tr);
+            addTd(bean.getJewelryName(), false, tr);
+            int slotValue = bean.getSlotValue();
+            addTd(String.valueOf(slotValue), true, tr);
+            addTd(String.valueOf(bean.getSlotNum()), true, tr);
+            String value = slotValue == 2 ? "<span style=\"color:#0011ff;\">Yes</span>" : "No";
+            td = getTd(true);
+            td.append(value);
+            tr.appendChild(td);
+            element.appendChild(tr);
+        }
     }
 
     private Element getTd(boolean isDefault) {
@@ -274,6 +260,22 @@ public class SkillParserTest {
         }
     }
 
+    @Test
+    public void parseSkillEffect() throws IOException {
+        Type type = new TypeToken<Map<String, Map<String, String>>>() {
+        }.getType();
+        File file = new File(Constants.TEMP_SUMMARY_PATH, "skill_index.json");
+        Map<String, Map<String, String>> map = JsonUtils.fromStringByType(new FileReader(file), type);
+        Map<String, String> skill = map.get("skill");
+        Set<String> set = skill.keySet();
+        ArrayList<LinkInfo> list = new ArrayList<>(set.size());
+        for (String s : set) {
+            list.add(mSkillParser.parseSkillEffect(skill.get(s)));
+        }
+        file = new File(Constants.TEMP_TRANSLATED_PATH, "skill/skill_effect.json");
+        JsonUtils.writeJson(file, list);
+    }
+
 
     /**
      * 翻译一览和各分类的技能
@@ -303,10 +305,10 @@ public class SkillParserTest {
         List<LinkInfo> list = JsonUtils.toList(new FileReader(file), LinkInfo.class);
         LinkInfo info = list.get(0);
         Collection<String> values = info.getData().values();
-        for (String value : values) {
-            mSkillParser.convertHtml(new File(Constants.MH_PATH, value), map);
-        }
-        for (String s : list.get(1).getData().values()) {
+//        for (String value : values) {
+//            mSkillParser.convertHtml(new File(Constants.MH_PATH, value), map);
+//        }
+        for (String s : list.get(3).getData().values()) {
             mSkillParser.convertSkillInEquip(new File(Constants.MH_PATH, s), map);
         }
     }
@@ -345,24 +347,29 @@ public class SkillParserTest {
         }
     }
 
+    /**
+     * 狩技翻译
+     *
+     * @throws IOException
+     */
     @Test
     public void fightSkill() throws IOException {
         File file = new File(Constants.DATA_PATH, "1847.html");
         File file1 = new File(Constants.TEMP_TRANSLATED_PATH, "skill/fight_skill.json");
         Type type = new TypeToken<Map<String, Map<String, String>>>() {
         }.getType();
-        Map<String, Map<String,String>> map=JsonUtils.fromStringByType(new FileReader(file1),type);
+        Map<String, Map<String, String>> map = JsonUtils.fromStringByType(new FileReader(file1), type);
         Map<String, String> names = map.get("name");
         Document doc = getDoc(file);
         Elements select = doc.select("td.b[rowspan]:not([style])");
         for (Element element : select) {
             String text = element.text().trim();
             String s = names.get(text);
-            if (s!=null){
+            if (s != null) {
                 element.text(s);
             }
         }
-        writeDoc(file,doc);
+        writeDoc(file, doc);
         for (String link : map.get("link").values()) {
             file = new File(Constants.MH_PATH, link);
             doc = getDoc(file);
@@ -370,12 +377,36 @@ public class SkillParserTest {
             for (Element element : a) {
                 String text = element.text().trim();
                 String s = names.get(text);
-                if (s!=null){
+                if (s != null) {
                     element.text(s);
                 }
             }
-            writeDoc(file,doc);
+            writeDoc(file, doc);
         }
-        JsonUtils.writeJson(file1,map);
+        JsonUtils.writeJson(file1, map);
+    }
+
+    /**
+     * 技能效果翻译
+     */
+    @Test
+    public void convertSkillEffect() throws IOException {
+        File file = new File(Constants.TEMP_TRANSLATED_PATH, "skill/skill_effect.json");
+        List<LinkInfo> list = JsonUtils.toList(new FileReader(file), LinkInfo.class);
+        Map<String, String> map = new HashMap<>();
+        for (LinkInfo info : list) {
+            map.putAll(info.getData());
+        }
+        Set<String> set = new HashSet<>();
+        for (LinkInfo info : list) {
+            set.addAll(mSkillParser.convertSkillEffect(info));
+        }
+        for (String url : set) {
+            mSkillParser.convertSkillEffect(url, map);
+        }
+        for (int i = 2201; i < 2207; i++) {
+            File file1 = new File(Constants.DATA_PATH, i + ".html");
+            mSkillParser.convertSkillEffectInCatlog(file1,map);
+        }
     }
 }
