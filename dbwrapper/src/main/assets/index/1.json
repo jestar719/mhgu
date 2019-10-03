@@ -1,1 +1,483 @@
-[{"id":65792,"type":1,"name":"大剑","parent":0},{"id":65793,"type":1,"name":"大剑1","url":"data/1900.html","parent":65792},{"id":65794,"type":1,"name":"大剑2","url":"data/2882.html","parent":65792},{"id":65795,"type":1,"name":"大剑操作","url":"data/1950.html","parent":65792},{"id":65796,"type":1,"name":"最終","url":"data/2700.html","parent":65792},{"id":66048,"type":1,"name":"太刀","parent":0},{"id":66049,"type":1,"name":"太刀1","url":"data/1901.html","parent":66048},{"id":66050,"type":1,"name":"太刀2","url":"data/2883.html","parent":66048},{"id":66051,"type":1,"name":"太刀操作","url":"data/1951.html","parent":66048},{"id":66052,"type":1,"name":"最終","url":"data/2701.html","parent":66048},{"id":66304,"type":1,"name":"长枪","parent":0},{"id":66305,"type":1,"name":"最終","url":"data/2713.html","parent":66304},{"id":66306,"type":1,"name":"长枪1","url":"data/1906.html","parent":66304},{"id":66307,"type":1,"name":"长枪2","url":"data/2888.html","parent":66304},{"id":66308,"type":1,"name":"长枪操作","url":"data/1956.html","parent":66304},{"id":66560,"type":1,"name":"片手剑","parent":0},{"id":66561,"type":1,"name":"最終","url":"data/2702.html","parent":66560},{"id":66562,"type":1,"name":"片手剑1","url":"data/1902.html","parent":66560},{"id":66563,"type":1,"name":"片手剑2","url":"data/2884.html","parent":66560},{"id":66564,"type":1,"name":"片手剑操作","url":"data/1952.html","parent":66560},{"id":66816,"type":1,"name":"双剑","parent":0},{"id":66817,"type":1,"name":"双剑1","url":"data/1903.html","parent":66816},{"id":66818,"type":1,"name":"双剑2","url":"data/2885.html","parent":66816},{"id":66819,"type":1,"name":"双剑操作","url":"data/1953.html","parent":66816},{"id":66820,"type":1,"name":"最終","url":"data/2703.html","parent":66816},{"id":67072,"type":1,"name":"大锤","parent":0},{"id":67073,"type":1,"name":"大锤1","url":"data/1904.html","parent":67072},{"id":67074,"type":1,"name":"大锤2","url":"data/2886.html","parent":67072},{"id":67075,"type":1,"name":"大锤操作","url":"data/1954.html","parent":67072},{"id":67076,"type":1,"name":"最終","url":"data/2704.html","parent":67072},{"id":67328,"type":1,"name":"狩猎笛","parent":0},{"id":67329,"type":1,"name":"最終","url":"data/2705.html","parent":67328},{"id":67330,"type":1,"name":"狩猎笛1","url":"data/1905.html","parent":67328},{"id":67331,"type":1,"name":"狩猎笛2","url":"data/2887.html","parent":67328},{"id":67332,"type":1,"name":"狩猎笛操作","url":"data/1955.html","parent":67328},{"id":67333,"type":1,"name":"笛旋律","url":"data/2602.html","parent":67328},{"id":67584,"type":1,"name":"铳枪","parent":0},{"id":67585,"type":1,"name":"最終","url":"data/2707.html","parent":67584},{"id":67586,"type":1,"name":"铳枪1","url":"data/1907.html","parent":67584},{"id":67587,"type":1,"name":"铳枪2","url":"data/2889.html","parent":67584},{"id":67588,"type":1,"name":"铳枪操作","url":"data/1957.html","parent":67584},{"id":67840,"type":1,"name":"斩击斧","parent":0},{"id":67841,"type":1,"name":"斩击斧1","url":"data/1908.html","parent":67840},{"id":67842,"type":1,"name":"斩击斧2","url":"data/2890.html","parent":67840},{"id":67843,"type":1,"name":"斩击斧操作","url":"data/1958.html","parent":67840},{"id":67844,"type":1,"name":"最終","url":"data/2708.html","parent":67840},{"id":68096,"type":1,"name":"盾斧","parent":0},{"id":68097,"type":1,"name":"最終","url":"data/2709.html","parent":68096},{"id":68098,"type":1,"name":"盾斧","url":"data/1909.html","parent":68096},{"id":68099,"type":1,"name":"盾斧操作","url":"data/1959.html","parent":68096},{"id":68352,"type":1,"name":"操虫棍","parent":0},{"id":68353,"type":1,"name":"操虫棍","url":"data/1910.html","parent":68352},{"id":68354,"type":1,"name":"操虫棍操作","url":"data/1960.html","parent":68352},{"id":68355,"type":1,"name":"最終","url":"data/2710.html","parent":68352},{"id":68608,"type":1,"name":"弓","parent":0},{"id":68609,"type":1,"name":"弓1","url":"data/1911.html","parent":68608},{"id":68610,"type":1,"name":"弓2","url":"data/2893.html","parent":68608},{"id":68611,"type":1,"name":"弓操作","url":"data/1961.html","parent":68608},{"id":68612,"type":1,"name":"最終","url":"data/2711.html","parent":68608},{"id":68864,"type":1,"name":"轻弩","parent":0},{"id":68865,"type":1,"name":"最終","url":"data/2712.html","parent":68864},{"id":68866,"type":1,"name":"轻弩1","url":"data/1912.html","parent":68864},{"id":68867,"type":1,"name":"轻弩2","url":"data/2894.html","parent":68864},{"id":68868,"type":1,"name":"轻弩操作","url":"data/1962.html","parent":68864},{"id":69120,"type":1,"name":"重弩","parent":0},{"id":69121,"type":1,"name":"最終","url":"data/2713.html","parent":69120},{"id":69122,"type":1,"name":"重弩1","url":"data/1913.html","parent":69120},{"id":69123,"type":1,"name":"重弩2","url":"data/2895.html","parent":69120},{"id":69124,"type":1,"name":"重弩操作","url":"data/1963.html","parent":69120}]
+[
+  {
+    "id": 65792,
+    "type": 1,
+    "name": "大剑",
+    "parent": 0
+  },
+  {
+    "id": 65793,
+    "type": 1,
+    "name": "大剑1",
+    "url": "data/1900.html",
+    "parent": 65792
+  },
+  {
+    "id": 65794,
+    "type": 1,
+    "name": "大剑2",
+    "url": "data/2882.html",
+    "parent": 65792
+  },
+ 
+  {
+    "id": 65795,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2700.html",
+    "parent": 65792
+  },
+  {
+    "id": 65796,
+    "type": 1,
+    "name": "大剑操作",
+    "url": "data/1950.html",
+    "parent": 65792
+  },
+  {
+    "id": 66048,
+    "type": 1,
+    "name": "太刀",
+    "parent": 0
+  },
+  {
+    "id": 66049,
+    "type": 1,
+    "name": "太刀1",
+    "url": "data/1901.html",
+    "parent": 66048
+  },
+  {
+    "id": 66050,
+    "type": 1,
+    "name": "太刀2",
+    "url": "data/2883.html",
+    "parent": 66048
+  },
+
+  {
+    "id": 66050,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2701.html",
+    "parent": 66048
+  },
+  {
+    "id": 66052,
+    "type": 1,
+    "name": "太刀操作",
+    "url": "data/1951.html",
+    "parent": 66048
+  },
+  {
+    "id": 66304,
+    "type": 1,
+    "name": "长枪",
+    "parent": 0
+  },
+
+  {
+    "id": 66305,
+    "type": 1,
+    "name": "长枪1",
+    "url": "data/1906.html",
+    "parent": 66304
+  },
+  {
+    "id": 66306,
+    "type": 1,
+    "name": "长枪2",
+    "url": "data/2888.html",
+    "parent": 66304
+  },
+  {
+    "id": 66307,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2713.html",
+    "parent": 66304
+  },
+  {
+    "id": 66308,
+    "type": 1,
+    "name": "长枪操作",
+    "url": "data/1956.html",
+    "parent": 66304
+  },
+  {
+    "id": 66560,
+    "type": 1,
+    "name": "片手剑",
+    "parent": 0
+  },
+
+  {
+    "id": 66561,
+    "type": 1,
+    "name": "片手剑1",
+    "url": "data/1902.html",
+    "parent": 66560
+  },
+  {
+    "id": 66562,
+    "type": 1,
+    "name": "片手剑2",
+    "url": "data/2884.html",
+    "parent": 66560
+  },
+  {
+    "id": 66563,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2702.html",
+    "parent": 66560
+  },
+  {
+    "id": 66564,
+    "type": 1,
+    "name": "片手剑操作",
+    "url": "data/1952.html",
+    "parent": 66560
+  },
+  {
+    "id": 66816,
+    "type": 1,
+    "name": "双剑",
+    "parent": 0
+  },
+  {
+    "id": 66817,
+    "type": 1,
+    "name": "双剑1",
+    "url": "data/1903.html",
+    "parent": 66816
+  },
+  {
+    "id": 66818,
+    "type": 1,
+    "name": "双剑2",
+    "url": "data/2885.html",
+    "parent": 66816
+  },
+
+  {
+    "id": 66819,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2703.html",
+    "parent": 66816
+  },
+  {
+    "id": 66820,
+    "type": 1,
+    "name": "双剑操作",
+    "url": "data/1953.html",
+    "parent": 66816
+  },
+  {
+    "id": 67072,
+    "type": 1,
+    "name": "大锤",
+    "parent": 0
+  },
+  {
+    "id": 67073,
+    "type": 1,
+    "name": "大锤1",
+    "url": "data/1904.html",
+    "parent": 67072
+  },
+  {
+    "id": 67074,
+    "type": 1,
+    "name": "大锤2",
+    "url": "data/2886.html",
+    "parent": 67072
+  },
+  {
+    "id": 67075,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2704.html",
+    "parent": 67072
+  },
+  {
+    "id": 67076,
+    "type": 1,
+    "name": "大锤操作",
+    "url": "data/1954.html",
+    "parent": 67072
+  },
+  {
+    "id": 67328,
+    "type": 1,
+    "name": "狩猎笛",
+    "parent": 0
+  },
+
+  {
+    "id": 67329,
+    "type": 1,
+    "name": "狩猎笛1",
+    "url": "data/1905.html",
+    "parent": 67328
+  },
+  {
+    "id": 67330,
+    "type": 1,
+    "name": "狩猎笛2",
+    "url": "data/2887.html",
+    "parent": 67328
+  },
+  {
+    "id": 67331,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2705.html",
+    "parent": 67328
+  },  {
+    "id": 67332,
+    "type": 1,
+    "name": "狩猎笛操作",
+    "url": "data/1955.html",
+    "parent": 67328
+  },
+  {
+    "id": 67333,
+    "type": 1,
+    "name": "笛旋律",
+    "url": "data/2602.html",
+    "parent": 67328
+  },
+  {
+    "id": 67584,
+    "type": 1,
+    "name": "铳枪",
+    "parent": 0
+  },
+
+  {
+    "id": 67585,
+    "type": 1,
+    "name": "铳枪1",
+    "url": "data/1907.html",
+    "parent": 67584
+  },
+  {
+    "id": 67586,
+    "type": 1,
+    "name": "铳枪2",
+    "url": "data/2889.html",
+    "parent": 67584
+  },
+  {
+    "id": 67587,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2707.html",
+    "parent": 67584
+  },
+  {
+    "id": 67588,
+    "type": 1,
+    "name": "铳枪操作",
+    "url": "data/1957.html",
+    "parent": 67584
+  },
+  {
+    "id": 67840,
+    "type": 1,
+    "name": "斩击斧",
+    "parent": 0
+  },
+  {
+    "id": 67841,
+    "type": 1,
+    "name": "斩击斧1",
+    "url": "data/1908.html",
+    "parent": 67840
+  },
+  {
+    "id": 67842,
+    "type": 1,
+    "name": "斩击斧2",
+    "url": "data/2890.html",
+    "parent": 67840
+  },
+
+  {
+    "id": 67843,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2708.html",
+    "parent": 67840
+  },
+  {
+    "id": 67844,
+    "type": 1,
+    "name": "斩击斧操作",
+    "url": "data/1958.html",
+    "parent": 67840
+  },
+  {
+    "id": 68096,
+    "type": 1,
+    "name": "盾斧",
+    "parent": 0
+  },
+
+  {
+    "id": 68097,
+    "type": 1,
+    "name": "盾斧",
+    "url": "data/1909.html",
+    "parent": 68096
+  },
+  {
+    "id": 68098,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2709.html",
+    "parent": 68096
+  },
+  {
+    "id": 68099,
+    "type": 1,
+    "name": "盾斧操作",
+    "url": "data/1959.html",
+    "parent": 68096
+  },
+  {
+    "id": 68352,
+    "type": 1,
+    "name": "操虫棍",
+    "parent": 0
+  },
+  {
+    "id": 68353,
+    "type": 1,
+    "name": "操虫棍",
+    "url": "data/1910.html",
+    "parent": 68352
+  },
+
+  {
+    "id": 68354,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2710.html",
+    "parent": 68352
+  },
+  {
+    "id": 68355,
+    "type": 1,
+    "name": "操虫棍操作",
+    "url": "data/1960.html",
+    "parent": 68352
+  },
+  {
+    "id": 68608,
+    "type": 1,
+    "name": "弓",
+    "parent": 0
+  },
+  {
+    "id": 68609,
+    "type": 1,
+    "name": "弓1",
+    "url": "data/1911.html",
+    "parent": 68608
+  },
+  {
+    "id": 68610,
+    "type": 1,
+    "name": "弓2",
+    "url": "data/2893.html",
+    "parent": 68608
+  },
+
+  {
+    "id": 68611,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2711.html",
+    "parent": 68608
+  },
+  {
+    "id": 68612,
+    "type": 1,
+    "name": "弓操作",
+    "url": "data/1961.html",
+    "parent": 68608
+  },
+  {
+    "id": 68864,
+    "type": 1,
+    "name": "轻弩",
+    "parent": 0
+  },
+
+  {
+    "id": 68865,
+    "type": 1,
+    "name": "轻弩1",
+    "url": "data/1912.html",
+    "parent": 68864
+  },
+  {
+    "id": 68866,
+    "type": 1,
+    "name": "轻弩2",
+    "url": "data/2894.html",
+    "parent": 68864
+  },
+  {
+    "id": 68867,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2712.html",
+    "parent": 68864
+  },
+  {
+    "id": 68868,
+    "type": 1,
+    "name": "轻弩操作",
+    "url": "data/1962.html",
+    "parent": 68864
+  },
+  {
+    "id": 69120,
+    "type": 1,
+    "name": "重弩",
+    "parent": 0
+  },
+
+  {
+    "id": 69121,
+    "type": 1,
+    "name": "重弩1",
+    "url": "data/1913.html",
+    "parent": 69120
+  },
+  {
+    "id": 69122,
+    "type": 1,
+    "name": "重弩2",
+    "url": "data/2895.html",
+    "parent": 69120
+  },
+  {
+    "id": 69123,
+    "type": 1,
+    "name": "最终",
+    "url": "data/2713.html",
+    "parent": 69120
+  },
+  {
+    "id": 69124,
+    "type": 1,
+    "name": "重弩操作",
+    "url": "data/1963.html",
+    "parent": 69120
+  }
+]

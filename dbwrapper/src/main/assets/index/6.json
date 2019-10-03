@@ -1,1 +1,746 @@
-[{"id":393472,"type":6,"name":"怪物一览","parent":0},{"id":393473,"type":6,"name":"大型怪物","url":"data/2501.html","parent":393472},{"id":393474,"type":6,"name":"小型怪物","url":"data/2502.html","parent":393472},{"id":393728,"type":6,"name":"其它种","parent":0},{"id":393729,"type":6,"name":"影蜘蛛","url":"data/2979.html","parent":393728},{"id":393730,"type":6,"name":"浑沌呻吟黑蚀龙","url":"data/2990.html","parent":393728},{"id":393731,"type":6,"name":"绞蛇龙","url":"data/1849.html","parent":393728},{"id":393732,"type":6,"name":"金雷公雷狼龙","url":"data/2839.html","parent":393728},{"id":393733,"type":6,"name":"雷狼龙","url":"data/1853.html","parent":393728},{"id":393734,"type":6,"name":"黑蚀龙","url":"data/2830.html","parent":393728},{"id":393984,"type":6,"name":"两生种","parent":0},{"id":393985,"type":6,"name":"岩穿鬼蛙","url":"data/2837.html","parent":393984},{"id":393986,"type":6,"name":"鬼蛙","url":"data/1856.html","parent":393984},{"id":393987,"type":6,"name":"鬼鲛","url":"data/1851.html","parent":393984},{"id":394240,"type":6,"name":"兽龙种","parent":0},{"id":394241,"type":6,"name":"土砂龙","url":"data/2965.html","parent":394240},{"id":394242,"type":6,"name":"宝缠爆锤龙","url":"data/2869.html","parent":394240},{"id":394243,"type":6,"name":"尾锤龙","url":"data/1976.html","parent":394240},{"id":394244,"type":6,"name":"恐暴龙","url":"data/2871.html","parent":394240},{"id":394245,"type":6,"name":"斩龙","url":"data/1829.html","parent":394240},{"id":394246,"type":6,"name":"极度饥饿恐暴龙","url":"data/2872.html","parent":394240},{"id":394247,"type":6,"name":"烬灭刃斩龙","url":"data/2870.html","parent":394240},{"id":394248,"type":6,"name":"爆锤龙","url":"data/1966.html","parent":394240},{"id":394249,"type":6,"name":"猛爆碎龙","url":"data/2991.html","parent":394240},{"id":394250,"type":6,"name":"碎龙","url":"data/1859.html","parent":394240},{"id":394496,"type":6,"name":"古龙种","parent":0},{"id":394497,"type":6,"name":"天廻龙","url":"data/2864.html","parent":394496},{"id":394498,"type":6,"name":"天慧龙","url":"data/2964.html","parent":394496},{"id":394499,"type":6,"name":"岚龙","url":"data/1979.html","parent":394496},{"id":394500,"type":6,"name":"炎王龙","url":"data/1973.html","parent":394496},{"id":394501,"type":6,"name":"煌黑龙","url":"data/2879.html","parent":394496},{"id":394502,"type":6,"name":"祖龙","url":"data/2995.html","parent":394496},{"id":394503,"type":6,"name":"红黑龙","url":"data/2994.html","parent":394496},{"id":394504,"type":6,"name":"老山龙","url":"data/2977.html","parent":394496},{"id":394505,"type":6,"name":"霞龙","url":"data/1967.html","parent":394496},{"id":394506,"type":6,"name":"风翔龙","url":"data/1970.html","parent":394496},{"id":394507,"type":6,"name":"骸龙","url":"data/2858.html","parent":394496},{"id":394508,"type":6,"name":"麒麟","url":"data/1969.html","parent":394496},{"id":394509,"type":6,"name":"黑龙","url":"data/2993.html","parent":394496},{"id":394752,"type":6,"name":"海龙种","parent":0},{"id":394753,"type":6,"name":"天眼泡狐龙","url":"data/2973.html","parent":394752},{"id":394754,"type":6,"name":"水兽","url":"data/1978.html","parent":394752},{"id":394755,"type":6,"name":"泡狐龙","url":"data/1832.html","parent":394752},{"id":394756,"type":6,"name":"海龙","url":"data/1861.html","parent":394752},{"id":394757,"type":6,"name":"潜口龙","url":"data/1858.html","parent":394752},{"id":394758,"type":6,"name":"炎戈龙","url":"data/1848.html","parent":394752},{"id":395008,"type":6,"name":"牙兽种","parent":0},{"id":395009,"type":6,"name":"大雪主白兔兽","url":"data/2863.html","parent":395008},{"id":395010,"type":6,"name":"奇猿狐","url":"data/1850.html","parent":395008},{"id":395011,"type":6,"name":"巨兽","url":"data/1831.html","parent":395008},{"id":395012,"type":6,"name":"桃毛兽王","url":"data/2971.html","parent":395008},{"id":395013,"type":6,"name":"激昂的金狮子","url":"data/2874.html","parent":395008},{"id":395014,"type":6,"name":"白兔兽","url":"data/1980.html","parent":395008},{"id":395015,"type":6,"name":"红盔青熊兽","url":"data/2835.html","parent":395008},{"id":395016,"type":6,"name":"赤甲兽","url":"data/1977.html","parent":395008},{"id":395017,"type":6,"name":"野猪王","url":"data/1975.html","parent":395008},{"id":395018,"type":6,"name":"金狮子","url":"data/2873.html","parent":395008},{"id":395019,"type":6,"name":"银岭巨兽","url":"data/2972.html","parent":395008},{"id":395020,"type":6,"name":"雪狮子王","url":"data/1857.html","parent":395008},{"id":395021,"type":6,"name":"青熊兽","url":"data/1964.html","parent":395008},{"id":395264,"type":6,"name":"甲壳种","parent":0},{"id":395265,"type":6,"name":"盾蟹","url":"data/1854.html","parent":395264},{"id":395266,"type":6,"name":"矛碎盾蟹","url":"data/2836.html","parent":395264},{"id":395267,"type":6,"name":"铠裂镰蟹","url":"data/2982.html","parent":395264},{"id":395268,"type":6,"name":"镰蟹","url":"data/1852.html","parent":395264},{"id":395520,"type":6,"name":"甲虫种","parent":0},{"id":395521,"type":6,"name":"彻甲虫","url":"data/2857.html","parent":395520},{"id":395522,"type":6,"name":"重甲虫","url":"data/1971.html","parent":395520},{"id":395523,"type":6,"name":"阁螳螂","url":"data/2992.html","parent":395520},{"id":395524,"type":6,"name":"阁螳螂·机甲","url":"data/3002.html","parent":395520},{"id":395776,"type":6,"name":"飞龙种","parent":0},{"id":395777,"type":6,"name":"冰牙龙","url":"data/2966.html","parent":395776},{"id":395778,"type":6,"name":"千刃龙","url":"data/2831.html","parent":395776},{"id":395779,"type":6,"name":"岩龙","url":"data/2983.html","parent":395776},{"id":395780,"type":6,"name":"崩龙","url":"data/2876.html","parent":395776},{"id":395781,"type":6,"name":"电龙","url":"data/1830.html","parent":395776},{"id":395782,"type":6,"name":"白电龙","url":"data/1860.html","parent":395776},{"id":395783,"type":6,"name":"白疾风迅龙","url":"data/2838.html","parent":395776},{"id":395784,"type":6,"name":"紫毒姫雌火龙","url":"data/2834.html","parent":395776},{"id":395785,"type":6,"name":"荒钩爪轰龙","url":"data/2840.html","parent":395776},{"id":395786,"type":6,"name":"角龙","url":"data/2962.html","parent":395776},{"id":395787,"type":6,"name":"轰龙","url":"data/1855.html","parent":395776},{"id":395788,"type":6,"name":"迅龙","url":"data/1839.html","parent":395776},{"id":395789,"type":6,"name":"鏖魔角龙","url":"data/2963.html","parent":395776},{"id":395790,"type":6,"name":"铠龙","url":"data/2980.html","parent":395776},{"id":395791,"type":6,"name":"雄火龙","url":"data/1863.html","parent":395776},{"id":395792,"type":6,"name":"雄火龙希少种","url":"data/2878.html","parent":395776},{"id":395793,"type":6,"name":"雌火龙","url":"data/1862.html","parent":395776},{"id":395794,"type":6,"name":"雌火龙希少种","url":"data/2877.html","parent":395776},{"id":395795,"type":6,"name":"霸龙","url":"data/2875.html","parent":395776},{"id":395796,"type":6,"name":"青电主电龙","url":"data/2974.html","parent":395776},{"id":395797,"type":6,"name":"黑炎王雄火龙","url":"data/2833.html","parent":395776},{"id":396032,"type":6,"name":"魚龙种","parent":0},{"id":396033,"type":6,"name":"水龙","url":"data/1968.html","parent":396032},{"id":396034,"type":6,"name":"沙龙王","url":"data/1974.html","parent":396032},{"id":396035,"type":6,"name":"熔岩龙","url":"data/1965.html","parent":396032},{"id":396036,"type":6,"name":"白速龙王","url":"data/2989.html","parent":396032},{"id":396288,"type":6,"name":"鸟龙种","parent":0},{"id":396289,"type":6,"name":"夜鸟","url":"data/1845.html","parent":396288},{"id":396290,"type":6,"name":"大怪鸟","url":"data/1840.html","parent":396288},{"id":396291,"type":6,"name":"朧隠夜鸟","url":"data/2981.html","parent":396288},{"id":396292,"type":6,"name":"毒怪鸟","url":"data/1972.html","parent":396288},{"id":396293,"type":6,"name":"独眼黑狼鸟","url":"data/2868.html","parent":396288},{"id":396294,"type":6,"name":"红速龙王","url":"data/1981.html","parent":396288},{"id":396295,"type":6,"name":"蓝速龙王","url":"data/1984.html","parent":396288},{"id":396296,"type":6,"name":"跳狗龙","url":"data/1836.html","parent":396288},{"id":396297,"type":6,"name":"黄速龙王","url":"data/1983.html","parent":396288},{"id":396298,"type":6,"name":"黑狼鸟","url":"data/1846.html","parent":396288}]
+[
+  {
+    "id": 393472,
+    "type": 6,
+    "name": "怪物一览",
+    "parent": 0
+  },
+  {
+    "id": 393473,
+    "type": 6,
+    "name": "大型怪物",
+    "url": "data/2501.html",
+    "parent": 393472
+  },
+  {
+    "id": 393474,
+    "type": 6,
+    "name": "小型怪物",
+    "url": "data/2502.html",
+    "parent": 393472
+  },
+  {
+    "id": 393728,
+    "type": 6,
+    "name": "其它种",
+    "parent": 0
+  },
+  {
+    "id": 393729,
+    "type": 6,
+    "name": "影蜘蛛",
+    "url": "data/2979.html",
+    "parent": 393728
+  },
+  {
+    "id": 393730,
+    "type": 6,
+    "name": "浑沌呻吟黑蚀龙",
+    "url": "data/2990.html",
+    "parent": 393728
+  },
+  {
+    "id": 393731,
+    "type": 6,
+    "name": "绞蛇龙",
+    "url": "data/1849.html",
+    "parent": 393728
+  },
+  {
+    "id": 393732,
+    "type": 6,
+    "name": "金雷公雷狼龙",
+    "url": "data/2839.html",
+    "parent": 393728
+  },
+  {
+    "id": 393733,
+    "type": 6,
+    "name": "雷狼龙",
+    "url": "data/1853.html",
+    "parent": 393728
+  },
+  {
+    "id": 393734,
+    "type": 6,
+    "name": "黑蚀龙",
+    "url": "data/2830.html",
+    "parent": 393728
+  },
+  {
+    "id": 393984,
+    "type": 6,
+    "name": "两生种",
+    "parent": 0
+  },
+  {
+    "id": 393985,
+    "type": 6,
+    "name": "岩穿鬼蛙",
+    "url": "data/2837.html",
+    "parent": 393984
+  },
+  {
+    "id": 393986,
+    "type": 6,
+    "name": "鬼蛙",
+    "url": "data/1856.html",
+    "parent": 393984
+  },
+  {
+    "id": 393987,
+    "type": 6,
+    "name": "鬼鲛",
+    "url": "data/1851.html",
+    "parent": 393984
+  },
+  {
+    "id": 394240,
+    "type": 6,
+    "name": "兽龙种",
+    "parent": 0
+  },
+  {
+    "id": 394241,
+    "type": 6,
+    "name": "土砂龙",
+    "url": "data/2965.html",
+    "parent": 394240
+  },
+  {
+    "id": 394242,
+    "type": 6,
+    "name": "宝缠爆锤龙",
+    "url": "data/2869.html",
+    "parent": 394240
+  },
+  {
+    "id": 394243,
+    "type": 6,
+    "name": "尾锤龙",
+    "url": "data/1976.html",
+    "parent": 394240
+  },
+  {
+    "id": 394244,
+    "type": 6,
+    "name": "恐暴龙",
+    "url": "data/2871.html",
+    "parent": 394240
+  },
+  {
+    "id": 394245,
+    "type": 6,
+    "name": "斩龙",
+    "url": "data/1829.html",
+    "parent": 394240
+  },
+  {
+    "id": 394246,
+    "type": 6,
+    "name": "怒食恐暴龙",
+    "url": "data/2872.html",
+    "parent": 394240
+  },
+  {
+    "id": 394247,
+    "type": 6,
+    "name": "烬灭刃斩龙",
+    "url": "data/2870.html",
+    "parent": 394240
+  },
+  {
+    "id": 394248,
+    "type": 6,
+    "name": "爆锤龙",
+    "url": "data/1966.html",
+    "parent": 394240
+  },
+  {
+    "id": 394249,
+    "type": 6,
+    "name": "猛爆碎龙",
+    "url": "data/2991.html",
+    "parent": 394240
+  },
+  {
+    "id": 394250,
+    "type": 6,
+    "name": "碎龙",
+    "url": "data/1859.html",
+    "parent": 394240
+  },
+  {
+    "id": 394496,
+    "type": 6,
+    "name": "古龙种",
+    "parent": 0
+  },
+  {
+    "id": 394497,
+    "type": 6,
+    "name": "天廻龙",
+    "url": "data/2864.html",
+    "parent": 394496
+  },
+  {
+    "id": 394498,
+    "type": 6,
+    "name": "天慧龙",
+    "url": "data/2964.html",
+    "parent": 394496
+  },
+  {
+    "id": 394499,
+    "type": 6,
+    "name": "岚龙",
+    "url": "data/1979.html",
+    "parent": 394496
+  },
+  {
+    "id": 394500,
+    "type": 6,
+    "name": "炎王龙",
+    "url": "data/1973.html",
+    "parent": 394496
+  },
+  {
+    "id": 394501,
+    "type": 6,
+    "name": "煌黑龙",
+    "url": "data/2879.html",
+    "parent": 394496
+  },
+  {
+    "id": 394502,
+    "type": 6,
+    "name": "祖龙",
+    "url": "data/2995.html",
+    "parent": 394496
+  },
+  {
+    "id": 394503,
+    "type": 6,
+    "name": "红龙",
+    "url": "data/2994.html",
+    "parent": 394496
+  },
+  {
+    "id": 394504,
+    "type": 6,
+    "name": "老山龙",
+    "url": "data/2977.html",
+    "parent": 394496
+  },
+  {
+    "id": 394505,
+    "type": 6,
+    "name": "霞龙",
+    "url": "data/1967.html",
+    "parent": 394496
+  },
+  {
+    "id": 394506,
+    "type": 6,
+    "name": "钢龙",
+    "url": "data/1970.html",
+    "parent": 394496
+  },
+  {
+    "id": 394507,
+    "type": 6,
+    "name": "骸龙",
+    "url": "data/2858.html",
+    "parent": 394496
+  },
+  {
+    "id": 394508,
+    "type": 6,
+    "name": "麒麟",
+    "url": "data/1969.html",
+    "parent": 394496
+  },
+  {
+    "id": 394509,
+    "type": 6,
+    "name": "黑龙",
+    "url": "data/2993.html",
+    "parent": 394496
+  },
+  {
+    "id": 394752,
+    "type": 6,
+    "name": "海龙种",
+    "parent": 0
+  },
+  {
+    "id": 394753,
+    "type": 6,
+    "name": "天眼泡狐龙",
+    "url": "data/2973.html",
+    "parent": 394752
+  },
+  {
+    "id": 394754,
+    "type": 6,
+    "name": "水兽",
+    "url": "data/1978.html",
+    "parent": 394752
+  },
+  {
+    "id": 394755,
+    "type": 6,
+    "name": "泡狐龙",
+    "url": "data/1832.html",
+    "parent": 394752
+  },
+  {
+    "id": 394756,
+    "type": 6,
+    "name": "海龙",
+    "url": "data/1861.html",
+    "parent": 394752
+  },
+  {
+    "id": 394757,
+    "type": 6,
+    "name": "潜口龙",
+    "url": "data/1858.html",
+    "parent": 394752
+  },
+  {
+    "id": 394758,
+    "type": 6,
+    "name": "炎戈龙",
+    "url": "data/1848.html",
+    "parent": 394752
+  },
+  {
+    "id": 395008,
+    "type": 6,
+    "name": "牙兽种",
+    "parent": 0
+  },
+  {
+    "id": 395009,
+    "type": 6,
+    "name": "大雪主白兔兽",
+    "url": "data/2863.html",
+    "parent": 395008
+  },
+  {
+    "id": 395010,
+    "type": 6,
+    "name": "奇猿狐",
+    "url": "data/1850.html",
+    "parent": 395008
+  },
+  {
+    "id": 395011,
+    "type": 6,
+    "name": "巨兽",
+    "url": "data/1831.html",
+    "parent": 395008
+  },
+  {
+    "id": 395012,
+    "type": 6,
+    "name": "桃毛兽王",
+    "url": "data/2971.html",
+    "parent": 395008
+  },
+  {
+    "id": 395013,
+    "type": 6,
+    "name": "激昂的金狮子",
+    "url": "data/2874.html",
+    "parent": 395008
+  },
+  {
+    "id": 395014,
+    "type": 6,
+    "name": "白兔兽",
+    "url": "data/1980.html",
+    "parent": 395008
+  },
+  {
+    "id": 395015,
+    "type": 6,
+    "name": "红盔青熊兽",
+    "url": "data/2835.html",
+    "parent": 395008
+  },
+  {
+    "id": 395016,
+    "type": 6,
+    "name": "赤甲兽",
+    "url": "data/1977.html",
+    "parent": 395008
+  },
+  {
+    "id": 395017,
+    "type": 6,
+    "name": "野猪王",
+    "url": "data/1975.html",
+    "parent": 395008
+  },
+  {
+    "id": 395018,
+    "type": 6,
+    "name": "金狮子",
+    "url": "data/2873.html",
+    "parent": 395008
+  },
+  {
+    "id": 395019,
+    "type": 6,
+    "name": "银岭巨兽",
+    "url": "data/2972.html",
+    "parent": 395008
+  },
+  {
+    "id": 395020,
+    "type": 6,
+    "name": "雪狮子王",
+    "url": "data/1857.html",
+    "parent": 395008
+  },
+  {
+    "id": 395021,
+    "type": 6,
+    "name": "青熊兽",
+    "url": "data/1964.html",
+    "parent": 395008
+  },
+  {
+    "id": 395264,
+    "type": 6,
+    "name": "甲壳种",
+    "parent": 0
+  },
+  {
+    "id": 395265,
+    "type": 6,
+    "name": "盾蟹",
+    "url": "data/1854.html",
+    "parent": 395264
+  },
+  {
+    "id": 395266,
+    "type": 6,
+    "name": "矛碎盾蟹",
+    "url": "data/2836.html",
+    "parent": 395264
+  },
+  {
+    "id": 395267,
+    "type": 6,
+    "name": "铠裂镰蟹",
+    "url": "data/2982.html",
+    "parent": 395264
+  },
+  {
+    "id": 395268,
+    "type": 6,
+    "name": "镰蟹",
+    "url": "data/1852.html",
+    "parent": 395264
+  },
+  {
+    "id": 395520,
+    "type": 6,
+    "name": "甲虫种",
+    "parent": 0
+  },
+  {
+    "id": 395521,
+    "type": 6,
+    "name": "彻甲虫",
+    "url": "data/2857.html",
+    "parent": 395520
+  },
+  {
+    "id": 395522,
+    "type": 6,
+    "name": "重甲虫",
+    "url": "data/1971.html",
+    "parent": 395520
+  },
+  {
+    "id": 395523,
+    "type": 6,
+    "name": "阁螳螂",
+    "url": "data/2992.html",
+    "parent": 395520
+  },
+  {
+    "id": 395524,
+    "type": 6,
+    "name": "阁螳螂·机甲",
+    "url": "data/3002.html",
+    "parent": 395520
+  },
+  {
+    "id": 395776,
+    "type": 6,
+    "name": "飞龙种",
+    "parent": 0
+  },
+  {
+    "id": 395777,
+    "type": 6,
+    "name": "冰牙龙",
+    "url": "data/2966.html",
+    "parent": 395776
+  },
+  {
+    "id": 395778,
+    "type": 6,
+    "name": "千刃龙",
+    "url": "data/2831.html",
+    "parent": 395776
+  },
+  {
+    "id": 395779,
+    "type": 6,
+    "name": "岩龙",
+    "url": "data/2983.html",
+    "parent": 395776
+  },
+  {
+    "id": 395780,
+    "type": 6,
+    "name": "崩龙",
+    "url": "data/2876.html",
+    "parent": 395776
+  },
+  {
+    "id": 395781,
+    "type": 6,
+    "name": "电龙",
+    "url": "data/1830.html",
+    "parent": 395776
+  },
+  {
+    "id": 395782,
+    "type": 6,
+    "name": "白电龙",
+    "url": "data/1860.html",
+    "parent": 395776
+  },
+  {
+    "id": 395783,
+    "type": 6,
+    "name": "白疾风迅龙",
+    "url": "data/2838.html",
+    "parent": 395776
+  },
+  {
+    "id": 395784,
+    "type": 6,
+    "name": "紫毒姫雌火龙",
+    "url": "data/2834.html",
+    "parent": 395776
+  },
+  {
+    "id": 395785,
+    "type": 6,
+    "name": "荒钩爪轰龙",
+    "url": "data/2840.html",
+    "parent": 395776
+  },
+  {
+    "id": 395786,
+    "type": 6,
+    "name": "角龙",
+    "url": "data/2962.html",
+    "parent": 395776
+  },
+  {
+    "id": 395787,
+    "type": 6,
+    "name": "轰龙",
+    "url": "data/1855.html",
+    "parent": 395776
+  },
+  {
+    "id": 395788,
+    "type": 6,
+    "name": "迅龙",
+    "url": "data/1839.html",
+    "parent": 395776
+  },
+  {
+    "id": 395789,
+    "type": 6,
+    "name": "鏖魔角龙",
+    "url": "data/2963.html",
+    "parent": 395776
+  },
+  {
+    "id": 395790,
+    "type": 6,
+    "name": "铠龙",
+    "url": "data/2980.html",
+    "parent": 395776
+  },
+  {
+    "id": 395791,
+    "type": 6,
+    "name": "雄火龙",
+    "url": "data/1863.html",
+    "parent": 395776
+  },
+  {
+    "id": 395792,
+    "type": 6,
+    "name": "雄火龙希少种",
+    "url": "data/2878.html",
+    "parent": 395776
+  },
+  {
+    "id": 395793,
+    "type": 6,
+    "name": "雌火龙",
+    "url": "data/1862.html",
+    "parent": 395776
+  },
+  {
+    "id": 395794,
+    "type": 6,
+    "name": "雌火龙希少种",
+    "url": "data/2877.html",
+    "parent": 395776
+  },
+  {
+    "id": 395795,
+    "type": 6,
+    "name": "霸龙",
+    "url": "data/2875.html",
+    "parent": 395776
+  },
+  {
+    "id": 395796,
+    "type": 6,
+    "name": "青电主电龙",
+    "url": "data/2974.html",
+    "parent": 395776
+  },
+  {
+    "id": 395797,
+    "type": 6,
+    "name": "黑炎王雄火龙",
+    "url": "data/2833.html",
+    "parent": 395776
+  },
+  {
+    "id": 396032,
+    "type": 6,
+    "name": "魚龙种",
+    "parent": 0
+  },
+  {
+    "id": 396033,
+    "type": 6,
+    "name": "水龙",
+    "url": "data/1968.html",
+    "parent": 396032
+  },
+  {
+    "id": 396034,
+    "type": 6,
+    "name": "沙龙王",
+    "url": "data/1974.html",
+    "parent": 396032
+  },
+  {
+    "id": 396035,
+    "type": 6,
+    "name": "熔岩龙",
+    "url": "data/1965.html",
+    "parent": 396032
+  },
+  {
+    "id": 396036,
+    "type": 6,
+    "name": "白速龙王",
+    "url": "data/2989.html",
+    "parent": 396032
+  },
+  {
+    "id": 396288,
+    "type": 6,
+    "name": "鸟龙种",
+    "parent": 0
+  },
+  {
+    "id": 396289,
+    "type": 6,
+    "name": "夜鸟",
+    "url": "data/1845.html",
+    "parent": 396288
+  },
+  {
+    "id": 396290,
+    "type": 6,
+    "name": "大怪鸟",
+    "url": "data/1840.html",
+    "parent": 396288
+  },
+  {
+    "id": 396291,
+    "type": 6,
+    "name": "朧隠夜鸟",
+    "url": "data/2981.html",
+    "parent": 396288
+  },
+  {
+    "id": 396292,
+    "type": 6,
+    "name": "毒怪鸟",
+    "url": "data/1972.html",
+    "parent": 396288
+  },
+  {
+    "id": 396293,
+    "type": 6,
+    "name": "独眼黑狼鸟",
+    "url": "data/2868.html",
+    "parent": 396288
+  },
+  {
+    "id": 396294,
+    "type": 6,
+    "name": "红速龙王",
+    "url": "data/1981.html",
+    "parent": 396288
+  },
+  {
+    "id": 396295,
+    "type": 6,
+    "name": "蓝速龙王",
+    "url": "data/1984.html",
+    "parent": 396288
+  },
+  {
+    "id": 396296,
+    "type": 6,
+    "name": "跳狗龙",
+    "url": "data/1836.html",
+    "parent": 396288
+  },
+  {
+    "id": 396297,
+    "type": 6,
+    "name": "黄速龙王",
+    "url": "data/1983.html",
+    "parent": 396288
+  },
+  {
+    "id": 396298,
+    "type": 6,
+    "name": "黑狼鸟",
+    "url": "data/1846.html",
+    "parent": 396288
+  }
+]

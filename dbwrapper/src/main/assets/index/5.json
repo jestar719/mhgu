@@ -1,1 +1,111 @@
-[{"id":327936,"type":5,"name":"技能","parent":0},{"id":327937,"type":5,"name":"体力・耐力・回復","url":"data/2202.html","parent":327936},{"id":327938,"type":5,"name":"复合技能","url":"data/2207.html","parent":327936},{"id":327939,"type":5,"name":"技能一览","url":"data/2200.html","parent":327936},{"id":327940,"type":5,"name":"报酬・採取・调合","url":"data/2205.html","parent":327936},{"id":327941,"type":5,"name":"攻击・防御・回避","url":"data/2201.html","parent":327936},{"id":327942,"type":5,"name":"神枪手专用","url":"data/2204.html","parent":327936},{"id":327943,"type":5,"name":"耐性・无效化","url":"data/2203.html","parent":327936},{"id":327944,"type":5,"name":"随从猫・其他","url":"data/2206.html","parent":327936},{"id":328192,"type":5,"name":"装饰品","parent":0},{"id":328193,"type":5,"name":"剑士用","url":"data/2581.html","parent":328192},{"id":328194,"type":5,"name":"神枪手用","url":"data/2582.html","parent":328192},{"id":328195,"type":5,"name":"通用","url":"data/2580.html","parent":328192},{"id":328448,"type":5,"name":"狩技","parent":0},{"id":328449,"type":5,"name":"狩技一览","url":"data/1847.html","parent":328448}]
+[
+  {
+    "id": 327936,
+    "type": 5,
+    "name": "技能",
+    "parent": 0
+  },
+  {
+    "id": 327937,
+    "type": 5,
+    "name": "技能一览",
+    "url": "data/2200.html",
+    "parent": 327936
+  },
+  {
+    "id": 327938,
+    "type": 5,
+    "name": "技能汇总",
+    "url": "data/2208.html",
+    "parent": 327936
+  },
+  {
+    "id": 327939,
+    "type": 5,
+    "name": "攻击・防御・回避",
+    "url": "data/2201.html",
+    "parent": 327936
+  },
+  {
+    "id": 327940,
+    "type": 5,
+    "name": "体力・耐力・回复",
+    "url": "data/2202.html",
+    "parent": 327936
+  },
+  {
+    "id": 327941,
+    "type": 5,
+    "name": "耐性・无效化",
+    "url": "data/2203.html",
+    "parent": 327936
+  },
+  {
+    "id": 327942,
+    "type": 5,
+    "name": "射手专用",
+    "url": "data/2204.html",
+    "parent": 327936
+  },
+  {
+    "id": 327943,
+    "type": 5,
+    "name": "报酬・采集・调合",
+    "url": "data/2205.html",
+    "parent": 327936
+  },
+  {
+    "id": 327944,
+    "type": 5,
+    "name": "随从猫・其他",
+    "url": "data/2206.html",
+    "parent": 327936
+  },
+  {
+    "id": 327945,
+    "type": 5,
+    "name": "复合技能",
+    "url": "data/2207.html",
+    "parent": 327936
+  },
+  {
+    "id": 328192,
+    "type": 5,
+    "name": "装饰品",
+    "parent": 0
+  },
+  {
+    "id": 328193,
+    "type": 5,
+    "name": "剑士用",
+    "url": "data/2581.html",
+    "parent": 328192
+  },
+  {
+    "id": 328194,
+    "type": 5,
+    "name": "射手用",
+    "url": "data/2582.html",
+    "parent": 328192
+  },
+  {
+    "id": 328195,
+    "type": 5,
+    "name": "通用",
+    "url": "data/2580.html",
+    "parent": 328192
+  },
+  {
+    "id": 328448,
+    "type": 5,
+    "name": "狩技",
+    "parent": 0
+  },
+  {
+    "id": 328449,
+    "type": 5,
+    "name": "狩技一览",
+    "url": "data/1847.html",
+    "parent": 328448
+  }
+]

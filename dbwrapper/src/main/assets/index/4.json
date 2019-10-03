@@ -1,1 +1,105 @@
-[{"id":262400,"type":4,"name":"猫猫探险","parent":0},{"id":262401,"type":4,"name":"G級","url":"data/2999.html","parent":262400},{"id":262402,"type":4,"name":"上位","url":"data/2822.html","parent":262400},{"id":262403,"type":4,"name":"下位","url":"data/2821.html","parent":262400},{"id":262656,"type":4,"name":"随从猫技能","parent":0},{"id":262657,"type":4,"name":"支援行动","url":"data/2832.html","parent":262656},{"id":262658,"type":4,"name":"被动技能","url":"data/2829.html","parent":262656},{"id":262912,"type":4,"name":"随从猫武器","parent":0},{"id":262913,"type":4,"name":"武器稀有度1～3","url":"data/2551.html","parent":262912},{"id":262914,"type":4,"name":"武器稀有度4～7","url":"data/2552.html","parent":262912},{"id":262915,"type":4,"name":"武器稀有度8～X","url":"data/2553.html","parent":262912},{"id":263168,"type":4,"name":"随从猫防具","parent":0},{"id":263169,"type":4,"name":"防具稀有度1～3","url":"data/2556.html","parent":263168},{"id":263170,"type":4,"name":"防具稀有度4～7","url":"data/2557.html","parent":263168},{"id":263171,"type":4,"name":"防具稀有度8～X","url":"data/2558.html","parent":263168}]
+
+
+[
+  {
+    "id": 262400,
+    "type": 4,
+    "name": "猫猫探险",
+    "parent": 0
+  },
+  {
+    "id": 262401,
+    "type": 4,
+    "name": "G級",
+    "url": "data/2999.html",
+    "parent": 262400
+  },
+  {
+    "id": 262402,
+    "type": 4,
+    "name": "上位",
+    "url": "data/2822.html",
+    "parent": 262400
+  },
+  {
+    "id": 262403,
+    "type": 4,
+    "name": "下位",
+    "url": "data/2821.html",
+    "parent": 262400
+  },
+  {
+    "id": 262656,
+    "type": 4,
+    "name": "随从猫技能",
+    "parent": 0
+  },
+  {
+    "id": 262657,
+    "type": 4,
+    "name": "支援行动",
+    "url": "data/2832.html",
+    "parent": 262656
+  },
+  {
+    "id": 262658,
+    "type": 4,
+    "name": "被动技能",
+    "url": "data/2829.html",
+    "parent": 262656
+  },
+  {
+    "id": 262912,
+    "type": 4,
+    "name": "随从猫武器",
+    "parent": 0
+  },
+  {
+    "id": 262913,
+    "type": 4,
+    "name": "武器稀有度1～3",
+    "url": "data/2551.html",
+    "parent": 262912
+  },
+  {
+    "id": 262914,
+    "type": 4,
+    "name": "武器稀有度4～7",
+    "url": "data/2552.html",
+    "parent": 262912
+  },
+  {
+    "id": 262915,
+    "type": 4,
+    "name": "武器稀有度8～X",
+    "url": "data/2553.html",
+    "parent": 262912
+  },
+  {
+    "id": 263168,
+    "type": 4,
+    "name": "随从猫防具",
+    "parent": 0
+  },
+  {
+    "id": 263169,
+    "type": 4,
+    "name": "防具稀有度1～3",
+    "url": "data/2556.html",
+    "parent": 263168
+  },
+  {
+    "id": 263170,
+    "type": 4,
+    "name": "防具稀有度4～7",
+    "url": "data/2557.html",
+    "parent": 263168
+  },
+  {
+    "id": 263171,
+    "type": 4,
+    "name": "防具稀有度8～X",
+    "url": "data/2558.html",
+    "parent": 263168
+  }
+]
