@@ -1,0 +1,6141 @@
+[
+  {
+    "id": 1,
+    "name": "KO",
+    "effectList": [
+      {
+        "name": "KO术",
+        "effect": "气绝值1.1倍（不包括操虫棍的猎虫攻击）",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "ＫＯ珠【1】",
+        "skillName": "KO",
+        "debuff": "蓄力缩短",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211195.html"
+      },
+      {
+        "name": "ＫＯ珠【2】",
+        "skillName": "KO",
+        "debuff": "蓄力缩短",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211196.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183552.html",
+    "type": 1
+  },
+  {
+    "id": 2,
+    "name": "乘骑",
+    "effectList": [
+      {
+        "name": "乘骑名人",
+        "effect": "骑乘积蓄值1.25倍、骑乘状态时攻击槽1.25倍",
+        "value": 10
+      },
+      {
+        "name": "不善乘骑",
+        "effect": "骑乘积蓄值0.9倍、骑乘状态时攻击槽0.9倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "骑惯珠【1】",
+        "skillName": "乘骑",
+        "value": 2,
+        "slotNum": 1,
+        "mUrl": "ida/211310.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183634.html",
+    "type": 1
+  },
+  {
+    "id": 3,
+    "name": "会心强化",
+    "effectList": [
+      {
+        "name": "超会心",
+        "effect": "会心时的伤害是通常的1.25倍现在增加到1.4倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "会心珠【1】",
+        "skillName": "会心强化",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231085.html"
+      },
+      {
+        "name": "会心珠【3】",
+        "skillName": "会心强化",
+        "debuff": "攻击",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288541.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 5,
+    "url": "ida/226912.html",
+    "type": 1
+  },
+  {
+    "id": 4,
+    "name": "全力",
+    "effectList": [
+      {
+        "name": "力量解放+2",
+        "effect": "累计受到伤害180以上，或者被大型怪物发现5分钟以后发动。90秒时间内、会心率上升50%、耐力值消费变为4分之一",
+        "value": 15
+      },
+      {
+        "name": "力量解放+1",
+        "effect": "累计受到伤害180以上，或者被大型怪物发现5分钟以后发动。90秒时间内、会心率上升30%、耐力值消费变为2分之一",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "全开珠【1】",
+        "skillName": "全力",
+        "debuff": "气息",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211193.html"
+      },
+      {
+        "name": "全开珠【2】",
+        "skillName": "全力",
+        "debuff": "气息",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211194.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183654.html",
+    "type": 1
+  },
+  {
+    "id": 5,
+    "name": "冰属性攻击",
+    "effectList": [
+      {
+        "name": "冰属性攻击强化+2",
+        "effect": "冰属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "冰属性攻击强化+1",
+        "effect": "冰属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "冰属性攻击弱化",
+        "effect": "冰属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "冰结珠【1】",
+        "skillName": "冰属性攻击",
+        "debuff": "火属性攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211179.html"
+      },
+      {
+        "name": "冰结珠【2】",
+        "skillName": "冰属性攻击",
+        "debuff": "火属性攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211180.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "url": "ida/183567.html",
+    "type": 1
+  },
+  {
+    "id": 6,
+    "name": "减气攻击",
+    "effectList": [
+      {
+        "name": "夺取耐力",
+        "effect": "打击属性(拔刀术【力】的斩击、弩的减气弹、弓的曲射、气瓶)造成的减气伤害1.2倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "夺气珠【1】",
+        "skillName": "减气攻击",
+        "debuff": "耐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211197.html"
+      },
+      {
+        "name": "夺气珠【2】",
+        "skillName": "减气攻击",
+        "debuff": "耐力",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211198.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183555.html",
+    "type": 1
+  },
+  {
+    "id": 7,
+    "name": "刃鳞",
+    "effectList": [
+      {
+        "name": "刃鳞打磨",
+        "effect": "拔刀中回避发动效果。剑士锋利度回复5(千刃龙武器回复7)。轻/重弩弾装填1发。50%的机率装填数+1。弓接击瓶的伤害是1.5倍(千刃龙武器1.65倍)",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "刃鳞珠【1】",
+        "skillName": "刃鳞",
+        "value": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288539.html"
+      },
+      {
+        "name": "刃鳞珠【3】",
+        "skillName": "刃鳞",
+        "value": 4,
+        "slotNum": 3,
+        "mUrl": "ida/288540.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286078.html",
+    "type": 1
+  },
+  {
+    "id": 8,
+    "name": "剑术",
+    "effectList": [
+      {
+        "name": "心眼",
+        "effect": "弹刀时不会引发硬直",
+        "value": 10
+      },
+      {
+        "name": "生疏",
+        "effect": "通常不弹刀的部位，也有3分之一的概率强制弹刀",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "剑豪珠【1】",
+        "skillName": "剑术",
+        "debuff": "匠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211321.html"
+      },
+      {
+        "name": "剑豪珠【3】",
+        "skillName": "剑术",
+        "debuff": "匠",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211322.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183557.html",
+    "type": 1
+  },
+  {
+    "id": 9,
+    "name": "加护",
+    "effectList": [
+      {
+        "name": "精灵加护",
+        "effect": "4分之一的概率，受到的伤害减少30%",
+        "value": 10
+      },
+      {
+        "name": "恶灵作崇",
+        "effect": "4分之一的概率，受到的伤害增加30%",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加护珠【1】",
+        "skillName": "加护",
+        "debuff": "加护",
+        "value": 1,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211208.html"
+      },
+      {
+        "name": "神护珠【1】",
+        "skillName": "加护",
+        "debuff": "加护",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211209.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "url": "ida/183534.html",
+    "type": 1
+  },
+  {
+    "id": 10,
+    "name": "匠",
+    "effectList": [
+      {
+        "name": "锋利度等级+2",
+        "effect": "斩位槽+2",
+        "value": 15
+      },
+      {
+        "name": "锋利度等级+1",
+        "effect": "斩位槽+1",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "匠珠【1】",
+        "skillName": "匠",
+        "debuff": "锋利度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288557.html"
+      },
+      {
+        "name": "匠珠【3】",
+        "skillName": "匠",
+        "debuff": "锋利度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211319.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 5,
+    "url": "ida/183612.html",
+    "type": 1
+  },
+  {
+    "id": 11,
+    "name": "回避性能",
+    "effectList": [
+      {
+        "name": "回避性能+2",
+        "effect": "回避的无敌时间从0.2秒增加到0.4秒",
+        "value": 15
+      },
+      {
+        "name": "回避性能+1",
+        "effect": "回避的无敌时间从0.2秒增加到0.33秒",
+        "value": 10
+      },
+      {
+        "name": "回避性能DOWN",
+        "effect": "回避的无敌时间从0.2秒减少到0.1秒",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "闪避珠【1】",
+        "skillName": "回避性能",
+        "debuff": "体力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211210.html"
+      },
+      {
+        "name": "闪避珠【2】",
+        "skillName": "回避性能",
+        "debuff": "体力",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211211.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183530.html",
+    "type": 1
+  },
+  {
+    "id": 12,
+    "name": "回避距离",
+    "effectList": [
+      {
+        "name": "回避距离UP",
+        "effect": "回避的距离增加",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "跳跃珠【1】",
+        "skillName": "回避距离",
+        "debuff": "体力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211212.html"
+      },
+      {
+        "name": "跳跃珠【3】",
+        "skillName": "回避距离",
+        "debuff": "体力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288537.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183528.html",
+    "type": 1
+  },
+  {
+    "id": 13,
+    "name": "属性会心",
+    "effectList": [
+      {
+        "name": "会心攻击【属性】",
+        "effect": "攻击发生会心时，给予的属性伤害(火、水、雷、冰、龙)提升。大剑1.2倍。轻/重弩1.3倍。片手剑、双剑、弓1.35倍。其他1.25倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "属会珠【1】",
+        "skillName": "属性会心",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211187.html"
+      },
+      {
+        "name": "属会珠【2】",
+        "skillName": "属性会心",
+        "debuff": "攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211188.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183599.html",
+    "type": 1
+  },
+  {
+    "id": 14,
+    "name": "属性攻击",
+    "effectList": [
+      {
+        "name": "属性攻击强化",
+        "effect": "火、水、雷、冰、龙的属性伤害值*1.1倍",
+        "value": 10
+      },
+      {
+        "name": "属性攻击弱化",
+        "effect": "火、水、雷、冰、龙的属性伤害值*0.9倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "属攻珠【1】",
+        "skillName": "属性攻击",
+        "debuff": "特殊攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211171.html"
+      },
+      {
+        "name": "属攻珠【3】",
+        "skillName": "属性攻击",
+        "debuff": "特殊攻击",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211172.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "url": "ida/183601.html",
+    "type": 1
+  },
+  {
+    "id": 15,
+    "name": "忍耐",
+    "effectList": [
+      {
+        "name": "虎视眈眈",
+        "effect": "受到伤害时，狩猎技、勇气槽、炼金槽也会积蓄",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "忍耐珠【1】",
+        "skillName": "忍耐",
+        "debuff": "无心",
+        "value": 2,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288547.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/286045.html",
+    "type": 1
+  },
+  {
+    "id": 16,
+    "name": "打磨术",
+    "effectList": [
+      {
+        "name": "刚刃打磨",
+        "effect": "使用砥石后一分钟内，锋利度不减/射手角色攻击*1.75",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "刚刃珠【1】",
+        "skillName": "打磨术",
+        "debuff": "磨刀匠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231081.html"
+      },
+      {
+        "name": "刚刃珠【3】",
+        "skillName": "打磨术",
+        "debuff": "磨刀匠",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/231082.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/226915.html",
+    "type": 1
+  },
+  {
+    "id": 17,
+    "name": "拔刀会心",
+    "effectList": [
+      {
+        "name": "拔刀术【技】",
+        "effect": "拔刀时，会心率增加100%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "拔刀珠【1】",
+        "skillName": "拔刀会心",
+        "debuff": "达人",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211325.html"
+      },
+      {
+        "name": "拔刀珠【2】",
+        "skillName": "拔刀会心",
+        "debuff": "达人",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211326.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/183640.html",
+    "type": 1
+  },
+  {
+    "id": 18,
+    "name": "拔刀减气",
+    "effectList": [
+      {
+        "name": "拔刀术【力】",
+        "effect": "切断系武器拔刀攻击时，附加气绝30和减气20。基本攻击力增加5",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "拔打珠【1】",
+        "skillName": "拔刀减气",
+        "debuff": "锋利度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211327.html"
+      },
+      {
+        "name": "拔打珠【3】",
+        "skillName": "拔刀减气",
+        "debuff": "锋利度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211328.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 8,
+    "url": "ida/183641.html",
+    "type": 1
+  },
+  {
+    "id": 19,
+    "name": "收刀",
+    "effectList": [
+      {
+        "name": "收刀术",
+        "effect": "收刀速度提升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "速纳珠【1】",
+        "skillName": "收刀",
+        "debuff": "磨刀匠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211214.html"
+      },
+      {
+        "name": "速纳珠【2】",
+        "skillName": "收刀",
+        "debuff": "磨刀匠",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211215.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 7,
+    "url": "ida/183633.html",
+    "type": 1
+  },
+  {
+    "id": 20,
+    "name": "收刀打磨",
+    "effectList": [
+      {
+        "name": "挑战者的收刀",
+        "effect": "怪物愤怒状态时，收刀回复少量的锋利度。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "收磨珠【1】",
+        "skillName": "收刀打磨",
+        "debuff": "收刀",
+        "value": 2,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288538.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 3,
+    "url": "ida/286088.html",
+    "type": 1
+  },
+  {
+    "id": 21,
+    "name": "攻击",
+    "effectList": [
+      {
+        "name": "攻击力UP【大】",
+        "effect": "攻击力+20",
+        "value": 20
+      },
+      {
+        "name": "攻击力UP【中】",
+        "effect": "攻击力+15",
+        "value": 15
+      },
+      {
+        "name": "攻击力UP【小】",
+        "effect": "攻击力+10",
+        "value": 10
+      },
+      {
+        "name": "攻击力DOWN【小】",
+        "effect": "攻击力-5",
+        "value": -10
+      },
+      {
+        "name": "攻击力DOWN【中】",
+        "effect": "攻击力-10",
+        "value": -15
+      },
+      {
+        "name": "攻击力DOWN【大】",
+        "effect": "攻击力-15",
+        "value": -20
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "攻击珠【1】",
+        "skillName": "攻击",
+        "debuff": "防御",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211163.html"
+      },
+      {
+        "name": "攻击珠【2】",
+        "skillName": "攻击",
+        "debuff": "防御",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211164.html"
+      },
+      {
+        "name": "攻击珠【3】",
+        "skillName": "攻击",
+        "debuff": "防御",
+        "value": 5,
+        "debuffValue": 1,
+        "slotNum": 3,
+        "mUrl": "ida/211165.html"
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "url": "ida/183560.html",
+    "type": 1
+  },
+  {
+    "id": 22,
+    "name": "斗魂",
+    "effectList": [
+      {
+        "name": "挑战者+2",
+        "effect": "大型怪物愤怒时能力提升，3秒后攻击力+25，会心率+20%",
+        "value": 15
+      },
+      {
+        "name": "挑战者+1",
+        "effect": "大型怪物愤怒时能力提升，3秒后攻击力+10，会心率+10%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "斗魂珠【1】",
+        "skillName": "斗魂",
+        "debuff": "格挡性能",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211225.html"
+      },
+      {
+        "name": "斗魂珠【2】",
+        "skillName": "斗魂",
+        "debuff": "格挡性能",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211226.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/183623.html",
+    "type": 1
+  },
+  {
+    "id": 23,
+    "name": "无伤",
+    "effectList": [
+      {
+        "name": "最佳状态",
+        "effect": "体力满格的时候，攻击力上升，基础攻击力+20",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "无伤珠【1】",
+        "skillName": "无伤",
+        "debuff": "回复速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211227.html"
+      },
+      {
+        "name": "无伤珠【2】",
+        "skillName": "无伤",
+        "debuff": "回复速度",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211228.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/183659.html",
+    "type": 1
+  },
+  {
+    "id": 24,
+    "name": "无心",
+    "effectList": [
+      {
+        "name": "明镜止水",
+        "effect": "狩技/勇气/炼金槽累积速度上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "无念珠【1】",
+        "skillName": "无心",
+        "debuff": "气息",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231093.html"
+      },
+      {
+        "name": "无念珠【3】",
+        "skillName": "无心",
+        "debuff": "气息",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288544.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/230119.html",
+    "type": 1
+  },
+  {
+    "id": 25,
+    "name": "暴怒",
+    "effectList": [
+      {
+        "name": "反怒",
+        "effect": "体力槽存在红色部分的时候攻击力提升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "逆境珠【1】",
+        "skillName": "暴怒",
+        "debuff": "体术",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231088.html"
+      },
+      {
+        "name": "逆境珠【2】",
+        "skillName": "暴怒",
+        "debuff": "体术",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/231089.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/230104.html",
+    "type": 1
+  },
+  {
+    "id": 26,
+    "name": "格挡性能",
+    "effectList": [
+      {
+        "name": "格挡性能+2",
+        "effect": "抑制防御时的后退，防御时的威力-20",
+        "value": 15
+      },
+      {
+        "name": "格挡性能+1",
+        "effect": "抑制防御时的后退，防御时的威力-10",
+        "value": 10
+      },
+      {
+        "name": "格挡性能-1",
+        "effect": "防御时更容易后退，防御时的威力+10",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "铁壁珠【1】",
+        "skillName": "格挡性能",
+        "debuff": "体术",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211216.html"
+      },
+      {
+        "name": "铁壁珠【2】",
+        "skillName": "格挡性能",
+        "debuff": "体术",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211217.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183527.html",
+    "type": 1
+  },
+  {
+    "id": 27,
+    "name": "水属性攻击",
+    "effectList": [
+      {
+        "name": "水属性攻击强化+2",
+        "effect": "水属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "水属性攻击强化+1",
+        "effect": "水属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "水属性攻击弱化",
+        "effect": "水属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "流水珠【1】",
+        "skillName": "水属性攻击",
+        "debuff": "雷属性攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211175.html"
+      },
+      {
+        "name": "流水珠【2】",
+        "skillName": "水属性攻击",
+        "debuff": "雷属性攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211176.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "url": "ida/183657.html",
+    "type": 1
+  },
+  {
+    "id": 28,
+    "name": "泡沫",
+    "effectList": [
+      {
+        "name": "泡沫之舞",
+        "effect": "回避行动被泡沫覆盖，无敌时间增加，紧急回避消耗的耐力下降",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "泡沫珠【1】",
+        "skillName": "泡沫",
+        "debuff": "耐力回复",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231086.html"
+      },
+      {
+        "name": "泡沫珠【3】",
+        "skillName": "泡沫",
+        "debuff": "耐力回复",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288542.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/226910.html",
+    "type": 1
+  },
+  {
+    "id": 29,
+    "name": "潜力",
+    "effectList": [
+      {
+        "name": "火场怪力+2",
+        "effect": "体力下降到40%以下后防御力增加30-45，攻击力1.3倍",
+        "value": 15
+      },
+      {
+        "name": "火场怪力+1",
+        "effect": "体力下降到40%以下后防御力增加30-45。",
+        "value": 10
+      },
+      {
+        "name": "畏手畏脚",
+        "effect": "体力下降到40%以下后防御力减少21-30，攻击力0.7倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "潜力珠【1】",
+        "skillName": "潜力",
+        "debuff": "加护",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211199.html"
+      },
+      {
+        "name": "潜力珠【2】",
+        "skillName": "潜力",
+        "debuff": "加护",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211200.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183603.html",
+    "type": 1
+  },
+  {
+    "id": 30,
+    "name": "火属性攻击",
+    "effectList": [
+      {
+        "name": "火属性攻击强化+2",
+        "effect": "火属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "火属性攻击强化+1",
+        "effect": "火属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "火属性攻击弱化",
+        "effect": "火属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "火炎珠【1】",
+        "skillName": "火属性攻击",
+        "debuff": "水属性攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211173.html"
+      },
+      {
+        "name": "火炎珠【2】",
+        "skillName": "火属性攻击",
+        "debuff": "水属性攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211174.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "url": "ida/183644.html",
+    "type": 1
+  },
+  {
+    "id": 31,
+    "name": "炮术",
+    "effectList": [
+      {
+        "name": "炮术王",
+        "effect": "压敏电阻弹、大炮、铳枪炮击、龙击炮的攻击力1.2倍，蓄力斧的榴弹瓶、彻甲榴弹的威力1.3倍。龙击炮的冷却时间从120秒缩短到90秒",
+        "value": 15
+      },
+      {
+        "name": "炮术師",
+        "effect": "压敏电阻弹、大炮、铳枪炮击、龙击炮的攻击力1.1倍，蓄力斧的榴弹瓶、彻甲榴弹的威力1.15倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "炮术珠【1】",
+        "skillName": "炮术",
+        "debuff": "炮术",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211204.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "url": "ida/183651.html",
+    "type": 1
+  },
+  {
+    "id": 32,
+    "name": "爆弹强化",
+    "effectList": [
+      {
+        "name": "爆破手",
+        "effect": "爆弹伤害1.3倍。爆破属性积蓄值1.2倍(如果和猫的火药术并用则1.25倍)。爆弹调和成功率100%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "爆师珠【1】",
+        "skillName": "爆弹强化",
+        "debuff": "爆弹强化",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211203.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "url": "ida/183636.html",
+    "type": 1
+  },
+  {
+    "id": 33,
+    "name": "特殊会心",
+    "effectList": [
+      {
+        "name": "会心攻击【特殊】",
+        "effect": "攻击发生会心时，给予的状态异常值(麻痹、毒、睡眠)*1.2倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "特会珠【1】",
+        "skillName": "特殊会心",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211189.html"
+      },
+      {
+        "name": "特会珠【2】",
+        "skillName": "特殊会心",
+        "debuff": "攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211190.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183627.html",
+    "type": 1
+  },
+  {
+    "id": 34,
+    "name": "特殊攻击",
+    "effectList": [
+      {
+        "name": "状态异常攻击+2",
+        "effect": "毒、麻痹、睡眠、捕获麻酔的属性值伤害*1.2倍+1",
+        "value": 15
+      },
+      {
+        "name": "状态异常攻击+1",
+        "effect": "毒、麻痹、睡眠、捕获麻酔的属性值伤害*1.1倍+1",
+        "value": 10
+      },
+      {
+        "name": "状态异常攻击弱化",
+        "effect": "毒、麻痹、睡眠、捕获麻酔的属性值伤害*0.9倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "特攻珠【1】",
+        "skillName": "特殊攻击",
+        "debuff": "属性攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211169.html"
+      },
+      {
+        "name": "特攻珠【2】",
+        "skillName": "特殊攻击",
+        "debuff": "属性攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211170.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183628.html",
+    "type": 1
+  },
+  {
+    "id": 35,
+    "name": "痛击",
+    "effectList": [
+      {
+        "name": "弱点特效",
+        "effect": "攻击肉质45以上的部位时会心率上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "痛击珠【1】",
+        "skillName": "痛击",
+        "debuff": "体力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211183.html"
+      },
+      {
+        "name": "痛击珠【3】",
+        "skillName": "痛击",
+        "debuff": "体力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211184.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183619.html",
+    "type": 1
+  },
+  {
+    "id": 36,
+    "name": "绝境",
+    "effectList": [
+      {
+        "name": "死中求生",
+        "effect": "状态异常时攻击力上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "绝境珠【1】",
+        "skillName": "绝境",
+        "debuff": "毒",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231090.html"
+      },
+      {
+        "name": "绝境珠【2】",
+        "skillName": "绝境",
+        "debuff": "毒",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/231091.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/226914.html",
+    "type": 1
+  },
+  {
+    "id": 37,
+    "name": "良机",
+    "effectList": [
+      {
+        "name": "杀手锏",
+        "effect": "跟大型魔物战斗中，机会来临时狩技威力上升(这边的机会大概是像骑倒之类的)※效果持续1分钟，使用狩技的伤害或持续时间1.2倍，此外，部分的狩技效果上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "好机珠【1】",
+        "skillName": "良机",
+        "debuff": "效果持续",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231087.html"
+      },
+      {
+        "name": "好机珠【3】",
+        "skillName": "良机",
+        "debuff": "效果持续",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288543.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/230114.html",
+    "type": 1
+  },
+  {
+    "id": 38,
+    "name": "英雄之盾",
+    "effectList": [
+      {
+        "name": "英雄守护",
+        "effect": "小伤害无效化（5点以下），状态异常，道具，慢慢的体力减少的攻击也能无效化",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "英雄珠【1】",
+        "skillName": "英雄之盾",
+        "debuff": "运气",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231094.html"
+      },
+      {
+        "name": "英雄珠【3】",
+        "skillName": "英雄之盾",
+        "debuff": "运气",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/231095.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/230102.html",
+    "type": 1
+  },
+  {
+    "id": 39,
+    "name": "蓄力缩短",
+    "effectList": [
+      {
+        "name": "集中",
+        "effect": "大剑、锤子、弓的蓄力时间0.8倍、太刀、双剣、斩击斧蓄力槽积蓄速度1.2倍。",
+        "value": 10
+      },
+      {
+        "name": "杂念",
+        "effect": "大剑、锤子、弓的蓄力时间1.2倍、太刀、双剣、斩击斧蓄力槽积蓄速度0.8倍。",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "短缩珠【1】",
+        "skillName": "蓄力缩短",
+        "debuff": "体术",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211191.html"
+      },
+      {
+        "name": "短缩珠【3】",
+        "skillName": "蓄力缩短",
+        "debuff": "体术",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211192.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183615.html",
+    "type": 1
+  },
+  {
+    "id": 40,
+    "name": "跳跃",
+    "effectList": [
+      {
+        "name": "飞燕",
+        "effect": "跳跃攻击威力和追加效果提升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "飞燕珠【1】",
+        "skillName": "跳跃",
+        "debuff": "跳跃",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/231092.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/226919.html",
+    "type": 1
+  },
+  {
+    "id": 41,
+    "name": "达人",
+    "effectList": [
+      {
+        "name": "洞察+3",
+        "effect": "会心率+30%",
+        "value": 20
+      },
+      {
+        "name": "洞察+2",
+        "effect": "会心率+20%",
+        "value": 15
+      },
+      {
+        "name": "洞察+1",
+        "effect": "会心率+10%",
+        "value": 10
+      },
+      {
+        "name": "洞察-1",
+        "effect": "会心率-5%",
+        "value": -10
+      },
+      {
+        "name": "洞察-2",
+        "effect": "会心率-10%",
+        "value": -15
+      },
+      {
+        "name": "洞察-3",
+        "effect": "会心率-15%",
+        "value": -20
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "达人珠【1】",
+        "skillName": "达人",
+        "debuff": "龙耐性",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211166.html"
+      },
+      {
+        "name": "达人珠【2】",
+        "skillName": "达人",
+        "debuff": "龙耐性",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211167.html"
+      },
+      {
+        "name": "达人珠【3】",
+        "skillName": "达人",
+        "debuff": "龙耐性",
+        "value": 5,
+        "debuffValue": 1,
+        "slotNum": 3,
+        "mUrl": "ida/211168.html"
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "url": "ida/183613.html",
+    "type": 1
+  },
+  {
+    "id": 42,
+    "name": "连击",
+    "effectList": [
+      {
+        "name": "连击的心得",
+        "effect": "攻击使会心率提升25%,5秒内再次攻击可继续提升，最高30%，5秒后失效",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "连击珠【1】",
+        "skillName": "连击",
+        "debuff": "加护",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231083.html"
+      },
+      {
+        "name": "连击珠【3】",
+        "skillName": "连击",
+        "debuff": "加护",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/231084.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/226923.html",
+    "type": 1
+  },
+  {
+    "id": 43,
+    "name": "逆境",
+    "effectList": [
+      {
+        "name": "不屈",
+        "effect": "1回猫车后，攻击力1.1倍，防御力上升15%。2回后，攻击力1.3倍，防御力上升30%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "逆境珠【1】",
+        "skillName": "逆境",
+        "debuff": "回复量",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211201.html"
+      },
+      {
+        "name": "逆境珠【2】",
+        "skillName": "逆境",
+        "debuff": "回复量",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211202.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/183546.html",
+    "type": 1
+  },
+  {
+    "id": 44,
+    "name": "里会心",
+    "effectList": [
+      {
+        "name": "残忍会心",
+        "effect": "负会心的攻击一定几率会转化为强力的会心攻击。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "里会心珠【1】",
+        "skillName": "里会心",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288535.html"
+      },
+      {
+        "name": "里会心珠【3】",
+        "skillName": "里会心",
+        "debuff": "攻击",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288536.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286039.html",
+    "type": 1
+  },
+  {
+    "id": 45,
+    "name": "重击",
+    "effectList": [
+      {
+        "name": "破坏王",
+        "effect": "部位破坏的积蓄值1.3倍。容易让怪物胆怯。但只增加对部位耐久值的伤害，不会增加攻击值，且部位破坏后则无效",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "重击珠【1】",
+        "skillName": "重击",
+        "debuff": "达人",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211185.html"
+      },
+      {
+        "name": "重击珠【3】",
+        "skillName": "重击",
+        "debuff": "达人",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211186.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183583.html",
+    "type": 1
+  },
+  {
+    "id": 46,
+    "name": "钝器",
+    "effectList": [
+      {
+        "name": "钝器手",
+        "effect": "锋利越差攻击力越高。蓝：不增加、绿：1.1倍、黄：1.15倍、橙、赤：1.2倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "钝器珠【1】",
+        "skillName": "钝器",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231098.html"
+      },
+      {
+        "name": "钝器珠【2】",
+        "skillName": "钝器",
+        "debuff": "攻击",
+        "value": 3,
+        "debuffValue": 2,
+        "slotNum": 2,
+        "mUrl": "ida/231099.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 0,
+    "url": "ida/230115.html",
+    "type": 1
+  },
+  {
+    "id": 47,
+    "name": "锋利度",
+    "effectList": [
+      {
+        "name": "利刃",
+        "effect": "通常攻击、铳枪的炮击、龙击炮、大剑和蓄力斧的防御等造成的锋利度下降减少至2分之一。但弹刀时的下降值不变。",
+        "value": 10
+      },
+      {
+        "name": "钝刃",
+        "effect": "锋利度的消耗加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "斩铁珠【1】",
+        "skillName": "锋利度",
+        "debuff": "匠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211323.html"
+      },
+      {
+        "name": "斩铁珠【3】",
+        "skillName": "锋利度",
+        "debuff": "匠",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211324.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183550.html",
+    "type": 1
+  },
+  {
+    "id": 48,
+    "name": "防御",
+    "effectList": [
+      {
+        "name": "防御力UP【大】",
+        "effect": "防御力1.06倍+25",
+        "value": 20
+      },
+      {
+        "name": "防御力UP【中】",
+        "effect": "防御力1.03倍+20",
+        "value": 15
+      },
+      {
+        "name": "防御力UP【小】",
+        "effect": "防御力+15",
+        "value": 10
+      },
+      {
+        "name": "防御力DOWN【小】",
+        "effect": "防御力-10。最小值是1",
+        "value": -10
+      },
+      {
+        "name": "防御力DOWN【中】",
+        "effect": "防御力0.95倍-10。最小值是1",
+        "value": -15
+      },
+      {
+        "name": "防御力DOWN【大】",
+        "effect": "防御力0.9倍-10。最小值是1",
+        "value": -20
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "防御珠【1】",
+        "skillName": "防御",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211205.html"
+      },
+      {
+        "name": "防御珠【2】",
+        "skillName": "防御",
+        "debuff": "攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211206.html"
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 13,
+    "url": "ida/183650.html",
+    "type": 1
+  },
+  {
+    "id": 49,
+    "name": "雷属性攻击",
+    "effectList": [
+      {
+        "name": "雷属性攻击强化+2",
+        "effect": "雷属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "雷属性攻击强化+1",
+        "effect": "雷属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "雷属性攻击弱化",
+        "effect": "雷属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "雷光珠【1】",
+        "skillName": "雷属性攻击",
+        "debuff": "冰属性攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211177.html"
+      },
+      {
+        "name": "雷光珠【2】",
+        "skillName": "雷属性攻击",
+        "debuff": "冰属性攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211178.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "url": "ida/183535.html",
+    "type": 1
+  },
+  {
+    "id": 50,
+    "name": "龙属性攻击",
+    "effectList": [
+      {
+        "name": "龙属性攻击强化+2",
+        "effect": "龙属性的攻击*1.1倍+6",
+        "value": 15
+      },
+      {
+        "name": "龙属性攻击强化+1",
+        "effect": "龙属性的攻击*1.05倍+4",
+        "value": 10
+      },
+      {
+        "name": "龙属性攻击弱化",
+        "effect": "龙属性的攻击*0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "破龙珠【1】",
+        "skillName": "龙属性攻击",
+        "debuff": "特殊攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211181.html"
+      },
+      {
+        "name": "破龙珠【2】",
+        "skillName": "龙属性攻击",
+        "debuff": "特殊攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211182.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 13,
+    "url": "ida/183660.html",
+    "type": 1
+  },
+  {
+    "id": 51,
+    "name": "龙气",
+    "effectList": [
+      {
+        "name": "龙气活性",
+        "effect": "体力２/３以下时触发龙属性异常状态、全部的属性耐性値+50，攻击力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "龙气珠【1】",
+        "skillName": "龙气",
+        "debuff": "防御",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288545.html"
+      },
+      {
+        "name": "龙气珠【3】",
+        "skillName": "龙气",
+        "debuff": "防御",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288546.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286092.html",
+    "type": 1
+  },
+  {
+    "id": 52,
+    "name": "ＳＰ持续",
+    "effectList": [
+      {
+        "name": "ＳＰ时间延长",
+        "effect": "因SP狩技发动的SP状态会延长",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "技延珠【1】",
+        "skillName": "ＳＰ持续",
+        "debuff": "无心",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288548.html"
+      },
+      {
+        "name": "技延珠【2】",
+        "skillName": "ＳＰ持续",
+        "debuff": "无心",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/288549.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/286041.html",
+    "type": 1
+  },
+  {
+    "id": 53,
+    "name": "体力",
+    "effectList": [
+      {
+        "name": "体力+50",
+        "effect": "体力最大値+50",
+        "value": 15
+      },
+      {
+        "name": "体力+20",
+        "effect": "体力最大値+20",
+        "value": 10
+      },
+      {
+        "name": "体力-10",
+        "effect": "体力最大値-10",
+        "value": -10
+      },
+      {
+        "name": "体力-30",
+        "effect": "体力最大値-30",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "体力珠【1】",
+        "skillName": "体力",
+        "debuff": "体力",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211269.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 13,
+    "url": "ida/183611.html",
+    "type": 2
+  },
+  {
+    "id": 54,
+    "name": "体术",
+    "effectList": [
+      {
+        "name": "体术+2",
+        "effect": "回避、防御时耐力消费量减半。遇到大型怪物时，可以实行紧急回避，紧急回避的移动距离增加",
+        "value": 15
+      },
+      {
+        "name": "体术+1",
+        "effect": "回避、防御时耐力消费量减少为0.75。遇到大型怪物时，可以实行紧急回避，紧急回避的移动距离增加",
+        "value": 10
+      },
+      {
+        "name": "体术-1",
+        "effect": "回避、防御时耐力消费量增加到1.2倍",
+        "value": -10
+      },
+      {
+        "name": "体术-2",
+        "effect": "回避、防御时耐力消费量增加到1.35倍",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "体术珠【1】",
+        "skillName": "体术",
+        "debuff": "耐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211278.html"
+      },
+      {
+        "name": "体术珠【2】",
+        "skillName": "体术",
+        "debuff": "耐力",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211279.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183605.html",
+    "type": 2
+  },
+  {
+    "id": 55,
+    "name": "回复速度",
+    "effectList": [
+      {
+        "name": "回复速度+2",
+        "effect": "体力红色槽回复速度4倍",
+        "value": 15
+      },
+      {
+        "name": "回复速度+1",
+        "effect": "体力红色槽回复速度2倍",
+        "value": 10
+      },
+      {
+        "name": "回复速度-1",
+        "effect": "体力红色槽回复速度二分之一",
+        "value": -10
+      },
+      {
+        "name": "回复速度-2",
+        "effect": "体力红色槽回复速度四分之一",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "早复珠【1】",
+        "skillName": "回复速度",
+        "debuff": "进食",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211270.html"
+      },
+      {
+        "name": "早复珠【2】",
+        "skillName": "回复速度",
+        "debuff": "进食",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211271.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 12,
+    "url": "ida/183531.html",
+    "type": 2
+  },
+  {
+    "id": 56,
+    "name": "回复量",
+    "effectList": [
+      {
+        "name": "体力回复量UP",
+        "effect": "体力回复道具的回复量增加到1.25倍",
+        "value": 10
+      },
+      {
+        "name": "体力回复量DOWN",
+        "effect": "体力回复道具的回复量减少到0.75倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "治愈珠【1】",
+        "skillName": "回复量",
+        "debuff": "回复速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211272.html"
+      },
+      {
+        "name": "治愈珠【2】",
+        "skillName": "回复量",
+        "debuff": "回复速度",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211273.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183532.html",
+    "type": 2
+  },
+  {
+    "id": 57,
+    "name": "广域",
+    "effectList": [
+      {
+        "name": "广域化+2",
+        "effect": "药草、回复药、解毒药、忍耐的种、怪力的种、抵消果实的效果在同一个区域内的队友、猫身上也会发动",
+        "value": 15
+      },
+      {
+        "name": "广域化+1",
+        "effect": "药草、回复药、解毒药、忍耐的种、怪力的种、抵消果实的效果在同一个区域内的队友、猫身上也会发动。除解毒药外其它效果减半",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "友爱珠【1】",
+        "skillName": "广域",
+        "debuff": "气息",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211284.html"
+      },
+      {
+        "name": "友爱珠【2】",
+        "skillName": "广域",
+        "debuff": "气息",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211285.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "url": "ida/183558.html",
+    "type": 2
+  },
+  {
+    "id": 58,
+    "name": "效果持续",
+    "effectList": [
+      {
+        "name": "道具使用强化",
+        "effect": "药、饮料、种子、丸药的道具效果持续时间2倍",
+        "value": 10
+      },
+      {
+        "name": "道具使用弱化",
+        "effect": "药、饮料、种子、丸药的道具效果持续时间3分之2",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "持续珠【1】",
+        "skillName": "效果持续",
+        "debuff": "效果持续",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211286.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183559.html",
+    "type": 2
+  },
+  {
+    "id": 59,
+    "name": "耐力",
+    "effectList": [
+      {
+        "name": "长跑健将",
+        "effect": "冲刺、鬼人状态、突进、蓄力时耐力消费量减半",
+        "value": 10
+      },
+      {
+        "name": "步履缓慢",
+        "effect": "冲刺、鬼人状态、突进、蓄力时耐力消费量加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "强走珠【1】",
+        "skillName": "耐力",
+        "debuff": "饥饿",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211276.html"
+      },
+      {
+        "name": "强走珠【3】",
+        "skillName": "耐力",
+        "debuff": "饥饿",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211277.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183590.html",
+    "type": 2
+  },
+  {
+    "id": 60,
+    "name": "耐力回复",
+    "effectList": [
+      {
+        "name": "耐力急速回复",
+        "effect": "耐力的回复速度加倍",
+        "value": 10
+      },
+      {
+        "name": "耐力回复迟缓",
+        "effect": "耐力回复速度减少到0.75",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "早气珠【1】",
+        "skillName": "耐力回复",
+        "debuff": "回避性能",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211280.html"
+      },
+      {
+        "name": "早气珠【2】",
+        "skillName": "耐力回复",
+        "debuff": "回避性能",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211281.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183549.html",
+    "type": 2
+  },
+  {
+    "id": 61,
+    "name": "肉食",
+    "effectList": [
+      {
+        "name": "嗜肉如命",
+        "effect": "可以食用生肉，食用后耐力最大值增加50。另外，吃烤生的肉、熟肉、冷肉、热肉将附加1分钟强走效果",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "肉食珠【1】",
+        "skillName": "肉食",
+        "debuff": "饥饿",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211287.html"
+      },
+      {
+        "name": "肉好珠【1】",
+        "skillName": "肉食",
+        "debuff": "肉食",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211288.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/183630.html",
+    "type": 2
+  },
+  {
+    "id": 62,
+    "name": "节食",
+    "effectList": [
+      {
+        "name": "浅尝辄止",
+        "effect": "吃肉或饮用道具后，25%的概率肉或道具不消失",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "节食珠【1】",
+        "skillName": "节食",
+        "debuff": "反复无常",
+        "value": 2,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211290.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183593.html",
+    "type": 2
+  },
+  {
+    "id": 63,
+    "name": "贪吃鬼",
+    "effectList": [
+      {
+        "name": "俯拾即食",
+        "effect": "吃肉时耐力最大值额外增加25。另外食用特定道具时耐力也会额外增加",
+        "value": 15
+      },
+      {
+        "name": "吃饱喝足",
+        "effect": "吃肉时耐力最大值额外增加25",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "食汉珠【1】",
+        "skillName": "贪吃鬼",
+        "debuff": "贪吃鬼",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211283.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "url": "ida/183551.html",
+    "type": 2
+  },
+  {
+    "id": 64,
+    "name": "进食",
+    "effectList": [
+      {
+        "name": "快吃+2",
+        "effect": "吃肉、食用道具速度加快",
+        "value": 15
+      },
+      {
+        "name": "快吃+1",
+        "effect": "吃肉速度加快",
+        "value": 10
+      },
+      {
+        "name": "细嚼慢咽",
+        "effect": "吃肉速度减慢",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "快吃珠【1】",
+        "skillName": "进食",
+        "debuff": "回复量",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211274.html"
+      },
+      {
+        "name": "快吃珠【3】",
+        "skillName": "进食",
+        "debuff": "回复量",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211275.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183586.html",
+    "type": 2
+  },
+  {
+    "id": 65,
+    "name": "野草知识",
+    "effectList": [
+      {
+        "name": "药草超强化",
+        "effect": "药草的回复力变为50",
+        "value": 15
+      },
+      {
+        "name": "药草强化",
+        "effect": "药草的回复力变为30",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "野草珠【1】",
+        "skillName": "野草知识",
+        "debuff": "野草知识",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228222.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/226922.html",
+    "type": 2
+  },
+  {
+    "id": 66,
+    "name": "长跑",
+    "effectList": [
+      {
+        "name": "奔跑不息",
+        "effect": "耐力剩余25(红色)以下时，无消耗。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "长跑珠【1】",
+        "skillName": "长跑",
+        "debuff": "体术",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288552.html"
+      },
+      {
+        "name": "长跑珠【2】",
+        "skillName": "长跑",
+        "debuff": "体术",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/288553.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/286080.html",
+    "type": 2
+  },
+  {
+    "id": 67,
+    "name": "食菇",
+    "effectList": [
+      {
+        "name": "最爱蘑菇",
+        "effect": "可以吃蘑菇后获得各种效果。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "茸好珠【1】",
+        "skillName": "食菇",
+        "debuff": "肉食",
+        "value": 2,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211289.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 5,
+    "url": "ida/183544.html",
+    "type": 2
+  },
+  {
+    "id": 68,
+    "name": "饥饿",
+    "effectList": [
+      {
+        "name": "饥饿无效",
+        "effect": "不会因饥饿导致耐力最大值减少",
+        "value": 15
+      },
+      {
+        "name": "饥饿减半",
+        "effect": "因饥饿造成的耐力最大值减少量下降一半",
+        "value": 10
+      },
+      {
+        "name": "饥饿加倍【小】",
+        "effect": "因饥饿造成的耐力最大值减少量上升到1.5倍",
+        "value": -10
+      },
+      {
+        "name": "饥饿加倍【大】",
+        "effect": "因饥饿造成的耐力最大值减少量上升到2倍",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "无食珠【1】",
+        "skillName": "饥饿",
+        "debuff": "饥饿",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211282.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183642.html",
+    "type": 2
+  },
+  {
+    "id": 69,
+    "name": "冰耐性",
+    "effectList": [
+      {
+        "name": "冰耐性【大】",
+        "effect": "冰耐性+20。合计耐性超过20时，冰属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "冰耐性【小】",
+        "effect": "冰耐性+15。合计耐性超过10时，冰属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "冰耐性弱化",
+        "effect": "冰耐性-20",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐冰珠【1】",
+        "skillName": "冰耐性",
+        "debuff": "火耐性",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211239.html"
+      },
+      {
+        "name": "制冰珠【1】",
+        "skillName": "冰耐性",
+        "debuff": "冰耐性",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211240.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "url": "ida/183568.html",
+    "type": 3
+  },
+  {
+    "id": 70,
+    "name": "听觉保护",
+    "effectList": [
+      {
+        "name": "高级耳栓",
+        "effect": "咆哮（大、小）无效。但无法抵御伴随伤害的咆哮（如轰龙）",
+        "value": 15
+      },
+      {
+        "name": "耳栓",
+        "effect": "咆哮（小）无效",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "防音珠【1】",
+        "skillName": "听觉保护",
+        "debuff": "加护",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211259.html"
+      },
+      {
+        "name": "防音珠【3】",
+        "skillName": "听觉保护",
+        "debuff": "加护",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211260.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183616.html",
+    "type": 3
+  },
+  {
+    "id": 71,
+    "name": "寒冷适应",
+    "effectList": [
+      {
+        "name": "北风猎手",
+        "effect": "寒冷无效，在寒冷区域攻击力、防御力上升。饮用冷饮后攻击力进一步上升。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "北风珠【1】",
+        "skillName": "寒冷适应",
+        "debuff": "耐暑",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231096.html"
+      },
+      {
+        "name": "北风珠【3】",
+        "skillName": "寒冷适应",
+        "debuff": "耐暑",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288550.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "url": "ida/226913.html",
+    "type": 3
+  },
+  {
+    "id": 72,
+    "name": "对防御DOWN",
+    "effectList": [
+      {
+        "name": "铁面",
+        "effect": "不会发生防御力下降状态。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐防珠【1】",
+        "skillName": "对防御DOWN",
+        "debuff": "对防御DOWN",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211251.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "url": "ida/183610.html",
+    "type": 3
+  },
+  {
+    "id": 73,
+    "name": "属性耐性",
+    "effectList": [
+      {
+        "name": "属性异常无效",
+        "effect": "全属性（火、水、雷、冰、龙属性）无效化",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "属耐珠【1】",
+        "skillName": "属性耐性",
+        "debuff": "体力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211231.html"
+      },
+      {
+        "name": "属耐珠【3】",
+        "skillName": "属性耐性",
+        "debuff": "体力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211232.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183602.html",
+    "type": 3
+  },
+  {
+    "id": 74,
+    "name": "昏厥",
+    "effectList": [
+      {
+        "name": "昏厥无效",
+        "effect": "不会进入气绝状态",
+        "value": 15
+      },
+      {
+        "name": "昏厥概率减半",
+        "effect": "气绝将发生时，有2分之一的概率气绝无效化",
+        "value": 10
+      },
+      {
+        "name": "昏厥加倍",
+        "effect": "气绝时间加倍、气绝回复时输入的摇杆、按键数加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐绝珠【1】",
+        "skillName": "昏厥",
+        "debuff": "麻痹",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211243.html"
+      },
+      {
+        "name": "制绝珠【1】",
+        "skillName": "昏厥",
+        "debuff": "昏厥",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211244.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 13,
+    "url": "ida/183543.html",
+    "type": 3
+  },
+  {
+    "id": 75,
+    "name": "毒",
+    "effectList": [
+      {
+        "name": "毒耐性",
+        "effect": "不会中毒",
+        "value": 10
+      },
+      {
+        "name": "毒加倍",
+        "effect": "中毒后受到的伤害加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐毒珠【1】",
+        "skillName": "毒",
+        "debuff": "昏厥",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211249.html"
+      },
+      {
+        "name": "耐毒珠【2】",
+        "skillName": "毒",
+        "debuff": "昏厥",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211250.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "url": "ida/183626.html",
+    "type": 3
+  },
+  {
+    "id": 76,
+    "name": "水耐性",
+    "effectList": [
+      {
+        "name": "水耐性【大】",
+        "effect": "水耐性+20。合计耐性超过20时，水属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "水耐性【小】",
+        "effect": "水耐性+15。合计耐性超过10时，水属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "水耐性弱化",
+        "effect": "水耐性-20",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐水珠【1】",
+        "skillName": "水耐性",
+        "debuff": "雷耐性",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211235.html"
+      },
+      {
+        "name": "制水珠【1】",
+        "skillName": "水耐性",
+        "debuff": "水耐性",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211236.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "url": "ida/183658.html",
+    "type": 3
+  },
+  {
+    "id": 77,
+    "name": "火耐性",
+    "effectList": [
+      {
+        "name": "火耐性【大】",
+        "effect": "火耐性+20。合计耐性超过20时，火属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "火耐性【小】",
+        "effect": "火耐性+15。合计耐性超过10时，火属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "火耐性弱化",
+        "effect": "火耐性-20",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐火珠【1】",
+        "skillName": "火耐性",
+        "debuff": "水耐性",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211233.html"
+      },
+      {
+        "name": "制火珠【1】",
+        "skillName": "火耐性",
+        "debuff": "火耐性",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211234.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "url": "ida/183645.html",
+    "type": 3
+  },
+  {
+    "id": 78,
+    "name": "炎热适应",
+    "effectList": [
+      {
+        "name": "南风猎手",
+        "effect": "暑热无效，在暑热区域攻击力、防御力上升。饮用热饮后攻击力进一步上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "南风珠【1】",
+        "skillName": "炎热适应",
+        "debuff": "耐寒",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/231097.html"
+      },
+      {
+        "name": "南风珠【3】",
+        "skillName": "炎热适应",
+        "debuff": "耐寒",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288551.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 0,
+    "url": "ida/230103.html",
+    "type": 3
+  },
+  {
+    "id": 79,
+    "name": "狂击耐性",
+    "effectList": [
+      {
+        "name": "无我之境",
+        "effect": "容易克服狂龙病毒，另外在狂击化时会心率上升15%-30%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "抗狂珠【1】",
+        "skillName": "狂击耐性",
+        "debuff": "回避性能",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211265.html"
+      },
+      {
+        "name": "抗狂珠【3】",
+        "skillName": "狂击耐性",
+        "debuff": "回避性能",
+        "value": 5,
+        "debuffValue": 1,
+        "slotNum": 3,
+        "mUrl": "ida/211266.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183547.html",
+    "type": 3
+  },
+  {
+    "id": 80,
+    "name": "睡眠",
+    "effectList": [
+      {
+        "name": "睡眠无效",
+        "effect": "不会进入睡眠状态",
+        "value": 10
+      },
+      {
+        "name": "睡眠加倍",
+        "effect": "睡眠状态的时間加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐眠珠【1】",
+        "skillName": "睡眠",
+        "debuff": "雪人",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211247.html"
+      },
+      {
+        "name": "耐眠珠【2】",
+        "skillName": "睡眠",
+        "debuff": "雪人",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211248.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "url": "ida/183588.html",
+    "type": 3
+  },
+  {
+    "id": 81,
+    "name": "细菌学",
+    "effectList": [
+      {
+        "name": "生化博士",
+        "effect": "大便玉击中后怪物必定换区。大便玉的调和必然成功。部分道具不能使用，不会沾染爆破粉尘。狂龙症发病时间缩短到0.8倍",
+        "value": 15
+      },
+      {
+        "name": "细菌研究员",
+        "effect": "大便玉击中后怪物必定换区。大便玉的调和必然成功。部分道具不能使用，不会沾染爆破粉尘。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "菌学珠【1】",
+        "skillName": "细菌学",
+        "debuff": "气息",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211263.html"
+      },
+      {
+        "name": "菌究珠【1】",
+        "skillName": "细菌学",
+        "debuff": "细菌学",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211264.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 5,
+    "url": "ida/183572.html",
+    "type": 3
+  },
+  {
+    "id": 82,
+    "name": "耐寒",
+    "effectList": [
+      {
+        "name": "寒冷无效",
+        "effect": "寒冷引起的耐力最大值减少无效化。",
+        "value": 10
+      },
+      {
+        "name": "寒冷加倍",
+        "effect": "寒冷引起的耐力最大值减少加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐寒珠【1】",
+        "skillName": "耐寒",
+        "debuff": "耐寒",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211258.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183604.html",
+    "type": 3
+  },
+  {
+    "id": 83,
+    "name": "耐暑",
+    "effectList": [
+      {
+        "name": "炎热无效",
+        "effect": "暑热、熔岩地形、燃尘造成的伤害无效",
+        "value": 10
+      },
+      {
+        "name": "炎热加倍",
+        "effect": "暑热、熔岩地形、燃尘造成的伤害加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐暑珠【1】",
+        "skillName": "耐暑",
+        "debuff": "耐暑",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211257.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183606.html",
+    "type": 3
+  },
+  {
+    "id": 84,
+    "name": "耐震",
+    "effectList": [
+      {
+        "name": "耐震",
+        "effect": "不会因震动引发硬直",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐震珠【1】",
+        "skillName": "耐震",
+        "debuff": "睡眠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211255.html"
+      },
+      {
+        "name": "抗震珠【1】",
+        "skillName": "耐震",
+        "debuff": "耐震",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211256.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "url": "ida/183607.html",
+    "type": 3
+  },
+  {
+    "id": 85,
+    "name": "裂伤",
+    "effectList": [
+      {
+        "name": "裂伤无效",
+        "effect": "裂伤无效化",
+        "value": 10
+      },
+      {
+        "name": "裂伤加倍",
+        "effect": "裂傷状态加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "抗伤珠【1】",
+        "skillName": "裂伤",
+        "debuff": "裂伤",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211267.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 10,
+    "url": "ida/183663.html",
+    "type": 3
+  },
+  {
+    "id": 86,
+    "name": "雪人",
+    "effectList": [
+      {
+        "name": "雪人状态无效",
+        "effect": "雪球、气泡状态无效化",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐达摩珠【1】",
+        "skillName": "雪人",
+        "debuff": "睡眠",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/228220.html"
+      },
+      {
+        "name": "抗达摩珠【1】",
+        "skillName": "雪人",
+        "debuff": "雪人",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228221.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 8,
+    "url": "ida/226917.html",
+    "type": 3
+  },
+  {
+    "id": 87,
+    "name": "雷耐性",
+    "effectList": [
+      {
+        "name": "雷耐性【大】",
+        "effect": "雷耐性+20。合计耐性超过20时，雷属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "雷耐性【小】",
+        "effect": "雷耐性+15。合计耐性超过10时，雷属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "雷耐性弱化",
+        "effect": "雷耐性-20",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐雷珠【1】",
+        "skillName": "雷耐性",
+        "debuff": "冰耐性",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211237.html"
+      },
+      {
+        "name": "制雷珠【1】",
+        "skillName": "雷耐性",
+        "debuff": "雷耐性",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211238.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "url": "ida/183536.html",
+    "type": 3
+  },
+  {
+    "id": 88,
+    "name": "风压",
+    "effectList": [
+      {
+        "name": "风压【大】无效",
+        "effect": "风压（大、小）无效。龙风压（大）效果减轻",
+        "value": 15
+      },
+      {
+        "name": "风压【小】无效",
+        "effect": "风压（小）无效",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "防风珠【1】",
+        "skillName": "风压",
+        "debuff": "运气",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211261.html"
+      },
+      {
+        "name": "防风珠【2】",
+        "skillName": "风压",
+        "debuff": "运气",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211262.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 7,
+    "url": "ida/183647.html",
+    "type": 3
+  },
+  {
+    "id": 89,
+    "name": "麻痹",
+    "effectList": [
+      {
+        "name": "麻痹无效",
+        "effect": "不会进入麻痹状态",
+        "value": 10
+      },
+      {
+        "name": "麻痹加倍",
+        "effect": "麻痹状态的时間加倍",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐麻珠【1】",
+        "skillName": "麻痹",
+        "debuff": "毒",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211245.html"
+      },
+      {
+        "name": "耐麻珠【2】",
+        "skillName": "麻痹",
+        "debuff": "毒",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211246.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 7,
+    "url": "ida/183655.html",
+    "type": 3
+  },
+  {
+    "id": 90,
+    "name": "龙耐性",
+    "effectList": [
+      {
+        "name": "龙耐性【大】",
+        "effect": "龙耐性+20。合计耐性超过20时，龙属性（大、小）无效化",
+        "value": 15
+      },
+      {
+        "name": "龙耐性【小】",
+        "effect": "龙耐性+15。合计耐性超过10时，龙属性（小）无效化",
+        "value": 10
+      },
+      {
+        "name": "龙耐性弱化",
+        "effect": "龙耐性-20",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐龙珠【1】",
+        "skillName": "龙耐性",
+        "debuff": "毒",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211241.html"
+      },
+      {
+        "name": "制龙珠【1】",
+        "skillName": "龙耐性",
+        "debuff": "龙耐性",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211242.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 13,
+    "url": "ida/183661.html",
+    "type": 3
+  },
+  {
+    "id": 91,
+    "name": "减气瓶追加",
+    "effectList": [
+      {
+        "name": "减气瓶追加",
+        "effect": "減气瓶可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "减瓶珠【1】",
+        "skillName": "减气瓶追加",
+        "debuff": "减气瓶追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211362.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183556.html",
+    "type": 4
+  },
+  {
+    "id": 92,
+    "name": "变则射击",
+    "effectList": [
+      {
+        "name": "特定射击强化",
+        "effect": "武器内藏\b弹、曲射、\b刚射的威力上升",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "变射珠【1】",
+        "skillName": "变则射击",
+        "debuff": "变则射击",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/231101.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 10,
+    "url": "ida/230117.html",
+    "type": 4
+  },
+  {
+    "id": 93,
+    "name": "后坐力",
+    "effectList": [
+      {
+        "name": "后坐力减轻+3",
+        "effect": "弩枪的反作用力减少3个阶段。但对速射的反作用力无效",
+        "value": 20
+      },
+      {
+        "name": "后坐力减轻+2",
+        "effect": "弩枪的反作用力减少2个阶段。但对速射的反作用力无效",
+        "value": 15
+      },
+      {
+        "name": "后坐力减轻+1",
+        "effect": "弩枪的反作用力减少1个阶段。但对速射的反作用力无效",
+        "value": 10
+      },
+      {
+        "name": "后坐力减轻-1",
+        "effect": "弩枪的反作用力增加1个阶段。但对速射的反作用力无效",
+        "value": -10
+      },
+      {
+        "name": "后坐力减轻-2",
+        "effect": "弩枪的反作用力增加2个阶段。但对速射的反作用力无效",
+        "value": -15
+      },
+      {
+        "name": "后坐力减轻-3",
+        "effect": "弩枪的反作用力增加3个阶段。但对速射的反作用力无效",
+        "value": -20
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "抑反珠【1】",
+        "skillName": "后坐力",
+        "debuff": "装填速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211337.html"
+      },
+      {
+        "name": "抑反珠【3】",
+        "skillName": "后坐力",
+        "debuff": "装填速度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211338.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 7,
+    "url": "ida/183643.html",
+    "type": 4
+  },
+  {
+    "id": 94,
+    "name": "射法",
+    "effectList": [
+      {
+        "name": "弹道强化",
+        "effect": "使部分子弹、弓箭的会心距离延长",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "射法珠【1】",
+        "skillName": "射法",
+        "debuff": "装填数",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211340.html"
+      },
+      {
+        "name": "射法珠【2】",
+        "skillName": "射法",
+        "debuff": "装填数",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211341.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/183582.html",
+    "type": 4
+  },
+  {
+    "id": 95,
+    "name": "属强瓶追加",
+    "effectList": [
+      {
+        "name": "属强瓶全LV追加",
+        "effect": "全LV的属强瓶可以使用",
+        "value": 15
+      },
+      {
+        "name": "属强瓶LV1追加",
+        "effect": "属强瓶LV1可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "属瓶珠【1】",
+        "skillName": "属强瓶追加",
+        "debuff": "特殊攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/228219.html"
+      },
+      {
+        "name": "属瓶珠【2】",
+        "skillName": "属强瓶追加",
+        "debuff": "特殊攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/231103.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "url": "ida/230112.html",
+    "type": 4
+  },
+  {
+    "id": 96,
+    "name": "弹药节约",
+    "effectList": [
+      {
+        "name": "弹药节约",
+        "effect": "射击时有时不消耗子弹及瓶子",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "节弹珠【1】",
+        "skillName": "弹药节约",
+        "debuff": "精确射击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/228228.html"
+      },
+      {
+        "name": "节弹珠【2】",
+        "skillName": "弹药节约",
+        "debuff": "精确射击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/231100.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/226918.html",
+    "type": 4
+  },
+  {
+    "id": 97,
+    "name": "强击瓶追加",
+    "effectList": [
+      {
+        "name": "强击瓶全LV追加",
+        "effect": "全LV的强击瓶可以使用",
+        "value": 15
+      },
+      {
+        "name": "强击瓶LV1追加",
+        "effect": "强击瓶LV1可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "强瓶珠【1】",
+        "skillName": "强击瓶追加",
+        "debuff": "达人",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211355.html"
+      },
+      {
+        "name": "强瓶珠【2】",
+        "skillName": "强击瓶追加",
+        "debuff": "达人",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211356.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "url": "ida/183548.html",
+    "type": 4
+  },
+  {
+    "id": 98,
+    "name": "扩散弹追加",
+    "effectList": [
+      {
+        "name": "扩散弹全LV追加",
+        "effect": "可使用所有LV的扩散弹",
+        "value": 15
+      },
+      {
+        "name": "扩散弹全LV追加",
+        "effect": "可使用LV1扩散弹",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加扩珠【1】",
+        "skillName": "扩散弹追加",
+        "debuff": "装填速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211353.html"
+      },
+      {
+        "name": "加扩珠【3】",
+        "skillName": "扩散弹追加",
+        "debuff": "装填速度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/288559.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183533.html",
+    "type": 4
+  },
+  {
+    "id": 99,
+    "name": "接击瓶追加",
+    "effectList": [
+      {
+        "name": "接击瓶追加",
+        "effect": "接击瓶可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "接瓶珠【1】",
+        "skillName": "接击瓶追加",
+        "debuff": "接击瓶追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211357.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183592.html",
+    "type": 4
+  },
+  {
+    "id": 100,
+    "name": "散弹强化",
+    "effectList": [
+      {
+        "name": "散弹・扩散矢UP",
+        "effect": "散弹的威力变为原来的1.2倍。扩散矢的威力变为原来的1.3倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "散弹珠【1】",
+        "skillName": "散弹强化",
+        "debuff": "后坐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211346.html"
+      },
+      {
+        "name": "散弹珠【3】",
+        "skillName": "散弹强化",
+        "debuff": "后坐力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211347.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183576.html",
+    "type": 4
+  },
+  {
+    "id": 101,
+    "name": "散弹追加",
+    "effectList": [
+      {
+        "name": "散弹全LV追加",
+        "effect": "可使用所有LV的散弹",
+        "value": 15
+      },
+      {
+        "name": "散弹LV1追加",
+        "effect": "可使用LV1散弹",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加散珠【1】",
+        "skillName": "散弹追加",
+        "debuff": "散弹追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211351.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183577.html",
+    "type": 4
+  },
+  {
+    "id": 102,
+    "name": "榴弹追加",
+    "effectList": [
+      {
+        "name": "徹甲榴弹全LV追加",
+        "effect": "可使用所有LV的徹甲榴弹",
+        "value": 15
+      },
+      {
+        "name": "徹甲榴弹LV1追加",
+        "effect": "可使用LV1徹甲榴弹",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加榴珠【1】",
+        "skillName": "榴弹追加",
+        "debuff": "榴弹追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211352.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183662.html",
+    "type": 4
+  },
+  {
+    "id": 103,
+    "name": "毒瓶追加",
+    "effectList": [
+      {
+        "name": "毒瓶追加",
+        "effect": "毒瓶可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "毒瓶珠【1】",
+        "skillName": "毒瓶追加",
+        "debuff": "毒瓶追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211358.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183629.html",
+    "type": 4
+  },
+  {
+    "id": 104,
+    "name": "爆破瓶追加",
+    "effectList": [
+      {
+        "name": "爆破瓶追加",
+        "effect": "可装备爆破瓶",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "爆瓶珠【1】",
+        "skillName": "爆破瓶追加",
+        "debuff": "爆破瓶追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211364.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183638.html",
+    "type": 4
+  },
+  {
+    "id": 105,
+    "name": "睡眠瓶追加",
+    "effectList": [
+      {
+        "name": "睡眠瓶追加",
+        "effect": "睡眠瓶可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "眠瓶珠【1】",
+        "skillName": "睡眠瓶追加",
+        "debuff": "睡眠瓶追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211361.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183589.html",
+    "type": 4
+  },
+  {
+    "id": 106,
+    "name": "精确射击",
+    "effectList": [
+      {
+        "name": "抑制偏移+2",
+        "effect": "不再有弹道抖动幅度",
+        "value": 15
+      },
+      {
+        "name": "抑制偏移+1",
+        "effect": "弹道抖动幅度减少1个阶段",
+        "value": 10
+      },
+      {
+        "name": "抑制偏移-1",
+        "effect": "弹道抖动幅度增加1个阶段",
+        "value": -10
+      },
+      {
+        "name": "抑制偏移-2",
+        "effect": "弹道抖动幅度大",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "点射珠【1】",
+        "skillName": "精确射击",
+        "debuff": "精确射击",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211339.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "url": "ida/183591.html",
+    "type": 4
+  },
+  {
+    "id": 107,
+    "name": "装填数",
+    "effectList": [
+      {
+        "name": "装填数UP",
+        "effect": "弩枪的装填数、弓的蓄力各增加1个阶段(最大4阶段)。铳枪的炮击、蓄力斧的装填数都会增加",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "装填珠【1】",
+        "skillName": "装填数",
+        "debuff": "装填速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/288558.html"
+      },
+      {
+        "name": "装填珠【3】",
+        "skillName": "装填数",
+        "debuff": "装填速度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211331.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 5,
+    "url": "ida/183595.html",
+    "type": 4
+  },
+  {
+    "id": 108,
+    "name": "装填速度",
+    "effectList": [
+      {
+        "name": "装填速度+3",
+        "effect": "弩枪的装填速度提高3个阶段，但是对蹲姿射击没有影响。弓的瓶子切换后可以自动装填",
+        "value": 20
+      },
+      {
+        "name": "装填速度+2",
+        "effect": "弩枪的装填速度提高2个阶段，但是对蹲姿射击没有影响。弓的瓶子切换后可以自动装填",
+        "value": 15
+      },
+      {
+        "name": "装填速度+1",
+        "effect": "弩枪的装填速度提高1个阶段，但是对蹲姿射击没有影响。弓的瓶子切换速度加快0.75倍",
+        "value": 10
+      },
+      {
+        "name": "装填速度-1",
+        "effect": "弩枪的装填速度延缓1个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.1倍",
+        "value": -10
+      },
+      {
+        "name": "装填速度-2",
+        "effect": "弩枪的装填速度延缓2个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.2倍",
+        "value": -15
+      },
+      {
+        "name": "装填速度-3",
+        "effect": "弩枪的装填速度延缓3个阶段。但是对蹲姿射击没有影响。弓的瓶子装入速度延缓1.3倍",
+        "value": -20
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "早填珠【1】",
+        "skillName": "装填速度",
+        "debuff": "后坐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211335.html"
+      },
+      {
+        "name": "早填珠【2】",
+        "skillName": "装填速度",
+        "debuff": "后坐力",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211336.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 7,
+    "url": "ida/183596.html",
+    "type": 4
+  },
+  {
+    "id": 109,
+    "name": "贯通弹强化",
+    "effectList": [
+      {
+        "name": "贯通弹・贯通矢UP",
+        "effect": "贯通弾、贯通矢的威力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "贯通珠【1】",
+        "skillName": "贯通弹强化",
+        "debuff": "后坐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211344.html"
+      },
+      {
+        "name": "贯通珠【3】",
+        "skillName": "贯通弹强化",
+        "debuff": "后坐力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211345.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183540.html",
+    "type": 4
+  },
+  {
+    "id": 110,
+    "name": "贯通弹追加",
+    "effectList": [
+      {
+        "name": "贯通弹全LV追加",
+        "effect": "可使用所有LV的贯通弹",
+        "value": 15
+      },
+      {
+        "name": "贯通弹LV1追加",
+        "effect": "可使用LV1贯通弹",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加贯珠【1】",
+        "skillName": "贯通弹追加",
+        "debuff": "贯通弹追加",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211350.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183541.html",
+    "type": 4
+  },
+  {
+    "id": 111,
+    "name": "通常弹强化",
+    "effectList": [
+      {
+        "name": "通常弹・连射矢UP",
+        "effect": "通常弹、连射矢的伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "强弹珠【1】",
+        "skillName": "通常弹强化",
+        "debuff": "后坐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211342.html"
+      },
+      {
+        "name": "强弹珠【3】",
+        "skillName": "通常弹强化",
+        "debuff": "后坐力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211343.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/183620.html",
+    "type": 4
+  },
+  {
+    "id": 112,
+    "name": "通常弹追加",
+    "effectList": [
+      {
+        "name": "通常弹全LV追加",
+        "effect": "可使用所有LV的通常弹",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "加弹珠【1】",
+        "skillName": "通常弹追加",
+        "debuff": "装填速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211348.html"
+      },
+      {
+        "name": "加弹珠【2】",
+        "skillName": "通常弹追加",
+        "debuff": "装填速度",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211349.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 8,
+    "url": "ida/183621.html",
+    "type": 4
+  },
+  {
+    "id": 113,
+    "name": "速射",
+    "effectList": [
+      {
+        "name": "连发数+1",
+        "effect": "速射时的发射数+1",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "速射珠【1】",
+        "skillName": "速射",
+        "debuff": "装填速度",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211333.html"
+      },
+      {
+        "name": "速射珠【3】",
+        "skillName": "速射",
+        "debuff": "装填速度",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211334.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 4,
+    "url": "ida/183598.html",
+    "type": 4
+  },
+  {
+    "id": 114,
+    "name": "重击弹强化",
+    "effectList": [
+      {
+        "name": "重击弹・重射矢UP",
+        "effect": "重击弹、重射矢的攻击力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "重弹珠【1】",
+        "skillName": "重击弹强化",
+        "debuff": "后坐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/228223.html"
+      },
+      {
+        "name": "重弹珠【3】",
+        "skillName": "重击弹强化",
+        "debuff": "后坐力",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/231102.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 5,
+    "url": "ida/230108.html",
+    "type": 4
+  },
+  {
+    "id": 115,
+    "name": "麻痹瓶追加",
+    "effectList": [
+      {
+        "name": "麻痹瓶追加",
+        "effect": "麻痹瓶可以使用",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "痹瓶珠【1】",
+        "skillName": "麻痹瓶追加",
+        "debuff": "攻击",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211359.html"
+      },
+      {
+        "name": "痹瓶珠【2】",
+        "skillName": "麻痹瓶追加",
+        "debuff": "攻击",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211360.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183656.html",
+    "type": 4
+  },
+  {
+    "id": 116,
+    "name": "剥取",
+    "effectList": [
+      {
+        "name": "剥取名人",
+        "effect": "剥取次数增加1次，剥取时霸体",
+        "value": 15
+      },
+      {
+        "name": "剥取铁人",
+        "effect": "剥取时霸体",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "剥皮珠【1】",
+        "skillName": "剥取",
+        "debuff": "运气",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211295.html"
+      },
+      {
+        "name": "剥皮珠【3】",
+        "skillName": "剥取",
+        "debuff": "运气",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211296.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 5,
+    "url": "ida/183635.html",
+    "type": 5
+  },
+  {
+    "id": 117,
+    "name": "反复无常",
+    "effectList": [
+      {
+        "name": "神明的反复无常",
+        "effect": "铁镐系、虫网系、笛系、回旋镖有1/2的机率不会坏掉",
+        "value": 15
+      },
+      {
+        "name": "精灵的反复无常",
+        "effect": "铁镐系、虫网系、笛系、回旋镖有1/3的机率不会坏掉",
+        "value": 10
+      },
+      {
+        "name": "恶灵的反复无常",
+        "effect": "铁镐系、虫网系、笛系、回旋镖有1/4的机率容易变坏",
+        "value": -10
+      },
+      {
+        "name": "悪魔的反复无常",
+        "effect": "铁镐系、虫网系、笛系、回旋镖有1/2的机率容易变坏",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "祝福珠【1】",
+        "skillName": "反复无常",
+        "debuff": "反复无常",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211300.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "url": "ida/183545.html",
+    "type": 5
+  },
+  {
+    "id": 118,
+    "name": "护石强化",
+    "effectList": [
+      {
+        "name": "护石系统加倍",
+        "effect": "护石技能点翻倍。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286053.html",
+    "type": 5
+  },
+  {
+    "id": 119,
+    "name": "护石王",
+    "effectList": [
+      {
+        "name": "护符猎人",
+        "effect": "采集时30%几率获得两个护身符",
+        "value": 15
+      },
+      {
+        "name": "护符收集",
+        "effect": "采集时20%几率获得两个护身符",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "护石珠【1】",
+        "skillName": "护石王",
+        "debuff": "护石王",
+        "value": 1,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211305.html"
+      },
+      {
+        "name": "护石珠【3】",
+        "skillName": "护石王",
+        "debuff": "护石王",
+        "value": 4,
+        "debuffValue": 0,
+        "slotNum": 3,
+        "mUrl": "ida/288554.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "url": "ida/183569.html",
+    "type": 5
+  },
+  {
+    "id": 120,
+    "name": "捕获",
+    "effectList": [
+      {
+        "name": "捕获名人",
+        "effect": "捕获怪物时的捕获报酬从2～3个增加至3～4个",
+        "value": 15
+      },
+      {
+        "name": "捕获达人",
+        "effect": "捕获怪物时的捕获报酬从2～3个增加至3个",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "捕获珠【1】",
+        "skillName": "捕获",
+        "debuff": "运气",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211293.html"
+      },
+      {
+        "name": "捕获珠【3】",
+        "skillName": "捕获",
+        "debuff": "运气",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211294.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 7,
+    "url": "ida/183652.html",
+    "type": 5
+  },
+  {
+    "id": 121,
+    "name": "搬运",
+    "effectList": [
+      {
+        "name": "搬运达人",
+        "effect": "搬运时的移动速度变快。就算从高处跳下也不容易使搬运物掉落",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "搬运珠【1】",
+        "skillName": "搬运",
+        "debuff": "搬运",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211297.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183525.html",
+    "type": 5
+  },
+  {
+    "id": 122,
+    "name": "蜂蜜",
+    "effectList": [
+      {
+        "name": "蜂蜜猎人",
+        "effect": "1次可采取2个蜂蜜及皇家蜂蜜",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "采蜜珠【1】",
+        "skillName": "蜂蜜",
+        "debuff": "反复无常",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211303.html"
+      },
+      {
+        "name": "占蜜珠【1】",
+        "skillName": "蜂蜜",
+        "debuff": "蜂蜜",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211304.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183639.html",
+    "type": 5
+  },
+  {
+    "id": 123,
+    "name": "调合数",
+    "effectList": [
+      {
+        "name": "满额调和",
+        "effect": "调合的生产数必然为最大",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "弹制珠【1】",
+        "skillName": "调合数",
+        "debuff": "调合数",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211302.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183617.html",
+    "type": 5
+  },
+  {
+    "id": 124,
+    "name": "调和成功率",
+    "effectList": [
+      {
+        "name": "调和成功率+45%",
+        "effect": "调合的成功率+45%",
+        "value": 15
+      },
+      {
+        "name": "调和成功率+20%",
+        "effect": "调合的成功率+20%",
+        "value": 10
+      },
+      {
+        "name": "调和成功率-10%",
+        "effect": "调合的成功率-10%",
+        "value": -10
+      },
+      {
+        "name": "调和成功率-20%",
+        "effect": "调合的成功率-20%",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "博士珠【1】",
+        "skillName": "调和成功率",
+        "debuff": "调和成功率",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211301.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "url": "ida/183618.html",
+    "type": 5
+  },
+  {
+    "id": 125,
+    "name": "运气",
+    "effectList": [
+      {
+        "name": "激运",
+        "effect": "任务报酬的抽奖报酬获得率从平时的22/32变化为31/32。",
+        "value": 20
+      },
+      {
+        "name": "强运",
+        "effect": "任务报酬的抽奖报酬获得率从平时的22/32变化为28/32。",
+        "value": 15
+      },
+      {
+        "name": "幸运",
+        "effect": "任务报酬的抽奖报酬获得率从平时的22/32变化为25/32。",
+        "value": 10
+      },
+      {
+        "name": "霉运",
+        "effect": "任务报酬的抽奖报酬获得率从平时的22/32变化为16/32。",
+        "value": -10
+      },
+      {
+        "name": "灾难",
+        "effect": "任务报酬的抽奖报酬获得率从平时的22/32变化为8/32。",
+        "value": -15
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "运气珠【1】",
+        "skillName": "运气",
+        "debuff": "反复无常",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211291.html"
+      },
+      {
+        "name": "运气珠【3】",
+        "skillName": "运气",
+        "debuff": "反复无常",
+        "value": 4,
+        "debuffValue": 2,
+        "slotNum": 3,
+        "mUrl": "ida/211292.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 7,
+    "url": "ida/183524.html",
+    "type": 5
+  },
+  {
+    "id": 126,
+    "name": "采集",
+    "effectList": [
+      {
+        "name": "采集+2",
+        "effect": "下次也可采取道具的几率从平时的25/32变为29/32。",
+        "value": 15
+      },
+      {
+        "name": "采集+1",
+        "effect": "下次也可采取道具的几率从平时的25/32变为27/32。",
+        "value": 10
+      },
+      {
+        "name": "采集-1",
+        "effect": "下次也可采取道具的几率从平时的25/32变为21/32。",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "采集珠【1】",
+        "skillName": "采集",
+        "debuff": "采集",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211298.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 13,
+    "url": "ida/183573.html",
+    "type": 5
+  },
+  {
+    "id": 127,
+    "name": "千里眼",
+    "effectList": [
+      {
+        "name": "自动标记",
+        "effect": "常时显示中型、大型怪物的位置、朝向、攻击状态",
+        "value": 15
+      },
+      {
+        "name": "探知",
+        "effect": "标记时，显示中型、大型怪物的位置、朝向、攻击状态。同时，就算没有进行标记也有一定几率获得同样的效果",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "千里珠【1】",
+        "skillName": "千里眼",
+        "debuff": "千里眼",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211306.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 12,
+    "url": "ida/183594.html",
+    "type": 6
+  },
+  {
+    "id": 128,
+    "name": "号令",
+    "effectList": [
+      {
+        "name": "号令随从猫",
+        "effect": "在猎猫休息的状态，实行动作“号令”就能使其体力回满。不可在使用后的10分钟内再次使用。在设有背水之阵的印的时候无效。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "号令珠【1】",
+        "skillName": "号令",
+        "debuff": "采集",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211316.html"
+      },
+      {
+        "name": "号令珠【2】",
+        "skillName": "号令",
+        "debuff": "采集",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211317.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "url": "ida/183565.html",
+    "type": 6
+  },
+  {
+    "id": 129,
+    "name": "指挥",
+    "effectList": [
+      {
+        "name": "指挥随从",
+        "effect": "随从猫的攻击力与防御力伤害*1.1倍",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "指挥珠【1】",
+        "skillName": "指挥",
+        "debuff": "效果持续",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211314.html"
+      },
+      {
+        "name": "名指挥珠【1】",
+        "skillName": "指挥",
+        "value": 2,
+        "slotNum": 1,
+        "mUrl": "ida/211315.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 10,
+    "url": "ida/183574.html",
+    "type": 6
+  },
+  {
+    "id": 130,
+    "name": "气息",
+    "effectList": [
+      {
+        "name": "隐密",
+        "effect": "变得不容易被怪物视为攻击目标",
+        "value": 10
+      },
+      {
+        "name": "挑衅",
+        "effect": "变得容易被被怪物视为攻击目标",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "蹑脚珠【1】",
+        "skillName": "气息",
+        "value": 2,
+        "slotNum": 1,
+        "mUrl": "ida/211309.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183554.html",
+    "type": 6
+  },
+  {
+    "id": 131,
+    "name": "猎人",
+    "effectList": [
+      {
+        "name": "猎人生活",
+        "effect": "变得容易做烤肉。就算没有地图也能显示小地图。钓鱼时在首次拉杆中上钩。鱼饵道具调合成功率100%。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "猎人珠【1】",
+        "skillName": "猎人",
+        "debuff": "猎人",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211308.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183537.html",
+    "type": 6
+  },
+  {
+    "id": 132,
+    "name": "磨刀匠",
+    "effectList": [
+      {
+        "name": "急速磨刀",
+        "effect": "使用砥石系道具所需时间变短。从平时的4次变为1次。",
+        "value": 10
+      },
+      {
+        "name": "缓慢磨刀",
+        "effect": "使用砥石系道具所需时间变长。从平时的4次变为5次。",
+        "value": -10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "打磨珠【1】",
+        "skillName": "磨刀匠",
+        "debuff": "磨刀匠",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211329.html"
+      }
+    ],
+    "leftMaxValue": 4,
+    "rightMaxValue": 10,
+    "url": "ida/183625.html",
+    "type": 6
+  },
+  {
+    "id": 133,
+    "name": "秘术",
+    "effectList": [
+      {
+        "name": "技能加点+2",
+        "effect": "装备技能点数的合计值+2。",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286090.html",
+    "type": 6
+  },
+  {
+    "id": 134,
+    "name": "笛",
+    "effectList": [
+      {
+        "name": "吹笛名人",
+        "effect": "延长狩猎笛的演奏效果时间，拥有回复效果的旋律则出现回复量变多的效果。此外，笛道具有1/2的几率不破损",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "鼓笛珠【1】",
+        "skillName": "笛",
+        "debuff": "笛",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211313.html"
+      }
+    ],
+    "leftMaxValue": 6,
+    "rightMaxValue": 10,
+    "url": "ida/183648.html",
+    "type": 6
+  },
+  {
+    "id": 135,
+    "name": "观察眼",
+    "effectList": [
+      {
+        "name": "捕获精通",
+        "effect": "标记时，在可捕获的时候图标出现白色闪烁。",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "观察珠【1】",
+        "skillName": "观察眼",
+        "debuff": "观察眼",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211307.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183539.html",
+    "type": 6
+  },
+  {
+    "id": 136,
+    "name": "身体系统加倍",
+    "effectList": [
+      {
+        "name": "身体系统加倍",
+        "effect": "胸部件的技能点数变为原来的2倍",
+        "value": 0
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/183622.html",
+    "type": 6
+  },
+  {
+    "id": 137,
+    "name": "高速设置",
+    "effectList": [
+      {
+        "name": "陷阱师",
+        "effect": "陷井道具、肉道具、炸弹(除了小桶炸弹和升空桶炸弹以外)的设置所需时间变短。陷井道具及肉道具的调合成功率100%",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "陷阱师【1】",
+        "skillName": "高速设置",
+        "debuff": "高速设置",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211311.html"
+      }
+    ],
+    "leftMaxValue": 8,
+    "rightMaxValue": 10,
+    "url": "ida/183563.html",
+    "type": 6
+  },
+  {
+    "id": 138,
+    "name": "偷盗无效",
+    "effectList": [
+      {
+        "name": "偷盗无效",
+        "effect": "道具不会被盗",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "耐盗珠【1】",
+        "skillName": "偷盗无效",
+        "debuff": "偷盗无效",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/211252.html"
+      }
+    ],
+    "leftMaxValue": 10,
+    "rightMaxValue": 10,
+    "url": "ida/183631.html",
+    "type": 7
+  },
+  {
+    "id": 139,
+    "name": "刀匠",
+    "effectList": [
+      {
+        "name": "真锻",
+        "effect": "锋利度等级+1 + 攻击力UP【大】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286087.html",
+    "type": 7
+  },
+  {
+    "id": 140,
+    "name": "刚击",
+    "effectList": [
+      {
+        "name": "无情",
+        "effect": "洞察+2 + 弱点特效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286050.html",
+    "type": 7
+  },
+  {
+    "id": 141,
+    "name": "北辰/海渊纳豆流",
+    "effectList": [
+      {
+        "name": "粘糊糊剑法",
+        "effect": "不屈 + 长跑健将 + 夺取耐力",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/183653.html",
+    "type": 7
+  },
+  {
+    "id": 142,
+    "name": "可可特",
+    "effectList": [
+      {
+        "name": "可可特之心",
+        "effect": "雷耐性【小】 + 精灵的反复无常",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "始猎珠【1】",
+        "skillName": "可可特",
+        "debuff": "可可特",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228227.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/230107.html",
+    "type": 7
+  },
+  {
+    "id": 143,
+    "name": "増幅",
+    "effectList": [
+      {
+        "name": "属性兼道具强化",
+        "effect": "属性攻击强化 + 道具使用强化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286081.html",
+    "type": 7
+  },
+  {
+    "id": 144,
+    "name": "大雪主",
+    "effectList": [
+      {
+        "name": "大雪主的魂",
+        "effect": "回避距离UP + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/226911.html",
+    "type": 7
+  },
+  {
+    "id": 145,
+    "name": "天眼",
+    "effectList": [
+      {
+        "name": "天眼之魂",
+        "effect": "洞察+3 + 挑战者+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286086.html",
+    "type": 7
+  },
+  {
+    "id": 146,
+    "name": "宝缠",
+    "effectList": [
+      {
+        "name": "宝缠之魂",
+        "effect": "护符猎人 + 饥饿无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230113.html",
+    "type": 7
+  },
+  {
+    "id": 147,
+    "name": "对炎龙",
+    "effectList": [
+      {
+        "name": "钢壳守护",
+        "effect": "南风猎手 + 火耐性【大】 + 细菌研究员",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286082.html",
+    "type": 7
+  },
+  {
+    "id": 148,
+    "name": "对钢龙",
+    "effectList": [
+      {
+        "name": "霞皮守护",
+        "effect": "北风猎手 + 风压【大】无效 + 雪人状态无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286084.html",
+    "type": 7
+  },
+  {
+    "id": 149,
+    "name": "对霞龙",
+    "effectList": [
+      {
+        "name": "炎鳞守护",
+        "effect": "毒耐性 + 偷盗无效 + 自动标记",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286083.html",
+    "type": 7
+  },
+  {
+    "id": 150,
+    "name": "射手",
+    "effectList": [
+      {
+        "name": "刚弹",
+        "effect": "通常弹・连射矢UP + 贯通弹・贯通矢UP + 散弹・扩散矢UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286056.html",
+    "type": 7
+  },
+  {
+    "id": 151,
+    "name": "居合",
+    "effectList": [
+      {
+        "name": "居合术【力】",
+        "effect": "拔刀术【力】 + 收刀术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286037.html",
+    "type": 7
+  },
+  {
+    "id": 152,
+    "name": "岩穿",
+    "effectList": [
+      {
+        "name": "岩穿之魂",
+        "effect": "火场怪力+2 + 俯拾即食",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230101.html",
+    "type": 7
+  },
+  {
+    "id": 153,
+    "name": "工人",
+    "effectList": [
+      {
+        "name": "陷阱大师",
+        "effect": "爆破手 + 陷阱师",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286058.html",
+    "type": 7
+  },
+  {
+    "id": 154,
+    "name": "强欲",
+    "effectList": [
+      {
+        "name": "丰收",
+        "effect": "强运 + 捕获达人",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286051.html",
+    "type": 7
+  },
+  {
+    "id": 155,
+    "name": "怒",
+    "effectList": [
+      {
+        "name": "逆鱗",
+        "effect": "火场怪力+2 + 毅力",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286038.html",
+    "type": 7
+  },
+  {
+    "id": 156,
+    "name": "护石收集",
+    "effectList": [
+      {
+        "name": "护符发烧友",
+        "effect": "护符猎人 + 采集+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286054.html",
+    "type": 7
+  },
+  {
+    "id": 157,
+    "name": "持盾",
+    "effectList": [
+      {
+        "name": "持盾手",
+        "effect": "格挡强化 + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286085.html",
+    "type": 7
+  },
+  {
+    "id": 158,
+    "name": "掩人耳目",
+    "effectList": [
+      {
+        "name": "暗中活跃",
+        "effect": "装填数UP + 调和成功率+20% + 隐密",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286040.html",
+    "type": 7
+  },
+  {
+    "id": 159,
+    "name": "斩术",
+    "effectList": [
+      {
+        "name": "人剑一体",
+        "effect": "心眼 + 利刃",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286055.html",
+    "type": 7
+  },
+  {
+    "id": 160,
+    "name": "格挡强化",
+    "effectList": [
+      {
+        "name": "格挡强化",
+        "effect": "可以防御通常不能防御的攻击。在防御特定的攻击后，不会出现一部分道具无法使用，防御力Down的状态",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "强壁珠【1】",
+        "skillName": "格挡强化",
+        "debuff": "耐力",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211218.html"
+      },
+      {
+        "name": "强壁珠【2】",
+        "skillName": "格挡强化",
+        "debuff": "耐力",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211219.html"
+      }
+    ],
+    "leftMaxValue": 7,
+    "rightMaxValue": 5,
+    "url": "ida/183526.html",
+    "type": 7
+  },
+  {
+    "id": 161,
+    "name": "毅力",
+    "effectList": [
+      {
+        "name": "毅力",
+        "effect": "体力在64以上时，一次性受到超过剩余体力的攻击也不会猫车。只能使用一次。猫车后可以再次生效",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "毅力珠【1】",
+        "skillName": "毅力",
+        "debuff": "调和成功率",
+        "value": 1,
+        "debuffValue": 1,
+        "slotNum": 1,
+        "mUrl": "ida/211223.html"
+      },
+      {
+        "name": "毅力珠【2】",
+        "skillName": "毅力",
+        "debuff": "调和成功率",
+        "value": 3,
+        "debuffValue": 1,
+        "slotNum": 2,
+        "mUrl": "ida/211224.html"
+      }
+    ],
+    "leftMaxValue": 5,
+    "rightMaxValue": 3,
+    "url": "ida/183571.html",
+    "type": 7
+  },
+  {
+    "id": 162,
+    "name": "波凯",
+    "effectList": [
+      {
+        "name": "波凯之心",
+        "effect": "冰耐性【小】 + 吃饱喝足",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "雪花珠【1】",
+        "skillName": "波凯",
+        "debuff": "波凯",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228225.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/230118.html",
+    "type": 7
+  },
+  {
+    "id": 163,
+    "name": "洁癖",
+    "effectList": [
+      {
+        "name": "舞斗家",
+        "effect": "最佳状态 + 回避距离UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286049.html",
+    "type": 7
+  },
+  {
+    "id": 164,
+    "name": "烬灭刃",
+    "effectList": [
+      {
+        "name": "烬灭刃之魂",
+        "effect": "锋利度等级+2 + 弹道强化 + 急速磨刀",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230110.html",
+    "type": 7
+  },
+  {
+    "id": 165,
+    "name": "状态耐性",
+    "effectList": [
+      {
+        "name": "护法",
+        "effect": "毒耐性 + 麻痹无效 + 睡眠无效 + 昏厥无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286057.html",
+    "type": 7
+  },
+  {
+    "id": 166,
+    "name": "独眼",
+    "effectList": [
+      {
+        "name": "独眼之魂",
+        "effect": "昏厥无效 + 挑战者+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230111.html",
+    "type": 7
+  },
+  {
+    "id": 167,
+    "name": "白疾风",
+    "effectList": [
+      {
+        "name": "白疾风之魂",
+        "effect": "回避性能+2 + 洞察+3",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230109.html",
+    "type": 7
+  },
+  {
+    "id": 168,
+    "name": "真・大雪主",
+    "effectList": [
+      {
+        "name": "真・大雪主之魂",
+        "effect": "回避距离UP + 乘骑名人 + 耐力急速回复",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286063.html",
+    "type": 7
+  },
+  {
+    "id": 169,
+    "name": "真・天眼",
+    "effectList": [
+      {
+        "name": "真・天眼之魂",
+        "effect": "洞察+3 + 挑战者+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286074.html",
+    "type": 7
+  },
+  {
+    "id": 170,
+    "name": "真・宝缠",
+    "effectList": [
+      {
+        "name": "真・宝缠之魂",
+        "effect": "护符猎人 + 英雄守护 + 饥饿无效",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286073.html",
+    "type": 7
+  },
+  {
+    "id": 171,
+    "name": "真・岩穿",
+    "effectList": [
+      {
+        "name": "真・岩穿之魂",
+        "effect": "火场怪力+2 + 俯拾即食 + 炮术王",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286061.html",
+    "type": 7
+  },
+  {
+    "id": 172,
+    "name": "真・烬灭刃",
+    "effectList": [
+      {
+        "name": "真・烬灭刃之魂",
+        "effect": "锋利度等级+2 + 爆破手 + 弹道强化 + 急速磨刀",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286070.html",
+    "type": 7
+  },
+  {
+    "id": 173,
+    "name": "真・独眼",
+    "effectList": [
+      {
+        "name": "真・独眼之魂",
+        "effect": "昏厥无效 + 挑战者+2 + 不屈",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286072.html",
+    "type": 7
+  },
+  {
+    "id": 174,
+    "name": "真・白疾风",
+    "effectList": [
+      {
+        "name": "真・白疾风之魂",
+        "effect": "回避性能+2 + 洞察+3 + 隐密",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286069.html",
+    "type": 7
+  },
+  {
+    "id": 175,
+    "name": "真・矛碎",
+    "effectList": [
+      {
+        "name": "真・矛碎之魂",
+        "effect": "利刃 + 后坐力减轻+2 + 精灵加护 + 体术+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286076.html",
+    "type": 7
+  },
+  {
+    "id": 176,
+    "name": "真・紫毒姫",
+    "effectList": [
+      {
+        "name": "真・紫毒姫之魂",
+        "effect": "状态异常攻击+2 + 广域化+2 + 药草超强化",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286068.html",
+    "type": 7
+  },
+  {
+    "id": 177,
+    "name": "真・红盔",
+    "effectList": [
+      {
+        "name": "真・红盔之魂",
+        "effect": "反怒 + 集中 + 长跑健将",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286075.html",
+    "type": 7
+  },
+  {
+    "id": 178,
+    "name": "真・胧隐",
+    "effectList": [
+      {
+        "name": "真・胧隐之魂",
+        "effect": "高级耳栓 + 装填速度+3 + 人剑一体 + 陷阱师",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286064.html",
+    "type": 7
+  },
+  {
+    "id": 179,
+    "name": "真・荒钩爪",
+    "effectList": [
+      {
+        "name": "真・荒钩爪之魂",
+        "effect": "快吃+2 + 高级耳栓 + ＳＰ时间延长",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286060.html",
+    "type": 7
+  },
+  {
+    "id": 180,
+    "name": "真・金雷公",
+    "effectList": [
+      {
+        "name": "真・金雷公之魂",
+        "effect": "力量解放+2 + 体术+2 + 集中",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286065.html",
+    "type": 7
+  },
+  {
+    "id": 181,
+    "name": "真・鏖魔",
+    "effectList": [
+      {
+        "name": "真・鏖魔之魂",
+        "effect": "攻击力UP【大】 + 回避性能+2 + 明镜止水",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286062.html",
+    "type": 7
+  },
+  {
+    "id": 182,
+    "name": "真・铠裂",
+    "effectList": [
+      {
+        "name": "真・铠裂之魂",
+        "effect": "格挡性能+2 + 收刀术 + 刃鳞打磨",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286077.html",
+    "type": 7
+  },
+  {
+    "id": 183,
+    "name": "真・银峰",
+    "effectList": [
+      {
+        "name": "真・银峰之魂",
+        "effect": "长跑健将 + 钝器手 + 通常弹・连射矢UP + 攻击力UP【中】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286066.html",
+    "type": 7
+  },
+  {
+    "id": 184,
+    "name": "真・青电主",
+    "effectList": [
+      {
+        "name": "真・青电主之魂",
+        "effect": "超会心 + 连发数+1 + 锋利度等级+1 + 虎视眈眈",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286071.html",
+    "type": 7
+  },
+  {
+    "id": 185,
+    "name": "真・黑炎王",
+    "effectList": [
+      {
+        "name": "真・黑炎王之魂",
+        "effect": "风压【大】无效 + 攻击力UP【大】 + 火场怪力+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286067.html",
+    "type": 7
+  },
+  {
+    "id": 186,
+    "name": "矛碎",
+    "effectList": [
+      {
+        "name": "矛碎之魂",
+        "effect": "利刃 + 后坐力减轻+2 + 精灵加护",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/226921.html",
+    "type": 7
+  },
+  {
+    "id": 187,
+    "name": "祈愿",
+    "effectList": [
+      {
+        "name": "祝福",
+        "effect": "体力回复量UP + 精灵加护",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286047.html",
+    "type": 7
+  },
+  {
+    "id": 188,
+    "name": "紫毒姫",
+    "effectList": [
+      {
+        "name": "紫毒姫之魂",
+        "effect": "状态异常攻击+2 + 广域化+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/226916.html",
+    "type": 7
+  },
+  {
+    "id": 189,
+    "name": "红盔",
+    "effectList": [
+      {
+        "name": "红盔之魂",
+        "effect": "反怒 + 集中",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/226920.html",
+    "type": 7
+  },
+  {
+    "id": 190,
+    "name": "结云",
+    "effectList": [
+      {
+        "name": "结云之心",
+        "effect": "水耐性【小】 + 蜂蜜猎人",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "仙汤珠【1】",
+        "skillName": "结云",
+        "debuff": "结云",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228226.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/230120.html",
+    "type": 7
+  },
+  {
+    "id": 191,
+    "name": "胧隐",
+    "effectList": [
+      {
+        "name": "胧隐之魂",
+        "effect": "高级耳栓 + 装填速度+3 + 人剑一体",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286043.html",
+    "type": 7
+  },
+  {
+    "id": 192,
+    "name": "荒钩爪",
+    "effectList": [
+      {
+        "name": "荒钩爪之魂",
+        "effect": "快吃+2 + 高级耳栓",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230100.html",
+    "type": 7
+  },
+  {
+    "id": 193,
+    "name": "贝鲁纳",
+    "effectList": [
+      {
+        "name": "贝鲁纳之心",
+        "effect": "火耐性【小】 + 饥饿减半",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "历铃珠【1】",
+        "skillName": "贝鲁纳",
+        "debuff": "贝鲁纳",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/228224.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/230116.html",
+    "type": 7
+  },
+  {
+    "id": 194,
+    "name": "金雷公",
+    "effectList": [
+      {
+        "name": "金雷公之魂",
+        "effect": "力量解放+2 + 体术+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230105.html",
+    "type": 7
+  },
+  {
+    "id": 195,
+    "name": "鏖魔",
+    "effectList": [
+      {
+        "name": "鏖魔之魂",
+        "effect": "攻击力UP【大】 + 回避性能+2",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286042.html",
+    "type": 7
+  },
+  {
+    "id": 196,
+    "name": "铁臂",
+    "effectList": [
+      {
+        "name": "痛打",
+        "effect": "夺取耐力 + KO术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286052.html",
+    "type": 7
+  },
+  {
+    "id": 197,
+    "name": "铠裂",
+    "effectList": [
+      {
+        "name": "铠裂之魂",
+        "effect": "格挡性能+2 + 收刀术",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286091.html",
+    "type": 7
+  },
+  {
+    "id": 198,
+    "name": "银峰",
+    "effectList": [
+      {
+        "name": "银峰之魂",
+        "effect": "长跑健将 + 钝器手 + 通常弹・连射矢UP",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286048.html",
+    "type": 7
+  },
+  {
+    "id": 199,
+    "name": "闪避术",
+    "effectList": [
+      {
+        "name": "杂技师",
+        "effect": "体术+1 + 回避性能+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286044.html",
+    "type": 7
+  },
+  {
+    "id": 200,
+    "name": "青电主",
+    "effectList": [
+      {
+        "name": "青电主之魂",
+        "effect": "超会心 + 连发数+1 + 锋利度等级+1",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/286079.html",
+    "type": 7
+  },
+  {
+    "id": 201,
+    "name": "顽强",
+    "effectList": [
+      {
+        "name": "铁壁",
+        "effect": "防御力UP【中】 + 铁面",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286046.html",
+    "type": 7
+  },
+  {
+    "id": 202,
+    "name": "飞行酒吧",
+    "effectList": [
+      {
+        "name": "飞行酒吧之心",
+        "effect": "KO术 + 吹笛名人",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "天宴珠【1】",
+        "skillName": "飞行酒吧",
+        "debuff": "飞行酒吧",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/288556.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286089.html",
+    "type": 7
+  },
+  {
+    "id": 203,
+    "name": "食欲",
+    "effectList": [
+      {
+        "name": "美食家",
+        "effect": "快吃+2 + 嗜肉如命 + 最爱蘑菇",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286059.html",
+    "type": 7
+  },
+  {
+    "id": 204,
+    "name": "黑炎王",
+    "effectList": [
+      {
+        "name": "黑炎王之魂",
+        "effect": "风压【大】无效 + 攻击力UP【大】",
+        "value": 10
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 3,
+    "url": "ida/230106.html",
+    "type": 7
+  },
+  {
+    "id": 205,
+    "name": "龙识船",
+    "effectList": [
+      {
+        "name": "龙识船之心",
+        "effect": "龙耐性【小】 + 细菌研究员",
+        "value": 10
+      }
+    ],
+    "jewelryList": [
+      {
+        "name": "探究珠【1】",
+        "skillName": "龙识船",
+        "debuff": "龙识船",
+        "value": 2,
+        "debuffValue": 0,
+        "slotNum": 1,
+        "mUrl": "ida/288555.html"
+      }
+    ],
+    "leftMaxValue": 0,
+    "rightMaxValue": 0,
+    "url": "ida/286093.html",
+    "type": 7
+  }
+]
