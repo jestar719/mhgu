@@ -31,8 +31,7 @@ public class VersionLiveData extends MutableLiveData<VersionBean> {
                     URL url = new URL(LINK);
                     InputStream stream = url.openStream();
                     InputStreamReader reader = new InputStreamReader(stream, "utf-8");
-                    bean = JsonUtils.fromString(reader, VersionBean.class);
-                    stream.close();
+                    bean = JsonUtils.getObject(reader, VersionBean.class);
                 } catch (Exception e) {
                     e.printStackTrace();
                     logE(e);

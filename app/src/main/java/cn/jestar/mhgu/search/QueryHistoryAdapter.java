@@ -7,14 +7,12 @@ import android.widget.Filter;
 
 import java.util.ArrayList;
 
-import cn.jestar.db.bean.SearchBean;
-
 /**
  * 搜索历史的Adapter
  * Created by 花京院 on 2019/4/3.
  */
 
-public class QueryHistoryAdapter extends ArrayAdapter<SearchBean> {
+public class QueryHistoryAdapter<T> extends ArrayAdapter<T> {
 
     public QueryHistoryAdapter(@NonNull Context context, int resource, int textViewResourceId) {
         super(context, resource, textViewResourceId);

@@ -11,4 +11,60 @@
         <item>任务</item>
         <item>猫饭</item>
     </string-array>
+    <string-array name="select_menu">
+        <item>装备</item>
+        <item>技能珠</item>
+        <item>技能</item>
+    </string-array>
+    <string-array name="skill_value_title">
+        <item>技能名</item>
+        <item>头</item>
+        <item>胸</item>
+        <item>手</item>
+        <item>腰</item>
+        <item>脚</item>
+        <item>护符</item>
+        <item>武器</item>
+        <item>合计</item>
+        <item>发动技能</item>
+    </string-array>
+    <string-array name="skill_type">
+        <item>攻,防,闪</item>
+        <item>体,耐,回</item>
+        <item>耐性,无效</item>
+        <item>射手用</item>
+        <item>收集,报酬,调和</item>
+        <item>猫,其它</item>
+        <item>复合</item>
+    </string-array>
+    <string-array name="equip_part">
+        <item>头</item>
+        <item>胸</item>
+        <item>手</item>
+        <item>腰</item>
+        <item>脚</item>
+    </string-array>
+    <string-array name="equip_sort">
+        <item>防御</item>
+        <item>等级</item>
+        <item>孔数</item>
+        <item>技能值</item>
+    </string-array>
+    <string-array name="equip_title">
+        <item>名称</item>
+        <item>部位</item>
+        <item>类型</item>
+        <item>性别</item>
+        <item>等级</item>
+        <item>防御</item>
+        <item>顶防</item>
+        <item>孔</item>
+        <item>技能</item>
+        <item>值</item>
+    </string-array>
+    <string-array name="search">
+        <item>装备搜索</item>
+        <item>技能珠搜索</item>
+        <item>技能搜索</item>
+    </string-array>
 </resources>

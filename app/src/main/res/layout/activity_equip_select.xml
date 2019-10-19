@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/equip_set"
+        app:titleTextColor="@color/white"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/d8"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        >
+
+        <include
+            android:id="@+id/select_menu"
+            layout="@layout/layout_equip_select_menu"/>
+
+        <include
+            android:id="@+id/equip_item_head"
+            layout="@layout/layout_equip_item"/>
+
+        <include
+            android:id="@+id/equip_item_body"
+            layout="@layout/layout_equip_item"/>
+
+        <include
+            android:id="@+id/equip_item_hand"
+            layout="@layout/layout_equip_item"/>
+
+        <include
+            android:id="@+id/equip_item_leg"
+            layout="@layout/layout_equip_item"/>
+
+        <include
+            android:id="@+id/equip_item_foot"
+            layout="@layout/layout_equip_item"/>
+
+        <include
+            android:id="@+id/equip_item_amulet"
+            layout="@layout/layout_amulet_item"/>
+
+        <include
+            android:id="@+id/equip_item_weapon"
+            layout="@layout/layout_equip_item"/>
+
+        <TextView
+            android:id="@+id/tv_equip_values"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d32"
+            android:layout_margin="@dimen/d8"
+            android:textSize="@dimen/sp12"
+            />
+
+        <include
+            android:id="@+id/skill_value_title"
+            layout="@layout/layout_skill_value_item"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frg_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/dialog_edit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/d4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d12"
+                android:text="@string/input_skill"
+                tools:text="fight"/>
+
+
+            <EditText
+                android:id="@+id/et_amulet_skill"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d48"
+                android:layout_below="@id/tv_save"
+                android:layout_marginEnd="@dimen/d8"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:hint="@string/hint_amulet_skill"
+                android:textSize="@dimen/sp14"
+                />
+
+            <EditText
+                android:id="@+id/et_skill"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d48"
+                android:layout_below="@id/et_amulet_skill"
+                android:layout_marginEnd="@dimen/d8"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:hint="@string/hint_skill"
+                android:textSize="@dimen/sp14"
+                />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/et_skill"
+                android:layout_margin="@dimen/d16"
+                android:text="@string/confirm"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp14"
+                />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_skill"
+                android:layout_margin="@dimen/d16"
+                android:layout_toStartOf="@id/tv_confirm"
+                android:text="@string/cancel"
+                android:textSize="@dimen/sp14"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/dialog_load_equip_recode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="@dimen/d4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_load_equip"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/d8"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/tv_load_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d16"
+                android:background="@drawable/shape_round_rect_accent"
+                android:gravity="center"
+                android:padding="@dimen/d8"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_web"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:cardElevation="@dimen/d4"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/d4"
+            />
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

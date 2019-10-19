@@ -7,9 +7,11 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import cn.jestar.convert.Constants;
 import cn.jestar.convert.bean.LinkInfo;
@@ -18,6 +20,7 @@ import cn.jestar.convert.bean.SkillJewelryBean;
 
 import static cn.jestar.convert.utils.ParserUtils.getAList;
 import static cn.jestar.convert.utils.ParserUtils.getDoc;
+import static cn.jestar.convert.utils.ParserUtils.getUrl;
 import static cn.jestar.convert.utils.ParserUtils.parseAList;
 import static cn.jestar.convert.utils.ParserUtils.writeDoc;
 
@@ -96,58 +99,58 @@ public class SkillParser {
         return jwdList;
     }
 
-   public LinkInfo parseSkillEffect(String url) throws IOException {
-       File file = new File(Constants.MH_PATH, url);
-       Document doc = getDoc(file);
-       Elements select = doc.selectFirst("table.t1").select("tr:has(td)");
-       LinkInfo info = new LinkInfo(url);
-       for (Element e : select) {
-           Element td = e.select("td").last();
-           String key = td.text().trim();
-           info.setData(key,"");
-       }
-       return info;
-   }
+    public LinkInfo parseSkillEffect(String url) throws IOException {
+        File file = new File(Constants.MH_PATH, url);
+        Document doc = getDoc(file);
+        Elements select = doc.selectFirst("table.t1").select("tr:has(td)");
+        LinkInfo info = new LinkInfo(url);
+        for (Element e : select) {
+            Element td = e.select("td").last();
+            String key = td.text().trim();
+            info.setData(key, "");
+        }
+        return info;
+    }
 
-   public List<String> convertSkillEffect(LinkInfo info) throws IOException {
-       String name = info.getName();
-       File file = new File(Constants.MH_PATH, name);
-       Document doc = getDoc(file);
-       Map<String, String> data = info.getData();
-       for (Element element : doc.select("table.t1 tr:has(td)")) {
-           Element span = element.select("td span").last();
-           String key = span.text().trim();
-           String value = data.get(key);
-           if (value!=null){
-               span.text(value);
-           }
-       }
-       writeDoc(file,doc);
-       Elements trs = doc.select("table[id^=sorter] tr:has(td)");
-       List<String> list=new ArrayList<>();
-       for (Element tr : trs) {
-           Elements a = tr.select("td:not(.left):has(a) a");
-           String url = a.attr("href").replace("../","").trim();
-           list.add(url);
-       }
-       return list;
-   }
+    public List<String> convertSkillEffect(LinkInfo info) throws IOException {
+        String name = info.getName();
+        File file = new File(Constants.MH_PATH, name);
+        Document doc = getDoc(file);
+        Map<String, String> data = info.getData();
+        for (Element element : doc.select("table.t1 tr:has(td)")) {
+            Element span = element.select("td span").last();
+            String key = span.text().trim();
+            String value = data.get(key);
+            if (value != null) {
+                span.text(value);
+            }
+        }
+        writeDoc(file, doc);
+        Elements trs = doc.select("table[id^=sorter] tr:has(td)");
+        List<String> list = new ArrayList<>();
+        for (Element tr : trs) {
+            Elements a = tr.select("td:not(.left):has(a) a");
+            String url = a.attr("href").replace("../", "").trim();
+            list.add(url);
+        }
+        return list;
+    }
 
-    public void convertSkillEffect(String url,Map<String,String> map) throws IOException {
+    public void convertSkillEffect(String url, Map<String, String> map) throws IOException {
         File file = new File(Constants.MH_PATH, url);
         Document doc = getDoc(file);
         Elements select = doc.select("table.t1 td.left:not(span)");
         System.out.println(select.size());
         for (Element e : select) {
-            if (e.childNodeSize()==1){
+            if (e.childNodeSize() == 1) {
                 String key = e.text().trim();
                 String s = map.get(key);
-                if (s!=null){
+                if (s != null) {
                     e.text(s);
                 }
             }
         }
-        writeDoc(file,doc);
+        writeDoc(file, doc);
     }
 
 
@@ -159,7 +162,6 @@ public class SkillParser {
     }
 
 
-
     public void convertSkillInType(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
@@ -169,6 +171,112 @@ public class SkillParser {
         writeDoc(file, doc);
     }
 
+
+    public String convertInIndex(File file, String key, String value) throws IOException {
+        Document doc = getDoc(file);
+        for (Element e : getAList(doc.body())) {
+            if (replaceE(e, key, value)) {
+                e.text(value);
+                writeDoc(file, doc);
+                return getUrl(e);
+            }
+        }
+        return null;
+    }
+
+    public void convertInDetail(File file, String key, String value) throws IOException {
+        Document doc = getDoc(file);
+        Element body = doc.body();
+        Element main = body.selectFirst("div.f_min");
+//        Elements aList = getAList(main);
+//        for (Element element : aList) {
+//            String text = element.text().trim();
+//            if (map.containsKey(text)) {
+//                element.text(map.get(text));
+//            }
+//        }
+//        Element e = body.selectFirst("h2");
+//        String text = e.text();
+//        e.text(text.replace(key,value));
+//        e = main.selectFirst("td.b");
+//        e.text(value);
+//        e=main.select("table.t1").last().selectFirst("td");
+//        e.text(value);
+        Elements select = main.select("tr");
+        Set<String> urls = new TreeSet<>();
+        Set<String> jUrls = new HashSet<>();
+        for (Element element : select) {
+            Element a = element.selectFirst("td:has(a)");
+            if (a != null) {
+                String style = a.attr("style");
+                a = a.selectFirst("a");
+                String url = a.attr("href").replace("../", "").trim();
+                if (style.startsWith("back")) {
+//                    String trim = a.text();
+//                    a.text(trim.replace(key, value));
+                    jUrls.add(url);
+                } else {
+                    urls.add(url);
+                }
+            }
+        }
+//        writeDoc(file,doc);
+//        for (String url : urls) {
+//             file = new File(Constants.MH_PATH, url);
+//             doc = getDoc(file);
+//            Elements aList = getAList(doc.body());
+//            for (Element e : aList) {
+//                if (key.equals(e.text().trim())){
+//                    e.text(value);
+//                }
+//            }
+//            writeDoc(file,doc);
+//        }
+        for (String url : jUrls) {
+            file = new File(Constants.MH_PATH, url);
+            doc = getDoc(file);
+            Elements aList = getAList(doc.body());
+            for (Element e : aList) {
+                if (key.equals(e.text().trim())) {
+                    e.text(value);
+                }
+            }
+            replaceE(doc.selectFirst("h2"), key, value);
+            replaceE(doc.selectFirst("h3"), key, value);
+            Elements tables = doc.select("table.t1");
+            Element e = tables.first().selectFirst("td");
+            replaceE(e.child(0), key, value);
+            writeDoc(file, doc);
+//            e = tables.last();
+//            for (String s : parseAList(e).values()) {
+//                file = new File(Constants.MH_PATH, s);
+//                doc = getDoc(file);
+//                for (Element a : getAList(doc.body())) {
+//                    replaceE(a,key,value);
+//                }
+//                writeDoc(file, doc);
+//            }
+        }
+    }
+
+    private boolean replaceE(Element e, String key, String value) {
+        String text = e.text().trim();
+        boolean equals = key.equals(text);
+        if (equals) {
+            e.text(value);
+        } else if (text.contains(key)) {
+            e.text(text.replace(key, value));
+        }
+        return equals;
+    }
+
+    /**
+     * 翻译技能详情
+     *
+     * @param file 技能详情页面
+     * @param map  翻译文本
+     * @throws IOException
+     */
     public void convertSkillInDetail(File file, Map<String, String> map) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
@@ -196,7 +304,7 @@ public class SkillParser {
         writeDoc(file, doc);
     }
 
-    public void convertSkillInJwerldy(File file, Map<String, String> map, Set<String> set) throws IOException {
+    public void convertSkillInJewelry(File file, Map<String, String> map, Set<String> set) throws IOException {
         Document doc = getDoc(file);
         Element body = doc.body();
         convertInElements(map, getAList(body));
@@ -232,7 +340,6 @@ public class SkillParser {
     }
 
 
-
     public void convertInElements(Map<String, String> map, Elements elements) {
         for (Element element : elements) {
             replaceElement(map, element);
@@ -262,10 +369,10 @@ public class SkillParser {
         for (Element element : select) {
             String text = element.text().trim();
             String s = map.get(text);
-            if (s!=null){
+            if (s != null) {
                 element.text(s);
             }
         }
-        writeDoc(file,doc);
+        writeDoc(file, doc);
     }
 }

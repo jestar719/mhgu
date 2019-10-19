@@ -1629,7 +1629,7 @@
   },
   {
     "id": 44,
-    "name": "里会心",
+    "name": "意外会心",
     "effectList": [
       {
         "name": "残忍会心",
@@ -1639,8 +1639,8 @@
     ],
     "jewelryList": [
       {
-        "name": "里会心珠【1】",
-        "skillName": "里会心",
+        "name": "意外会心珠【1】",
+        "skillName": "意外会心",
         "debuff": "攻击",
         "value": 1,
         "debuffValue": 1,
@@ -1648,8 +1648,8 @@
         "mUrl": "ida/288535.html"
       },
       {
-        "name": "里会心珠【3】",
-        "skillName": "里会心",
+        "name": "意外会心珠【3】",
+        "skillName": "意外会心",
         "debuff": "攻击",
         "value": 4,
         "debuffValue": 2,

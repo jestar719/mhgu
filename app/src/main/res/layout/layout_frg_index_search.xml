@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/d24">
+    android:layout_margin="@dimen/d24"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/d2"
+    app:cardElevation="@dimen/d6"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +30,7 @@
             android:gravity="center"
             android:padding="@dimen/d8"
             android:text="@string/action_search"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -33,7 +39,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <com.zhy.view.flowlayout.TagFlowLayout
@@ -42,9 +48,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/d4"
                     android:padding="@dimen/d8"
-                    zhy:max_select="1" />
+                    app:max_select="1"/>
 
-                <include layout="@layout/layout_divider" />
+                <include layout="@layout/layout_divider"/>
 
                 <com.zhy.view.flowlayout.TagFlowLayout
                     android:id="@+id/tfl_type"
@@ -52,9 +58,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/d4"
                     android:padding="@dimen/d8"
-                    zhy:max_select="1" />
+                    app:max_select="1"/>
 
-                <include layout="@layout/layout_divider" />
+                <include layout="@layout/layout_divider"/>
 
                 <com.zhy.view.flowlayout.TagFlowLayout
                     android:id="@+id/tfl_select"
@@ -62,9 +68,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/d4"
                     android:padding="@dimen/d8"
-                    zhy:max_select="1" />
+                    app:max_select="1"/>
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
 
-</FrameLayout>
+</android.support.v7.widget.CardView>

@@ -7,11 +7,10 @@ import org.jsoup.nodes.Element;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +18,8 @@ import java.util.Map;
 import java.util.Set;
 
 import cn.jestar.convert.Constants;
+import cn.jestar.convert.bean.BaseEquip;
+import cn.jestar.convert.bean.FullEquip;
 import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.utils.JsonUtils;
 
@@ -46,7 +47,7 @@ public class EquipmentParserTest {
     public void parseEquipNameInPage() throws IOException {
 //        mParser.parseEquipNameInPage();
         File file = new File(Constants.TEMP_TRANSLATED_PATH, EquipmentParser.EQUIP_DETAIL);
-        BufferedReader reader = new BufferedReader(new FileReader(file));
+        Reader reader = new FileReader(file);
         FileReader reader1 = new FileReader(new File(Constants.TEMP_SUMMARY_PATH, EquipmentParser.EQUIP_INDEX_NAME));
         List<LinkInfo> list = JsonUtils.toList(reader1, LinkInfo.class);
         Map<String, String> info = list.get(list.size() - 1).getData();
@@ -59,18 +60,31 @@ public class EquipmentParserTest {
             texts[index] = entry.getValue();
             index++;
         }
-        String line = null;
-        StringBuilder builder = new StringBuilder();
-        while ((line = reader.readLine()) != null) {
-            line = replace(line, texts[0], texts[1], texts[3]);
-            line = replace(line, texts[2], texts[3], texts[1]);
-            builder.append(line);
+        Type type = new TypeToken<Map<String, List<LinkInfo>>>() {
+        }.getType();
+        Map<String, List<LinkInfo>> t = JsonUtils.fromStringByType(reader, type);
+        for (List<LinkInfo> infos : t.values()) {
+            for (LinkInfo linkInfo : infos) {
+                Map<String, String> data = linkInfo.getData();
+                if (data.size() == 10) {
+                    for (Map.Entry<String, String> entry : data.entrySet()) {
+                        String key = entry.getKey();
+                        String value = entry.getValue();
+                        for (int i = 0; i < 2; i++) {
+                            int i1 = i * 2;
+                            String text = texts[i1];
+                            String text1 = texts[i1 + 1];
+                            if (key.endsWith(text) && value.endsWith(text1)) {
+                                String text2 = texts[i1 == 0 ? i + 3 : i1 - 1];
+                                value = value.replace(text1, text2);
+                                data.put(key, value);
+                            }
+                        }
+                    }
+                }
+            }
         }
-        FileWriter writer = new FileWriter(file);
-        writer.write(builder.toString());
-        reader.close();
-        writer.close();
-//        JsonUtils.writeJson(file, equip);
+        JsonUtils.writeJson(file, t);
     }
 
     private String replace(String text, String t1, String t2, String replace) {
@@ -113,7 +127,54 @@ public class EquipmentParserTest {
         LinkInfo info = infos.get(0);
         Set<Map.Entry<String, String>> set = info.getData().entrySet();
         ArrayList<Map.Entry<String, String>> entries = new ArrayList<>(set);
-        Map.Entry<String, String> entry = entries.get(1);
-        mParser.convertEquipDetail(map.get(entry.getKey()), entry.getValue());
+        for (Map.Entry<String, String> entry : entries) {
+            mParser.convertEquipDetail(map.get(entry.getKey()), entry.getValue());
+        }
+    }
+
+    @Test
+    public void parseEquipDetail() throws IOException {
+        File file = new File(Constants.TEMP_SUMMARY_PATH, EquipmentParser.EQUIP_INDEX_NAME);
+        List<LinkInfo> infos = JsonUtils.toList(new FileReader(file), LinkInfo.class);
+        List<BaseEquip> equipList = new ArrayList<>();
+        List<BaseEquip.EquipSkill> equipSkills = new ArrayList<>();
+        int rare = 0;
+        int start = 1;
+        int idStart = 0;
+        for (String s : infos.get(0).getData().values()) {
+            List<List<FullEquip>> lists = mParser.paserEquipDetail(s);
+            int rare1 = lists.get(0).get(0).getRare();
+            if (rare1 != rare) {
+                start = 1;
+                rare = rare1;
+                idStart = rare * 10000;
+            }
+            int size = lists.size();
+            for (int i = 0; i < size; i++) {
+                List<FullEquip> equips = lists.get(i);
+                int num = equips.size();
+                for (int i1 = 0; i1 < num; i1++) {
+                    FullEquip equip = equips.get(i1);
+                    int id = equip.getId();
+                    id = id + idStart + start * 10;
+                    equip.setId(id);
+                    List<BaseEquip.EquipSkill> skills = equip.getSkills();
+                    for (BaseEquip.EquipSkill skill : skills) {
+                        skill.setId(skill.getId() + id * 10);
+                        skill.setEquipId(id);
+                        equipSkills.add(skill);
+                    }
+                    equipList.add(equip.getBaseEquip());
+                }
+                start++;
+            }
+        }
+        String name = String.format(EquipmentParser.CATALOG_PAGE_NAME, "equips");
+        file = new File(Constants.TEMP_SUMMARY_PATH, name);
+        JsonUtils.writeJson(file, equipList);
+        name = String.format(EquipmentParser.CATALOG_PAGE_NAME, "equip_skills");
+        file = new File(Constants.TEMP_SUMMARY_PATH, name);
+        JsonUtils.writeJson(file, equipSkills);
+
     }
 }

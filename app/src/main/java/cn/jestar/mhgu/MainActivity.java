@@ -1,14 +1,19 @@
 package cn.jestar.mhgu;
 
+import android.Manifest;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.internal.NavigationMenuView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,13 +27,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 import cn.jestar.db.bean.SearchBean;
+import cn.jestar.mhgu.equip.EquipSelectActivity;
 import cn.jestar.mhgu.index.IndexFragment;
 import cn.jestar.mhgu.search.QueryHistoryAdapter;
 import cn.jestar.mhgu.search.WebViewManager;
@@ -52,9 +58,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private SearchView mSearchView;
     private View mFabContainer;
     private View mFab;
-    private AutoCompleteTextView mCompleteText;
-    private ArrayAdapter<SearchBean> mAdapter;
-
+    private QueryHistoryAdapter<SearchBean> mAdapter;
+    private int mRequestCode = 0x19;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -221,7 +226,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public boolean onQueryTextChange(String newText) {
                 Log.e("onQueryTextChange", newText);
-                mModel.onSearch(newText);
+                mModel.searchHistory(newText);
                 return false;
             }
         });
@@ -233,11 +238,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 设置Adapter及相关
      */
     public void initAutoComplete() {
-        mCompleteText = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
-        mAdapter = new QueryHistoryAdapter(this, R.layout.list_item, 0);
-        mCompleteText.setThreshold(1);
-        mCompleteText.setAdapter(mAdapter);
-        mModel.onSearch(null).observe(this, new Observer<List<SearchBean>>() {
+        AutoCompleteTextView view = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        mAdapter = new QueryHistoryAdapter<SearchBean>(this, R.layout.list_item, 0);
+        view.setThreshold(1);
+        view.setAdapter(mAdapter);
+        mModel.observerHistory(this, new Observer<List<SearchBean>>() {
             @Override
             public void onChanged(@Nullable List<SearchBean> searchBeans) {
 //                Log.e("onQueryTextChange", searchBeans.toString());
@@ -323,8 +328,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             showFragment(false);
             mModel.onMenuSelect((String) item.getTitle());
             mDrawer.closeDrawers();
+        } else if (R.id.item_set_equip == item.getItemId()) {
+            requestPermissions();
         }
         return false;
     }
 
+    private void requestPermissions() {
+        int i = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (i != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE}, mRequestCode);
+        } else {
+            startActivity(new Intent(this, EquipSelectActivity.class));
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == mRequestCode) {
+            if (grantResults.length < 1 || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, R.string.permission_alert, Toast.LENGTH_SHORT).show();
+            }
+            startActivity(new Intent(this, EquipSelectActivity.class));
+        }
+    }
 }

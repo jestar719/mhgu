@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/d4"
+    android:paddingTop="@dimen/d4"
+    >
+
+    <TextView
+        style="@style/style_item_skill_value"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="amuletSkill"/>
+
+    <TextView
+        android:id="@+id/tv_head"
+        style="@style/style_item_skill_value"
+        tools:text="head"/>
+
+    <TextView
+        android:id="@+id/tv_body"
+        style="@style/style_item_skill_value"
+        tools:text="body"/>
+
+    <TextView
+        android:id="@+id/tv_hand"
+        style="@style/style_item_skill_value"
+        tools:text="hand"/>
+
+    <TextView
+        android:id="@+id/tv_leg"
+        style="@style/style_item_skill_value"
+        tools:text="leg"/>
+
+    <TextView
+        android:id="@+id/tv_foot"
+        style="@style/style_item_skill_value"
+        tools:text="foot"/>
+
+    <TextView
+        android:id="@+id/tv_amulet"
+        style="@style/style_item_skill_value"
+        tools:text="amulet"/>
+
+    <TextView
+        android:id="@+id/tv_weapon"
+        style="@style/style_item_skill_value"
+        tools:text="weapon"/>
+
+    <TextView
+        android:id="@+id/tv_sum"
+        style="@style/style_item_skill_value"
+        tools:text="sum"/>
+
+    <TextView
+        style="@style/style_item_skill_value"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="effect"/>
+
+</LinearLayout>

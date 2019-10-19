@@ -16,8 +16,8 @@ import cn.jestar.db.JsonUtils;
 public class VersionUpdateTest {
     @Test
     public void getVersion() throws Exception {
-        int version = 210;
-        String versionName = "2.1.0";
+        int version = 220;
+        String versionName = "2.2.0";
         updateVersionBean(version, versionName);
         updateVersion(version, versionName);
     }
@@ -40,13 +40,13 @@ public class VersionUpdateTest {
         String separator = System.lineSeparator();
         builder
                 .append(separator)
-                .append("1 技能部分新增汇总页")
+                .append("1 调整技能翻译")
                 .append(separator)
-                .append("2 狩技部分翻译完成")
+                .append("2 调整怪物名翻译")
                 .append(separator)
-                .append("3 猫饭部分翻译完成")
-                .append(separator)
-                .append("4 大剑部分重新翻译完成");
+                .append("3 新增配装功能");
+//                .append(separator)
+//                .append("4 大剑部分重新翻译完成");
     }
 
     private void updateVersion(int version, String versionName) throws IOException {

@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<item android:title="@string/index">-->
-    <!--<menu>-->
     <group android:id="@+id/group_index">
         <item
             android:id="@+id/item_index_weapon"
             android:icon="@mipmap/ic_weapon"
-            android:title="@string/index_weapon" />
+            android:title="@string/index_weapon"/>
         <item
             android:id="@+id/item_index_armour"
             android:icon="@mipmap/ic_armour"
-            android:title="@string/index_armour" />
+            android:title="@string/index_armour"/>
         <item
             android:id="@+id/item_index_material"
             android:icon="@mipmap/ic_material"
-            android:title="@string/index_material" />
+            android:title="@string/index_material"/>
         <item
             android:id="@+id/item_index_cat"
-            android:title="@string/index_cat" />
+            android:icon="@mipmap/ic_cat"
+            android:title="@string/index_cat"/>
         <item
             android:id="@+id/item_index_skill"
-            android:title="@string/index_skill" />
+            android:icon="@mipmap/ic_skill"
+            android:title="@string/index_skill"/>
         <item
             android:id="@+id/item_index_monster"
             android:icon="@mipmap/ic_monster"
-            android:title="@string/index_monster" />
+            android:title="@string/index_monster"/>
         <item
             android:id="@+id/item_index_map"
             android:icon="@mipmap/ic_map"
-            android:title="@string/index_map" />
+            android:title="@string/index_map"/>
         <item
             android:id="@+id/item_index_cat_rice"
-            android:title="@string/index_cat_rice" />
+            android:icon="@mipmap/ic_cat_rice"
+            android:title="@string/index_cat_rice"/>
     </group>
-    <!--</menu>-->
-    <!--</item>-->
-
+    <item
+        android:id="@+id/item_set_equip"
+        android:icon="@mipmap/ic_equip_set"
+        android:title="@string/set_equip"
+        />
 </menu>

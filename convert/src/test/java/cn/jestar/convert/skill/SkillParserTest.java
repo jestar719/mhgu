@@ -336,7 +336,7 @@ public class SkillParserTest {
         }
         for (String index : jwdMap.get("index").values()) {
             File file2 = new File(Constants.MH_PATH, index);
-            mSkillParser.convertSkillInJwerldy(file2, texts, set);
+            mSkillParser.convertSkillInJewelry(file2, texts, set);
         }
         for (String s : set) {
             File file2 = new File(Constants.MH_PATH, s);
@@ -408,5 +408,18 @@ public class SkillParserTest {
             File file1 = new File(Constants.DATA_PATH, i + ".html");
             mSkillParser.convertSkillEffectInCatlog(file1,map);
         }
+    }
+
+    @Test
+    public void convertSkillPlusTest() throws IOException {
+        Map<String, String> map = JsonUtils.fromString(new FileReader(mSkills), Map.class);
+        ArrayList<Map.Entry<String, String>> entries = new ArrayList<>(map.entrySet());
+        Map.Entry<String, String> entry = entries.get(0);
+        String key = entry.getKey();
+        String value = entry.getValue();
+//        String url = mSkillParser.convertInIndex(new File(Constants.DATA_PATH, "2200.html"), key, value);
+//        mSkillParser.convertInIndex(new File(Constants.DATA_PATH,"2201.html"), key, value);
+        mSkillParser.convertInIndex(new File(Constants.DATA_PATH, "2580.html"), key, value);
+//        mSkillParser.convertInDetail(new File(Constants.MH_PATH,url),key,value);
     }
 }

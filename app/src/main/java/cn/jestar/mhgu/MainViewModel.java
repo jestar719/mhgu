@@ -28,11 +28,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class MainViewModel extends ViewModel {
 
-    private final LiveData<List<SearchBean>> mSearchList;
     private IndexDao mDao;
-    private LiveData<List<IndexBean>> mTyps;
-    private LiveData<List<IndexBean>> mSelects;
-
     private MutableLiveData<String> mSelectTag = new MutableLiveData<>();
     private MutableLiveData<String> mMenuSelect = new MutableLiveData<>();
     private MutableLiveData<String> mSearchData = new MutableLiveData<>();
@@ -46,24 +42,6 @@ public class MainViewModel extends ViewModel {
      */
     public MainViewModel() {
         mDao = MyDataBase.getInstance().getDao();
-        mTyps = Transformations.switchMap(mSelectType, new Function<Integer, LiveData<List<IndexBean>>>() {
-            @Override
-            public LiveData<List<IndexBean>> apply(Integer input) {
-                return mDao.queryByType(mType);
-            }
-        });
-        mSelects = Transformations.switchMap(mSelectParent, new Function<Integer, LiveData<List<IndexBean>>>() {
-            @Override
-            public LiveData<List<IndexBean>> apply(Integer input) {
-                return mDao.queryTypeWithParent(mType, input);
-            }
-        });
-        mSearchList = Transformations.switchMap(mSearchData, new Function<String, LiveData<List<SearchBean>>>() {
-            @Override
-            public LiveData<List<SearchBean>> apply(String input) {
-                return mDao.search(input);
-            }
-        });
     }
 
     public void onTypeSelect(int type) {
@@ -76,11 +54,21 @@ public class MainViewModel extends ViewModel {
     }
 
     public void observerType(LifecycleOwner lifecycle, Observer<List<IndexBean>> observer) {
-        mTyps.observe(lifecycle, observer);
+        Transformations.switchMap(mSelectType, new Function<Integer, LiveData<List<IndexBean>>>() {
+            @Override
+            public LiveData<List<IndexBean>> apply(Integer input) {
+                return mDao.queryByType(mType);
+            }
+        }).observe(lifecycle, observer);
     }
 
     public void observerParent(LifecycleOwner owner, Observer<List<IndexBean>> observer) {
-        mSelects.observe(owner, observer);
+        Transformations.switchMap(mSelectParent, new Function<Integer, LiveData<List<IndexBean>>>() {
+            @Override
+            public LiveData<List<IndexBean>> apply(Integer input) {
+                return mDao.queryTypeWithParent(mType, input);
+            }
+        }).observe(owner, observer);
     }
 
     public void observerMenuSelect(LifecycleOwner owner, Observer<String> observer) {
@@ -89,6 +77,15 @@ public class MainViewModel extends ViewModel {
 
     public void observerTagSelect(LifecycleOwner owner, Observer<String> observer) {
         mSelectTag.observe(owner, observer);
+    }
+
+    public void observerHistory(LifecycleOwner owner, Observer<List<SearchBean>> observer) {
+        Transformations.switchMap(mSearchData, new Function<String, LiveData<List<SearchBean>>>() {
+            @Override
+            public LiveData<List<SearchBean>> apply(String input) {
+                return mDao.search(input);
+            }
+        }).observe(owner, observer);
     }
 
     public VersionLiveData getVersion() {
@@ -110,12 +107,11 @@ public class MainViewModel extends ViewModel {
         return (int) set.toArray()[0];
     }
 
-    public LiveData<List<SearchBean>> onSearch(String text) {
+    public void searchHistory(String text) {
         if (TextUtils.isEmpty(text)) {
             text = "null";
         }
         mSearchData.setValue("%" + text + "%");
-        return mSearchList;
     }
 
     public void onPerformSearch(String query) {

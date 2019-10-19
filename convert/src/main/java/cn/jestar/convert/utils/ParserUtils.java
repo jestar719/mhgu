@@ -31,14 +31,18 @@ public class ParserUtils {
     public static Map<String, String> parseAList(Elements elements) {
         HashMap<String, String> map = new LinkedHashMap<>();
         for (Element a : elements) {
-            map.put(a.text(), a.attr("href").replace("../", ""));
+            map.put(a.text(), getUrl(a));
         }
         return map;
     }
 
     public static Map<String, String> parseA(Element a, Map<String, String> map) {
-        map.put(a.text(), a.attr("href").replace("../", ""));
+        map.put(a.text(), getUrl(a));
         return map;
+    }
+
+    public static String getUrl(Element a) {
+        return a.attr("href").replace("../", "");
     }
 
 

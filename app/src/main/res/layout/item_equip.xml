@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/style_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="skill_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_part"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        tools:text="part"
+        />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        tools:text="type"
+        />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        tools:text="sex"
+        />
+
+    <TextView
+        android:id="@+id/tv_rare"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        tools:text="rare"
+        />
+
+    <TextView
+        android:id="@+id/tv_defence"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_max_defence"
+        style="@style/style_text"
+        android:layout_width="@dimen/d32"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_slot_num"
+        style="@style/style_text"
+        android:layout_width="@dimen/d24"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_skill_name"
+        style="@style/style_text"
+        android:layout_width="@dimen/d64"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_skill_value"
+        style="@style/style_text"
+        android:layout_width="@dimen/d24"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

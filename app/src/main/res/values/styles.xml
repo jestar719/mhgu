@@ -17,8 +17,31 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="style_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:padding">@dimen/d4</item>
+    </style>
+
+    <style name="style_equip_item">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/select_button</item>
+        <item name="android:padding">@dimen/d4</item>
+    </style>
+
+    <style name="style_item_skill_value">
+        <item name="android:layout_width">@dimen/d24</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 
 </resources>

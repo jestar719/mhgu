@@ -1,27 +1,16 @@
 package cn.jestar.db.bean;
 
 import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 
 /**
+ * 索引的数据结构
  * Created by 花京院 on 2019/1/27.
  */
 @Entity
-public class IndexBean {
-    @PrimaryKey
-    private int id;
+public class IndexBean extends BaseBean {
     private int type;
     private int parent;
-    private String name;
     private String url;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getType() {
         return type;
@@ -37,14 +26,6 @@ public class IndexBean {
 
     public void setParent(int parent) {
         this.parent = parent;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getUrl() {

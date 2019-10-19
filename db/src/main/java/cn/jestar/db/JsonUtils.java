@@ -5,6 +5,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,15 +21,17 @@ public class JsonUtils {
         return sGson.toJson(o);
     }
 
-    public static <T> T fromString(String string, Class<T> cls) {
+    public static <T> T getObject(String string, Class<T> cls) {
         return sGson.fromJson(string, cls);
     }
 
-    public static <T> T fromString(Reader reader, Class<T> cls) {
-        return sGson.fromJson(reader, cls);
+    public static <T> T getObject(Reader reader, Class<T> cls) throws IOException {
+        T t = sGson.fromJson(reader, cls);
+        reader.close();
+        return t;
     }
 
-    public static <T> List<T> toList(String string, Class<T> clazz) {
+    public static <T> List<T> getList(String string, Class<T> clazz) {
         List<T> lst = new ArrayList<>();
         try {
             JsonArray array = new JsonParser().parse(string).getAsJsonArray();
@@ -40,13 +43,14 @@ public class JsonUtils {
         return lst;
     }
 
-    public static <T> List<T> toList(Reader reader, Class<T> clazz) {
+    public static <T> List<T> getList(Reader reader, Class<T> clazz) {
         List<T> lst = new ArrayList<>();
         try {
             JsonArray array = new JsonParser().parse(reader).getAsJsonArray();
             for (final JsonElement elem : array) {
                 lst.add(sGson.fromJson(elem, clazz));
             }
+            reader.close();
         } catch (Exception e) {
         }
         return lst;

@@ -46,12 +46,13 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':db')
+    implementation files('libs/crasheye-2.2.5.jar')
     implementation design
+    implementation cardview
     implementation constraint
     implementation flowlayout
-    implementation project(':db')
     testImplementation junit
     androidTestImplementation testRunner
     androidTestImplementation espresso
-    implementation files('libs/crasheye-2.2.5.jar')
 }

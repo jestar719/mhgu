@@ -12,15 +12,11 @@ import android.util.Log;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
 
 import cn.jestar.db.DbConstants;
-import cn.jestar.db.JsonUtils;
 import cn.jestar.db.MyDataBase;
 import cn.jestar.mhgu.App;
 import cn.jestar.mhgu.AppManager;
-import cn.jestar.mhgu.version.VersionBean;
 
 /**
  * 始化逻辑类
@@ -89,6 +85,8 @@ public class SplashModel extends ViewModel {
      */
     private void copyDb() throws Exception {
         Application app = AppManager.getApp();
+        app.getDatabasePath(DbConstants.DB_WAL).deleteOnExit();
+        app.getDatabasePath(DbConstants.DB_SHM).deleteOnExit();
         try (InputStream in = app.getAssets().open(DbConstants.DB_NAME);
              FileOutputStream out = new FileOutputStream(app.getDatabasePath(DbConstants.DB_NAME))) {
             int len;

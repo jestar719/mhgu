@@ -15,6 +15,7 @@ import cn.jestar.convert.Constants;
 import static cn.jestar.convert.utils.ParserUtils.getDoc;
 import static cn.jestar.convert.utils.ParserUtils.parseA;
 import static cn.jestar.convert.utils.ParserUtils.parseAList;
+import static cn.jestar.convert.utils.ParserUtils.writeDoc;
 
 /**
  * 索引解析
@@ -45,5 +46,42 @@ public class IndexParser {
             }
         }
         return index;
+    }
+
+    public Map<String, String> parseMonster() throws IOException {
+        File file = new File(Constants.DATA_PATH, "2974.html");
+        Document doc = getDoc(file);
+        Map<String, String> map = new HashMap<>();
+        for (Element e : doc.select("div[id=navi1] a")) {
+            String s = e.text().trim();
+            map.put(s, s);
+        }
+        return map;
+    }
+
+    public void convertMonsterName(String url, Map<String, String> map) throws IOException {
+        File file = new File(Constants.MH_PATH, url);
+        Document doc = getDoc(file);
+        for (Element e : doc.select("div[id=navi1] a")) {
+            String s = e.text().trim();
+            String s1 = map.get(s);
+            if (s1 != null) {
+                e.text(s1);
+            }
+        }
+        Element a = doc.select("ul[id=bread] a").last();
+        String text = a.text().trim();
+        String s = map.get(text);
+        if (s != null) {
+            a.text(s);
+            Element div = doc.selectFirst("div.f_min");
+            Element h3 = div.selectFirst("h3");
+            String string = h3.text();
+            h3.text(string.replace(text, s));
+            Element td = div.select("table.t1 td.b").first();
+            string = td.text();
+            td.text(string.replace(text, s));
+        }
+        writeDoc(file, doc);
     }
 }

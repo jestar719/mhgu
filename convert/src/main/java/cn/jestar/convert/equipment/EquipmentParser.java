@@ -21,10 +21,14 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import cn.jestar.convert.Constants;
+import cn.jestar.convert.bean.BaseEquip;
 import cn.jestar.convert.bean.EquipIndexBean;
+import cn.jestar.convert.bean.FullEquip;
 import cn.jestar.convert.bean.LinkInfo;
 import cn.jestar.convert.utils.JsonUtils;
 
+import static cn.jestar.convert.bean.BaseEquip.TYPE.ALL;
+import static cn.jestar.convert.bean.BaseEquip.TYPE.ARCHER;
 import static cn.jestar.convert.utils.ParserUtils.getAList;
 import static cn.jestar.convert.utils.ParserUtils.getDoc;
 import static cn.jestar.convert.utils.ParserUtils.matchCovert;
@@ -46,7 +50,6 @@ public class EquipmentParser {
     public static final String EQUIP_INDEX_NAME = "equip_index.json";
 
 
-
     /**
      * 从装备一览中解析装备页
      *
@@ -65,11 +68,121 @@ public class EquipmentParser {
         JsonUtils.writeJson(new File(Constants.TEMP_TRANSLATED_PATH, CATALOG_NAME), tree);
     }
 
+    public List<List<FullEquip>> paserEquipDetail(String page) throws IOException {
+        List<List<FullEquip>> equips = new ArrayList<>();
+        File file = new File(Constants.MH_PATH, page);
+        Document doc = getDoc(file);
+        for (Element e : doc.select("div[class^=panel]:has(table)")) {
+            String name = e.className();
+            int sex = BaseEquip.SEX.ALL;
+            if (name.endsWith("info2")) {
+                sex = BaseEquip.SEX.MAN;
+            } else if (name.endsWith("danger")) {
+                sex = BaseEquip.SEX.FELMAN;
+            }
+            String url = e.selectFirst("a").attr("href").replace("../", "").trim();
+            doc = getDoc(new File(Constants.MH_PATH, url));
+            Elements select = doc.select("table.t1");
+            String td = select.first().selectFirst("td").text().trim();
+            int rare = 11;
+            try {
+                rare = Integer.parseInt(td);
+            } catch (NumberFormatException e1) {
+
+            }
+            List<FullEquip> list = createEquips(select.get(1), select.get(2), sex, rare, url);
+            equips.add(list);
+        }
+        return equips;
+    }
+
+    private List<FullEquip> createEquips(Element values, Element skills, int sex, int rare, String url) {
+        int index = 0;
+        List<FullEquip> equips = new ArrayList<>();
+        Elements trs = values.select("tr:has(td)");
+        Elements skillTrs = skills.select("tr:has(td)");
+        int size = values.select("tr[style^=background]").size();
+        int type = size > 1 ? BaseEquip.TYPE.FIGHT : ALL;
+        int num = trs.size();
+        for (int i = 0; i < num; i++) {
+            Element tr = trs.get(i);
+            String style = tr.attr("style");
+            if (style != null && style.contains("background")) {
+                System.out.println(style);
+                if (type != ALL) {
+                    index += 5;
+                    type = ARCHER;
+                }
+            } else {
+                FullEquip equip = new FullEquip();
+                equip.setUrl(url);
+                equip.setRare(rare);
+                equip.setSex(sex);
+                equip.setType(type);
+                equips.add(equip);
+                Element td = tr.selectFirst("td.left");
+                equip.setName(td.text().trim());
+                String src = td.selectFirst("img").attr("src");
+                int part = src.lastIndexOf("/");
+                part = Integer.parseInt(src.substring(part + 2, part + 3)) - 1;
+                equip.setPart(part);
+                equip.setId(index + part);
+                td = td.nextElementSibling();
+                equip.setDefence(getIntValue(td));
+                td = td.nextElementSibling();
+                equip.setMaxDefence(getIntValue(td));
+                td = td.nextElementSibling();
+                equip.setFire(getIntValue(td.selectFirst("span[class^=c_]")));
+                td = td.nextElementSibling();
+                equip.setWater(getIntValue(td.selectFirst("span[class^=c_]")));
+                td = td.nextElementSibling();
+                equip.setFlash(getIntValue(td.selectFirst("span[class^=c_]")));
+                td = td.nextElementSibling();
+                equip.setIce(getIntValue(td.selectFirst("span[class^=c_]")));
+                td = td.nextElementSibling();
+                equip.setDragon(getIntValue(td.selectFirst("span[class^=c_]")));
+                Element e = skillTrs.get(i);
+                Elements tds = e.select("td");
+                equip.setSkills(getSkills(tds.last()));
+                String slot = tds.get(1).text().trim();
+                int slotNum;
+                int start = slot.indexOf("-");
+                int end = slot.lastIndexOf("-");
+                if (start == end) {
+                    slotNum = start < 0 ? 0 : 1;
+                } else {
+                    slotNum = end - start + 1;
+                }
+                equip.setSlotNum(3 - slotNum);
+            }
+        }
+        return equips;
+    }
+
+    private List<BaseEquip.EquipSkill> getSkills(Element e) {
+        Elements a = e.select("a");
+        Elements span = e.select("span");
+        int size = a.size();
+        ArrayList<BaseEquip.EquipSkill> list = new ArrayList<>(size);
+        for (int i = 0; i < size; i++) {
+            BaseEquip.EquipSkill skill = new BaseEquip.EquipSkill();
+            skill.setId(i);
+            skill.setName(a.get(i).text().trim());
+            skill.setValue(getIntValue(span.get(i)));
+            list.add(skill);
+        }
+        return list;
+    }
+
+    public int getIntValue(Element e) {
+        return Integer.parseInt(e.text().trim());
+    }
+
     public void parseEquipNameInPage() throws IOException {
         File file = new File(Constants.TEMP_SUMMARY_PATH, EQUIP_INDEX_NAME);
         List<LinkInfo> list = JsonUtils.toList(new FileReader(file), LinkInfo.class);
         Map<String, String> data = list.get(0).getData();
-        Map<String,List<LinkInfo>> map=new LinkedHashMap<>();
+        Map<String, List<LinkInfo>> map = new LinkedHashMap<>();
         for (Map.Entry<String, String> key : data.entrySet()) {
             List<EquipIndexBean> beans = getEquipListIndex(key.getValue());
             List<LinkInfo> infos = new ArrayList<>(beans.size());
@@ -77,13 +190,13 @@ public class EquipmentParser {
                 LinkInfo info = new LinkInfo(bean.getName());
                 LinkedHashMap<String, String> map1 = new LinkedHashMap<>();
                 for (String s : bean.getEquipNameList()) {
-                    map1.put(s,s);
+                    map1.put(s, s);
                 }
                 info.setData(map1);
                 infos.add(info);
             }
             String name = key.getKey();
-            map.put(name,infos);
+            map.put(name, infos);
         }
         JsonUtils.writeJson(new File(Constants.TEMP_TRANSLATED_PATH, EQUIP_DETAIL), map);
     }
@@ -207,52 +320,52 @@ public class EquipmentParser {
     }
 
 
-    public void convertEquipDetail(List<LinkInfo> infos,String url) throws IOException {
-        Map<String,LinkInfo> map=new HashMap<>();
+    public void convertEquipDetail(List<LinkInfo> infos, String url) throws IOException {
+        Map<String, LinkInfo> map = new HashMap<>();
         for (LinkInfo linkInfo : infos) {
-                map.put(linkInfo.getName(),linkInfo);
+            map.put(linkInfo.getName(), linkInfo);
         }
         File file = new File(Constants.MH_PATH, url);
         Document doc = getDoc(file);
         for (Element element : doc.select("div[class^=panel]:has(table)")) {
             Element a = element.selectFirst("a");
             String text = a.text().trim();
-            String equipUrl = a.attr("href").replace("../","").trim();
+            String equipUrl = a.attr("href").replace("../", "").trim();
             LinkInfo info = map.get(text);
-            if (info!=null){
+            if (info != null) {
                 Map<String, String> data = info.getData();
                 for (Element e : element.select("td.left:has(img) a")) {
                     text = e.text().trim();
                     String value = data.get(text);
-                    if (value!=null){
+                    if (value != null) {
                         e.text(value);
                     }
                 }
-                convertEquipDetail(info,equipUrl);
+                convertEquipDetail(info, equipUrl);
             }
         }
-        writeDoc(file,doc);
+        writeDoc(file, doc);
     }
 
-    public void convertEquipDetail(LinkInfo info,String url) throws IOException {
+    public void convertEquipDetail(LinkInfo info, String url) throws IOException {
         File file = new File(Constants.MH_PATH, url);
         Document doc = getDoc(file);
         Map<String, String> data = info.getData();
         for (Element e : doc.select("td.left:has(img)")) {
             String text = e.text().trim();
             String value = data.get(text);
-            if (value!=null){
+            if (value != null) {
                 Element a = e.selectFirst("img");
                 Element img = new Element("img");
-                String key="style";
-                img.attr(key,a.attr(key));
-                key="src";
-                img.attr(key,a.attr(key));
+                String key = "style";
+                img.attr(key, a.attr(key));
+                key = "src";
+                img.attr(key, a.attr(key));
                 e.text(value);
-                e.insertChildren(0,img);
+                e.insertChildren(0, img);
             }
         }
-        writeDoc(file,doc);
+        writeDoc(file, doc);
     }
 
 

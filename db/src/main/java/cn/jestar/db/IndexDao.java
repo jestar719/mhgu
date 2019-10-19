@@ -33,9 +33,8 @@ public interface IndexDao {
     @Query("SELECT * FROM IndexBean WHERE type = :type AND parent = :parent")
     LiveData<List<IndexBean>> queryTypeWithParent(int type, int parent);
 
-
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(SearchBean bean);
+    void insert(SearchBean... bean);
 
     @Query("SELECT * FROM SearchBean WHERE name LIKE :name")
     LiveData<List<SearchBean>> search(String name);

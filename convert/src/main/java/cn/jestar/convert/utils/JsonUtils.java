@@ -6,7 +6,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
@@ -33,7 +32,7 @@ public class JsonUtils {
         return sGson.fromJson(reader, cls);
     }
 
-    public static <T> List<T> toList(FileReader string, Class<T> clazz) {
+    public static <T> List<T> toList(Reader string, Class<T> clazz) {
         List<T> lst = new ArrayList<>();
         try {
             JsonArray array = new JsonParser().parse(string).getAsJsonArray();
@@ -45,19 +44,8 @@ public class JsonUtils {
         return lst;
     }
 
-    public static <T> List<T> toList(Reader reader, Class<T> clazz) {
-        List<T> lst = new ArrayList<>();
-        try {
-            JsonArray array = new JsonParser().parse(reader).getAsJsonArray();
-            for (final JsonElement elem : array) {
-                lst.add(sGson.fromJson(elem, clazz));
-            }
-        } catch (Exception e) {
-        }
-        return lst;
-    }
 
-    public static <T> T fromStringByType(FileReader reader, Type type) {
+    public static <T> T fromStringByType(Reader reader, Type type) {
         return sGson.fromJson(reader, type);
     }
 

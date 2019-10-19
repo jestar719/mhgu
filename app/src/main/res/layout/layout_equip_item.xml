@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d32"
+    android:paddingBottom="@dimen/d4"
+    android:paddingTop="@dimen/d4"
+    >
+
+    <ImageView
+        android:id="@+id/iv_name"
+        android:layout_width="@dimen/d24"
+        android:layout_height="@dimen/d24"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_equip"
+        style="@style/style_equip_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/d8"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/iv_name"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:text="equip name"
+        />
+
+    <TextView
+        android:id="@+id/tv_slot_num"
+        style="@style/style_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d24"
+        android:layout_marginStart="@dimen/d4"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@id/tv_equip"
+        tools:text="3"
+        />
+
+    <TextView
+        android:id="@+id/tv_j1"
+        style="@style/style_equip_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d24"
+        android:layout_marginStart="@dimen/d8"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@id/tv_j2"
+        app:layout_constraintStart_toEndOf="@+id/tv_slot_num"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="@dimen/d24"
+        tools:text="+"/>
+
+    <TextView
+        android:id="@+id/tv_j2"
+        style="@style/style_equip_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d24"
+        android:layout_marginStart="@dimen/d8"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_j1"
+        app:layout_constraintRight_toLeftOf="@id/tv_j3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="@dimen/d24"
+        tools:text="+"/>
+
+    <TextView
+        android:id="@+id/tv_j3"
+        style="@style/style_equip_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d24"
+        android:layout_marginStart="@dimen/d8"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_j2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="@dimen/d24"
+        tools:text="+"/>
+</android.support.constraint.ConstraintLayout>
