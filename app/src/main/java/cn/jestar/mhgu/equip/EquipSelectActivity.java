@@ -301,30 +301,31 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 if (mCurrentFrg == null || mCurrentFrg.isHidden()) {
-                    int itemId = item.getItemId();
-                    switch (itemId) {
-                        case R.id.menu_clear_all:
-                            clearAll();
-                            mModel.clearAll();
-                            break;
-                        case R.id.menu_clear_equip:
-                            clearEquip();
-                            break;
-                        case R.id.menu_clear_jewelry:
-                            clearJewelry();
-                            break;
-                        case R.id.menu_load:
-                            onLoadEquipSet(false);
-                            break;
-                        case R.id.menu_load_default:
-                            onLoadEquipSet(true);
-                            break;
-                        case R.id.menu_save:
-                            mEquipSetInput.setVisibility(View.VISIBLE);
-                            break;
-                        default:
-                            break;
-                    }
+                    hideFrg();
+                }
+                int itemId = item.getItemId();
+                switch (itemId) {
+                    case R.id.menu_clear_all:
+                        clearAll();
+                        mModel.clearAll();
+                        break;
+                    case R.id.menu_clear_equip:
+                        clearEquip();
+                        break;
+                    case R.id.menu_clear_jewelry:
+                        clearJewelry();
+                        break;
+                    case R.id.menu_load:
+                        onLoadEquipSet(false);
+                        break;
+                    case R.id.menu_load_default:
+                        onLoadEquipSet(true);
+                        break;
+                    case R.id.menu_save:
+                        mEquipSetInput.setVisibility(View.VISIBLE);
+                        break;
+                    default:
+                        break;
                 }
                 return false;
             }
@@ -431,12 +432,16 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
         } else if (mEquipLoadDialog.getVisibility() == View.VISIBLE) {
             mEquipLoadDialog.setVisibility(View.GONE);
         } else if (mCurrentFrg != null && !mCurrentFrg.isHidden()) {
-            getSupportFragmentManager().beginTransaction().hide(mCurrentFrg).commit();
-            setToolbarTitle(DEFAULT);
-            mModel.setEquipQueryType(false);
+            hideFrg();
         } else {
             super.onBackPressed();
         }
+    }
+
+    private void hideFrg() {
+        getSupportFragmentManager().beginTransaction().hide(mCurrentFrg).commit();
+        setToolbarTitle(DEFAULT);
+        mModel.setEquipQueryType(false);
     }
 
     /**
