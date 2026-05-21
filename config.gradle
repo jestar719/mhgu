@@ -1,27 +1,31 @@
 ext {
     //版本
     minSdk = 21
-    targetSdk = 27
-vCode=220
-vName='2.2.0'
-    supportV = "27.1.1"
-    architectureV = "1.1.1"
+    targetSdk = 35
+    compileSdk = 35
+    vCode=221
+    vName='2.3.0'
+    appcompatV = "1.7.0"
+    materialV = "1.12.0"
+    constraintV = "2.2.1"
+    lifecycleV = "2.8.7"
+    roomV = "2.6.1"
+    annotationV = "1.9.1"
     //android支持库
-    support = "com.android.support:appcompat-v7:$supportV"
-    appcompat = "com.android.support:appcompat-v7:$supportV"
-    cardview = "com.android.support:cardview-v7:$supportV"
-    design = "com.android.support:design:$supportV"
-    constraint = "com.android.support.constraint:constraint-layout:1.1.3"
-    lifecycle = "android.arch.lifecycle:extensions:$architectureV"
-    lifecycleRuntime = "android.arch.lifecycle:runtime:$architectureV"
-    room = "android.arch.persistence.room:runtime:$architectureV"
-    roomCompiler = "android.arch.persistence.room:compiler:$architectureV"
+    appcompat = "androidx.appcompat:appcompat:$appcompatV"
+    cardview = "androidx.cardview:cardview:1.0.0"
+    design = "com.google.android.material:material:$materialV"
+    constraint = "androidx.constraintlayout:constraintlayout:$constraintV"
+    lifecycle = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    lifecycleRuntime = "androidx.lifecycle:lifecycle-compiler:2.8.7"
+    room = "androidx.room:room-runtime:$roomV"
+    roomCompiler = "androidx.room:room-compiler:$roomV"
+    annotation = "androidx.annotation:annotation:$annotationV"
     //测试
     junit = "junit:junit:4.12"
-    espresso = "com.android.support.test.espresso:espresso-core:3.0.2"
-    testRunner = "com.android.support.test:runner:1.0.2"
+    espresso = "androidx.test.espresso:espresso-core:3.6.1"
+    testRunner = "androidx.test:runner:1.6.2"
     //其它库
     gson = "com.google.code.gson:gson:2.8.5"
-    flowlayout = 'com.hyman:flowlayout-lib:1.1.2'
     jsoup = 'org.jsoup:jsoup:1.12.1'
 }

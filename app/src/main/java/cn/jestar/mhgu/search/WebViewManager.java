@@ -1,7 +1,7 @@
 package cn.jestar.mhgu.search;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import android.graphics.Bitmap;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;

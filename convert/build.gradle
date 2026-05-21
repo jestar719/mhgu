@@ -4,7 +4,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation gson
     implementation jsoup
-    testCompile junit
+    testImplementation junit
 }
 
 sourceCompatibility = "1.8"

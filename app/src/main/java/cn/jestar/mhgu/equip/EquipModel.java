@@ -1,13 +1,11 @@
 package cn.jestar.mhgu.equip;
 
-import android.arch.core.util.Function;
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.Transformations;
-import android.arch.lifecycle.ViewModel;
-import android.support.annotation.Nullable;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -199,13 +197,13 @@ public class EquipModel extends ViewModel {
      * @param observer {@link EquipSelectActivity#initModel()}
      */
     public void observerEquipSet(LifecycleOwner owner, Observer<EquipSetDetail> observer) {
-        Transformations.map(mRepository.getRecodeData(), new Function<EquipSetDetail, EquipSetDetail>() {
+        mRepository.getRecodeData().observe(owner, new Observer<EquipSetDetail>() {
             @Override
-            public EquipSetDetail apply(EquipSetDetail detail) {
+            public void onChanged(@Nullable EquipSetDetail detail) {
                 mSummer.loadEquipSet(detail);
-                return detail;
+                observer.onChanged(detail);
             }
-        }).observe(owner, observer);
+        });
     }
 
     public void observerJewelry(LifecycleOwner owner, Observer<List<Jewelry>> observer) {
@@ -221,12 +219,14 @@ public class EquipModel extends ViewModel {
     }
 
     public void observeHistory(LifecycleOwner owner, Observer<List<String>> observer) {
-        Transformations.switchMap(mSkillSearchData, new Function<String, LiveData<List<String>>>() {
+        mSkillSearchData.observe(owner, new Observer<String>() {
             @Override
-            public LiveData<List<String>> apply(String input) {
-                return mRepository.getSkillNames(input);
+            public void onChanged(@Nullable String input) {
+                if (input != null) {
+                    mRepository.getSkillNames(input).observe(owner, observer);
+                }
             }
-        }).observe(owner, observer);
+        });
     }
 
 }

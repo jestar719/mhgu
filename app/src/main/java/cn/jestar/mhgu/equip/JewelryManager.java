@@ -1,8 +1,8 @@
 package cn.jestar.mhgu.equip;
 
-import android.support.annotation.CallSuper;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.IdRes;
+import androidx.annotation.CallSuper;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.IdRes;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;

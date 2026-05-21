@@ -1,12 +1,11 @@
 package cn.jestar.mhgu;
 
-import android.arch.core.util.Function;
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.Transformations;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 
 import java.util.List;
@@ -54,21 +53,23 @@ public class MainViewModel extends ViewModel {
     }
 
     public void observerType(LifecycleOwner lifecycle, Observer<List<IndexBean>> observer) {
-        Transformations.switchMap(mSelectType, new Function<Integer, LiveData<List<IndexBean>>>() {
+        mSelectType.observe(lifecycle, new Observer<Integer>() {
             @Override
-            public LiveData<List<IndexBean>> apply(Integer input) {
-                return mDao.queryByType(mType);
+            public void onChanged(@Nullable Integer input) {
+                mDao.queryByType(mType).observe(lifecycle, observer);
             }
-        }).observe(lifecycle, observer);
+        });
     }
 
     public void observerParent(LifecycleOwner owner, Observer<List<IndexBean>> observer) {
-        Transformations.switchMap(mSelectParent, new Function<Integer, LiveData<List<IndexBean>>>() {
+        mSelectParent.observe(owner, new Observer<Integer>() {
             @Override
-            public LiveData<List<IndexBean>> apply(Integer input) {
-                return mDao.queryTypeWithParent(mType, input);
+            public void onChanged(@Nullable Integer input) {
+                if (input != null) {
+                    mDao.queryTypeWithParent(mType, input).observe(owner, observer);
+                }
             }
-        }).observe(owner, observer);
+        });
     }
 
     public void observerMenuSelect(LifecycleOwner owner, Observer<String> observer) {
@@ -80,12 +81,14 @@ public class MainViewModel extends ViewModel {
     }
 
     public void observerHistory(LifecycleOwner owner, Observer<List<SearchBean>> observer) {
-        Transformations.switchMap(mSearchData, new Function<String, LiveData<List<SearchBean>>>() {
+        mSearchData.observe(owner, new Observer<String>() {
             @Override
-            public LiveData<List<SearchBean>> apply(String input) {
-                return mDao.search(input);
+            public void onChanged(@Nullable String input) {
+                if (input != null) {
+                    mDao.search(input).observe(owner, observer);
+                }
             }
-        }).observe(owner, observer);
+        });
     }
 
     public VersionLiveData getVersion() {

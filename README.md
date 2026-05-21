@@ -10,7 +10,7 @@
 
 其中最重要的翻译，实在是太烦琐了，只能寻找有志之士帮忙了处理了。
 
-已经提取文本，放在[Google在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)，[腾讯在线文本](https://docs.qq.com/sheet/DTWJacUxUbWJsc0F3)上，所有人都可以编辑
+早期提取文本放在[Google在线文本](https://docs.google.com/spreadsheets/d/1hw0ZgkxVsN_2pb9WyNlavaQhKN5yJU51tX52fC4ep5Q/edit?usp=sharing)，[腾讯在线文本](https://docs.qq.com/sheet/DTWJacUxUbWJsc0F3)上。当前翻译维护以仓库内 `temp/translated` 为准，编译后的页面在 `app/src/main/assets/mhxx` 中。
 
 
 当某页文本都翻译完了，我会进行处理，然后发布新版本
@@ -35,11 +35,16 @@
 
     导航后期根据需求不定时更新，比如各种数据的汇总，网上优秀的文章链接等。
 
-* 翻译（待协作，不定时更新）
+* 翻译（不定时更新）
+    * 当前仓库进度
+        *  待翻译源文本：`temp/translation` 共 17 个 JSON，5144 条顶层条目
+        *  已维护翻译表：`temp/translated` 共 45 个 JSON，5768 条顶层条目
+        *  已编译汇总：`temp/summary` 共 26 个 JSON，31172 条顶层条目
+        *  14 个武器源文件均已有翻译表和 TransBean，并已编译到离线 HTML
     * 武器
         *  大剑  进度：已完成
         *  太刀  进度：已完成
-        *  片手  进度：待翻译
+        *  片手  进度：已完成
         *  双刀  进度：已完成
         *  大锤  进度：已完成
         *  盾斧  进度：已完成
@@ -47,8 +52,8 @@
         *  斩斧  进度：已完成
         *  长枪  进度：已完成
         *  铳枪  进度：已完成
-        *  笛  进度：待翻译
-        *  笛旋律  进度：待翻译
+        *  笛  进度：已完成
+        *  笛旋律  进度：已接入，待校对
         *  弓  进度：已完成
         *  轻弩  进度：已完成
         *  重弩  进度：已完成
@@ -58,7 +63,8 @@
        * 猫技能  进度：待翻译
      * 猫饭
        * 食材 进度：已完成
-       * 料理及说明 已完成
+       * 料理及说明 进度：已完成
+       * 猫饭技能 进度：已完成
      * 技能
        * 技能名 进度：已完成
        * 技能效果名 进度：已完成

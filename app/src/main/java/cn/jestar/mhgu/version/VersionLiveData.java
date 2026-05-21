@@ -1,6 +1,6 @@
 package cn.jestar.mhgu.version;
 
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.MutableLiveData;
 import android.util.Log;
 
 import java.io.InputStream;

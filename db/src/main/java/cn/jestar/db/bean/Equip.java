@@ -1,7 +1,7 @@
 package cn.jestar.db.bean;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
+import androidx.room.Entity;
+import androidx.room.Ignore;
 
 import java.util.List;
 

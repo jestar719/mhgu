@@ -1,17 +1,16 @@
 package cn.jestar.mhgu.equip;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -125,7 +124,7 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
 
 
     private void initModel() {
-        mModel = ViewModelProviders.of(this).get(EquipModel.class);
+        mModel = new ViewModelProvider(this).get(EquipModel.class);
         mModel.observerEvent(this, this);
         mModel.observerSumSkill(this, new Observer<EquipSetValue>() {
             @Override
@@ -304,28 +303,19 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
                     hideFrg();
                 }
                 int itemId = item.getItemId();
-                switch (itemId) {
-                    case R.id.menu_clear_all:
-                        clearAll();
-                        mModel.clearAll();
-                        break;
-                    case R.id.menu_clear_equip:
-                        clearEquip();
-                        break;
-                    case R.id.menu_clear_jewelry:
-                        clearJewelry();
-                        break;
-                    case R.id.menu_load:
-                        onLoadEquipSet(false);
-                        break;
-                    case R.id.menu_load_default:
-                        onLoadEquipSet(true);
-                        break;
-                    case R.id.menu_save:
-                        mEquipSetInput.setVisibility(View.VISIBLE);
-                        break;
-                    default:
-                        break;
+                if (itemId == R.id.menu_clear_all) {
+                    clearAll();
+                    mModel.clearAll();
+                } else if (itemId == R.id.menu_clear_equip) {
+                    clearEquip();
+                } else if (itemId == R.id.menu_clear_jewelry) {
+                    clearJewelry();
+                } else if (itemId == R.id.menu_load) {
+                    onLoadEquipSet(false);
+                } else if (itemId == R.id.menu_load_default) {
+                    onLoadEquipSet(true);
+                } else if (itemId == R.id.menu_save) {
+                    mEquipSetInput.setVisibility(View.VISIBLE);
                 }
                 return false;
             }
@@ -342,7 +332,7 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_equip_select, menu);
         MenuItem item = menu.findItem(R.id.action_search);
-        mSearchView = (SearchView) MenuItemCompat.getActionView(item);
+        mSearchView = (SearchView) item.getActionView();
         initSearch();
         return super.onCreateOptionsMenu(menu);
     }
@@ -396,7 +386,7 @@ public class EquipSelectActivity extends AppCompatActivity implements OnSelectEv
      * 设置Adapter及相关
      */
     public void initAutoComplete() {
-        AutoCompleteTextView completeTextView = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        AutoCompleteTextView completeTextView = mSearchView.findViewById(androidx.appcompat.R.id.search_src_text);
         mHistoryAdapter = new QueryHistoryAdapter<>(this, R.layout.list_item, 0);
         completeTextView.setThreshold(1);
         completeTextView.setAdapter(mHistoryAdapter);

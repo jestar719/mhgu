@@ -1,7 +1,7 @@
 package cn.jestar.db.bean;
 
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
+import androidx.room.PrimaryKey;
+import androidx.annotation.NonNull;
 
 /**
  * 数据基类

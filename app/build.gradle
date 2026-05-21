@@ -6,7 +6,8 @@ def path = properties['KEY_PATH']
 
 
 android {
-    compileSdkVersion targetSdk
+    namespace "cn.jestar.mhgu"
+    compileSdkVersion rootProject.ext.compileSdk
     applicationVariants.all { variant ->
         if (variant.buildType.name.contentEquals('release')) {
             variant.outputs.all { output ->
@@ -18,11 +19,11 @@ android {
 
     defaultConfig {
         applicationId "cn.jestar.mhgu"
-        minSdkVersion minSdk
-        targetSdkVersion targetSdk
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
         versionCode vCode
         versionName vName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
@@ -37,11 +38,17 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
     }
-
+    buildFeatures {
+        buildConfig true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -51,7 +58,7 @@ dependencies {
     implementation design
     implementation cardview
     implementation constraint
-    implementation flowlayout
+    implementation annotation
     testImplementation junit
     androidTestImplementation testRunner
     androidTestImplementation espresso

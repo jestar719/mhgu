@@ -1,6 +1,6 @@
 package cn.jestar.db.bean;
 
-import android.arch.persistence.room.Entity;
+import androidx.room.Entity;
 
 /**
  * 装饰品

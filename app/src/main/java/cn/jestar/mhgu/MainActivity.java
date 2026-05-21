@@ -1,25 +1,24 @@
 package cn.jestar.mhgu;
 
 import android.Manifest;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.internal.NavigationMenuView;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.internal.NavigationMenuView;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mWebViewManager = new WebViewManager((WebView) findViewById(R.id.web));
-        mModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        mModel = new ViewModelProvider(this).get(MainViewModel.class);
         initFragment();
         initVersion();
         initLeftMenu();
@@ -164,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.open, R.string.close);
         toggle.syncState();
-        mDrawer.setDrawerListener(toggle);
+        mDrawer.addDrawerListener(toggle);
         mFab = findViewById(R.id.fab_top);
         mFab.setOnClickListener(this);
         findViewById(R.id.fab_up).setOnClickListener(this);
@@ -192,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_title, menu);
         MenuItem item = menu.findItem(R.id.action_search);
-        mSearchView = (SearchView) MenuItemCompat.getActionView(item);
+        mSearchView = (SearchView) item.getActionView();
         initAutoComplete();
         mSearchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
@@ -238,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 设置Adapter及相关
      */
     public void initAutoComplete() {
-        AutoCompleteTextView view = mSearchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        AutoCompleteTextView view = mSearchView.findViewById(androidx.appcompat.R.id.search_src_text);
         mAdapter = new QueryHistoryAdapter<SearchBean>(this, R.layout.list_item, 0);
         view.setThreshold(1);
         view.setAdapter(mAdapter);
@@ -270,26 +269,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id) {
-            case R.id.ll_version:
-                if (!isVersionGetting) {
-                    mModel.getVersion();
-                } else {
-                    if (mVersion.getVersion() > BuildConfig.VERSION_CODE) {
-                        mDrawer.closeDrawers();
-                        update();
-                    }
-                }
-                break;
-            case R.id.fab_top:
-                mWebViewManager.toTop();
-                break;
-            case R.id.fab_up:
-                mWebViewManager.searchNext(false);
-                break;
-            case R.id.fab_down:
-                mWebViewManager.searchNext(true);
-                break;
+        if (id == R.id.ll_version) {
+            if (!isVersionGetting) {
+                mModel.getVersion();
+            } else if (mVersion.getVersion() > BuildConfig.VERSION_CODE) {
+                mDrawer.closeDrawers();
+                update();
+            }
+        } else if (id == R.id.fab_top) {
+            mWebViewManager.toTop();
+        } else if (id == R.id.fab_up) {
+            mWebViewManager.searchNext(false);
+        } else if (id == R.id.fab_down) {
+            mWebViewManager.searchNext(true);
         }
     }
 
@@ -329,30 +321,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mModel.onMenuSelect((String) item.getTitle());
             mDrawer.closeDrawers();
         } else if (R.id.item_set_equip == item.getItemId()) {
-            requestPermissions();
+            startActivity(new Intent(this, EquipSelectActivity.class));
         }
         return false;
-    }
-
-    private void requestPermissions() {
-        int i = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (i != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE}, mRequestCode);
-        } else {
-            startActivity(new Intent(this, EquipSelectActivity.class));
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == mRequestCode) {
-            if (grantResults.length < 1 || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, R.string.permission_alert, Toast.LENGTH_SHORT).show();
-            }
-            startActivity(new Intent(this, EquipSelectActivity.class));
-        }
     }
 }

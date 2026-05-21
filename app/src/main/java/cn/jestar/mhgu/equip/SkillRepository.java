@@ -1,9 +1,8 @@
 package cn.jestar.mhgu.equip;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import android.content.SharedPreferences;
-import android.os.Environment;
 import android.util.SparseArray;
 
 import java.io.File;
@@ -55,7 +54,7 @@ public class SkillRepository {
 
     public SkillRepository() {
         mDao = MyDataBase.getInstance().getSkillDao();
-        mFile = new File(Environment.getExternalStorageDirectory(), Constans.FILE_DIR);
+        mFile = new File(AppManager.getApp().getFilesDir(), Constans.FILE_DIR);
         if (!mFile.exists()) {
             mFile.mkdirs();
         }
